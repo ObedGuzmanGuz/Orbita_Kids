@@ -105,7 +105,7 @@ El desarrollo fue apoyado mediante **Codex y Archify** para la organización, co
 
 La versión publicada de la práctica puede consultarse aquí:
 
-### 🚀 [Abrir Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Practicas_Integradora_230142/Practica04/)
+### 🚀 [Abrir Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)
 
 La aplicación está preparada para funcionar mediante **GitHub Pages**, utilizando rutas relativas para sus archivos CSS, JavaScript y recursos.
 

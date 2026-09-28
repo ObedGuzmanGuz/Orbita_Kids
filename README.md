@@ -97,7 +97,7 @@ La aplicación móvil y la PWA estarán conectadas mediante una **API REST desar
 
 La **Práctica 04** presenta el modelo de negocio del proyecto mediante un **Business Model Canvas interactivo**, compuesto por los nueve bloques principales del modelo Canvas.
 
-🚀 [Ver Canvas interactivo](Practica04/index.html)
+🚀 [Ver Canvas interactivo](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)
 
 📄 [Ver documentación de la Práctica 04](Practica04/README.md)
 
