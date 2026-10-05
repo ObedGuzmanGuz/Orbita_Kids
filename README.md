@@ -210,7 +210,8 @@ El sitio incorpora un planeta giratorio, bordes con una estela luminosa suave, f
 
 📂 **[Ver carpeta del Business Model Canvas](Practica04/)**
 
-🚀 **[Ver Canvas interactivo en GitHub Pages](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)**
+🚀 **[Ver el Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/ModelBusinesCanvas/)**
+
 
 📄 **[Consultar documentación del Canvas](Practica04/README.md)**
 

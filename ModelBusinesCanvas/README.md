@@ -125,7 +125,8 @@ El desarrollo y la documentación del Canvas contaron con apoyo de **Codex y Arc
 
 ## 🌐 GitHub Pages
 
-**[🚀 Ver el Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)**
+🚀 **[Ver el Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/ModelBusinesCanvas/)**
+
 
 El sitio utiliza rutas relativas para sus estilos, scripts e imágenes. El enlace corresponde a la carpeta `Practica04` del proyecto.
 
