@@ -1,152 +1,157 @@
-# 🪐 Práctica 04 — Business Model Canvas de Órbita Kids
+# 🪐 Business Model Canvas — Órbita Kids
 
-## 🎯 Objetivo de la práctica
+**Modelo de negocio interactivo de una propuesta educativa para reforzar las matemáticas en los primeros grados de primaria.**
 
-Analizar el **modelo de negocio y funcionamiento general de Órbita Kids** mediante un **Business Model Canvas interactivo**, identificando sus elementos principales, propuesta de valor, usuarios, recursos, actividades y posibles fuentes de ingresos.
+🌐 **[Abrir el Business Model Canvas de Órbita Kids en GitHub Pages](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)**
 
----
+## 📊 ¿Qué es el Business Model Canvas?
 
-## 🚀 Proyecto analizado
+El **Business Model Canvas**, también llamado **lienzo de modelo de negocio**, es una herramienta visual que organiza una propuesta en **nueve bloques relacionados**. Permite explicar cómo un proyecto crea valor, lo entrega a sus usuarios y obtiene los recursos económicos necesarios para sostenerse.
 
-**Órbita Kids** es una plataforma educativa propuesta para reforzar el aprendizaje de matemáticas en niños de los primeros grados de primaria.
+En Órbita Kids, el Canvas reúne la propuesta educativa, las personas a quienes se dirige y las condiciones necesarias para desarrollar y mantener la plataforma.
 
-La experiencia utiliza una temática de **exploración espacial**, donde los estudiantes avanzan por distintos niveles mientras resuelven actividades matemáticas.
+## 🎯 ¿Para qué sirve?
 
-La primera versión del proyecto se enfoca principalmente en:
+El Canvas permite:
 
-- ➕ Sumas.
-- 🪐 Tres niveles de dificultad.
-- 🧩 Dos tipos de actividades.
-- 📈 Seguimiento del progreso.
-- 🧠 Adaptación básica de ejercicios según el desempeño del estudiante.
+- Comprender el funcionamiento general del proyecto.
+- Relacionar las necesidades de los usuarios con la propuesta de valor.
+- Identificar recursos, actividades y colaboradores necesarios.
+- Comparar posibles ingresos con los costos.
+- Detectar supuestos que deben comprobarse antes de ampliar el proyecto.
 
-Los docentes podrán acompañar el progreso mediante una **PWA**, donde podrán administrar grupos, asignar actividades y consultar las áreas que necesitan mayor refuerzo.
+**El objetivo de este trabajo** es aplicar los nueve bloques a Órbita Kids y presentarlos mediante una interfaz clara, visual e interactiva.
 
----
+## 🚀 ¿De qué trata Órbita Kids?
 
-## 🧩 ¿Qué contiene la práctica?
+**Órbita Kids** es una plataforma educativa propuesta para apoyar el aprendizaje de matemáticas mediante una experiencia de **exploración espacial**.
 
-La práctica desarrolla los **nueve bloques del Business Model Canvas**:
+Los estudiantes podrán elegir un personaje, resolver actividades, recorrer planetas, reparar su nave y recibir recompensas visuales. Estos elementos acompañarán la práctica y mostrarán su avance.
 
-1. 👥 Segmentos de clientes.
-2. 💡 Propuesta de valor.
-3. 📢 Canales.
-4. 🤝 Relaciones con clientes.
-5. 💰 Fuentes de ingresos.
-6. 🧰 Recursos clave.
-7. ⚙️ Actividades clave.
-8. 🔗 Socios clave.
-9. 💸 Estructura de costos.
+### Alcance de la primera versión
 
-Cada tarjeta incluye una **ilustración original relacionada con su tema**. Al abrirla, **Aplicación en Órbita Kids** ocupa un cuadro destacado de ancho completo, con un resumen y una lista que especifica qué engloba ese bloque en el proyecto. Su imagen queda junto a la lista en escritorio. **¿Qué significa este bloque?** aparece debajo, en una sección independiente.
+- ➕ **Un tema principal:** sumas.
+- 🪐 **Tres niveles de dificultad.**
+- 🧩 **Dos tipos de actividades:** sumas con apoyo visual y selección de respuestas.
+- 📈 **Registro básico del progreso**, los intentos y los errores.
+- 🧠 **Adaptación mediante reglas programadas:** ofrecer ayuda o ejercicios más sencillos ante dificultades y permitir avanzar cuando mejore el desempeño.
+- 👩‍🏫 **Acompañamiento docente** mediante una aplicación web progresiva (**PWA**) para administrar grupos, asignar actividades y consultar resultados.
 
-Cada bloque conserva:
+Las familias podrán acompañar el aprendizaje de manera indirecta; la primera versión no contempla una interfaz específica para ellas.
 
-- 📘 Significado del bloque.
-- 📋 Información que debe contener.
-- ❓ Preguntas guía.
-- 🪐 Aplicación en Órbita Kids.
-- 💡 Ejemplo sencillo.
-- 🔄 Relación con otros bloques.
+> La plataforma educativa se presenta como una propuesta en desarrollo. El sitio de este Canvas documenta su modelo de negocio y no equivale a la aplicación educativa terminada.
 
-> Las fuentes de ingresos, socios y algunos elementos del modelo representan **hipótesis de negocio por validar**. Actualmente no se consideran convenios, ventas o alianzas confirmadas.
+## 🧩 Los nueve bloques y su aplicación en Órbita Kids
 
----
+| Bloque | ¿Qué significa? | Aplicación en Órbita Kids |
+| --- | --- | --- |
+| **1. 👥 Segmentos de clientes** | Personas u organizaciones a quienes se dirige el proyecto. | Niños de los primeros grados de primaria como usuarios; docentes que acompañan el aprendizaje; escuelas como posibles clientes institucionales y familias como apoyo indirecto. |
+| **2. 💡 Propuesta de valor** | Beneficios que atienden una necesidad. | Práctica de sumas con apoyos visuales, tres niveles, refuerzo según el desempeño y una misión espacial. Los docentes contarían con información para identificar qué necesita más práctica. |
+| **3. 📢 Canales** | Medios para comunicar y entregar la propuesta. | Aplicación móvil para estudiantes, PWA para docentes, sitio web del proyecto y demostraciones o pilotos en escuelas. |
+| **4. 🤝 Relaciones con clientes** | Formas de acompañar y mantener el vínculo. | Retroalimentación al estudiante, reportes para el docente, orientación inicial y un canal de soporte para dudas y sugerencias escolares. |
+| **5. 💰 Fuentes de ingresos** | Formas de recibir pagos por el servicio. | Posible suscripción o licencia escolar, con planes institucionales para más grupos y reportes ampliados. Se propone acceso gratuito limitado para conocer la plataforma; este acceso no genera ingresos directos. |
+| **6. 🧰 Recursos clave** | Activos y capacidades necesarios. | App, PWA, API, base de datos, banco de sumas, reglas de adaptación, personajes, apoyos visuales y un equipo con capacidades técnicas y educativas. |
+| **7. ⚙️ Actividades clave** | Tareas esenciales para entregar el valor. | Diseñar y revisar ejercicios; desarrollar y probar la plataforma; comprobar las reglas de adaptación; realizar pilotos; mantener el servicio y atender a sus usuarios. |
+| **8. 🔗 Socios clave** | Colaboradores que ayudan a realizar la propuesta. | Escuelas para posibles pilotos, docentes que revisen actividades, especialistas en educación y proveedores de infraestructura tecnológica. |
+| **9. 💸 Estructura de costos** | Gastos necesarios para operar el proyecto. | Desarrollo y pruebas, diseño de personajes e interfaz, elaboración de contenido, alojamiento, base de datos, respaldos, mantenimiento y soporte. |
 
-## 💻 Desarrollo
+> **Supuestos por validar:** los ingresos, precios, planes, alianzas y beneficios educativos deberán evaluarse mediante investigación y pruebas con usuarios. No se presentan ventas ni convenios como confirmados. El modelo no contempla publicidad dirigida a niños ni venta de sus datos.
 
-El Canvas fue desarrollado como una **interfaz web interactiva y adaptable**, utilizando tarjetas para representar cada uno de los nueve bloques.
+## 💻 ¿Cómo funciona el Canvas interactivo?
 
-Al seleccionar una tarjeta se abre una ficha con secciones separadas: aplicación concreta al proyecto e imagen, significado del bloque, ejemplo y conexiones. La cabecera y los botones permanecen accesibles mientras se desplaza el contenido. En móvil, la información se acomoda en una sola columna.
+La página representa los nueve bloques mediante **tarjetas seleccionables**, cada una con una ilustración relacionada con su tema y con los colores de la plantilla.
 
-Entre sus principales características se encuentran:
+Al abrir una tarjeta se muestra:
 
-- 🖱️ Tarjetas seleccionables.
-- 🪟 Fichas con secciones independientes que evitan la superposición al desplazarse.
-- 🖼️ Nueve ilustraciones locales, una por bloque, visibles también dentro de cada ficha.
-- 🪐 Aplicación en Órbita Kids destacada con mayor tamaño, contraste y un ejemplo.
-- 🌎 ODS 4 desplegable con ilustración propia y relación con el proyecto.
-- 👥 Sección de integrantes del equipo.
-- 🪐 Planeta giratorio y satélites en órbita; los textos permanecen quietos.
-- ✨ Una estela luminosa suave recorre el borde del Canvas y de cada tarjeta, siguiendo su color.
-- ⏸️ Botón para pausar o reanudar los efectos. Se respeta la preferencia del sistema de reducir movimiento.
-- ⌨️ Navegación mediante teclado.
-- ❌ Cierre del modal mediante botón.
-- ⎋ Cierre utilizando la tecla **Escape**.
-- 🖱️ Cierre al seleccionar el área exterior del modal.
-- ↔️ Navegación entre diferentes fichas.
-- ✅ Indicador de bloques consultados.
+1. **Aplicación en Órbita Kids:** un cuadro destacado de ancho completo, con un resumen, su imagen y una lista concreta de lo que engloba el bloque en el proyecto.
+2. **¿Qué significa este bloque?:** una sección independiente con su explicación.
+3. **Información que debe contener y preguntas guía.**
+4. **Un ejemplo sencillo y su relación con otros bloques.**
+
+La distribución permite leer cada sección con su propio espacio. En computadora, la ilustración acompaña la lista; en móvil, el contenido se organiza en una columna.
+
+### Características de la interfaz
+
+- 🖼️ **Diez ilustraciones locales:** una para cada bloque y otra para el ODS 4.
+- 🪐 **Planeta giratorio y satélites en órbita**, con los textos fijos para facilitar la lectura.
+- ✨ **Estela luminosa que recorre los bordes** del Canvas y de las tarjetas, con colores suaves acordes con la plantilla.
+- ⏸️ **Control para pausar o reanudar las animaciones** y respeto por la preferencia del sistema de reducir movimiento.
+- 🌎 **ODS 4 desplegable**, con imagen y explicación de su relación con el proyecto.
+- ↔️ **Navegación entre fichas** e indicador de bloques consultados.
+- ⌨️ Uso mediante teclado y cierre de las fichas con el botón, la tecla **Escape** o el área exterior.
+- 📱 Diseño adaptable a computadora, tablet y celular.
 - 🖨️ Vista preparada para imprimir el resumen.
-- 📱 Diseño adaptable para computadora, tablet y dispositivos móviles.
+- 👥 Sección con los integrantes del equipo.
 
-La práctica puede ejecutarse directamente desde:
+Las ilustraciones son conceptuales y no representan pantallas de la aplicación educativa terminada.
 
-[`index.html`](index.html)
+## 🌎 Relación con el ODS 4 — Educación de calidad
 
-No requiere instalación de dependencias. **Extrae primero todo el ZIP** y abre `Practica04/index.html`; no muevas el HTML fuera de su carpeta. La interfaz y sus imágenes funcionan sin conexión; los enlaces de referencia requieren internet.
+El **ODS 4** promueve una educación inclusiva, equitativa y de calidad, así como oportunidades de aprendizaje para todas las personas.
 
-La sección **ODS 4** se puede desplegar y contraer con un clic, **Enter** o **Espacio**. Las ilustraciones son conceptuales y no representan pantallas de la aplicación terminada.
+Órbita Kids busca contribuir mediante la práctica de matemáticas, los apoyos visuales, el ajuste de ejercicios al desempeño y la información que ayude al docente a orientar el refuerzo. Su aporte educativo deberá comprobarse mediante pilotos y evaluación con usuarios.
 
-Los datos académicos opcionales pueden modificarse en:
+En el Canvas, esta relación se presenta en una **sección desplegable con ilustración propia**, que puede abrirse con un clic o mediante **Enter** y **Espacio**.
 
-`js/app.js`
+🔗 [Consultar el ODS 4 — Naciones Unidas](https://sdgs.un.org/goals/goal4)
 
-Dentro del objeto:
+## 🛠️ Tecnologías
 
-`datosAcademicos`
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white)
 
-Si estos campos permanecen vacíos, no se muestran en la interfaz.
+### Sitio del Canvas
 
----
+- **HTML5:** estructura y contenido.
+- **CSS3 y SVG:** diseño, distribución, adaptación a pantallas y efectos visuales.
+- **JavaScript:** fichas, navegación y controles de interacción.
+- **Git y GitHub:** control de versiones.
+- **GitHub Pages:** publicación del sitio estático.
 
-## 🛠️ Tecnologías utilizadas
+### Tecnologías propuestas para la plataforma educativa
 
-![HTML5](https://img.shields.io/badge/HTML5-Structure-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Styles-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Interaction-F7DF1E?logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deploy-222222?logo=githubpages)
+| Componente | Tecnología prevista | Función |
+| --- | --- | --- |
+| Aplicación del estudiante | Flutter y Dart | Actividades, personajes, niveles y progreso. |
+| PWA del docente | React | Grupos, asignación de ejercicios y consulta de resultados. |
+| API | FastAPI | Comunicación entre aplicaciones y gestión de la lógica del servicio. |
+| Base de datos | PostgreSQL | Usuarios, roles, grupos, actividades, intentos y progreso. |
 
-El desarrollo fue apoyado mediante **Codex y Archify** para la organización, construcción y documentación de la práctica.
-
----
+El desarrollo y la documentación del Canvas contaron con apoyo de **Codex y Archify**.
 
 ## 🌐 GitHub Pages
 
-La versión publicada de la práctica puede consultarse aquí:
+**[🚀 Ver el Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)**
 
-### 🚀 [Abrir Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)
+El sitio utiliza rutas relativas para sus estilos, scripts e imágenes. El enlace corresponde a la carpeta `Practica04` del proyecto.
 
-La aplicación está preparada para funcionar mediante **GitHub Pages**, utilizando rutas relativas para sus archivos CSS, JavaScript y recursos.
+## ▶️ Uso local
 
-> Si el enlace todavía no muestra la práctica, será necesario publicar primero la rama correspondiente desde la configuración de GitHub Pages.
+1. Descarga el proyecto y, si viene en un ZIP, **extráelo completo**.
+2. Abre `Practica04/index.html` en tu navegador.
+3. Selecciona una tarjeta para explorar su contenido.
 
----
+**No requiere instalar dependencias.** Conserva las carpetas `css`, `js` y `assets` junto al archivo HTML. La interfaz y sus ilustraciones funcionan sin conexión; los enlaces externos requieren internet.
 
-## 📂 Estructura de la práctica
+Si reemplazas una versión anterior y sigues viendo los estilos previos, actualiza con **Ctrl + F5**.
 
-- `index.html`: estructura, ODS desplegable y equipo.
-- `css/styles.css`: plantilla original, fichas, adaptación a móvil e impresión.
-- `js/app.js`: nueve bloques, imágenes y navegación.
-- `assets/orbita.svg`: identidad visual original.
-- `assets/imagenes/`: diez imágenes PNG (nueve bloques y ODS 4).
-- `assets/ILUSTRACIONES.md`: procedencia y prompts finales de las imágenes.
-- `README.md`: instrucciones y documentación.
+## 📂 Estructura de archivos
 
----
+| Archivo o carpeta | Contenido |
+| --- | --- |
+| `index.html` | Estructura del Canvas, ODS desplegable y equipo. |
+| `css/styles.css` | Estilos, fichas, animaciones, diseño adaptable e impresión. |
+| `js/app.js` | Contenido de los nueve bloques, imágenes, navegación e interacción. |
+| `assets/orbita.svg` | Identidad visual del proyecto. |
+| `assets/imagenes/` | Diez imágenes PNG para los bloques y el ODS 4. |
+| `assets/ILUSTRACIONES.md` | Procedencia y descripciones utilizadas para generar las ilustraciones. |
+| `README.md` | Presentación del modelo, alcance e instrucciones de uso. |
 
-## 🌎 Relación con los ODS
-
-Órbita Kids se relaciona principalmente con:
-
-### 📘 ODS 4 — Educación de calidad
-
-El proyecto busca utilizar herramientas digitales como apoyo para reforzar el aprendizaje de matemáticas en estudiantes de educación primaria.
-
-🔗 [Consultar ODS 4 — Naciones Unidas](https://www.un.org/sustainabledevelopment/es/education/)
-
----
+Los datos académicos opcionales se editan en el objeto `datosAcademicos`, dentro de `js/app.js`. Los campos vacíos no aparecen en la interfaz.
 
 ## 👥 Integrantes del equipo
 
@@ -156,27 +161,18 @@ El proyecto busca utilizar herramientas digitales como apoyo para reforzar el ap
 - Michelle Castro Otero
 - Jennifer Bautista Barrios
 
----
-
 ## 📚 Referencias
 
-- 📊 [Business Model Canvas — Strategyzer](https://www.strategyzer.com/library/the-business-model-canvas)
-- 🌎 [ODS 4 — Educación de calidad](https://www.un.org/sustainabledevelopment/es/education/)
-- 📖 [Configuración de GitHub Pages](https://docs.github.com/es/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [Business Model Canvas — Strategyzer](https://www.strategyzer.com/library/the-business-model-canvas)
+- [ODS 4 — Naciones Unidas](https://sdgs.un.org/goals/goal4)
+- [Configuración de GitHub Pages — Documentación de GitHub](https://docs.github.com/es/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-**Base conceptual:** septiembre de 2026. **Actualización visual y del equipo:** octubre de 2026.
+**Última actualización:** octubre de 2026.
 
 ---
 
 <p align="center">
   🪐 <strong>Órbita Kids</strong><br>
-  Business Model Canvas interactivo — Práctica 04
+  Business Model Canvas interactivo
 </p>
 
-## Actualización de distribución y movimiento
-
-La aplicación al proyecto enumera elementos específicos de cada bloque: públicos, funciones educativas, canales, acompañamiento, ingresos propuestos, recursos, actividades, socios potenciales y costos. Los precios y acuerdos se mantienen como propuestas por validar.
-
-La zona desplazable de la ficha utiliza flujo normal. Las imágenes, explicaciones, ejemplos y conexiones tienen su propio espacio y no se superponen. Los bordes se animan con trazos SVG locales y el planeta con CSS; no hay dependencias externas.
-
-Para reemplazar una versión previa, extrae el ZIP completo y sustituye la carpeta `Practica04`. Si tu navegador conserva los estilos anteriores, actualiza con **Ctrl + F5**.
