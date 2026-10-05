@@ -38,7 +38,9 @@ La práctica desarrolla los **nueve bloques del Business Model Canvas**:
 8. 🔗 Socios clave.
 9. 💸 Estructura de costos.
 
-Cada bloque incluye una ficha interactiva con:
+Cada tarjeta incluye una **ilustración original relacionada con su tema**. Al abrirla, **Aplicación en Órbita Kids** ocupa un cuadro destacado de ancho completo, con un resumen y una lista que especifica qué engloba ese bloque en el proyecto. Su imagen queda junto a la lista en escritorio. **¿Qué significa este bloque?** aparece debajo, en una sección independiente.
+
+Cada bloque conserva:
 
 - 📘 Significado del bloque.
 - 📋 Información que debe contener.
@@ -55,12 +57,19 @@ Cada bloque incluye una ficha interactiva con:
 
 El Canvas fue desarrollado como una **interfaz web interactiva y adaptable**, utilizando tarjetas para representar cada uno de los nueve bloques.
 
-Al seleccionar una tarjeta se abre una ficha con información detallada.
+Al seleccionar una tarjeta se abre una ficha con secciones separadas: aplicación concreta al proyecto e imagen, significado del bloque, ejemplo y conexiones. La cabecera y los botones permanecen accesibles mientras se desplaza el contenido. En móvil, la información se acomoda en una sola columna.
 
 Entre sus principales características se encuentran:
 
 - 🖱️ Tarjetas seleccionables.
-- 🪟 Ventanas modales con información detallada.
+- 🪟 Fichas con secciones independientes que evitan la superposición al desplazarse.
+- 🖼️ Nueve ilustraciones locales, una por bloque, visibles también dentro de cada ficha.
+- 🪐 Aplicación en Órbita Kids destacada con mayor tamaño, contraste y un ejemplo.
+- 🌎 ODS 4 desplegable con ilustración propia y relación con el proyecto.
+- 👥 Sección de integrantes del equipo.
+- 🪐 Planeta giratorio y satélites en órbita; los textos permanecen quietos.
+- ✨ Una estela luminosa suave recorre el borde del Canvas y de cada tarjeta, siguiendo su color.
+- ⏸️ Botón para pausar o reanudar los efectos. Se respeta la preferencia del sistema de reducir movimiento.
 - ⌨️ Navegación mediante teclado.
 - ❌ Cierre del modal mediante botón.
 - ⎋ Cierre utilizando la tecla **Escape**.
@@ -74,7 +83,9 @@ La práctica puede ejecutarse directamente desde:
 
 [`index.html`](index.html)
 
-No requiere instalación de dependencias.
+No requiere instalación de dependencias. **Extrae primero todo el ZIP** y abre `Practica04/index.html`; no muevas el HTML fuera de su carpeta. La interfaz y sus imágenes funcionan sin conexión; los enlaces de referencia requieren internet.
+
+La sección **ODS 4** se puede desplegar y contraer con un clic, **Enter** o **Espacio**. Las ilustraciones son conceptuales y no representan pantallas de la aplicación terminada.
 
 Los datos académicos opcionales pueden modificarse en:
 
@@ -115,20 +126,13 @@ La aplicación está preparada para funcionar mediante **GitHub Pages**, utiliza
 
 ## 📂 Estructura de la práctica
 
-```text
-Practica04/
-│
-├── index.html
-├── README.md
-│
-├── css/
-│   └── styles.css
-│
-├── js/
-│   └── app.js
-│
-└── assets/
-```
+- `index.html`: estructura, ODS desplegable y equipo.
+- `css/styles.css`: plantilla original, fichas, adaptación a móvil e impresión.
+- `js/app.js`: nueve bloques, imágenes y navegación.
+- `assets/orbita.svg`: identidad visual original.
+- `assets/imagenes/`: diez imágenes PNG (nueve bloques y ODS 4).
+- `assets/ILUSTRACIONES.md`: procedencia y prompts finales de las imágenes.
+- `README.md`: instrucciones y documentación.
 
 ---
 
@@ -140,17 +144,27 @@ Practica04/
 
 El proyecto busca utilizar herramientas digitales como apoyo para reforzar el aprendizaje de matemáticas en estudiantes de educación primaria.
 
-🔗 [Consultar ODS 4 — Naciones Unidas](https://sdgs.un.org/es/goals/goal4)
+🔗 [Consultar ODS 4 — Naciones Unidas](https://www.un.org/sustainabledevelopment/es/education/)
+
+---
+
+## 👥 Integrantes del equipo
+
+- Obed Guzmán Flores
+- Yazmin Gutierrez Hernandez
+- Citlalli Perez Dionicio
+- Michelle Castro Otero
+- Jennifer Bautista Barrios
 
 ---
 
 ## 📚 Referencias
 
 - 📊 [Business Model Canvas — Strategyzer](https://www.strategyzer.com/library/the-business-model-canvas)
-- 🌎 [ODS 4 — Educación de calidad](https://sdgs.un.org/es/goals/goal4)
+- 🌎 [ODS 4 — Educación de calidad](https://www.un.org/sustainabledevelopment/es/education/)
 - 📖 [Configuración de GitHub Pages](https://docs.github.com/es/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-**Consulta y adaptación conceptual:** septiembre de 2026.
+**Base conceptual:** septiembre de 2026. **Actualización visual y del equipo:** octubre de 2026.
 
 ---
 
@@ -158,3 +172,11 @@ El proyecto busca utilizar herramientas digitales como apoyo para reforzar el ap
   🪐 <strong>Órbita Kids</strong><br>
   Business Model Canvas interactivo — Práctica 04
 </p>
+
+## Actualización de distribución y movimiento
+
+La aplicación al proyecto enumera elementos específicos de cada bloque: públicos, funciones educativas, canales, acompañamiento, ingresos propuestos, recursos, actividades, socios potenciales y costos. Los precios y acuerdos se mantienen como propuestas por validar.
+
+La zona desplazable de la ficha utiliza flujo normal. Las imágenes, explicaciones, ejemplos y conexiones tienen su propio espacio y no se superponen. Los bordes se animan con trazos SVG locales y el planeta con CSS; no hay dependencias externas.
+
+Para reemplazar una versión previa, extrae el ZIP completo y sustituye la carpeta `Practica04`. Si tu navegador conserva los estilos anteriores, actualiza con **Ctrl + F5**.
