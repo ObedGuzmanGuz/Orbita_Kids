@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Práctica 05: Diagrama de Roles de Usuarios",
+    "subtitle": "Órbita Kids · Plataforma educativa de matemáticas",
+    "output": "practica-05-roles.html",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1280,
+      520
+    ]
+  },
+  "components": [
+    {
+      "id": "estudiante",
+      "type": "external",
+      "label": "Estudiante",
+      "sublabel": "Aplicación móvil · 1.º a 3.º",
+      "tag": "ROL PRINCIPAL",
+      "pos": [
+        60,
+        55
+      ],
+      "size": [
+        210,
+        82
+      ]
+    },
+    {
+      "id": "docente",
+      "type": "external",
+      "label": "Docente",
+      "sublabel": "PWA desde navegador",
+      "tag": "ROL PRINCIPAL",
+      "pos": [
+        1010,
+        55
+      ],
+      "size": [
+        210,
+        82
+      ]
+    },
+    {
+      "id": "escuela",
+      "type": "external",
+      "label": "Escuela / Institución",
+      "sublabel": "Adopción y contexto escolar",
+      "tag": "ACTOR EXTERNO",
+      "pos": [
+        535,
+        0
+      ],
+      "size": [
+        210,
+        82
+      ]
+    },
+    {
+      "id": "orbita",
+      "type": "frontend",
+      "label": "Órbita Kids",
+      "sublabel": "Plataforma educativa de matemáticas",
+      "tag": "PROYECTO INTEGRADOR",
+      "pos": [
+        500,
+        170
+      ],
+      "size": [
+        280,
+        100
+      ]
+    },
+    {
+      "id": "actividades",
+      "type": "frontend",
+      "label": "Actividades matemáticas",
+      "sublabel": "Sumas interactivas y niveles",
+      "pos": [
+        50,
+        350
+      ],
+      "size": [
+        220,
+        76
+      ]
+    },
+    {
+      "id": "refuerzo",
+      "type": "backend",
+      "label": "Refuerzo adaptado",
+      "sublabel": "Reglas según aciertos y errores",
+      "pos": [
+        300,
+        350
+      ],
+      "size": [
+        220,
+        76
+      ]
+    },
+    {
+      "id": "mision",
+      "type": "frontend",
+      "label": "Progreso y misión espacial",
+      "sublabel": "Planetas, nave y recompensas",
+      "pos": [
+        550,
+        350
+      ],
+      "size": [
+        220,
+        76
+      ]
+    },
+    {
+      "id": "grupos",
+      "type": "frontend",
+      "label": "Grupos y asignaciones",
+      "sublabel": "Administrar grupos y actividades",
+      "pos": [
+        800,
+        350
+      ],
+      "size": [
+        220,
+        76
+      ]
+    },
+    {
+      "id": "resultados",
+      "type": "frontend",
+      "label": "Resultados y seguimiento",
+      "sublabel": "Progreso, errores y refuerzo",
+      "pos": [
+        1050,
+        350
+      ],
+      "size": [
+        220,
+        76
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "estudiante-plataforma",
+      "from": "estudiante",
+      "to": "orbita",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "docente-plataforma",
+      "from": "docente",
+      "to": "orbita",
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "institucion-plataforma",
+      "from": "escuela",
+      "to": "orbita",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "estudiante-actividades",
+      "from": "estudiante",
+      "to": "actividades",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "estudiante-refuerzo",
+      "from": "estudiante",
+      "to": "refuerzo",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "estudiante-mision",
+      "from": "estudiante",
+      "to": "mision",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "docente-refuerzo",
+      "from": "docente",
+      "to": "refuerzo",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "via": [
+        [
+          1115,
+          155
+        ],
+        [
+          1040,
+          155
+        ],
+        [
+          1040,
+          500
+        ],
+        [
+          410,
+          500
+        ],
+        [
+          410,
+          426
+        ]
+      ]
+    },
+    {
+      "id": "docente-grupos",
+      "from": "docente",
+      "to": "grupos",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "docente-resultados",
+      "from": "docente",
+      "to": "resultados",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "ROLES DE USUARIO",
+      "items": [
+        "Estudiante ? Usuario principal: practica sumas, explora planetas, repara su nave y gana recompensas.",
+        "Docente ? Administra grupos, asigna actividades y revisa progreso para decidir qu? reforzar.",
+        "Escuela / Instituci?n ? Contexto de adopci?n; puede contratar una licencia o participar en pilotos. Sin interfaz propia."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "PRINCIPALES FUNCIONALIDADES",
+      "items": [
+        "Actividades matem?ticas ? Sumas interactivas por nivel.",
+        "Refuerzo adaptado ? Apoyo y dificultad seg?n aciertos y errores.",
+        "Progreso y misi?n espacial ? Planetas, nave, recompensas y avance.",
+        "Grupos y asignaciones ? Organizaci?n docente y actividades.",
+        "Resultados y seguimiento ? Errores y progreso para detectar necesidades."
+      ]
+    }
+  ]
+}
