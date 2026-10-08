@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101119">
+  <meta name="description" content="Diagrama interactivo de roles de usuario y funcionalidades de Órbita Kids.">
+  <title>Práctica 05 · Diagrama de Roles | Órbita Kids</title>
+  <link rel="icon" type="image/svg+xml" href="../ModelBusinesCanvas/assets/orbita.svg">
+  <link rel="stylesheet" href="practica-05.css">
+  <script src="practica-05.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#diagrama">Saltar al diagrama</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Órbita Kids, inicio">
+      <img src="../ModelBusinesCanvas/assets/orbita.svg" width="40" height="40" alt="">
+      <span>Órbita <strong>Kids</strong><small>APRENDER ES EXPLORAR</small></span>
+    </a>
+    <span class="practice-label">PRÁCTICA <b>05</b></span>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> UNA MISIÓN CON PROPÓSITO</p>
+        <h1 id="page-title">Diagrama de Roles de Usuario</h1>
+        <p class="hero-description">Órbita Kids · Plataforma educativa de matemáticas</p>
+      </div>
+      <div class="hero-mark" aria-hidden="true"><img src="../ModelBusinesCanvas/assets/orbita.svg" alt=""></div>
+    </section>
+
+    <section id="diagrama" aria-labelledby="diagram-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">EL MAPA DE USO DE LA PLATAFORMA</p><h2 id="diagram-title">Personas, escuela y aprendizaje.</h2><p>Selecciona un rol, una funcionalidad o el núcleo para explorar su ficha.</p></div>
+        <div class="heading-actions">
+          <button id="motion-toggle" class="secondary-button" type="button" aria-label="Pausar animaciones" aria-pressed="false" title="Pausar animaciones"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pausar animaciones</span></button>
+          <button id="print-button" class="secondary-button" type="button" aria-label="Imprimir diagrama"><span aria-hidden="true">↓</span><span class="print-label">Imprimir</span></button>
+        </div>
+      </div>
+
+      <div class="diagram-toolbar">
+        <div class="legend" aria-label="Leyenda">
+          <span><i class="dot blue"></i>Roles principales</span>
+          <span><i class="dot yellow"></i>Actor externo</span>
+          <span><i class="dot violet"></i>Plataforma</span>
+          <span><i class="dot green"></i>Funcionalidades</span>
+        </div>
+        <p id="explore-progress" role="status" aria-live="polite">Explora los 9 elementos</p>
+      </div>
+
+      <div class="diagram-frame">
+        <svg class="edge-trace" aria-hidden="true" focusable="false"><defs><linearGradient id="edge-spectrum"><stop stop-color="#b6a0f5"/><stop offset=".3" stop-color="#91baf8"/><stop offset=".65" stop-color="#b4dfa1"/><stop offset="1" stop-color="#e6a5c5"/></linearGradient></defs><rect class="edge-halo" pathLength="100"/><rect class="edge-tail" pathLength="100"/><rect class="edge-body" pathLength="100"/><rect class="edge-head" pathLength="100"/></svg>
+        <div class="diagram-board">
+          <div class="institution-row">
+            <button class="actor-card institution selectable" type="button" data-item="school" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Escuela o Institución">
+              <span class="actor-icon school-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M9 27 32 11l23 16v27H9V27Z" fill="#292632" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m6 28 26-19 26 19" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M26 54V37h12v17M15 32h8v8h-8zm26 0h8v8h-8z" fill="#242334" stroke="currentColor" stroke-width="2"/><path d="M29 23h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+              <span class="actor-copy"><span class="actor-type">Actor externo</span><strong>Escuela / Institución</strong><small>Adopción · pilotos · licencias</small></span><span class="card-hint">Ver detalles ↗</span>
+            </button>
+          </div>
+          <svg class="school-link" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M600 0 C600 24 600 36 600 64"/><circle cx="600" cy="62" r="3.5"/></svg>
+
+          <div class="role-grid">
+            <svg class="role-links" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true"><path class="role-link link-blue" d="M310 178 C370 178 405 178 463 178"/><path class="role-link link-violet" d="M890 178 C830 178 795 178 737 178"/><circle class="link-node node-blue" cx="310" cy="178" r="4"/><circle class="link-node node-violet" cx="890" cy="178" r="4"/><circle class="link-node node-violet" cx="463" cy="178" r="4"/><circle class="link-node node-violet" cx="737" cy="178" r="4"/></svg>
+            <button class="actor-card role-card student selectable" type="button" data-item="student" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Estudiante">
+              <span class="avatar avatar-student" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="55" fill="#202635" stroke="#91baf8" stroke-opacity=".38"/><path d="M30 103c2-18 13-28 30-28s28 10 30 28" fill="#dcae91"/><path d="M42 79c4 7 11 11 18 11s14-4 18-11l8 8v16H34V87l8-8Z" fill="#91baf8"/><path d="M38 49c0-20 10-31 24-31 17 0 25 13 23 31l-5 19c-3 12-11 19-20 19-11 0-19-8-22-20l-3-18Z" fill="#efc19d"/><path d="M36 48c-3-20 8-34 26-34 17 0 27 11 25 30-5-7-10-11-17-12-8 7-19 10-34 9v7Z" fill="#4d435b"/><path d="M47 53h1m24 0h1" stroke="#292837" stroke-width="4" stroke-linecap="round"/><path d="M53 66c4 4 10 4 14 0" stroke="#a96470" stroke-width="2.5" stroke-linecap="round"/><rect x="68" y="81" width="29" height="19" rx="4" fill="#191b26" stroke="#91baf8" stroke-width="2" transform="rotate(-8 68 81)"/><path d="m76 89 3 3 6-7" stroke="#b4dfa1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m22 27 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Zm78 25 2 4 4 2-4 2-2 4-2-4-4-2 4-2 2-4Z" fill="#ebca83"/></svg></span>
+              <span class="role-content"><span class="role-kicker"><i></i>Rol principal · Usuario principal</span><strong class="card-title">Estudiante</strong><span class="card-description">Utiliza la aplicación móvil para resolver actividades matemáticas, avanzar en la misión espacial y consultar su progreso.</span><span class="role-tag">App móvil</span></span><span class="card-hint">Ver detalles ↗</span>
+            </button>
+            <button class="core-card selectable" type="button" data-item="platform" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Órbita Kids, núcleo de la plataforma">
+              <span class="core-orbit orbit-one" aria-hidden="true"></span><span class="core-orbit orbit-two" aria-hidden="true"></span><span class="core-logo"><img src="../ModelBusinesCanvas/assets/orbita.svg" width="76" height="76" alt=""></span><strong>Órbita Kids</strong><small>Plataforma educativa de matemáticas</small><span class="core-hint">Explora el núcleo ↗</span><span class="core-stars" aria-hidden="true">✦　·　✧</span>
+            </button>
+            <button class="actor-card role-card teacher selectable" type="button" data-item="teacher" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Docente">
+              <span class="avatar avatar-teacher" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="55" fill="#242334" stroke="#b6a0f5" stroke-opacity=".44"/><path d="M28 103c3-18 14-28 32-28s29 10 32 28" fill="#d8b39c"/><path d="M39 79c4 7 11 11 21 11s17-4 21-11l8 8v16H31V87l8-8Z" fill="#b6a0f5"/><path d="M39 49c0-20 9-31 23-31 16 0 24 12 22 31l-4 19c-3 12-11 19-20 19-11 0-19-8-22-20l-3-18Z" fill="#efc4a6"/><path d="M37 49c-3-19 7-34 25-34 16 0 26 11 24 30-6-7-11-11-18-12-8 7-18 10-33 9v7Z" fill="#51475a"/><path d="M48 53h1m24 0h1" stroke="#292837" stroke-width="4" stroke-linecap="round"/><path d="M53 66c4 4 10 4 14 0" stroke="#a96470" stroke-width="2.5" stroke-linecap="round"/><rect x="8" y="79" width="31" height="22" rx="4" fill="#191b26" stroke="#b6a0f5" stroke-width="2"/><path d="M13 85h19m-19 5h12" stroke="#91baf8" stroke-width="2" stroke-linecap="round"/><path d="m74 82 8-4 8 4v12l-8 5-8-5V82Z" fill="#242334" stroke="#b6a0f5" stroke-width="2"/><path d="m77 87 4 4 7-8" stroke="#b4dfa1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m103 25 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#ebca83"/></svg></span>
+              <span class="role-content"><span class="role-kicker"><i></i>Rol principal · Usuario de seguimiento</span><strong class="card-title">Docente</strong><span class="card-description">Utiliza la PWA para administrar grupos, asignar actividades y consultar resultados y progreso.</span><span class="role-tag teacher-tag">PWA docente</span></span><span class="card-hint">Ver detalles ↗</span>
+            </button>
+          </div>
+
+          <svg class="feature-links" viewBox="0 0 1200 92" preserveAspectRatio="none" aria-hidden="true"><path class="trunk" d="M600 0v22"/><path class="branch" d="M120 78 C120 50 120 50 120 43H1080 C1080 50 1080 50 1080 78M360 78V43m240 35V43m240 35V43"/><circle cx="120" cy="78" r="3.5"/><circle cx="360" cy="78" r="3.5"/><circle cx="600" cy="78" r="3.5"/><circle cx="840" cy="78" r="3.5"/><circle cx="1080" cy="78" r="3.5"/></svg>
+          <div class="feature-heading"><p class="eyebrow">FUNCIONES PRINCIPALES</p><h2>Una misión compartida, cinco formas de avanzar.</h2></div>
+          <div class="features-grid">
+            <button class="feature-card feature-blue selectable" type="button" data-item="activities" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Actividades matemáticas"><span class="feature-index">01</span><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="9" y="5" width="30" height="38" rx="6" stroke="currentColor" stroke-width="2.3"/><rect x="14" y="10" width="20" height="8" rx="2" fill="#242334" stroke="currentColor" stroke-width="1.5"/><path d="M16 25h4m8 0h4m-16 7h4m8 0h4m-16 7h4m8 0h4M22 23v5m-2.5-2.5h5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></span><strong>Actividades matemáticas</strong><small>Sumas interactivas y diferentes niveles de dificultad.</small><span class="feature-users"><i class="user-student"></i>Estudiante</span><span class="card-hint">Ver detalles ↗</span></button>
+            <button class="feature-card feature-green selectable" type="button" data-item="reinforcement" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Refuerzo adaptado"><span class="feature-index">02</span><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M17 31c0-4-6-7-6-14a13 13 0 0 1 26 0c0 7-6 10-6 14H17Z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><path d="M18 35h12m-10 4h8M24 10v7m-7-3 4 4m10-4-4 4" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="m8 7 2 3 3 1-3 1-2 3-1-3-3-1 3-1 1-3Z" fill="#ebca83"/></svg></span><strong>Refuerzo adaptado</strong><small>Apoyo y ajuste según aciertos y errores.</small><span class="feature-users"><i class="user-student"></i>Estudiante<i class="user-teacher"></i>Docente</span><span class="card-hint">Ver detalles ↗</span></button>
+            <button class="feature-card feature-violet selectable" type="button" data-item="mission" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Progreso y misión espacial"><span class="feature-index">03</span><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M20 34c-5-5-5-15 0-22l4-6 4 6c5 7 5 17 0 22l-4 4-4-4Z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><circle cx="24" cy="19" r="4" stroke="currentColor" stroke-width="2"/><path d="m19 31-7 6 1-10m16 4 7 6-1-10M20 38l-2 5m10-5 2 5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="m8 11 2 3 3 1-3 1-2 3-1-3-3-1 3-1 1-3Z" fill="#ebca83"/></svg></span><strong>Progreso y misión espacial</strong><small>Planetas, nave, progreso y recompensas.</small><span class="feature-users"><i class="user-student"></i>Estudiante</span><span class="card-hint">Ver detalles ↗</span></button>
+            <button class="feature-card feature-pink selectable" type="button" data-item="groups" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Grupos y asignaciones"><span class="feature-index">04</span><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="18" cy="15" r="6" stroke="currentColor" stroke-width="2.3"/><circle cx="33" cy="18" r="5" stroke="currentColor" stroke-width="2.3"/><path d="M6 38c0-8 5-13 12-13s12 5 12 13M27 28c2-2 4-3 7-3 6 0 10 5 10 12" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M34 7v7m-3.5-3.5h7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></span><strong>Grupos y asignaciones</strong><small>Administrar grupos y actividades.</small><span class="feature-users"><i class="user-teacher"></i>Docente</span><span class="card-hint">Ver detalles ↗</span></button>
+            <button class="feature-card feature-yellow selectable" type="button" data-item="results" aria-haspopup="dialog" aria-controls="detail-dialog" aria-label="Ver detalles de Resultados y seguimiento"><span class="feature-index">05</span><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M8 40V8m0 32h34" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="m13 32 8-9 7 4 11-14" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 13h7v7" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="23" r="2" fill="#ebca83"/><circle cx="28" cy="27" r="2" fill="#ebca83"/></svg></span><strong>Resultados y seguimiento</strong><small>Progreso, errores y necesidades de refuerzo.</small><span class="feature-users"><i class="user-teacher"></i>Docente</span><span class="card-hint">Ver detalles ↗</span></button>
+          </div>
+          <p class="diagram-caption"><span aria-hidden="true">✧</span> Las etiquetas de cada función muestran los roles que la utilizan. La escuela representa el contexto de adopción institucional.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p><strong>Órbita Kids</strong><span>Práctica 05 · Diagrama de Roles de Usuario</span></p><span>Proyecto Integrador · Educación y tecnología</span></footer>
+
+  <dialog id="detail-dialog" aria-labelledby="detail-title" aria-describedby="detail-subtitle">
+    <div class="dialog-heading"><div><p id="detail-number" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-subtitle"></p></div><button id="close-dialog" class="icon-button" type="button" aria-label="Cerrar ficha" autofocus>×</button></div>
+    <div id="detail-content" class="detail-content"></div>
+    <div class="dialog-footer"><button id="previous-item" class="secondary-button" type="button">← Anterior</button><span id="detail-position" aria-live="polite"></span><button id="next-item" class="secondary-button" type="button">Siguiente →</button></div>
+  </dialog>
+</body>
+</html>
