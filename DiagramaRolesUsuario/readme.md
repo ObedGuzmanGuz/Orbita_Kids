@@ -46,7 +46,7 @@ El sistema cuenta con un núcleo central representado por **Órbita Kids**, alre
 🚀 **[Ver el Diagrama de Roles de Usuario de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/DiagramaRolesUsuario/)**
 
 
-### 👨‍🎓 Estudiante
+### 👨‍🎓 Estudiantes
 
 El estudiante representa al usuario principal de la plataforma educativa.
 
