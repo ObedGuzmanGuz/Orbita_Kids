@@ -2,8 +2,6 @@
 
 **Modelo de negocio interactivo de una propuesta educativa para reforzar las matemáticas en los primeros grados de primaria.**
 
-🌐 **[Abrir el Business Model Canvas de Órbita Kids en GitHub Pages](https://obedguzmanguz.github.io/Orbita_Kids/Practica04/)**
-
 ## 📊 ¿Qué es el Business Model Canvas?
 
 El **Business Model Canvas**, también llamado **lienzo de modelo de negocio**, es una herramienta visual que organiza una propuesta en **nueve bloques relacionados**. Permite explicar cómo un proyecto crea valor, lo entrega a sus usuarios y obtiene los recursos económicos necesarios para sostenerse.
