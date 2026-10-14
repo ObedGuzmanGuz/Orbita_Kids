@@ -1,10 +1,29 @@
-# 🪐 Órbita Kids
+<div align="center">
 
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+### <sub>✨ <i>CREAMOS EXPERIENCIAS QUE INSPIRAN</i> ✨</sub>
+---
+</div>
 **Órbita Kids** es un proyecto educativo que propone reforzar el aprendizaje de **matemáticas en niños de los primeros grados de primaria**, mediante actividades interactivas y una aventura espacial.
 
 El estudiante podrá elegir un personaje, explorar planetas, superar misiones y reparar su nave mientras practica matemáticas. La experiencia combinará apoyos visuales, recompensas y ejercicios ajustados a su desempeño.
 
 La propuesta contempla una **aplicación móvil para estudiantes** y una **aplicación web progresiva (PWA) para docentes**, conectadas mediante una API.
+
+---
+
+## LOGOTIPOS
+
+<table>
+   <td>Logo de la Empresa</td>
+   <td>Logo de la Aplicacion</td>
+  <tr>
+    <td>  <img src="/Logos/Logo_Empresa.png" width="80%" style="padding: 10px;" />  </td>
+    <td>   <img src="/Logos/Logo_Aplicacion.png" width="80%" style="padding: 10px;" /> </td>
+   
+  </tr>
+ 
+</table>
 
 ---
 
