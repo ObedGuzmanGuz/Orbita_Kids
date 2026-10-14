@@ -15,7 +15,7 @@ La propuesta contempla una **aplicación móvil para estudiantes** y una **aplic
 ## LOGOTIPOS
 
 <table>
-   <td>Logo de la empresa</td>
+   <td>Logo de la Empresa</td>
    <td>Logo de la Aplicacion</td>
   <tr>
     <td>  <img src="/Logos/Logo_Empresa.png" width="80%" style="padding: 10px;" />  </td>
