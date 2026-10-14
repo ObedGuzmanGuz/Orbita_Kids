@@ -75,6 +75,7 @@ h1 { margin: 0; font-size: clamp(30px, 4vw, 46px); line-height: 1.16; letter-spa
 .institution { --actor-accent: var(--yellow); max-width: 470px; min-height: 102px; background: linear-gradient(105deg, #242334, #191b26 68%); }
 .actor-icon { display: grid; place-items: center; flex: 0 0 64px; width: 64px; height: 64px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--actor-accent) 30%, var(--border)); background: #242334; color: var(--actor-accent); }
 .actor-icon svg { width: 51px; height: 51px; }
+.actor-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 .actor-copy { min-width: 0; display: flex; flex-direction: column; }
 .actor-type { color: var(--yellow); font-size: 8px; letter-spacing: 1.4px; font-weight: 750; text-transform: uppercase; }
 .actor-copy strong { color: var(--text); font-size: 15px; font-weight: 620; line-height: 1.35; margin: 3px 0; }
@@ -96,17 +97,17 @@ h1 { margin: 0; font-size: clamp(30px, 4vw, 46px); line-height: 1.16; letter-spa
 .role-card.teacher { --actor-accent: var(--violet); grid-column: 3; grid-row: 1; }
 .avatar { flex: 0 0 102px; width: 102px; height: 102px; display: grid; place-items: center; border-radius: 50%; position: relative; border: 1px solid color-mix(in srgb, var(--actor-accent) 62%, var(--border)); background: #242334; box-shadow: 0 0 0 6px color-mix(in srgb, var(--actor-accent) 7%, transparent), 0 0 24px color-mix(in srgb, var(--actor-accent) 11%, transparent); transition: transform .25s ease; }
 .role-card:hover .avatar, .role-card:focus-visible .avatar { transform: scale(1.045); }
-.avatar svg { width: 94px; height: 94px; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 .role-content { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding-bottom: 7px; }
 .role-kicker { display: flex; align-items: center; gap: 6px; color: var(--actor-accent); font-size: 8px; letter-spacing: .8px; line-height: 1.5; font-weight: 700; }
 .role-kicker i { width: 5px; height: 5px; border-radius: 50%; background: currentColor; box-shadow: 0 0 7px color-mix(in srgb, currentColor 55%, transparent); }
 .card-title { margin: 5px 0 6px; color: var(--text); font-size: 20px; line-height: 1.2; font-weight: 620; }
 .card-description { color: #b8b8cd; font-size: 10px; line-height: 1.7; }
 .role-tag { display: inline-flex; margin-top: 11px; padding: 3px 9px; border: 1px solid color-mix(in srgb, var(--actor-accent) 32%, var(--border)); border-radius: 99px; background: color-mix(in srgb, var(--actor-accent) 8%, #191b26); color: var(--actor-accent); font-size: 8px; font-weight: 700; }
-.core-card { --actor-accent: var(--violet); position: relative; grid-column: 2; grid-row: 1; justify-self: center; width: min(100%, 306px); aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; isolation: isolate; overflow: visible; border: 1px solid #49445e; border-radius: 50%; background: radial-gradient(circle at 50% 42%, #242334 0, #191b26 62%, #171923 100%); box-shadow: 0 0 0 8px #b6a0f50a, 0 0 42px #b6a0f51c, inset 0 0 35px #b6a0f50a; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.core-card { --actor-accent: var(--violet); position: relative; grid-column: 2; grid-row: 1; justify-self: center; width: min(100%, 330px); min-height: 292px; padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; isolation: isolate; overflow: visible; border: 1px solid #49445e; border-radius: 28px; background: radial-gradient(ellipse at 50% 42%, #242334 0, #191b26 62%, #171923 100%); box-shadow: 0 0 0 8px #b6a0f50a, 0 0 42px #b6a0f51c, inset 0 0 35px #b6a0f50a; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
 .core-card:hover, .core-card:focus-visible { transform: scale(1.025); border-color: #756c91; box-shadow: 0 0 0 9px #b6a0f50e, 0 0 52px #b6a0f529, inset 0 0 35px #b6a0f50d; }
-.core-logo { display: grid; place-items: center; width: 94px; height: 94px; border: 1px solid #504967; border-radius: 29px; background: #171923; box-shadow: 0 0 23px #b6a0f522; }
-.core-logo img { width: 76px; height: 76px; border-radius: 20px; }
+.core-logo { display: grid; place-items: center; width: min(78%, 224px); height: 126px; border: 1px solid #504967; border-radius: 20px; background: #101119; box-shadow: 0 0 23px #b6a0f522; overflow: hidden; }
+.core-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .core-card > strong { color: var(--text); font-size: 19px; line-height: 1.2; font-weight: 650; }
 .core-card > small { max-width: 190px; color: var(--muted); font-size: 9px; line-height: 1.4; text-align: center; }
 .core-hint { color: #bdb0e0; font-size: 8px; opacity: .8; }
@@ -155,9 +156,10 @@ dialog[open] { display: flex; flex-direction: column; animation: reveal .18s eas
 .detail-content { flex: 1 1 auto; min-height: 0; min-width: 0; padding: 24px; overflow: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #625a78 var(--surface); }
 .detail-hero { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: center; gap: 22px; padding: 20px; border: 1px solid color-mix(in srgb, var(--accent) 36%, var(--border)); border-radius: 11px; background: #171923; }
 .detail-illustration { width: 142px; height: 142px; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border)); border-radius: 50%; background: #242334; color: var(--accent); }
-.detail-illustration svg { width: 112px; height: 112px; }.detail-illustration img { width: 82px; height: 82px; border-radius: 20px; }
+.detail-illustration svg { width: 112px; height: 112px; }.detail-illustration img { width: 82px; height: 82px; object-fit: cover; border-radius: 20px; }
 .detail-hero p { color: #c6c4d3; font-size: 12px; line-height: 1.8; margin: 0; }
 .detail-hero .detail-type { color: var(--accent); font-size: 9px; letter-spacing: 1.4px; font-weight: 700; margin-bottom: 5px; }
+.detail-hero .scope-status { display: inline-flex; margin-top: 12px; padding: 5px 9px; border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border)); border-radius: 7px; color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, #171923); font-size: 10px; line-height: 1.5; }
 .detail-section { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border); }
 .detail-section h3 { color: #dedbe9; font-size: 12px; margin: 0 0 11px; font-weight: 620; }
 .detail-list { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; margin: 0; padding: 0; }
@@ -173,7 +175,7 @@ dialog[open] { display: flex; flex-direction: column; animation: reveal .18s eas
   .diagram-frame { padding: 16px; }
   .role-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; gap: 18px; padding-top: 8px; }
   .role-links, .feature-links { display: none; }
-  .core-card { grid-column: 1 / -1; grid-row: 1; width: 250px; margin: 0 auto 7px; }
+  .core-card { grid-column: 1 / -1; grid-row: 1; width: min(100%, 330px); margin: 0 auto 7px; }
   .role-card.student { grid-column: 1; grid-row: 2; }
   .role-card.teacher { grid-column: 2; grid-row: 2; }
   .role-card { min-height: 220px; padding: 15px; gap: 12px; }
@@ -231,7 +233,7 @@ dialog[open] { display: flex; flex-direction: column; animation: reveal .18s eas
   .legend { max-width: 100%; }
   .role-grid { display: flex; flex-direction: column; gap: 12px; }
   .role-links { display: none; }
-  .core-card { order: 0; width: min(64vw, 230px); margin: 0 auto 4px; }
+  .core-card { order: 0; width: min(100%, 330px); min-height: 292px; margin: 0 auto 4px; }
   .role-card { width: 100%; min-height: 0; flex-direction: row; align-items: center; padding: 14px; }
   .role-card.student { order: 1; }
   .role-card.teacher { order: 2; }

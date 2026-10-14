@@ -2,30 +2,34 @@ const fichas = [
   {
     id: "student", titulo: "Estudiante", tipo: "Rol principal · Usuario principal", color: "blue",
     subtitulo: "App móvil · Aprendizaje y misión espacial",
-    descripcion: "Utiliza la aplicación móvil para resolver actividades matemáticas, avanzar en la misión espacial y consultar su progreso.",
-    funciones: ["Actividades matemáticas", "Refuerzo adaptado", "Progreso y misión espacial"],
+    descripcion: "Aprende matemáticas mientras exploras el universo de Órbita Kids.",
+    estado: "Alcance previsto · implementación por desarrollar",
+    funciones: ["Elegir o personalizar su personaje", "Resolver sumas con apoyos visuales y seleccionar respuestas", "Explorar planetas y completar misiones", "Recibir retroalimentación y recompensas visuales", "Consultar su progreso", "Recibir actividades ajustadas mediante reglas según su desempeño"],
     relacion: "El estudiante utiliza la app móvil de Órbita Kids para practicar matemáticas y avanzar en su misión.",
-    icono: ".avatar-student svg"
+    icono: ".avatar-student img"
   },
   {
     id: "teacher", titulo: "Docente", tipo: "Rol principal · Usuario de seguimiento", color: "violet",
     subtitulo: "PWA docente · Gestión y seguimiento",
-    descripcion: "Utiliza la PWA para administrar grupos, asignar actividades y consultar resultados y progreso.",
-    funciones: ["Refuerzo adaptado", "Grupos y asignaciones", "Resultados y seguimiento"],
+    descripcion: "Acompaña el aprendizaje y organiza las actividades matemáticas de sus estudiantes.",
+    estado: "Alcance previsto · implementación por desarrollar",
+    funciones: ["Administrar grupos y estudiantes", "Asignar actividades", "Consultar resultados e intentos", "Visualizar el progreso", "Identificar errores frecuentes y necesidades de refuerzo", "Orientar las siguientes actividades con base en los resultados"],
     relacion: "El docente usa la PWA para gestionar actividades y consultar información que le ayude a identificar necesidades de refuerzo.",
-    icono: ".avatar-teacher svg"
+    icono: ".avatar-teacher img"
   },
   {
     id: "school", titulo: "Escuela / Institución", tipo: "Actor externo · Contexto de adopción", color: "yellow",
     subtitulo: "Pilotos · Demostraciones · Licencias",
-    descripcion: "Contexto institucional donde Órbita Kids puede ser adoptado mediante pilotos y licencias.",
-    funciones: ["Adopción institucional", "Pilotos escolares", "Licencia de la plataforma"],
+    descripcion: "Evalúa la incorporación de Órbita Kids como herramienta de apoyo educativo.",
+    estado: "Posibilidad por evaluar · no implica acuerdos o ventas confirmados",
+    funciones: ["Evaluar la plataforma mediante posibles pilotos", "Explorar opciones de adopción institucional", "Revisar necesidades de docentes y estudiantes", "Considerar posibles licencias institucionales", "Analizar resultados de pruebas y utilidad de la herramienta"],
     relacion: "La escuela representa el contexto de adopción. Esta versión no contempla una interfaz específica para este actor.",
-    icono: ".school-icon svg"
+    icono: ".school-icon img"
   },
   {
     id: "activities", titulo: "Actividades matemáticas", tipo: "Funcionalidad · Estudiante", color: "blue",
     subtitulo: "Sumas interactivas · Niveles de dificultad",
+    estado: "Alcance previsto · implementación por desarrollar",
     descripcion: "Sumas interactivas y diferentes niveles de dificultad.",
     funciones: ["Resolver ejercicios de sumas", "Practicar en niveles de dificultad"],
     relacion: "El estudiante utiliza esta función en la aplicación móvil de Órbita Kids.",
@@ -34,6 +38,7 @@ const fichas = [
   {
     id: "reinforcement", titulo: "Refuerzo adaptado", tipo: "Funcionalidad · Estudiante y docente", color: "green",
     subtitulo: "Apoyo según aciertos y errores",
+    estado: "Alcance previsto · implementación por desarrollar",
     descripcion: "Apoyo y ajuste según aciertos y errores.",
     funciones: ["Proporcionar apoyo visual", "Ajustar la dificultad mediante reglas de refuerzo"],
     relacion: "El estudiante recibe apoyo durante la práctica. El docente consulta el desempeño para decidir qué contenidos requieren más práctica.",
@@ -42,6 +47,7 @@ const fichas = [
   {
     id: "mission", titulo: "Progreso y misión espacial", tipo: "Funcionalidad · Estudiante", color: "violet",
     subtitulo: "Planetas · Nave · Recompensas",
+    estado: "Alcance previsto · implementación por desarrollar",
     descripcion: "Planetas, nave, progreso y recompensas.",
     funciones: ["Avanzar por planetas y niveles", "Reparar la nave espacial", "Obtener recompensas y visualizar el progreso"],
     relacion: "El estudiante vive la misión en la app móvil; su progreso y resultados quedan registrados para el seguimiento docente.",
@@ -50,6 +56,7 @@ const fichas = [
   {
     id: "groups", titulo: "Grupos y asignaciones", tipo: "Funcionalidad · Docente", color: "pink",
     subtitulo: "Administración de grupos · Actividades",
+    estado: "Alcance previsto · implementación por desarrollar",
     descripcion: "Administrar grupos y actividades.",
     funciones: ["Administrar grupos", "Asignar actividades matemáticas"],
     relacion: "El docente gestiona sus grupos desde la PWA y asigna actividades a sus estudiantes.",
@@ -58,6 +65,7 @@ const fichas = [
   {
     id: "results", titulo: "Resultados y seguimiento", tipo: "Funcionalidad · Docente", color: "yellow",
     subtitulo: "Progreso · Errores · Necesidades de refuerzo",
+    estado: "Alcance previsto · implementación por desarrollar",
     descripcion: "Progreso, errores y necesidades de refuerzo.",
     funciones: ["Consultar resultados y errores", "Revisar el progreso", "Identificar qué ejercicios requieren más práctica"],
     relacion: "El docente consulta la información de desempeño en la PWA y la utiliza para orientar el refuerzo.",
@@ -118,7 +126,7 @@ function abrirFicha(ficha, indice = -1, origen = document.activeElement) {
   contenido.innerHTML = `
     <section class="detail-hero">
       <div class="detail-illustration" aria-hidden="true">${ilustracionDe(ficha)}</div>
-      <div><p class="detail-type">${escapar(ficha.tipo)}</p><p>${escapar(ficha.descripcion)}</p></div>
+      <div><p class="detail-type">${escapar(ficha.tipo)}</p><p>${escapar(ficha.descripcion)}</p>${ficha.estado ? `<p class="scope-status">${escapar(ficha.estado)}</p>` : ""}</div>
     </section>
     <section class="detail-section"><h3>${ficha.actores ? "Qué permite hacer" : "Funciones principales"}</h3><ul class="detail-list">${funciones}</ul></section>
     ${roles}
