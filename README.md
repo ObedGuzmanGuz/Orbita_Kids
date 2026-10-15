@@ -229,14 +229,30 @@ El sitio incorpora un planeta giratorio, bordes con una estela luminosa suave, f
 
 📂 **[Ver carpeta del Business Model Canvas](Practica04/)**
 
-🚀 **[Ver el Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/ModelBusinesCanvas/)**
+🚀 **[Ver el Business Model Canvas de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/)**
 
 
-📄 **[Consultar documentación del Canvas](Practica04/README.md)**
 
 > Los ingresos, precios y alianzas del modelo son propuestas por validar. No representan ventas ni convenios confirmados.
 
 ---
+
+## Roles de usuario y Sketches
+
+Para ver el diagrama de Roles de usuario, da clic en la imagen siguiente:
+[![Diagrama de Roles de usuario](/Logos/DiagramaRoles.png)](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/DiagramaRolesUsuario/)
+
+---
+
+## Skeches de la Aplicacion
+
+Para ver los Sketches da click en la imagen siguiente:
+
+Si quieres que “Para ver el enlace de los sketches” sea el propio enlace, usa:
+
+[Para ver el enlace de los sketches](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746)
+
+--- 
 
 ## 📍 Estado del proyecto
 
