@@ -1,5 +1,10 @@
-# 🪐 Órbita Kids — Frontend
 
+<div align="center">
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+### <sub>✨ <i>CREAMOS EXPERIENCIAS QUE INSPIRAN</i> ✨</sub>
+---
+</div>
 Frontend de la **PWA para docentes** de Órbita Kids, una plataforma educativa
 que apoya la práctica de sumas en estudiantes de los primeros grados de
 primaria mediante una experiencia espacial, actividades interactivas y
@@ -8,6 +13,7 @@ seguimiento del progreso.
 > **Estado actual:** el frontend forma parte del desarrollo previsto del
 > proyecto. Las funcionalidades descritas en este documento representan el
 > alcance de la PWA y no necesariamente indican que ya estén implementadas.
+
 
 ## 📖 Descripción
 
