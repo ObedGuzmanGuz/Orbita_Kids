@@ -1,0 +1,136 @@
+/* Órbita Kids · Design tokens WEB (React + Vite)
+ * Base: html { font-size: 100% } → 1rem = 16px. Valores px originales en comentario.
+ * Generado por tools/export_specs.py */
+:root {
+  /* spacing */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.25rem; /* 20px */
+  --space-xl: 1.5rem; /* 24px */
+  --space-xxl: 2rem; /* 32px */
+  /* radius */
+  --radius-card: 0.75rem; /* 12px */
+  --radius-button: 0.625rem; /* 10px */
+  --radius-row: 0.625rem; /* 10px */
+  --radius-input: 0.5rem; /* 8px */
+  --radius-doc: 0.25rem; /* 4px */
+  --radius-checkbox: 0.25rem; /* 4px */
+  --radius-track: 0.25rem; /* 4px */
+  --radius-chip: 1.125rem; /* 18px */
+  --radius-search: 1.5rem; /* 24px */
+  --radius-search-header: 1.375rem; /* 22px */
+  --radius-switch-track: 0.75rem; /* 12px */
+  /* size */
+  --size-button: 3rem; /* 48px */
+  --size-input: 3rem; /* 48px */
+  --size-textarea: 6rem; /* 96px */
+  --size-chip: 2.25rem; /* 36px */
+  --size-cell-button: 1.75rem; /* 28px */
+  --size-icon: 1.5rem; /* 24px */
+  --size-icon-sm: 1.25rem; /* 20px */
+  --size-icon-md: 2rem; /* 32px */
+  --size-icon-xl: 3.5rem; /* 56px */
+  --size-avatar: 2.5rem; /* 40px */
+  --size-avatar-app-bar: 2rem; /* 32px */
+  --size-avatar-lg: 4.5rem; /* 72px */
+  --size-step-badge: 1.5rem; /* 24px */
+  --size-radio: 1.25rem; /* 20px */
+  --size-radio-dot: 0.625rem; /* 10px */
+  --size-radio-rubric: 1.125rem; /* 18px */
+  --size-checkbox: 1.25rem; /* 20px */
+  --size-switch-w: 2.75rem; /* 44px */
+  --size-switch-h: 1.5rem; /* 24px */
+  --size-switch-thumb: 1rem; /* 16px */
+  --size-progress: 0.5rem; /* 8px */
+  --size-timer-ring: 7.25rem; /* 116px */
+  --size-play-button: 3.5rem; /* 56px */
+  --size-row-list: 4rem; /* 64px */
+  --size-row-toggle: 3.5rem; /* 56px */
+  --size-row-check: 3.25rem; /* 52px */
+  --size-row-table: 2.75rem; /* 44px */
+  --size-row-step-mobile: 2.75rem; /* 44px */
+  --size-row-step-web: 3rem; /* 48px */
+  --size-tap-target: 3rem; /* 48px */
+  /* tipografía: font-size / line-height / weight */
+  --font-h1-web-size: 1.75rem; /* 28px */
+  --font-h1-web-line: 2.25rem; /* 36px */
+  --font-h1-web-weight: 700;
+  --font-h1-mobile-size: 1.375rem; /* 22px */
+  --font-h1-mobile-line: 1.75rem; /* 28px */
+  --font-h1-mobile-weight: 700;
+  --font-h2-size: 1.25rem; /* 20px */
+  --font-h2-line: 1.75rem; /* 28px */
+  --font-h2-weight: 700;
+  --font-timer-size: 1.625rem; /* 26px */
+  --font-timer-line: 2rem; /* 32px */
+  --font-timer-weight: 700;
+  --font-stat-value-size: 1.75rem; /* 28px */
+  --font-stat-value-line: 2.25rem; /* 36px */
+  --font-stat-value-weight: 700;
+  --font-card-title-size: 1.0625rem; /* 17px */
+  --font-card-title-line: 1.5rem; /* 24px */
+  --font-card-title-weight: 700;
+  --font-brand-web-size: 1rem; /* 16px */
+  --font-brand-web-line: 1.375rem; /* 22px */
+  --font-brand-web-weight: 700;
+  --font-title-size: 0.875rem; /* 14px */
+  --font-title-line: 1.25rem; /* 20px */
+  --font-title-weight: 700;
+  --font-body-size: 0.8125rem; /* 13px */
+  --font-body-line: 1.125rem; /* 18px */
+  --font-body-weight: 400;
+  --font-body-strong-size: 0.8125rem; /* 13px */
+  --font-body-strong-line: 1.125rem; /* 18px */
+  --font-body-strong-weight: 700;
+  --font-small-size: 0.75rem; /* 12px */
+  --font-small-line: 1rem; /* 16px */
+  --font-small-weight: 400;
+  --font-caption-size: 0.6875rem; /* 11px */
+  --font-caption-line: 1rem; /* 16px */
+  --font-caption-weight: 400;
+  --font-label-size: 0.6875rem; /* 11px */
+  --font-label-line: 1rem; /* 16px */
+  --font-label-weight: 700;
+  --font-nav-size: 0.625rem; /* 10px */
+  --font-nav-line: 0.875rem; /* 14px */
+  --font-nav-weight: 400;
+  --font-paragraph-size: 0.875rem; /* 14px */
+  --font-paragraph-line: 1.25rem; /* 20px */
+  --font-paragraph-weight: 400;
+  /* layout web */
+  --layout-canvas-w: 80rem; /* 1280px */
+  --layout-canvas-h: 50rem; /* 800px */
+  --layout-header: 5rem; /* 80px */
+  --layout-header-padding-x: 1.5rem; /* 24px */
+  --layout-header-padding-y: 1rem; /* 16px */
+  --layout-sidebar: 16.25rem; /* 260px */
+  --layout-sidebar-padding: 1rem; /* 16px */
+  --layout-sidebar-item-w: 14.25rem; /* 228px */
+  --layout-sidebar-item-h: 2.75rem; /* 44px */
+  --layout-sidebar-item-gap: 0.5rem; /* 8px */
+  --layout-main: 63.75rem; /* 1020px */
+  --layout-main-padding: 1.5rem; /* 24px */
+  --layout-content-width: 60.75rem; /* 972px */
+  --layout-block-gap: 1.5rem; /* 24px */
+  --layout-grid-column: 3.6875rem; /* 59px */
+  --layout-grid-gutter: 1.5rem; /* 24px */
+  --layout-card-padding: 1rem; /* 16px */
+  --layout-hero-padding: 1.25rem; /* 20px */
+  --layout-search-w: 26.25rem; /* 420px */
+  --layout-search-h: 2.75rem; /* 44px */
+  --layout-logo-box: 3rem; /* 48px */
+  --layout-header-avatar: 2.5rem; /* 40px */
+  --layout-grid-columns: 12;
+}
+
+/* Esqueleto de layout de referencia */
+.app-shell { display: grid; grid-template-columns: var(--layout-sidebar) 1fr; grid-template-rows: var(--layout-header) 1fr; min-height: 100vh; }
+.app-header { grid-column: 1 / -1; height: var(--layout-header); padding: var(--layout-header-padding-y) var(--layout-header-padding-x); display: flex; align-items: center; }
+.app-sidebar { padding: var(--space-xl) var(--layout-sidebar-padding) var(--layout-sidebar-padding); display: flex; flex-direction: column; gap: var(--layout-sidebar-item-gap); }
+.app-main { padding: var(--layout-main-padding); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--layout-grid-gutter); row-gap: var(--layout-block-gap); align-content: start; }
+.card { border-radius: var(--radius-card); padding: var(--layout-card-padding); }
+.card--hero { padding: var(--layout-hero-padding); }
+.btn { height: var(--size-button); border-radius: var(--radius-button); padding: 0 var(--space-md); font-size: var(--font-body-strong-size); line-height: var(--font-body-strong-line); font-weight: 700; }
+.input { height: var(--size-input); border-radius: var(--radius-input); padding: 0 var(--space-sm); }

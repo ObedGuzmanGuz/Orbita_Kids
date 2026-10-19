@@ -1,227 +1,171 @@
-# 🪐 Órbita Kids — Frontend
+# 🪐 Órbita Kids: sketches y wireframes
 
-Frontend de la **PWA para docentes** de Órbita Kids, una plataforma educativa
-que apoya la práctica de sumas en estudiantes de los primeros grados de
-primaria mediante una experiencia espacial, actividades interactivas y
-seguimiento del progreso.
+Esta carpeta reúne los **sketches** y **wireframes** de Órbita Kids, una
+plataforma educativa que busca acompañar el aprendizaje infantil mediante
+actividades interactivas, movimiento, exploración del entorno y seguimiento del
+progreso.
 
-> **Estado actual:** el frontend forma parte del desarrollo previsto del
-> proyecto. Las funcionalidades descritas en este documento representan el
-> alcance de la PWA y no necesariamente indican que ya estén implementadas.
+Estos recursos representan la evolución visual y funcional de la propuesta:
+los sketches permiten explorar ideas de manera rápida y los wireframes
+organizan esas ideas en pantallas, flujos y componentes que pueden utilizarse
+como referencia durante el desarrollo del producto.
 
-## 📖 Descripción
+## 🎯 Propósito
 
-La PWA docente permitirá a los profesores administrar la práctica matemática
-de sus grupos y consultar información útil para orientar el refuerzo educativo.
-La aplicación se comunicará con la API REST del proyecto, desarrollada con
-FastAPI, y no tendrá conexión directa con la base de datos.
+El objetivo de los sketches y wireframes es convertir las necesidades de los
+usuarios en una experiencia clara antes de implementar la interfaz final.
+Sirven para:
 
-Desde esta interfaz, el docente podrá:
+- Explorar distintas soluciones de navegación y distribución de contenido.
+- Visualizar las tareas principales de estudiantes y profesores.
+- Detectar problemas de usabilidad en una etapa temprana.
+- Alinear al equipo de diseño, desarrollo y contenido.
+- Mantener una referencia común durante la construcción de la aplicación.
+- Validar que la experiencia funcione en dispositivos móviles y en la versión
+  web/PWA.
 
-- Administrar grupos y estudiantes.
-- Asignar actividades de sumas.
-- Consultar intentos, resultados y progreso.
-- Identificar errores frecuentes.
-- Reconocer actividades que requieren mayor práctica.
-- Dar seguimiento al avance de los estudiantes.
+## ✏️ Sketches
 
-## 🎯 Objetivo del frontend
+Los sketches son bocetos iniciales de las pantallas y flujos de Órbita Kids.
+Se enfocan en la idea general de cada vista, la secuencia de navegación y la
+ubicación aproximada de los elementos, sin definir todavía todos los detalles
+visuales o técnicos.
 
-Proporcionar una interfaz web clara, accesible y adaptable que ayude al
-docente a:
+En [`../Sketches`](../Sketches) se encuentran las propuestas organizadas por:
 
-1. Organizar a sus estudiantes en grupos.
-2. Asignar actividades de acuerdo con los niveles de dificultad.
-3. Revisar el desempeño individual y grupal.
-4. Detectar necesidades de refuerzo.
-5. Tomar decisiones de acompañamiento con base en los resultados registrados.
+- **Perfil:** estudiante y profesor.
+- **Plataforma:** móvil y Web/PWA.
+- **Pantallas:** bienvenida, acceso, inicio, cursos, lecciones, retos,
+  actividades, progreso, reportes y perfil, entre otras.
 
-## 🧩 Alcance funcional
+Los sketches ayudan a responder preguntas como:
 
-### Gestión docente
+- ¿Qué necesita hacer el usuario en cada paso?
+- ¿Qué información debe aparecer primero?
+- ¿Cómo se relacionan las pantallas entre sí?
+- ¿La navegación resulta comprensible para un niño o para un profesor?
 
-- Acceso a la PWA para docentes.
-- Visualización de grupos y estudiantes.
-- Consulta de la información relevante de cada grupo.
+## 🧱 Wireframes
 
-### Asignación de actividades
+Los wireframes son una versión más estructurada de los sketches. Definen con
+mayor claridad la jerarquía de la información, las áreas de cada pantalla, las
+acciones disponibles, los estados de navegación y la adaptación entre
+dispositivos.
 
-- Selección de actividades de sumas.
-- Asignación de ejercicios a grupos o estudiantes.
-- Organización de actividades dentro de los tres niveles de dificultad.
+Los wireframes de esta carpeta contemplan dos perfiles principales:
 
-### Seguimiento del progreso
+### Estudiante
 
-- Consulta de intentos y resultados.
-- Visualización del avance de cada estudiante.
-- Identificación de respuestas incorrectas y errores frecuentes.
-- Detección de actividades que necesitan refuerzo.
+Incluyen experiencias de aprendizaje y bienestar, como:
 
-### Comunicación con la API
+- Bienvenida y acceso.
+- Perfil infantil e inicio.
+- Cursos, rutas de aprendizaje y lecciones.
+- Quizzes y actividades breves.
+- Retos físicos, pausas activas y exploración del entorno.
+- Experimentos, lecturas y actividades familiares.
+- Diario, equilibrio digital, logros y perfil.
 
-El frontend consumirá los servicios de la API REST para consultar y enviar
-información relacionada con:
+### Profesor
 
-- Usuarios y roles.
-- Grupos y estudiantes.
-- Actividades.
-- Intentos y respuestas.
-- Resultados y progreso.
+Incluyen herramientas para acompañar y administrar el aprendizaje, como:
 
-El flujo general será:
+- Inicio, grupos y seguimiento de estudiantes.
+- Cursos, actividades y asignación de contenido.
+- Biblioteca offline y materiales imprimibles.
+- Creación y validación de retos.
+- Planificación semanal y pausas activas.
+- Rúbricas, retroalimentación y comunicación con familias.
+- Reportes, bienestar, uso digital y preferencias.
 
-```text
-Docente → PWA React → API REST FastAPI → PostgreSQL
-                                      ↓
-                         Resultados y progreso
-```
+Cada perfil cuenta con propuestas para **móvil** y **Web/PWA**, de modo que las
+funciones puedan consultarse y utilizarse en el contexto más adecuado.
 
-## 🛠️ Tecnologías
-
-| Tecnología | Uso |
-| --- | --- |
-| **React** | Construcción de la interfaz de la PWA docente. |
-| **JavaScript** | Lógica e interacción de la aplicación. |
-| **HTML** | Estructura de las vistas. |
-| **CSS** | Estilos, diseño adaptable y presentación visual. |
-| **FastAPI** | API REST que conecta el frontend con los datos del proyecto. |
-| **PostgreSQL** | Almacenamiento gestionado por la API. |
-| **Git y GitHub** | Control de versiones y colaboración. |
-
-## 🚀 Ejecución local
-
-La configuración definitiva de ejecución se documentará cuando se incorpore la
-estructura completa de la aplicación React y su archivo `package.json`.
-
-De forma general, el flujo esperado para un proyecto React será:
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/ObedGuzmanGuz/Orbita_Kids.git
-
-# Entrar al directorio del frontend
-cd Orbita_Kids/Frontend
-
-# Instalar dependencias
-npm install
-
-# Iniciar el servidor de desarrollo
-npm run dev
-```
-
-> Los comandos pueden cambiar según la herramienta de construcción que se
-> utilice para la versión final del frontend. Consulta los scripts definidos en
-> `package.json` cuando estén disponibles.
-
-## 🔐 Configuración de la API
-
-La URL de la API deberá configurarse mediante variables de entorno y no
-escribirse directamente en los componentes de React. Por ejemplo:
-
-```env
-VITE_API_URL=http://localhost:8000
-```
-
-El nombre y el formato de esta variable deberán ajustarse a la herramienta de
-construcción elegida para el proyecto.
-
-La API será responsable de:
-
-- Validar las solicitudes.
-- Gestionar la autenticación y los permisos.
-- Aplicar las reglas de adaptación de actividades.
-- Guardar y consultar los datos en PostgreSQL.
-
-## 📱 Experiencia y diseño
-
-La PWA docente debe priorizar:
-
-- Navegación sencilla y consistente.
-- Diseño adaptable para computadoras, tabletas y pantallas pequeñas.
-- Contraste y tamaños de texto adecuados.
-- Mensajes claros para errores, cargas y operaciones exitosas.
-- Tablas, tarjetas o indicadores que faciliten la lectura del progreso.
-- Accesibilidad mediante teclado y controles comprensibles.
-- Coherencia visual con la temática espacial de Órbita Kids sin dificultar la
-  consulta de información.
-
-## 🗂️ Organización esperada
-
-La estructura podrá organizarse de la siguiente manera cuando se implemente la
-aplicación:
+## 🗂️ Organización de los recursos
 
 ```text
 Frontend/
-├── public/             # Recursos públicos
-├── src/
-│   ├── components/     # Componentes reutilizables
-│   ├── pages/          # Vistas principales de la PWA
-│   ├── services/       # Comunicación con la API
-│   ├── hooks/          # Lógica reutilizable de React
-│   ├── styles/         # Estilos globales y de la aplicación
-│   └── App.jsx         # Componente raíz
-├── package.json
-└── readme.md
+├── Sketches/
+│   ├── assets/              # Bocetos visuales en formato PNG
+│   ├── catalogo.json       # Catálogo de pantallas y recorridos
+│   └── README.md            # Documentación específica de los sketches
+└── Wireframes/
+    ├── assets/
+    │   ├── wireframes/     # Wireframes organizados por perfil y plataforma
+    │   └── VISTA_GENERAL_*.jpg
+    ├── tokens/             # Tokens visuales reutilizables
+    ├── tools/              # Herramientas para generar y exportar recursos
+    ├── catalogo.json       # Descripción de pantallas, acciones y conexiones
+    ├── index.html          # Visualizador de wireframes
+    └── README.md           # Este documento
 ```
 
-Esta organización es una referencia inicial y puede adaptarse a las
-necesidades del equipo.
+Los recursos pueden encontrarse en formatos PNG y SVG. El archivo
+[`catalogo.json`](./catalogo.json) concentra información de las vistas,
+incluyendo sus títulos, descripciones, acciones y la pantalla siguiente dentro
+del flujo.
 
-## 🔄 Flujo de uso previsto
+## 🔄 Relación entre sketches y wireframes
 
-1. El docente accede a la PWA.
-2. Selecciona un grupo o un estudiante.
-3. Asigna una actividad de sumas.
-4. El estudiante resuelve la actividad desde la aplicación móvil.
-5. La API registra los intentos y resultados.
-6. El docente consulta el progreso desde la PWA.
-7. Con base en los errores y avances, decide qué actividades reforzar.
+El proceso recomendado para utilizar estos materiales es:
 
-## 🧪 Validación
+1. **Explorar:** plantear ideas y alternativas mediante sketches.
+2. **Organizar:** seleccionar las propuestas que mejor responden a las
+   necesidades de cada usuario.
+3. **Estructurar:** convertirlas en wireframes con flujos, jerarquías y
+   componentes más definidos.
+4. **Validar:** revisar la claridad de la navegación y detectar ajustes antes
+   del desarrollo.
+5. **Implementar:** utilizar los wireframes como referencia para construir la
+   interfaz y sus versiones responsivas.
 
-El frontend deberá evaluarse mediante pruebas técnicas y sesiones con usuarios
-para comprobar:
+Los wireframes no sustituyen las pruebas con usuarios ni representan
+necesariamente la interfaz visual final. Son una guía para validar la
+experiencia, documentar decisiones y reducir cambios costosos durante la
+implementación.
 
-- Funcionamiento de la asignación de actividades.
-- Correcta consulta de resultados y progreso.
-- Claridad de las instrucciones y mensajes.
-- Facilidad para navegar entre grupos, estudiantes y actividades.
-- Visualización comprensible de errores frecuentes.
-- Adaptabilidad a diferentes tamaños de pantalla.
-- Accesibilidad y uso mediante teclado.
+## 💡 Importancia para Órbita Kids
 
-La utilidad educativa de la plataforma deberá validarse con docentes y
-estudiantes. No se consideran demostradas mejoras de aprendizaje antes de
-realizar las pruebas correspondientes.
+Los sketches y wireframes son importantes porque ayudan a que la tecnología
+responda al propósito educativo del proyecto:
 
-## 🚫 Fuera del alcance inicial
+- **Ponen al usuario en el centro:** consideran las necesidades y capacidades
+  de estudiantes y profesores.
+- **Favorecen una experiencia infantil clara:** permiten revisar que las
+  instrucciones, acciones y recorridos sean fáciles de comprender.
+- **Conectan aprendizaje y bienestar:** hacen visible la integración de
+  lecciones, movimiento, actividades offline y participación familiar.
+- **Mantienen consistencia entre plataformas:** ayudan a conservar una
+  experiencia coherente en móvil y Web/PWA.
+- **Facilitan la accesibilidad:** permiten revisar desde temprano el orden de la
+  información, el tamaño de los controles y la claridad de los mensajes.
+- **Reducen riesgos de desarrollo:** los problemas de flujo pueden resolverse
+  antes de convertirlos en código.
+- **Mejoran la comunicación del equipo:** ofrecen una referencia compartida
+  para diseño, frontend, backend, contenido y validación.
 
-La primera versión del frontend no contempla:
+## ✅ Recomendaciones de uso
 
-- Una interfaz específica para madres, padres o tutores.
-- Chatbot o adaptación mediante inteligencia artificial.
-- Actividades de multiplicación, división u otros temas matemáticos.
-- Funciones multijugador.
-- Diagnóstico clínico o automático de dificultades de aprendizaje.
-- Conexión directa del navegador con PostgreSQL.
+Antes de implementar una pantalla basada en estos recursos, se recomienda:
 
-## 👥 Integrantes
+1. Confirmar el perfil y la plataforma a la que pertenece.
+2. Revisar el flujo de navegación en `catalogo.json`.
+3. Verificar las acciones principales y los estados esperados.
+4. Comprobar que el contenido sea comprensible para el público objetivo.
+5. Validar el comportamiento en diferentes tamaños de pantalla.
+6. Registrar cualquier cambio importante para mantener actualizada la
+   documentación.
 
-- Obed Guzmán Flores
-- Yazmin Gutierrez Hernandez
-- Citlalli Perez Dionicio
-- Michelle Castro Otero
-- Jennifer Bautista Barrios
+## 🔗 Recursos relacionados
 
-## 🔗 Recursos del proyecto
-
+- [Bocetos de Órbita Kids](../Sketches)
+- [Catálogo de wireframes](./catalogo.json)
+- [Visualizador de wireframes](./index.html)
+- [Documentación general del frontend](../readme.md)
 - [Repositorio de Órbita Kids](https://github.com/ObedGuzmanGuz/Orbita_Kids)
-- [Business Model Canvas](https://obedguzmanguz.github.io/Orbita_Kids/ModelBusinesCanvas/)
-- [ODS 4 — Educación de calidad](https://sdgs.un.org/goals/goal4)
 
 ---
 
-<p align="center">
-  🪐 <strong>Órbita Kids</strong><br>
-  Una herramienta docente para acompañar el aprendizaje de matemáticas.
-</p>
+Los sketches y wireframes son una referencia viva del proyecto: pueden
+evolucionar a medida que se validen las necesidades de los usuarios y se
+incorporen nuevas funcionalidades a Órbita Kids.
