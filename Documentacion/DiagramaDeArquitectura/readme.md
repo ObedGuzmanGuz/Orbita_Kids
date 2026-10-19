@@ -10,7 +10,7 @@ La arquitectura contempla dos interfaces principales que se comunican con un bac
 
 El siguiente diagrama representa los componentes principales del sistema, sus tecnologías, las conexiones entre plataformas y servicios, así como la infraestructura propuesta para su despliegue.
 
-![Diagrama de arquitectura de Órbita Kids](/Documentacion/img/diagramaArquitectura.jpeg)
+![Diagrama de arquitectura de Órbita Kids](./img/diagramaArquitectura.jpeg)
 
 *Figura 1. Arquitectura propuesta para la plataforma educativa Órbita Kids.*
 
