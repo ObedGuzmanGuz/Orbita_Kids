@@ -244,15 +244,35 @@ Para ver el diagrama de Roles de usuario, da clic en la imagen siguiente:
 
 ---
 
-## Skeches de la Aplicacion
+## ✏️ Sketches de la aplicación
 
-Para ver los Sketches da click en la imagen siguiente:
+Explora los sketches interactivos de las pantallas para estudiantes y docentes, tanto en móvil como en Web/PWA. Sirven para conocer las vistas y recorridos propuestos antes de definir su implementación.
 
-Si quieres que “Para ver el enlace de los sketches” sea el propio enlace, usa:
+🚀 **[Explorar Sketchess](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Sketches/)**
 
-[Para ver el enlace de los sketches](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746)
+📂 [Ver carpeta de Sketches](Frontend/Sketches/)
+
+🎨 [Consultar diseño en Figma](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746)
+
+---
+
+## 📐 Wireframes de la aplicación
+
+Los wireframes muestran la estructura y navegación de las pantallas de estudiantes y docentes en móvil y Web/PWA. Incluyen vistas con medidas para apoyar el diseño y la implementación de las interfaces.
+
+🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Wireframes/)**
+
+📂 [Ver carpeta de Wireframes](Frontend/Wireframes/)
 
 --- 
+
+## 🏗️ Diagrama de arquitectura
+
+El diagrama presenta la arquitectura tecnológica propuesta para Órbita Kids: la aplicación móvil para estudiantes y la PWA para docentes se conectan a una API central, que gestiona la lógica del sistema y el acceso a los datos. También muestra componentes previstos para autenticación, despliegue y monitoreo. Estas tecnologías representan una propuesta y no implican que ya estén implementadas.
+
+📂 **[Ver la carpeta del diagrama de arquitectura](Documentacion/DiagramaDeArquitectura/)**
+
+---
 
 ## 📍 Estado del proyecto
 
