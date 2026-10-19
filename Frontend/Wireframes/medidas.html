@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0b15">
+<title>Órbita Kids / Wireframes · Especificación de medidas</title>
+<style>
+:root{color-scheme:dark;--bg:#0a0b15;--panel:#151624;--panel2:#1c1c2e;--border:#39334f;--line:#2a2840;--muted:#bdbbd3;--dim:#8e8aa8;--text:#f8f6ff;--violet:#ae92ff;--red:#ff5c84;--green:#9cd4ab;--amber:#f7ce86;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 45% -10%,#1c1a3a 0%,#0c0c1a 40%,#090912 85%);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.5;min-height:100vh}
+a{color:var(--violet)}
+.wrap{max-width:1320px;margin:0 auto;padding:24px 16px 64px}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:14px}.brand img{height:34px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--violet);text-transform:uppercase}
+h1{font-size:clamp(24px,3vw,36px);letter-spacing:-.04em;margin:4px 0 0;line-height:1.1}
+h2{font-size:22px;letter-spacing:-.03em;margin:44px 0 6px}
+h3{font-size:15px;margin:22px 0 8px}
+p.lead{color:var(--muted);max-width:820px;margin:8px 0 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--panel2);color:var(--text);text-decoration:none;font-weight:700;font-size:13px;cursor:pointer}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:#14102a}
+.btn:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+nav.toc{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 0}
+nav.toc a{font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted)}
+nav.toc a:hover{color:var(--text);border-color:var(--violet)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:16px;margin-top:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin-top:0;display:flex;align-items:center;gap:8px}
+.pill{font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:999px;background:#2a2347;color:var(--violet);font-weight:700}
+.pill.fl{background:#17324a;color:#8cc8ff}
+ul.rules{margin:0;padding-left:18px;color:var(--muted)}ul.rules li{margin:5px 0}ul.rules b{color:var(--text)}
+code,.mono{font-family:var(--mono);font-size:12px}
+code{background:#221f36;padding:1px 5px;border-radius:5px;color:#e6defd}
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);background:var(--panel2);position:sticky;top:0;z-index:1;white-space:nowrap}
+td.num{font-family:var(--mono);white-space:nowrap;text-align:right}
+td.code{font-family:var(--mono);font-size:11px;color:#cfc6ef;min-width:260px}
+tr.blockrow td{background:#1f1b33;color:var(--violet);font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+tr:hover td{background:#1a1830}
+tr.blockrow:hover td{background:#1f1b33}
+.kind{font-size:10.5px;padding:2px 7px;border-radius:6px;background:#26233b;color:var(--muted);white-space:nowrap}
+.rep{color:var(--amber);font-family:var(--mono);font-weight:700}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin-top:14px}
+.controls label{display:grid;gap:4px;font-size:11px;font-weight:700;color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
+select,input[type=search]{background:var(--panel2);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:9px 12px;font:inherit;font-size:13px;min-width:180px}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.seg button{background:var(--panel2);color:var(--muted);border:0;padding:9px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--violet);color:#14102a}
+.screen{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:18px;margin-top:16px;align-items:start}
+.screen>*{min-width:0}
+.screen figure{margin:0;position:sticky;top:12px}
+.screen figure a{display:block;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#efefef}
+.screen figure img{display:block;width:100%;height:auto}
+.screen figcaption{font-size:11px;color:var(--dim);margin-top:6px}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}
+.summary span{font-family:var(--mono);font-size:11.5px;padding:6px 9px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.muted{color:var(--dim)}
+.swatch-type{font-weight:700}
+footer{margin-top:48px;color:var(--dim);font-size:12px;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:860px){.screen{grid-template-columns:minmax(0,1fr)}.screen figure{position:static}}
+@media print{
+ :root{color-scheme:light;--bg:#fff;--panel:#fff;--panel2:#f3f3f6;--line:#d8d8e0;--muted:#333;--dim:#555;--text:#000;--violet:#5b3fd6}
+ body{background:#fff}.actions,nav.toc,.controls{display:none}th{position:static}td.code{color:#222}code{background:#f1effa;color:#222}
+ .screen{grid-template-columns:1fr}.screen figure{position:static;max-width:420px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header class="top">
+  <div class="brand">
+   <img src="assets/logo_aplicacion.png" alt="Órbita Kids">
+   <div><span class="eyebrow">Órbita Kids / Wireframes</span><h1>Especificación de medidas</h1></div>
+  </div>
+  <div class="actions">
+   <a class="btn" href="index.html">← Volver a los wireframes</a>
+   <a class="btn" href="medidas.csv" download>⤓ medidas.csv</a>
+   <a class="btn" href="tokens/tokens.css" download>⤓ tokens.css</a>
+   <a class="btn" href="tokens/tokens.ts" download>⤓ tokens.ts</a>
+   <a class="btn primary" href="tokens/app_tokens.dart" download>⤓ app_tokens.dart</a>
+  </div>
+ </header>
+ <p class="lead">Medidas exactas de los 80 wireframes, generadas a partir de la misma geometría que dibuja cada imagen. La app móvil se implementa en <b>Flutter</b> con píxeles lógicos; la web/PWA en <b>React + Vite</b> con px CSS convertidos a rem.</p>
+ <nav class="toc" aria-label="Secciones"><a href="#unidades">1 · Unidades</a><a href="#layout">2 · Layout base</a><a href="#tokens">3 · Tokens</a><a href="#tipografia">4 · Tipografía</a><a href="#pantallas">5 · Medidas por pantalla</a><a href="#lectura">6 · Cómo leer las cotas</a></nav>
+
+ <section id="unidades">
+  <h2>1 · Unidades por tecnología</h2>
+  <div class="grid2">
+   <div class="card"><h3>App móvil <span class="pill fl">Flutter · lp</span></h3>
+    <ul class="rules">
+     <li><b>Píxeles lógicos (lp = dp).</b> Todas las cifras de los wireframes móviles se usan tal cual en <code>SizedBox</code>, <code>EdgeInsets</code>, <code>BorderRadius</code> y <code>TextStyle(fontSize)</code>.</li>
+     <li><b>No convertir a píxeles físicos.</b> Flutter multiplica por <code>devicePixelRatio</code> automáticamente.</li>
+     <li><b>Lienzo base 375×812 lp</b>. En pantallas más anchas, el cuerpo se estira (<code>Expanded</code>) y se conservan paddings, gaps, radios y alturas.</li>
+     <li><b>Alto de línea:</b> <code>height = lineHeight ÷ fontSize</code> (ej.: 13/18 → <code>height: 18/13</code>).</li>
+     <li>Áreas táctiles mínimas de <b>48×48 lp</b> aunque el elemento visible sea menor (avatar 32, switch 44×24).</li>
+    </ul></div>
+   <div class="card"><h3>Web / PWA <span class="pill">React + Vite · px / rem</span></h3>
+    <ul class="rules">
+     <li><b>px CSS</b> en los wireframes; en código usar <b>rem = px ÷ 16</b> con <code>html { font-size: 100% }</code>.</li>
+     <li>Ejemplos: 8px = 0.5rem · 12px = 0.75rem · 16px = 1rem · 24px = 1.5rem · 48px = 3rem · 260px = 16.25rem · 972px = 60.75rem.</li>
+     <li><b>Lienzo base 1280×800 px</b>. El main usa grid de 12 columnas (59px · gutter 24px); los anchos de tarjeta salen de columnas, no de valores fijos.</li>
+     <li>Anchos con decimales (ej. 127.43, 165.5) indican <b>fracciones</b>: implementar con <code>1fr</code> / <code>flex: 1</code>, no como valores fijos.</li>
+     <li>Bordes de 1px se mantienen en px (no escalan con rem).</li>
+    </ul></div>
+  </div>
+ </section>
+
+ <section id="layout">
+  <h2>2 · Layout base</h2>
+  <div class="grid2">
+   <div><h3>Móvil · 375×812 lp</h3><div class="table-scroll"><table id="layoutMobile"></table></div></div>
+   <div><h3>Web · 1280×800 px</h3><div class="table-scroll"><table id="layoutWeb"></table></div></div>
+  </div>
+ </section>
+
+ <section id="tokens">
+  <h2>3 · Tokens de espaciado, radios y tamaños</h2>
+  <p class="lead">Valor único para ambas plataformas. La columna Web muestra la variable CSS de <code>tokens.css</code>; la columna Flutter, la constante de <code>app_tokens.dart</code>.</p>
+  <div class="table-scroll"><table id="tokenTable"></table></div>
+ </section>
+
+ <section id="tipografia">
+  <h2>4 · Escala tipográfica</h2>
+  <div class="table-scroll"><table id="typeTable"></table></div>
+ </section>
+
+ <section id="pantallas">
+  <h2>5 · Medidas por pantalla</h2>
+  <p class="lead">Cada fila es un elemento del wireframe. Las coordenadas <b>x, y</b> son desde la esquina superior izquierda del lienzo. Los elementos idénticos repetidos se agrupan (<span class="rep">×N</span>, x/y del primero).</p>
+  <div class="controls">
+   <label>Rol<select id="selRole"><option>Estudiante</option><option>Profesor</option></select></label>
+   <label>Plataforma<select id="selPlat"><option value="Movil">App móvil (Flutter)</option><option value="Web_PWA">Web / PWA (React + Vite)</option></select></label>
+   <label>Pantalla<select id="selScreen"></select></label>
+   <label>Filtrar<input id="filter" type="search" placeholder="botón, texto, padding…"></label>
+   <label>Código<span class="seg" role="group" aria-label="Formato de código"><button type="button" data-code="auto" aria-pressed="true">Según plataforma</button><button type="button" data-code="css" aria-pressed="false">CSS</button><button type="button" data-code="flutter" aria-pressed="false">Flutter</button></span></label>
+  </div>
+  <div class="screen">
+   <figure><a id="imgLink" href="#" target="_blank" rel="noopener"><img id="screenImg" alt=""></a><figcaption id="imgCap"></figcaption></figure>
+   <div>
+    <div class="summary" id="summary"></div>
+    <div class="table-scroll"><table id="elTable"></table></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="lectura">
+  <h2>6 · Cómo leer las cotas de las imágenes</h2>
+  <div class="grid2">
+   <div class="card"><ul class="rules">
+    <li><b>Negro, fuera del marco:</b> lienzo, regiones (barra de estado, AppBar, header, sidebar) y alto de cada bloque.</li>
+    <li><b style="color:var(--red)">Rojo:</b> medidas de cada elemento. <code>W×H rN</code> = ancho × alto y radio; <code>Ø</code> = diámetro; <code>□24</code> = icono de 24; <code>×N</code> = repetido idéntico.</li>
+    <li><b>Flechas rojas cortas:</b> padding interno (izquierda y arriba; derecha/abajo solo si difieren) y separaciones (gap) entre hermanos y entre bloques.</li>
+    <li><code>Aa13/18 B</code> = font-size 13, line-height 18, peso 700.</li>
+   </ul></div>
+   <div class="card"><ul class="rules">
+    <li>Las barras grises representan texto; su largo es ilustrativo. El ancho que cuenta es el del contenedor (columna «Ancho» = máximo disponible, o «auto»).</li>
+    <li>Las imágenes «sin medidas» (<code>assets/wireframes/…/limpio/</code>) son la misma pantalla sin cotas, para revisión visual.</li>
+    <li>Todas las cifras salen de <code>tools/</code>: si cambias un token, ejecuta <code>build.py</code> y <code>export_specs.py</code> y se regeneran imágenes, tablas y tokens.</li>
+   </ul></div>
+  </div>
+ </section>
+ <footer>Órbita Kids · Wireframes con medidas · dp/lp (Flutter) · px/rem (React + Vite) · Prototipo conceptual.</footer>
+</div>
+<script src="catalogo.js"></script>
+<script src="medidas.js"></script>
+<script>
+(function(){
+ const U=window.MEDIDAS_UTIL, TK=MEDIDAS_TOKENS, $=id=>document.getElementById(id);
+ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const rem=v=>U.n(v/16)+'rem';
+ const kebab=s=>s.replace(/[A-Z]/g,m=>'-'+m.toLowerCase());
+ // ---- layout
+ const LM=[['Lienzo base','375 × 812','—'],['Barra de estado / SafeArea','375 × 44','MediaQuery.padding.top'],['AppBar','375 × 56','toolbarHeight: 56 · padding h 16'],['Cuerpo','375 × 648','padding 16 · ancho útil 343'],['Separación entre bloques','12','SizedBox(height: 12)'],['Separación en listas','8','SizedBox(height: 8)'],['Padding de tarjeta','16 / destacada 20','EdgeInsets.all(16 | 20)'],['NavigationBar','375 × 64','4 destinos de 93.75 · icono 24 · etiqueta 10/14'],['Avatar AppBar','Ø32 (área táctil 48)','IconButton'],['Logo AppBar','Ø28','—']];
+ const LW=[['Lienzo base','1280 × 800 px','80rem × 50rem'],['Header','1280 × 80','5rem · padding 1rem 1.5rem'],['Logo','48 × 48 r8','3rem · radius .5rem'],['Búsqueda global','420 × 44 r22','26.25rem × 2.75rem'],['Iconos header','24 · gap 16','1.5rem · gap 1rem'],['Avatar header','Ø40','2.5rem'],['Sidebar','260 × 720','16.25rem · padding 1rem'],['Ítem de sidebar','228 × 44 r10 · gap 8','14.25rem × 2.75rem · gap .5rem'],['Tarjeta inferior sidebar','228 × 88 r12','14.25rem × 5.5rem'],['Main','1020 × 720 · padding 24','63.75rem · padding 1.5rem'],['Ancho útil','972','60.75rem'],['Grid','12 col × 59 · gutter 24','repeat(12, 1fr) · gap 1.5rem'],['Separación entre bloques','24','1.5rem']];
+ $('layoutMobile').innerHTML='<thead><tr><th>Región</th><th>Medida (lp)</th><th>Flutter</th></tr></thead><tbody>'+LM.map(r=>`<tr><td>${r[0]}</td><td class="num">${r[1]}</td><td class="code">${r[2]}</td></tr>`).join('')+'</tbody>';
+ $('layoutWeb').innerHTML='<thead><tr><th>Región</th><th>Medida (px)</th><th>rem / CSS</th></tr></thead><tbody>'+LW.map(r=>`<tr><td>${r[0]}</td><td class="num">${r[1]}</td><td class="code">${r[2]}</td></tr>`).join('')+'</tbody>';
+ // ---- tokens
+ const GN={spacing:['Espaciado','space','AppSpacing'],radius:['Radio','radius','AppRadius'],size:['Tamaño','size','AppSize']};
+ let tr='<thead><tr><th>Grupo</th><th>Token</th><th>Valor</th><th>Web (rem · variable CSS)</th><th>Flutter (lp)</th></tr></thead><tbody>';
+ for(const g of ['spacing','radius','size']) for(const [k,v] of Object.entries(TK[g])) tr+=`<tr><td class="muted">${GN[g][0]}</td><td><code>${k}</code></td><td class="num">${v}</td><td class="code">${rem(v)} · var(--${GN[g][1]}-${kebab(k)})</td><td class="code">${GN[g][2]}.${k} = ${v}</td></tr>`;
+ $('tokenTable').innerHTML=tr+'</tbody>';
+ let ty='<thead><tr><th>Estilo</th><th>font-size / line-height</th><th>Peso</th><th>Web (rem)</th><th>Flutter</th></tr></thead><tbody>';
+ for(const [k,[fs,l,fw]] of Object.entries(TK.type)) ty+=`<tr><td><code>${k}</code></td><td class="num swatch-type" style="font-size:${Math.min(fs,22)}px">${fs} / ${l}</td><td class="num">${fw}</td><td class="code">font-size:${rem(fs)}; line-height:${rem(l)}; font-weight:${fw}</td><td class="code">AppText.${k} · TextStyle(fontSize: ${fs}, height: ${l}/${fs}, w${fw})</td></tr>`;
+ $('typeTable').innerHTML=ty+'</tbody>';
+ // ---- pantallas
+ let codeMode='auto';
+ const keyOf=s=>`${s.role}|${s.platform}|${s.slug}`;
+ function fillScreens(sel){
+  const role=$('selRole').value, plat=$('selPlat').value;
+  const list=CATALOGO.filter(s=>s.role===role&&s.platform===plat).sort((a,b)=>a.step-b.step);
+  $('selScreen').innerHTML=list.map(s=>`<option value="${esc(s.slug)}">${String(s.step).padStart(2,'0')} · ${esc(s.title)}</option>`).join('');
+  if(sel&&list.some(s=>s.slug===sel)) $('selScreen').value=sel;
+  render();
+ }
+ function render(){
+  const role=$('selRole').value, plat=$('selPlat').value, slug=$('selScreen').value;
+  const s=CATALOGO.find(x=>x.role===role&&x.platform===plat&&x.slug===slug); if(!s) return;
+  const web=plat!=='Movil', u=web?'px':'lp';
+  const els=MEDIDAS[keyOf(s)]||[];
+  $('screenImg').src=s.file; $('screenImg').alt=`Wireframe con medidas: ${s.title}`; $('imgLink').href=s.file;
+  $('imgCap').textContent=`${s.role} · ${web?'Web / PWA':'App móvil'} · ${String(s.step).padStart(2,'0')} ${s.title} — clic para abrir a tamaño completo`;
+  const sp=s.spec;
+  $('summary').innerHTML=`<span>${sp.frame.w}×${sp.frame.h} ${u}${web?` · ${rem(sp.frame.w)}×${rem(sp.frame.h)}`:''}</span><span>${sp.frame.tech}</span><span>${sp.components.length} bloques</span><span>${els.length} elementos medidos</span><span>contenido ${sp.contentHeight} ${u}</span>`;
+  const f=$('filter').value.trim().toLowerCase();
+  const mode=codeMode==='auto'?(web?'css':'flutter'):codeMode;
+  let html=`<thead><tr><th>Elemento</th><th>Tipo</th><th>x</th><th>y</th><th>Ancho</th><th>Alto</th>${web?'<th>Ancho rem</th><th>Alto rem</th>':''}<th>Radio</th><th>Padding t r b l</th><th>Tipografía</th><th>×N</th><th>${mode==='css'?'CSS (rem)':'Flutter (lp)'}</th></tr></thead><tbody>`;
+  let last=null;
+  for(const e of els){
+   if(e.k==='block') continue;
+   const hay=(e.nm+' '+e.b+' '+(U.KIND[e.k]||e.k)).toLowerCase();
+   if(f&&!hay.includes(f)) continue;
+   if(e.b!==last){html+=`<tr class="blockrow"><td colspan="${web?13:11}">${esc(e.b)}</td></tr>`;last=e.b;}
+   const typ=e.k==='text'?`${e.fs}/${e.lh} · ${e.fw}`:'';
+   const wr=e.w==='auto'?'auto':rem(parseFloat(e.w)), hr=rem(parseFloat(e.h));
+   html+=`<tr><td>${esc(e.nm)}${e.note?`<div class="muted" style="font-size:11px">${esc(e.note)}</div>`:''}</td><td><span class="kind">${U.KIND[e.k]||e.k}</span></td><td class="num">${e.x}</td><td class="num">${e.y}</td><td class="num">${e.w}</td><td class="num">${e.h}</td>${web?`<td class="num">${wr}</td><td class="num">${hr}</td>`:''}<td class="num">${e.r??''}</td><td class="num">${e.pad?e.pad.join(' '):''}</td><td class="num">${typ}</td><td class="num">${e.n>1?`<span class="rep">×${e.n}</span>`:''}</td><td class="code">${esc(mode==='css'?U.css(e):U.flutter(e))}</td></tr>`;
+  }
+  $('elTable').innerHTML=html+'</tbody>';
+  try{history.replaceState(null,'',`#s=${encodeURIComponent(keyOf(s))}`);}catch(_){}
+ }
+ $('selRole').addEventListener('change',()=>fillScreens());
+ $('selPlat').addEventListener('change',()=>fillScreens());
+ $('selScreen').addEventListener('change',render);
+ $('filter').addEventListener('input',render);
+ document.querySelectorAll('[data-code]').forEach(b=>b.addEventListener('click',()=>{codeMode=b.dataset.code;document.querySelectorAll('[data-code]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render();}));
+ // deep link: medidas.html#s=Rol|Plataforma|slug
+ const m=decodeURIComponent(location.hash||'').match(/^#s=([^|]+)\|([^|]+)\|(.+)$/);
+ if(m){$('selRole').value=m[1];$('selPlat').value=m[2];fillScreens(m[3]);if(location.hash)setTimeout(()=>$('pantallas').scrollIntoView(),0);}else fillScreens();
+})();
+</script>
+</body>
+</html>
