@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es"0>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090f22">
+<title>Órbita Kids / Sketches · Estudiante y Profesor</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+ <header class="mast">
+  <div class="identity">
+   <img src="assets/logo_empresa.png" alt="Órbita Kids Studios">
+   <span class="separator"></span>
+   <img src="assets/logo_aplicacion.png" alt="Órbita Kids">
+   <div><div class="brand-title">SKETCHES</div><div class="brand-sub">WIREFRAMES CON MEDIDAS · 2026</div></div>
+  </div>
+  <div class="small-meta"><button class="primary" id="openDiagram" type="button">☷ Ver diagrama</button></div>
+ </header>
+ <section class="overview">
+  <div><h1>Órbita Kids <span>/ Sketches</span></h1><p>Wireframes en blanco y negro con medidas: dp para la app móvil (Flutter) y px para la web/PWA (React + Vite). Explora cada pantalla, prueba sus acciones y revisa los recorridos en el diagrama.</p></div>
+  <div class="brief"><div class="metric"><b>80</b><small>Wireframes</small></div><div class="metric"><b>40</b><small>Móvil</small></div><div class="metric"><b>40</b><small>Web/PWA</small></div></div>
+ </section>
+ <section class="filters hierarchical-filters" aria-label="Explorar sketches por rol y plataforma">
+  <div class="role-explorer">
+   <div class="role-explorer-head"><span class="eyebrow">01 · ELIGE UN ROL</span><span class="role-helper">Cada rol tiene 20 pantallas móviles y 20 Web/PWA</span></div>
+   <div class="role-parent-row" role="group" aria-label="Seleccionar rol">
+    <button class="role-parent selected" type="button" data-role="Estudiante" aria-pressed="true" aria-expanded="true" aria-controls="platformBranches"><span class="role-symbol" aria-hidden="true">✧</span><span class="role-parent-text"><strong>Estudiante</strong><small>Aprende y explora</small></span><span class="role-selected-mark" aria-hidden="true">↳</span></button>
+    <button class="role-parent" type="button" data-role="Profesor" aria-pressed="false" aria-expanded="false" aria-controls="platformBranches"><span class="role-symbol" aria-hidden="true">✦</span><span class="role-parent-text"><strong>Profesor</strong><small>Enseña y acompaña</small></span><span class="role-selected-mark" aria-hidden="true">↳</span></button>
+   </div>
+   <div class="role-branches" id="platformBranches">
+    <div class="branch-heading"><span class="branch-stem" aria-hidden="true"></span><span class="eyebrow">02 · VISTAS DE <strong id="selectedRoleName">ESTUDIANTE</strong></span><span class="selected-path" id="selectedPath">Estudiante / App móvil</span></div>
+    <div class="platform-children" role="group" aria-label="Vistas del rol seleccionado">
+      <button type="button" class="platform-child selected" data-platform="Movil" aria-pressed="true"><span class="platform-icon" aria-hidden="true">▯</span><span><strong>App móvil</strong><small>20 sketches · teléfono</small></span><span class="platform-check" aria-hidden="true">✓</span></button>
+      <button type="button" class="platform-child" data-platform="Web_PWA" aria-pressed="false"><span class="platform-icon" aria-hidden="true">▣</span><span><strong>Web / PWA</strong><small>20 sketches · dashboard</small></span><span class="platform-check" aria-hidden="true">✓</span></button>
+    </div>
+   </div>
+  </div>
+  <div class="search-wrap" role="search" aria-label="Buscar sketches de Órbita Kids">
+   <label for="search" class="eyebrow">BUSCAR PANTALLA</label>
+   <div class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" class="search" type="search" placeholder="Buscar tema, reto, acción…" aria-label="Buscar por nombre, descripción, categoría o acción" autocomplete="off" spellcheck="false" aria-describedby="searchHint searchStatus"><button id="clearSearch" class="search-clear" type="button" aria-label="Limpiar búsqueda" title="Limpiar búsqueda" hidden>✕</button></div>
+   <span class="search-hint" id="searchHint">Ej.: reto físico, lectura, descargar, pausa</span>
+   <span class="search-status" id="searchStatus" aria-live="polite">Buscando en Estudiante / App móvil</span>
+  </div>
+ </section>
+ <main class="workspace" id="workspace">
+  <aside class="side-panel" aria-label="Lista de pantallas">
+   <div class="panel-bar"><strong>Lista de pantallas</strong><small id="listTotal">20 pantallas</small></div>
+   <div class="scroll-list" id="screenList"></div>
+  </aside>
+  <section class="stage" aria-label="Vista central del sketch">
+   <div class="stage-head"><div><span class="type" id="modeLabel">APP MÓVIL</span><span class="screen-name" id="stageName"></span></div><div class="view-toggle" role="group" aria-label="Tipo de imagen"><button type="button" class="view-btn selected" data-view="wire" aria-pressed="true">Wireframe + medidas</button><button type="button" class="view-btn" data-view="sketch" aria-pressed="false">Sketch original</button></div><span class="wireframe">WIREFRAME · SOLO CAJAS Y MEDIDAS</span></div>
+   <div class="display">
+    <button class="image-preview-trigger" id="imagePreviewTrigger" type="button" aria-label="Abrir sketch completo con descripción y acciones">
+      <img id="mainImg" src="" alt="Sketch seleccionado">
+      <span class="preview-hint">⤢ &nbsp; Ver imagen y acciones</span>
+    </button>
+   </div>
+   <div class="stage-footer"><button id="zoomBtn" class="ghost" type="button">⤢ Ampliar sketch</button><span id="counter" class="count">1 / 20</span><div class="footer-controls"><button id="backBtn" class="ghost" type="button">←</button><button id="nextBtn" class="ghost" type="button">Siguiente →</button></div></div>
+  </section>
+  <aside class="info-panel" aria-label="Descripción y acciones de pantalla">
+   <span class="eyebrow" id="roleLabel">PANTALLA 01 · ESTUDIANTE</span>
+   <h2 id="detailTitle"></h2>
+   <p id="detailDesc" class="desc"></p>
+   <div class="section"><h3>PROPÓSITO</h3><div id="purpose" class="purpose"></div></div>
+   <div class="section"><h3>ACCIONES DEL USUARIO</h3><div id="actionList" class="action-list"></div><p id="feedback" class="status" role="status"></p></div>
+   <div class="section"><h3>MEDIDAS · <span id="specTech"></span></h3><div id="specBox" class="spec-box"></div></div>
+   <div class="section"><h3>ETIQUETAS</h3><div id="tags"></div><p id="detailNote" class="note"></p></div>
+  </aside>
+ </main>
+ <footer class="app-footer"><span>20 wireframes por rol y plataforma · dp (Flutter) / px (React + Vite)</span><span>Órbita Kids · Aprendizaje digital y exploración del mundo real</span><span>Usa ← → para cambiar de pantalla</span></footer>
+</div>
+
+<!-- Hidden by default: it opens ONLY when the user clicks 'Ver diagrama' -->
+<section id="diagramOverlay" class="overlay" hidden role="dialog" aria-modal="true" aria-labelledby="diagTitle">
+ <div class="overlay-inner">
+  <div class="cosmic-stars" aria-hidden="true"></div>
+  <div class="diag-head">
+   <div class="orbit-emblem" aria-hidden="true"><span class="orbit-ring"></span><span class="orbit-planet"></span><span class="orbit-spark">✧</span></div>
+   <div><span class="eyebrow">DIAGRAMA UML DE SECUENCIA · ÓRBITA KIDS</span><h2 id="diagTitle">Flujo del usuario</h2><p id="diagSubtitle"></p></div>
+   <div class="diag-actions"><button id="jumpBack" class="ghost" type="button">← Volver a sketches</button><button id="closeDiagram" class="ghost danger" type="button" aria-label="Cerrar diagrama">✕</button></div>
+  </div>
+  <div class="diag-control-bar">
+   <div class="case-tabs" id="caseTabs" role="group" aria-label="Casos de uso"></div>
+   <div class="diagram-toolbar">
+    <span class="case-indicator" id="diagramCounter">Paso 01 / 12</span>
+    <button class="diagram-tool" id="diagramPrev" type="button" title="Paso anterior" aria-label="Paso anterior">←</button>
+    <button class="diagram-tool" id="diagramNext" type="button" title="Paso siguiente" aria-label="Paso siguiente">→</button>
+    <button class="diagram-tool diagram-play" id="diagramPlay" type="button" aria-pressed="false">▶ Recorrer flujo</button>
+   </div>
+  </div>
+  <div class="diagram-legend"><span><i class="legend-solid"></i> Acción de usuario</span><span><i class="legend-dashed"></i> Respuesta del sistema</span><span>✦ Selecciona una flecha para explorar</span></div>
+  <div class="diag-content">
+   <div class="seq-scroll"><div class="uml">
+    <div class="actors" id="actors"></div>
+    <div id="diagramBody" class="diagram-body"><div class="life-lines" id="lifeLines"></div><div class="events" id="eventRows"></div></div>
+   </div></div>
+   <aside class="diag-detail">
+    <span class="eyebrow" id="selectedEventLabel">ACCIÓN DEL USUARIO</span>
+    <h3 id="selectedStepName"></h3>
+    <p class="small-desc" id="selectedEventDesc"></p>
+    <div class="diag-preview"><img id="diagramImage" alt="Sketch del paso seleccionado"></div>
+    <div class="diag-steps"><strong>Acción destacada</strong><span id="sequenceAction"></span></div>
+    <div class="diag-steps"><strong>Acciones del rol en esta pantalla</strong><div id="diagramAvailableActions" class="diag-action-buttons"></div></div>
+    <div class="diag-steps"><strong>Medidas del wireframe</strong><span id="diagramSpec"></span></div>
+    <div class="diag-steps diag-expected"><strong>Respuesta esperada</strong><span id="sequenceResponse" aria-live="polite"></span></div>
+    <button id="jumpScreen" class="primary diag-link" type="button">Abrir esta pantalla en Sketches ↗</button>
+    <p class="legend">Toca cualquier mensaje para ver el sketch correspondiente. Este diagrama presenta un flujo conceptual, sin conexiones reales a servicios o bases de datos.</p>
+   </aside>
+  </div>
+ </div>
+</section>
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="lightSummary">
+  <div class="lightbox-card">
+    <div class="lightbox-head">
+      <div class="modal-headline">
+        <div class="modal-kicker"><span class="kicker-dot"></span> ÓRBITA KIDS <span class="kicker-sep">/</span> SKETCHES</div>
+        <span id="lightMeta" class="eyebrow">ESTUDIANTE · APP MÓVIL</span>
+        <h2 id="modalTitle" class="lightbox-title"></h2>
+        <p id="lightSummary" class="modal-summary"></p>
+      </div>
+      <button id="closeLightbox" type="button" class="modal-close" aria-label="Cerrar ventana de sketch" title="Cerrar (Esc)">✕ <span>Cerrar</span></button>
+    </div>
+    <div class="lightbox-body">
+      <div class="lightbox-visual-col">
+        <div class="lightbox-image-wrap"><img id="lightImage" alt="Sketch ampliado"></div>
+        <div class="modal-image-caption"><span>WIREFRAME · BLANCO Y NEGRO</span><span id="lightImageStep">01 / 20</span></div>
+      </div>
+      <aside class="lightbox-side">
+        <section class="modal-block modal-purpose"><div class="modal-section-head"><span class="section-icon">✦</span><h3>¿Para qué sirve esta pantalla?</h3></div><p id="lightPurpose"></p></section>
+        <section class="modal-block"><div class="modal-section-head"><span class="section-icon">↗</span><h3>Acciones del rol</h3></div><p class="modal-help">Selecciona una acción para ver su resultado previsto.</p><div id="lightActions" class="modal-action-list"></div></section>
+        <section class="modal-block modal-response"><div class="modal-section-head"><span class="section-icon">✓</span><h3>Respuesta del sistema</h3></div><p id="lightBehavior" aria-live="polite"></p></section>
+        <section class="modal-block modal-spec"><div class="modal-section-head"><span class="section-icon">⌖</span><h3>Medidas y componentes</h3></div><div id="lightSpec" class="spec-box"></div></section>
+        <section class="modal-block modal-tag-section"><div class="modal-section-head"><span class="section-icon">◇</span><h3>Contexto del sketch</h3></div><div id="lightTags"></div></section>
+      </aside>
+    </div>
+    <div class="lightbox-foot">
+      <div class="foot-progress"><div class="foot-progress-label"><span>RECORRIDO DE PANTALLAS</span><strong id="lightCount">01 de 20</strong></div><div class="foot-progress-track"><div id="lightProgress" class="foot-progress-fill"></div></div></div>
+      <div class="foot-nav">
+        <button id="modalPrev" class="modal-nav-button" type="button" aria-label="Sketch anterior">← <span>Anterior</span></button>
+        <button id="modalNext" class="modal-nav-button primary-nav" type="button" aria-label="Siguiente sketch"><span>Siguiente</span> →</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="catalogo.js"></script><script src="app.js"></script>
+</body>
+</html>
