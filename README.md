@@ -469,15 +469,10 @@ Las siguientes etapas deberán priorizar la validación del diseño, el desarrol
 
 <a id="equipo"></a>
 
-## 👨‍💻 18. Integrantes del equipo
+## 👨‍💻 18. Integrantes del proyecto
 
-- Obed Guzmán Flores
-- Yazmin Gutierrez Hernandez
-- Citlalli Perez Dionicio
-- Michelle Castro Otero
-- Jennifer Bautista Barrios
+ <img src="/Logos/Roles_Proyecto.png" alt="Roles del proyecto" width="80%" >
 
-La distribución definitiva de responsabilidades técnicas deberá reflejar el equipo que participe en cada etapa del desarrollo.
 
 [Volver al índice](#indice)
 
