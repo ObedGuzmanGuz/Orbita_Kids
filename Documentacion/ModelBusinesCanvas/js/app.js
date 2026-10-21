@@ -1,6 +1,7 @@
+
 "use strict";
 
-// Completa únicamente los datos reales. Los campos vacíos no se muestran.
+// Datos académicos: completa solo los campos que quieras mostrar.
 const datosAcademicos = {
   estudiante: "",
   materia: "",
@@ -8,481 +9,493 @@ const datosAcademicos = {
   fecha: ""
 };
 
-// Propuesta académica: las aplicaciones, ingresos y alianzas están por validar.
-// Los números siguen los nueve bloques; CSS conserva la distribución del Canvas.
+// ============================================================
+// MODELO CANVAS DE ÓRBITA KIDS
+// Propuesta académica y comercial pendiente de validación.
+// Tecnología: Flutter/Dart, React, FastAPI y MySQL.
+// Equipo: 5 integrantes, 3 desarrolladores.
+// ============================================================
+
 const bloques = [
   {
-    "id": "segmentos",
-    "numero": 1,
-    "titulo": "Segmentos de clientes",
-    "categoria": "Personas",
-    "color": "blue",
-    "pregunta": "¿Para quién creamos valor?",
-    "resumen": [
-      "Niños de 6 a 7 años: 1.º de primaria",
-      "Niños de 7 a 8 años: 2.º de primaria",
-      "Niños de 8 a 9 años: 3.º de primaria",
-      "Docentes y escuelas: acompañamiento y adopción"
+    id: "segmentos",
+    numero: 1,
+    titulo: "Segmentos de clientes",
+    categoria: "Personas",
+    color: "blue",
+    pregunta: "¿Para quién creamos valor?",
+    resumen: [
+      "Niños de 6 a 9 años",
+      "Docentes de primaria",
+      "Escuelas e instituciones educativas"
     ],
-    "contexto": [
-      "Una comunidad educativa",
-      "Las familias acompañan como usuarias indirectas."
+    contexto: [
+      "Comunidad educativa",
+      "La escuela contrata el servicio y administra los accesos."
     ],
-    "significado": "Son los grupos de personas u organizaciones a quienes se dirige la propuesta. Usar la plataforma y pagar por ella pueden corresponder a actores distintos.",
-    "incluye": "Usuarios, necesidades educativas y responsables de decidir o financiar la adopción.",
-    "preguntas": [
-      "¿Quién resuelve las actividades?",
+    significado: "Son las personas y organizaciones a las que se dirige Órbita Kids. El usuario de la aplicación no siempre es quien paga por ella.",
+    incluye: "Edades, necesidades educativas, usuarios de la plataforma y organizaciones que pueden contratar las licencias.",
+    preguntas: [
+      "¿Quién utiliza la aplicación móvil?",
       "¿Qué edades tienen los estudiantes?",
-      "¿Quién acompaña el aprendizaje?",
-      "¿Quién decide y paga una licencia?"
+      "¿Qué necesitan los docentes?",
+      "¿Quién contrata y paga las licencias?"
     ],
-    "aplicacion": "Órbita Kids se dirige principalmente a niños de primeros grados de primaria, específicamente de 6 a 9 años. Los estudiantes utilizan la app móvil para aprender matemáticas mediante actividades y dinámicas de videojuego, mientras que los docentes utilizan la PWA para acompañar y consultar su progreso. Las escuelas son los posibles clientes que pueden contratar la plataforma.",
-    "ejemplo": "Un grupo de 1.º de primaria estaría formado principalmente por niños de 6 a 7 años y utilizaría actividades de sumas con mayor apoyo visual. Un grupo de 2.º tendría actividades para niños de 7 a 8 años y un grupo de 3.º para niños de 8 a 9 años, aumentando gradualmente la dificultad.",
-    "relacion": "Las necesidades de cada segmento orientan la propuesta de valor; la edad de los estudiantes determina el tipo de contenido, mientras que docentes y escuelas participan en el acompañamiento y adopción de la plataforma.",
-    "relacionados": [
-      "valor",
-      "ingresos",
-      "relaciones"
-    ],
-    "elementos": [
+    aplicacion: "Órbita Kids se dirige principalmente a niños de 6 a 9 años que cursan los primeros tres grados de primaria. Los estudiantes utilizan la aplicación móvil para practicar matemáticas mediante una experiencia de videojuego. Los docentes utilizan la PWA para administrar grupos, asignar actividades y consultar resultados. Las escuelas son los clientes institucionales potenciales que contratan los planes y distribuyen los accesos.",
+    ejemplo: "Una escuela primaria contrata una licencia para 100 estudiantes. El administrador escolar organiza sus grupos, genera códigos de acceso y los entrega a los alumnos. Los docentes consultan el desempeño de sus grupos desde la plataforma web.",
+    relacion: "La edad y las necesidades de los estudiantes determinan el contenido educativo. Las necesidades de docentes y escuelas orientan las funciones administrativas y los planes de pago.",
+    relacionados: ["valor", "ingresos", "relaciones"],
+    elementos: [
       {
-        "titulo": "Niños de 6 a 7 años",
-        "descripcion": "Usuarios correspondientes principalmente a 1.º de primaria. Realizan actividades matemáticas con mayor apoyo visual y ejercicios sencillos."
+        titulo: "Niños de 6 a 7 años",
+        descripcion: "Estudiantes de 1.º de primaria que practican sumas sencillas con apoyo visual y actividades guiadas."
       },
       {
-        "titulo": "Niños de 7 a 8 años",
-        "descripcion": "Usuarios correspondientes principalmente a 2.º de primaria. Resuelven actividades con un nivel de dificultad intermedio."
+        titulo: "Niños de 7 a 8 años",
+        descripcion: "Estudiantes de 2.º de primaria que avanzan a ejercicios de sumas de dificultad intermedia."
       },
       {
-        "titulo": "Niños de 8 a 9 años",
-        "descripcion": "Usuarios correspondientes principalmente a 3.º de primaria. Realizan ejercicios con menor apoyo visual y mayor dificultad."
+        titulo: "Niños de 8 a 9 años",
+        descripcion: "Estudiantes de 3.º de primaria que practican ejercicios con mayor dificultad y menos apoyo visual."
       },
       {
-        "titulo": "Docentes de primaria",
-        "descripcion": "Utilizan la PWA para administrar grupos, asignar actividades, consultar resultados e identificar necesidades de refuerzo."
+        titulo: "Docentes",
+        descripcion: "Utilizan la PWA para organizar grupos, asignar actividades, revisar resultados e identificar temas que necesitan refuerzo."
       },
       {
-        "titulo": "Escuelas e instituciones",
-        "descripcion": "Posibles clientes que pueden contratar una licencia para utilizar Órbita Kids con sus grupos y docentes."
-      },
-      {
-        "titulo": "Padres y tutores",
-        "descripcion": "Acompañan de manera indirecta el uso de la plataforma. La primera versión no incluye una interfaz específica para familias."
+        titulo: "Escuelas e instituciones",
+        descripcion: "Contratan licencias según la cantidad de estudiantes y las funciones que necesitan. Administran los códigos de acceso de sus alumnos."
       }
     ],
-    "nota": "La primera versión está enfocada en niños de 6 a 9 años de los tres primeros grados de primaria. La segmentación puede ampliarse posteriormente según los resultados de los pilotos."
+    nota: "El público inicial será de niños de 6 a 9 años, docentes y escuelas de primaria. La meta de crecimiento se validará mediante pilotos y retroalimentación de las instituciones."
   },
+
   {
-    "id": "valor",
-    "numero": 2,
-    "titulo": "Propuesta de valor",
-    "categoria": "Valor",
-    "color": "green",
-    "pregunta": "¿Qué ofrecemos?",
-    "resumen": [
-      "Matemáticas interactivas",
-      "Refuerzo adaptado a los errores",
-      "Seguimiento del progreso"
+    id: "valor",
+    numero: 2,
+    titulo: "Propuesta de valor",
+    categoria: "Valor",
+    color: "green",
+    pregunta: "¿Qué nos hace diferentes?",
+    resumen: [
+      "Matemáticas con temática espacial",
+      "Práctica progresiva y adaptativa",
+      "Seguimiento del aprendizaje"
     ],
-    "contexto": [
-      "Aprender es la misión",
-      "La exploración espacial motiva; el aprendizaje guía cada actividad."
+    significado: "Es el conjunto de beneficios que diferencia a Órbita Kids y ayuda a resolver las necesidades de sus usuarios.",
+    incluye: "La experiencia educativa, las características de la aplicación, los beneficios para estudiantes y las herramientas para docentes.",
+    preguntas: [
+      "¿Cómo hacemos más atractivas las matemáticas?",
+      "¿Cómo ayudamos cuando un niño se equivoca?",
+      "¿Qué información recibe el docente?"
     ],
-    "significado": "Es el beneficio que la plataforma ofrece para atender una necesidad concreta de sus usuarios.",
-    "incluye": "La dificultad que se busca resolver, los beneficios educativos y las características que hacen útil la solución.",
-    "preguntas": [
-      "¿Qué dificultad matemática queremos atender?",
-      "¿Cómo cambia la ayuda cuando hay errores?",
-      "¿Qué información necesita el docente?"
-    ],
-    "aplicacion": "La propuesta combina práctica de sumas, apoyo adaptativo y una misión espacial para motivar el aprendizaje, con seguimiento para el docente.",
-    "ejemplo": "Como regla ilustrativa por validar: tras tres errores consecutivos, ofrecer una suma menor con objetos contables; tras cuatro aciertos, volver a intentar el siguiente nivel. El ajuste nunca bajaría del nivel 1 ni superaría el 3.",
-    "relacion": "Responde a los segmentos de usuarios y requiere contenido educativo, reglas de adaptación y seguimiento docente.",
-    "relacionados": [
-      "segmentos",
-      "recursos",
-      "actividades"
-    ],
-    "elementos": [
+    aplicacion: "Órbita Kids combina la práctica de matemáticas con una aventura espacial. Los niños resuelven ejercicios para avanzar por planetas, completar misiones, reparar su nave y obtener recompensas. La aplicación plantea actividades progresivas y apoyo según el desempeño, mientras que la PWA permite a los docentes consultar resultados y detectar temas que requieren refuerzo.",
+    ejemplo: "Un estudiante resuelve una suma para obtener energía para su nave. Si tiene dificultades, la aplicación puede ofrecer apoyo visual y ejercicios más sencillos. El resultado se registra para que el docente pueda revisar su avance.",
+    relacion: "La propuesta responde a las necesidades de los niños, docentes y escuelas. Requiere desarrollo de software, contenido matemático, pruebas de usabilidad y evaluación educativa.",
+    relacionados: ["segmentos", "recursos", "actividades"],
+    elementos: [
       {
-        "titulo": "Sumas en tres niveles",
-        "descripcion": "Dos tipos de actividad: sumas con apoyo visual y selección de respuestas."
+        titulo: "Aventura espacial educativa",
+        descripcion: "Personajes, planetas, nave y misiones que convierten la práctica matemática en una experiencia interactiva."
       },
       {
-        "titulo": "Refuerzo según el desempeño",
-        "descripcion": "Reglas programadas añaden ayuda o reducen la dificultad ante errores; los aciertos permiten avanzar."
+        titulo: "Actividades progresivas",
+        descripcion: "Ejercicios organizados por dificultad, con apoyos visuales y oportunidades para volver a practicar."
       },
       {
-        "titulo": "Una misión que muestra el avance",
-        "descripcion": "El estudiante elige personaje, recorre planetas, repara su nave y recibe recompensas visuales."
+        titulo: "Refuerzo según el desempeño",
+        descripcion: "Reglas programadas pueden ofrecer ayuda adicional cuando se detectan errores. Su eficacia deberá probarse con estudiantes."
       },
       {
-        "titulo": "Información útil para el docente",
-        "descripcion": "La PWA muestra el progreso y los ejercicios que requieren más práctica."
+        titulo: "Seguimiento para docentes",
+        descripcion: "La PWA permite consultar resultados, progreso y dificultades frecuentes para orientar el refuerzo."
+      },
+      {
+        titulo: "Acceso administrado por la escuela",
+        descripcion: "Códigos individuales y de grupo facilitan la incorporación de alumnos a las licencias institucionales."
       }
     ],
-    "nota": "Se buscarán instrucciones claras y controles accesibles. Los beneficios educativos deberán evaluarse con usuarios."
+    nota: "La diferenciación propuesta es la combinación de gamificación espacial, práctica progresiva y seguimiento docente. Sus beneficios educativos deberán evaluarse mediante pruebas y pilotos escolares."
   },
+
   {
-    "id": "canales",
-    "numero": 3,
-    "titulo": "Canales",
-    "categoria": "Personas",
-    "color": "blue",
-    "pregunta": "¿Cómo llegamos a las aulas?",
-    "resumen": [
-      "App móvil para estudiantes",
+    id: "canales",
+    numero: 3,
+    titulo: "Canales",
+    categoria: "Personas",
+    color: "blue",
+    pregunta: "¿Cómo llegamos a las escuelas?",
+    resumen: [
+      "Aplicación móvil para estudiantes",
       "PWA para docentes",
-      "Sitio web y demostraciones escolares"
+      "Redes sociales y contacto escolar"
     ],
-    "significado": "Son los medios para dar a conocer la propuesta, facilitar su adopción y entregar el servicio.",
-    "incluye": "Puntos de descubrimiento, acceso a la plataforma y distribución de su experiencia educativa.",
-    "preguntas": [
-      "¿Cómo conocerá la escuela el proyecto?",
-      "¿Dónde practicarán los estudiantes?",
-      "¿Cómo accederá el docente?"
+    significado: "Son los medios para dar a conocer Órbita Kids, facilitar su contratación y entregar el servicio a los usuarios.",
+    incluye: "Canales de difusión, demostraciones, acceso a la plataforma y comunicación con instituciones educativas.",
+    preguntas: [
+      "¿Cómo conocerán las escuelas el proyecto?",
+      "¿Cómo accederán los estudiantes?",
+      "¿Cómo se enterarán los clientes de las novedades?"
     ],
-    "aplicacion": "El proyecto llegará a estudiantes y docentes mediante la app móvil y la PWA, apoyadas por una presentación del servicio a las escuelas.",
-    "ejemplo": "Después de una demostración escolar, una docente accedería a la PWA para asignar una actividad que su grupo resolvería en la app móvil.",
-    "relacion": "Los canales conectan los segmentos con la propuesta de valor y requieren acompañamiento para la adopción.",
-    "relacionados": [
-      "segmentos",
-      "valor",
-      "relaciones"
-    ],
-    "elementos": [
+    aplicacion: "Órbita Kids utilizará redes sociales, correo electrónico y contacto directo con escuelas para dar a conocer sus funciones y posibles planes de suscripción. La aplicación móvil permitirá a los estudiantes practicar y la PWA permitirá a los docentes administrar grupos y consultar el progreso.",
+    ejemplo: "El equipo publica una demostración de una misión matemática en redes sociales. Una escuela solicita información por correo, recibe una demostración de la PWA y, si decide contratar un plan, obtiene acceso a la plataforma para administrar sus grupos.",
+    relacion: "Los canales conectan a los clientes con la propuesta de valor. Las demostraciones ayudan a generar confianza y las plataformas digitales permiten utilizar el servicio.",
+    relacionados: ["segmentos", "valor", "relaciones"],
+    elementos: [
       {
-        "titulo": "App móvil en Flutter",
-        "descripcion": "Canal de práctica para los niños: actividades, niveles, personaje y progreso."
+        titulo: "Aplicación móvil en Flutter",
+        descripcion: "Canal de aprendizaje para los niños, con actividades matemáticas, misiones, niveles y recompensas."
       },
       {
-        "titulo": "PWA docente en React",
-        "descripcion": "Acceso desde el navegador para gestionar grupos, asignar ejercicios y consultar resultados."
+        titulo: "PWA docente en React",
+        descripcion: "Plataforma web para administrar grupos, generar códigos, asignar actividades y revisar resultados."
       },
       {
-        "titulo": "Sitio web del proyecto",
-        "descripcion": "Presentación de la propuesta, su alcance y las herramientas disponibles."
+        titulo: "Redes sociales",
+        descripcion: "Facebook, Instagram y YouTube pueden utilizarse para publicar demostraciones, novedades, videos y avances del proyecto."
       },
       {
-        "titulo": "Demostraciones y pilotos escolares",
-        "descripcion": "Forma propuesta de dar a conocer Órbita Kids y recoger opiniones antes de su adopción."
+        titulo: "Correo electrónico",
+        descripcion: "Medio para enviar información comercial, instrucciones de acceso, novedades y comunicaciones a las escuelas."
+      },
+      {
+        titulo: "Contacto y demostraciones escolares",
+        descripcion: "Presentaciones dirigidas a docentes y directivos para explicar el funcionamiento y recoger opiniones."
       }
     ],
-    "nota": "La disponibilidad de dispositivos y conexión se revisará con cada institución."
+    nota: "Las redes sociales, el correo y las demostraciones son canales propuestos. Su uso comercial dependerá de la preparación del producto y de la disponibilidad de los medios oficiales."
   },
+
   {
-    "id": "relaciones",
-    "numero": 4,
-    "titulo": "Relaciones con clientes",
-    "categoria": "Personas",
-    "color": "pink",
-    "pregunta": "¿Cómo acompañamos?",
-    "resumen": [
-      "Retroalimentación al estudiante",
-      "Reportes para el docente",
-      "Orientación y soporte escolar"
+    id: "relaciones",
+    numero: 4,
+    titulo: "Relaciones con clientes",
+    categoria: "Personas",
+    color: "pink",
+    pregunta: "¿Cómo acompañamos a los usuarios?",
+    resumen: [
+      "Comunicación de nuevas funciones",
+      "Orientación para las escuelas",
+      "Soporte y mejora continua"
     ],
-    "significado": "Describe cómo se acompaña a los usuarios y se mantiene una relación útil con los clientes a lo largo del tiempo.",
-    "incluye": "Orientación inicial, seguimiento, retroalimentación y mecanismos para atender dudas y mejorar el servicio.",
-    "preguntas": [
-      "¿Qué ayuda recibe el niño al equivocarse?",
-      "¿Cómo interpreta el docente el progreso?",
-      "¿Cómo se atienden dudas de la escuela?"
+    significado: "Describe cómo Órbita Kids mantiene la comunicación y acompaña a los usuarios y clientes durante el uso del servicio.",
+    incluye: "Incorporación de escuelas, atención de dudas, anuncios de actualizaciones, retroalimentación y soporte.",
+    preguntas: [
+      "¿Cómo se informa una nueva funcionalidad?",
+      "¿Cómo se atienden las dudas?",
+      "¿Cómo se recogen opiniones para mejorar?"
     ],
-    "aplicacion": "Órbita Kids plantea acompañamiento durante la práctica, seguimiento del grupo y orientación a las escuelas que utilicen la plataforma.",
-    "ejemplo": "Si una estudiante acumula errores en sumas, recibiría apoyo visual. Su docente identificaría esa dificultad en el reporte y asignaría práctica adicional.",
-    "relacion": "El acompañamiento utiliza los canales y convierte los resultados de las actividades en seguimiento educativo.",
-    "relacionados": [
-      "canales",
-      "actividades",
-      "segmentos"
-    ],
-    "elementos": [
+    aplicacion: "La relación con las escuelas se mantendrá mediante correo electrónico, avisos dentro de la plataforma y publicaciones en redes sociales. Los docentes podrán recibir orientación para organizar grupos y administrar códigos. Los estudiantes recibirán retroalimentación durante sus actividades.",
+    ejemplo: "Cuando se publique un nuevo conjunto de ejercicios, el equipo podrá mostrar la novedad en la PWA, enviar un aviso por correo a las escuelas y publicar una demostración. Los docentes podrán enviar comentarios sobre su utilidad.",
+    relacion: "La comunicación permite que los clientes conozcan nuevas funciones y que el equipo reciba retroalimentación para mejorar el producto. El soporte requiere tiempo de trabajo y recursos operativos.",
+    relacionados: ["canales", "actividades", "segmentos"],
+    elementos: [
       {
-        "titulo": "Retroalimentación al estudiante",
-        "descripcion": "Mensajes claros, apoyo visual y ejercicios ajustados cuando aparezcan dificultades."
+        titulo: "Avisos dentro de la plataforma",
+        descripcion: "Mostrar novedades, cambios importantes y nuevas actividades cuando estén disponibles."
       },
       {
-        "titulo": "Seguimiento del docente",
-        "descripcion": "Consulta de resultados, errores y progreso para decidir qué reforzar con cada grupo."
+        titulo: "Correo para escuelas",
+        descripcion: "Enviar información sobre actualizaciones, renovación de licencias, instrucciones y comunicaciones importantes."
       },
       {
-        "titulo": "Orientación inicial",
-        "descripcion": "Una guía para conocer la app, organizar grupos y comenzar a asignar actividades."
+        titulo: "Redes sociales",
+        descripcion: "Compartir demostraciones, publicaciones educativas, avances y anuncios de nuevas funcionalidades."
       },
       {
-        "titulo": "Soporte y mejora continua",
-        "descripcion": "Un canal para dudas y reportes escolares; los comentarios ayudarán a mejorar instrucciones y ejercicios."
+        titulo: "Orientación y soporte",
+        descripcion: "Ayudar a docentes y administradores a organizar grupos, entregar códigos y resolver problemas de acceso."
+      },
+      {
+        titulo: "Retroalimentación",
+        descripcion: "Recoger sugerencias y reportes de errores para priorizar mejoras de usabilidad y contenido."
       }
     ],
-    "nota": "El acompañamiento del docente forma parte central de la propuesta educativa."
+    nota: "Estos mecanismos se plantean para una futura operación del servicio. Los avisos, el correo automatizado y el soporte deberán implementarse y probarse."
   },
+
   {
-    "id": "ingresos",
-    "numero": 5,
-    "titulo": "Fuentes de ingresos",
-    "categoria": "Sostenibilidad",
-    "color": "yellow",
-    "pregunta": "¿Cómo sostener la propuesta?",
-    "resumen": [
-      "Versión gratuita con acceso limitado",
-      "Plan Aula: $799 MXN al mes",
-      "Plan Escuela: $1,499 MXN al mes"
+    id: "ingresos",
+    numero: 5,
+    titulo: "Fuentes de ingresos",
+    categoria: "Sostenibilidad",
+    color: "yellow",
+    pregunta: "¿Cómo monetizamos Órbita Kids?",
+    resumen: [
+      "Funciones básicas gratuitas",
+      "Planes por estudiantes y funciones",
+      "Licencias mensuales y anuales"
     ],
-    "significado": "Son las formas en que el proyecto podría recibir pagos por el valor que entrega a las escuelas y docentes.",
-    "incluye": "Quién pagaría, cuánto pagaría y qué servicios recibiría a cambio de utilizar Órbita Kids.",
-    "preguntas": [
-      "¿Qué institución pagaría por utilizar la plataforma?",
-      "¿Qué incluye la versión gratuita?",
-      "¿Cuánto cuesta cada modalidad de pago?"
+    significado: "Describe cómo el proyecto podría recibir ingresos mediante el pago de instituciones educativas por el acceso a funciones y capacidades adicionales.",
+    incluye: "Modalidades gratuitas y de pago, límites por estudiantes, funcionalidades incluidas, periodos de suscripción y licencias escolares.",
+    preguntas: [
+      "¿Qué puede utilizar una escuela gratuitamente?",
+      "¿Qué funciones justifican un plan de pago?",
+      "¿Cómo se administran los pagos y códigos?"
     ],
-    "aplicacion": "Órbita Kids plantea un modelo freemium educativo: una versión gratuita con acceso limitado para conocer la plataforma y versiones de pago dirigidas a escuelas que necesiten utilizar más actividades, grupos y herramientas de seguimiento.",
-    "ejemplo": "Una escuela podría comenzar con la versión gratuita para conocer la experiencia. Después podría contratar el Plan Aula por $799 MXN al mes para hasta 50 estudiantes y 5 docentes, o el Plan Escuela por $1,499 MXN al mes para hasta 150 estudiantes y más herramientas de seguimiento.",
-    "relacion": "Los ingresos deben cubrir los costos de infraestructura, mantenimiento, soporte y actualización del contenido educativo. La versión gratuita funciona como medio de entrada, mientras que las suscripciones representan los ingresos principales.",
-    "relacionados": [
-      "segmentos",
-      "valor",
-      "costos"
-    ],
-    "elementos": [
+    aplicacion: "Órbita Kids propone un modelo freemium: las escuelas podrán utilizar permanentemente una versión básica gratuita y contratar planes de pago para administrar más estudiantes y acceder a funciones adicionales. Los planes podrán pagarse mensualmente o anualmente. La escuela pagará la licencia y administrará los códigos individuales y de grupo que se entreguen a sus alumnos.",
+    ejemplo: "Una escuela comienza con el plan gratuito para probar las actividades básicas. Si necesita administrar más alumnos, grupos o reportes, contrata un plan superior. Después del pago, la escuela genera o administra los códigos de acceso incluidos en su licencia.",
+    relacion: "Los ingresos deben financiar alojamiento, respaldos, mantenimiento, soporte y, en un escenario de crecimiento, la contratación del equipo. Los precios propuestos deberán probarse con instituciones antes de considerarse definitivos.",
+    relacionados: ["segmentos", "valor", "costos"],
+    elementos: [
       {
-        "titulo": "Versión gratuita",
-        "descripcion": "Acceso limitado a actividades básicas para que docentes y escuelas conozcan el funcionamiento de Órbita Kids antes de contratar un plan."
+        titulo: "Plan gratuito",
+        descripcion: "Acceso permanente a funciones básicas, con límites de estudiantes y herramientas para que las escuelas conozcan la plataforma."
       },
       {
-        "titulo": "Plan Aula",
-        "descripcion": "Suscripción de $799 MXN al mes para hasta 50 estudiantes y 5 docentes, con acceso a más actividades y seguimiento del grupo."
+        titulo: "Plan Aula — propuesta",
+        descripcion: "$799 MXN mensuales o $8,150 MXN anuales, aproximadamente. Propuesta para hasta 50 estudiantes y 5 docentes, con actividades ampliadas y seguimiento del grupo."
       },
       {
-        "titulo": "Plan Escuela",
-        "descripcion": "Suscripción de $1,499 MXN al mes para hasta 150 estudiantes, más grupos y herramientas ampliadas de seguimiento."
+        titulo: "Plan Escuela — propuesta",
+        descripcion: "$1,799 MXN mensuales o $18,350 MXN anuales, aproximadamente. Propuesta para hasta 150 estudiantes, más grupos y reportes ampliados."
+      },
+      {
+        titulo: "Licencia institucional — propuesta",
+        descripcion: "$4,999 MXN mensuales o $50,990 MXN anuales, aproximadamente. Propuesta para hasta 500 estudiantes y funciones de administración ampliadas."
+      },
+      {
+        titulo: "Administración de códigos",
+        descripcion: "La escuela contrata la licencia y distribuye códigos individuales o de grupo dentro de los límites del plan contratado."
       }
     ],
-    "nota": "Los precios son una propuesta inicial para mantener un costo accesible para instituciones educativas. Se podrán ajustar después de validar los costos reales y la aceptación del servicio."
+    nota: "Los precios son propuestas académicas, no tarifas comerciales confirmadas. Los importes anuales ilustran un descuento cercano al 15 %. Se deben validar la disposición de pago de las escuelas, los costos reales, los impuestos y las condiciones de renovación. Los códigos de acceso no sustituyen el control de licencias."
   },
+
   {
-    "id": "recursos",
-    "numero": 6,
-    "titulo": "Recursos clave",
-    "categoria": "Operación",
-    "color": "violet",
-    "pregunta": "¿Qué necesitamos?",
-    "resumen": [
-      "App móvil, PWA, API y base de datos",
-      "Contenido y recursos del videojuego",
-      "Equipo técnico y apoyo educativo"
+    id: "recursos",
+    numero: 6,
+    titulo: "Recursos clave",
+    categoria: "Operación",
+    color: "violet",
+    pregunta: "¿Qué necesitamos para operar?",
+    resumen: [
+      "Flutter, React, FastAPI y MySQL",
+      "VPS y herramientas de desarrollo",
+      "Equipo de 5 integrantes"
     ],
-    "significado": "Son los activos, conocimientos y capacidades necesarios para construir, operar y mantener Órbita Kids.",
-    "incluye": "Tecnología, contenido educativo, diseño, infraestructura y personas encargadas del desarrollo y revisión de la plataforma.",
-    "preguntas": [
-      "¿Qué tecnología necesita cada usuario?",
-      "¿Qué contenido necesita el videojuego?",
-      "¿Qué equipo se necesita para mantener la plataforma?"
+    significado: "Son los recursos humanos, tecnológicos y educativos necesarios para construir, desplegar y mantener Órbita Kids.",
+    incluye: "Aplicaciones, infraestructura, base de datos, contenido matemático, herramientas de trabajo y responsabilidades del equipo.",
+    preguntas: [
+      "¿Qué tecnologías utiliza el producto?",
+      "¿Qué infraestructura necesitamos?",
+      "¿Quién se responsabiliza de cada área?"
     ],
-    "aplicacion": "Para construir Órbita Kids se necesitan una aplicación móvil para estudiantes, una PWA para docentes, una API, una base de datos, contenido matemático, recursos visuales del videojuego y un equipo encargado del desarrollo y mantenimiento.",
-    "ejemplo": "La app móvil desarrollada con Flutter se comunica con FastAPI para registrar las respuestas de los estudiantes. PostgreSQL almacena los resultados y la PWA desarrollada con React permite al docente consultar el progreso de su grupo.",
-    "relacion": "Los recursos permiten realizar las actividades clave y determinan parte importante de los costos de desarrollo, infraestructura, contenido y mantenimiento.",
-    "relacionados": [
-      "actividades",
-      "valor",
-      "costos"
-    ],
-    "elementos": [
+    aplicacion: "Órbita Kids contempla una aplicación móvil para estudiantes desarrollada con Flutter y Dart, una PWA docente con React, una API con FastAPI y una base de datos MySQL. La infraestructura propuesta es un VPS con capacidad ampliable, respaldos y medidas de seguridad. El proyecto cuenta con cinco integrantes, de los cuales tres participan en desarrollo.",
+    ejemplo: "La aplicación móvil envía las respuestas a la API de FastAPI. La API valida los datos y los guarda en MySQL. La PWA permite que el docente consulte resultados y gestione grupos. Los servicios se desplegarán en un VPS cuya capacidad se revisará mediante pruebas de carga.",
+    relacion: "Los recursos permiten ejecutar las actividades clave y determinan los costos de infraestructura, mantenimiento, desarrollo y soporte.",
+    relacionados: ["actividades", "valor", "costos"],
+    elementos: [
       {
-        "titulo": "Aplicación móvil",
-        "descripcion": "Desarrollada con Flutter y Dart para que los estudiantes realicen actividades matemáticas, avancen por planetas y obtengan recompensas."
+        titulo: "Yazmin — Frontend y líder de equipo",
+        descripcion: "Coordina las tareas del equipo y participa en el desarrollo de interfaces y experiencia de usuario."
       },
       {
-        "titulo": "PWA para docentes",
-        "descripcion": "Desarrollada con React para gestionar grupos, asignar actividades y consultar el desempeño de los estudiantes."
+        titulo: "Michelle — Backend",
+        descripcion: "Participa en el desarrollo de la API, la lógica de negocio y la comunicación con la base de datos."
       },
       {
-        "titulo": "API y base de datos",
-        "descripcion": "FastAPI y PostgreSQL para administrar usuarios, roles, grupos, actividades, intentos, errores, niveles y progreso."
+        titulo: "Obed Guzmán — Backend y documentación",
+        descripcion: "Participa en el backend y apoya la documentación técnica, los procedimientos y la entrega del proyecto."
       },
       {
-        "titulo": "Contenido matemático",
-        "descripcion": "Banco de sumas, actividades, apoyos visuales y reglas de adaptación para los diferentes niveles de aprendizaje."
+        titulo: "Citlalli — QA",
+        descripcion: "Diseña y ejecuta pruebas, registra errores y verifica las correcciones y el funcionamiento de la plataforma."
       },
       {
-        "titulo": "Recursos del videojuego",
-        "descripcion": "Personajes, planetas, nave espacial, recompensas, ilustraciones, interfaz y demás elementos visuales necesarios para la experiencia."
+        titulo: "Jennifer — Documentación",
+        descripcion: "Apoya la preparación y organización de documentos, guías y materiales de entrega."
       },
       {
-        "titulo": "Equipo técnico y educativo",
-        "descripcion": "Desarrolladores, diseñadores y apoyo docente o pedagógico para crear, revisar y mantener la plataforma."
+        titulo: "Infraestructura tecnológica",
+        descripcion: "Flutter/Dart, React, FastAPI, MySQL, Git/GitHub, Docker y un VPS. Monitoreo y respaldos se incorporarán según las necesidades."
+      },
+      {
+        titulo: "Contenido educativo",
+        descripcion: "Ejercicios de sumas, niveles, apoyos visuales, personajes, planetas, recompensas y reglas de refuerzo."
       }
     ],
-    "nota": "Los recursos tecnológicos y educativos deben trabajar en conjunto para ofrecer una experiencia de aprendizaje interactiva y funcional."
+    nota: "El equipo actual es estudiantil y no tiene salarios asignados en este presupuesto. Los sueldos se calcularán como un escenario futuro de contratación. La infraestructura y las herramientas deberán verificarse antes del despliegue."
   },
+
   {
-    "id": "actividades",
-    "numero": 7,
-    "titulo": "Actividades clave",
-    "categoria": "Operación",
-    "color": "violet",
-    "pregunta": "¿Qué debemos hacer bien?",
-    "resumen": [
-      "Desarrollar un videojuego educativo",
-      "Crear una app móvil y una PWA",
-      "Diseñar y probar actividades matemáticas"
+    id: "actividades",
+    numero: 7,
+    titulo: "Actividades clave",
+    categoria: "Operación",
+    color: "violet",
+    pregunta: "¿Qué debemos realizar?",
+    resumen: [
+      "Desarrollar app, PWA y API",
+      "Crear actividades matemáticas",
+      "Probar, desplegar y mantener"
     ],
-    "significado": "Son las tareas esenciales que el equipo debe realizar para crear, operar y mejorar Órbita Kids.",
-    "incluye": "Diseño del videojuego, desarrollo de las aplicaciones, creación de actividades matemáticas, pruebas, adaptación de dificultad y mantenimiento.",
-    "preguntas": [
-      "¿De qué trata Órbita Kids?",
-      "¿Qué se desarrolla en la app móvil y en la PWA?",
-      "¿Cómo se crean y mejoran las actividades?"
+    significado: "Son las tareas fundamentales que el equipo necesita realizar para construir, publicar y mejorar el servicio educativo.",
+    incluye: "Diseño, programación, contenido, pruebas, despliegue, seguridad, soporte y actualización de la plataforma.",
+    preguntas: [
+      "¿Qué debe desarrollar el equipo?",
+      "¿Cómo se preparan las actividades educativas?",
+      "¿Cómo comprobamos que todo funcione?"
     ],
-    "aplicacion": "Órbita Kids es un videojuego educativo de matemáticas para niños de primeros grados de primaria. Se compone de una aplicación móvil para estudiantes, donde exploran planetas, resuelven sumas, avanzan por niveles, reparan su nave espacial y reciben recompensas; y una PWA para docentes, donde se administran grupos, se asignan actividades y se consulta el progreso.",
-    "ejemplo": "El equipo diseñaría una actividad donde el estudiante debe resolver una suma para obtener energía y continuar su viaje a otro planeta. La respuesta se registra mediante la API, se guarda en PostgreSQL y posteriormente el docente puede revisar el resultado desde la PWA.",
-    "relacion": "Estas actividades aprovechan los recursos tecnológicos y educativos, requieren colaboración con docentes y generan costos de desarrollo, operación y mantenimiento.",
-    "relacionados": [
-      "recursos",
-      "socios",
-      "costos"
-    ],
-    "elementos": [
+    aplicacion: "El trabajo comprende diseñar la experiencia espacial, desarrollar la aplicación móvil y la PWA, implementar la API y MySQL, crear ejercicios matemáticos, integrar el sistema de códigos, probar el funcionamiento y mantener el servicio. También se realizarán pilotos para conocer las necesidades de docentes y estudiantes.",
+    ejemplo: "El equipo desarrolla una misión de sumas. El estudiante responde en la aplicación, FastAPI registra el resultado en MySQL y la PWA muestra el progreso. QA verifica el registro, los permisos y los reportes antes de liberar la función.",
+    relacion: "Las actividades aprovechan los recursos tecnológicos y humanos. Las escuelas y docentes pueden colaborar en pilotos, mientras que los resultados orientan mejoras del producto.",
+    relacionados: ["recursos", "socios", "costos"],
+    elementos: [
       {
-        "titulo": "Diseñar el videojuego educativo",
-        "descripcion": "Crear la historia, personajes, planetas, niveles, recompensas y misión principal para que el estudiante aprenda mientras juega."
+        titulo: "Diseñar la experiencia educativa",
+        descripcion: "Definir la historia, los personajes, los planetas, las misiones, los niveles y las recompensas."
       },
       {
-        "titulo": "Desarrollar la app móvil",
-        "descripcion": "Construir con Flutter las actividades matemáticas, navegación, niveles, selección de personaje y progreso del estudiante."
+        titulo: "Desarrollar la app móvil",
+        descripcion: "Implementar con Flutter las actividades, la navegación, los niveles y el progreso de los estudiantes."
       },
       {
-        "titulo": "Desarrollar la PWA docente",
-        "descripcion": "Construir con React las herramientas para gestionar grupos, asignar ejercicios y consultar el desempeño de los estudiantes."
+        titulo: "Desarrollar la PWA docente",
+        descripcion: "Implementar con React la administración de grupos, asignaciones, códigos y reportes."
       },
       {
-        "titulo": "Crear actividades matemáticas",
-        "descripcion": "Diseñar ejercicios de sumas con distintos niveles de dificultad y apoyos visuales para los contenidos de primaria."
+        titulo: "Construir backend y base de datos",
+        descripcion: "Desarrollar con FastAPI y MySQL la autenticación, los permisos, las licencias, los grupos, las actividades y los resultados."
       },
       {
-        "titulo": "Probar y evaluar",
-        "descripcion": "Realizar pruebas de funcionamiento y pilotos escolares para identificar errores, dificultades de uso y oportunidades de mejora."
+        titulo: "Crear y revisar contenido matemático",
+        descripcion: "Preparar sumas por nivel, apoyos visuales y reglas de refuerzo que puedan probarse con docentes."
       },
       {
-        "titulo": "Mantener y actualizar",
-        "descripcion": "Corregir fallos, agregar nuevas actividades, mejorar contenidos y brindar soporte a las instituciones."
+        titulo: "Realizar pruebas de calidad",
+        descripcion: "Comprobar funciones, permisos, códigos, errores, seguridad básica, usabilidad y funcionamiento con distintos dispositivos."
+      },
+      {
+        titulo: "Desplegar y mantener",
+        descripcion: "Configurar el VPS, respaldos, monitoreo, actualizaciones, correcciones y soporte."
+      },
+      {
+        titulo: "Ejecutar pilotos escolares",
+        descripcion: "Recoger retroalimentación de docentes y evaluar la experiencia antes de ampliar el número de usuarios."
       }
     ],
-    "nota": "Órbita Kids integra tres componentes principales: un videojuego educativo, una aplicación móvil para estudiantes y una PWA para docentes, conectados mediante una API y una base de datos."
+    nota: "Las actividades se realizarán por etapas. Primero se busca una versión funcional y un piloto; después se ampliará la capacidad de infraestructura y el alcance según los resultados."
   },
+
   {
-    "id": "socios",
-    "numero": 8,
-    "titulo": "Socios clave",
-    "categoria": "Operación",
-    "color": "violet",
-    "pregunta": "¿Con quién colaborar?",
-    "resumen": [
-      "Escuelas para posibles pilotos",
-      "Docentes y especialistas en pedagogía",
-      "Proveedores de infraestructura"
+    id: "socios",
+    numero: 8,
+    titulo: "Socios clave",
+    categoria: "Operación",
+    color: "violet",
+    pregunta: "¿Quiénes pueden colaborar?",
+    resumen: [
+      "Escuelas piloto",
+      "Docentes y especialistas pedagógicos",
+      "Proveedores tecnológicos"
     ],
-    "contexto": [
-      "Alianzas por construir",
-      "Colaboraciones propuestas; no hay convenios confirmados."
+    contexto: [
+      "Colaboraciones propuestas",
+      "Las alianzas deberán establecerse y confirmarse."
     ],
-    "significado": "Son los actores externos cuya colaboración puede aportar conocimientos, recursos o acceso al entorno educativo.",
-    "incluye": "Colaboradores potenciales, su aportación y el propósito de la relación. No toda relación es una alianza formal.",
-    "preguntas": [
-      "¿Quién puede revisar el contenido educativo?",
-      "¿Dónde se podría realizar un piloto?",
-      "¿Qué servicios conviene contratar externamente?"
+    significado: "Son las organizaciones y personas externas que pueden aportar conocimientos, espacios de prueba o servicios para facilitar el desarrollo y la adopción de Órbita Kids.",
+    incluye: "Qué aporta cada colaborador, cómo participa y qué beneficio puede obtener de la relación.",
+    preguntas: [
+      "¿Quién puede revisar las actividades?",
+      "¿Dónde se puede probar el producto?",
+      "¿Qué servicios necesitamos contratar?"
     ],
-    "aplicacion": "En Órbita Kids, las colaboraciones propuestas se enfocan en probar la plataforma en escuelas, revisar el contenido de sumas y contar con infraestructura tecnológica.",
-    "ejemplo": "Se propondría a una escuela revisar un conjunto de sumas con sus docentes y evaluar un piloto acotado antes de considerar una adopción institucional.",
-    "relacion": "La colaboración aporta recursos y ayuda a revisar las actividades. Una escuela puede ser colaboradora de un piloto y, por separado, posible cliente.",
-    "relacionados": [
-      "actividades",
-      "recursos",
-      "segmentos"
-    ],
-    "elementos": [
+    aplicacion: "Órbita Kids buscará colaborar con escuelas para realizar pilotos, con docentes para revisar la utilidad de las actividades, con especialistas pedagógicos para orientar el contenido y con proveedores tecnológicos para alojar y mantener los servicios.",
+    ejemplo: "El equipo contacta a una escuela para presentar la plataforma. Los docentes revisan las actividades, un grupo participa en un piloto y la institución comparte comentarios. Si el servicio resulta útil, la escuela podría evaluar contratar una licencia.",
+    relacion: "Los socios pueden facilitar pruebas, revisión educativa y operación tecnológica. Una escuela puede participar primero como colaboradora de un piloto y después decidir si contrata el servicio.",
+    relacionados: ["actividades", "recursos", "segmentos"],
+    elementos: [
       {
-        "titulo": "Escuelas de primaria",
-        "descripcion": "Espacios propuestos para realizar pilotos con grupos y obtener retroalimentación sobre el uso de la plataforma."
+        titulo: "Escuelas de primaria",
+        descripcion: "Pueden facilitar pilotos, aportar opiniones sobre la experiencia y evaluar si la plataforma responde a necesidades reales."
       },
       {
-        "titulo": "Docentes",
-        "descripcion": "Revisión de las instrucciones y actividades; observación de las dificultades y avances de los estudiantes."
+        titulo: "Docentes",
+        descripcion: "Pueden revisar instrucciones, niveles de dificultad, asignaciones y reportes para mejorar su utilidad educativa."
       },
       {
-        "titulo": "Especialistas en pedagogía",
-        "descripcion": "Orientación para revisar el nivel de las sumas, los apoyos visuales y las reglas de refuerzo."
+        titulo: "Especialistas pedagógicos",
+        descripcion: "Pueden orientar el diseño de ejercicios, la progresión de dificultad y los apoyos para estudiantes con dificultades."
       },
       {
-        "titulo": "Proveedores tecnológicos",
-        "descripcion": "Servicios contratados para alojar la API, la base de datos y las copias de seguridad."
+        titulo: "Proveedores de hosting y dominio",
+        descripcion: "Pueden proporcionar el VPS, el dominio y los servicios necesarios para desplegar y mantener la plataforma."
+      },
+      {
+        titulo: "Proveedores de herramientas",
+        descripcion: "GitHub y otras herramientas pueden apoyar el control de versiones, la colaboración, las pruebas y el mantenimiento."
       }
     ],
-    "nota": "Son colaboradores potenciales: no hay empresas, convenios ni alianzas confirmadas."
+    nota: "Estos son socios y colaboradores potenciales. No se afirma que existan convenios o alianzas comerciales confirmadas. Los servicios de terceros se seleccionarán según costo, seguridad y necesidades del proyecto."
   },
+
   {
-    "id": "costos",
-    "numero": 9,
-    "titulo": "Estructura de costos",
-    "categoria": "Sostenibilidad",
-    "color": "yellow",
-    "pregunta": "¿En qué debemos invertir?",
-    "resumen": [
-      "Desarrollo inicial: ~$45,000 MXN",
-      "Operación mensual: ~$3,500 MXN",
-      "Modelo gratuito y versión de pago"
+    id: "costos",
+    numero: 9,
+    titulo: "Estructura de costos",
+    categoria: "Sostenibilidad",
+    color: "yellow",
+    pregunta: "¿Cuánto cuesta desarrollar y operar?",
+    resumen: [
+      "Piloto: hosting desde ~$274 MXN/mes",
+      "Operación inicial: ~$700–$1,500 MXN/mes",
+      "Equipo contratado: escenario futuro"
     ],
-    "significado": "Reúne los gastos necesarios para desarrollar, poner en funcionamiento y mantener Órbita Kids como servicio educativo.",
-    "incluye": "Costos iniciales de desarrollo y diseño, gastos mensuales de infraestructura, mantenimiento, soporte y actualización del contenido, así como la relación entre la versión gratuita y las versiones de pago.",
-    "preguntas": [
-      "¿Cuánto cuesta desarrollar la plataforma?",
-      "¿Cuánto cuesta mantenerla cada mes?",
-      "¿Cómo se relacionan los costos con la versión gratuita y la de pago?"
+    significado: "Reúne los gastos necesarios para construir, desplegar y mantener Órbita Kids, distinguiendo los gastos actuales del equipo estudiantil y los costos de una operación comercial futura.",
+    incluye: "Hosting, dominio, respaldos, mantenimiento, soporte, personal contratado y otros servicios necesarios.",
+    preguntas: [
+      "¿Cuánto cuesta la infraestructura?",
+      "¿Qué gastos existen actualmente?",
+      "¿Cuánto costaría contratar al equipo?",
+      "¿Qué ingresos cubrirían esos gastos?"
     ],
-    "aplicacion": "Para una primera versión funcional de Órbita Kids se estima una inversión inicial aproximada de $45,000 MXN. Después del lanzamiento, el costo de operación se estima alrededor de $3,500 MXN mensuales. La versión gratuita tendrá un alcance limitado, mientras que los planes de pago ayudarán a cubrir los costos de operación y mantenimiento.",
-    "ejemplo": "El desarrollo inicial podría distribuirse aproximadamente en $28,000 MXN para programación y pruebas, $7,000 MXN para diseño y contenido educativo, $4,000 MXN para ilustraciones y recursos visuales y $6,000 MXN para configuración, despliegue y pruebas finales. Mensualmente se estiman $1,000 MXN de infraestructura, $1,500 MXN de mantenimiento y $1,000 MXN de soporte y actualización de contenido.",
-    "relacion": "Los costos se originan principalmente por los recursos y actividades necesarias para construir y operar la plataforma. Por ello, los ingresos de los planes de pago deben permitir cubrir el gasto operativo, mientras que la versión gratuita funciona como medio de acceso y demostración.",
-    "relacionados": [
-      "recursos",
-      "actividades",
-      "ingresos"
-    ],
-    "elementos": [
+    aplicacion: "El equipo actual es estudiantil y cada integrante cuenta con computadora, por lo que no se contempla una compra inicial de cinco equipos ni el pago actual de salarios. Para el piloto se propone presupuestar infraestructura, dominio y servicios auxiliares. En un escenario comercial futuro se deben sumar los salarios, las prestaciones, los impuestos y el mantenimiento del producto.",
+    ejemplo: "Para un piloto, un VPS de entrada puede costar alrededor de $274 MXN al mes al precio de renovación publicado. Si el proyecto crece, podría requerir un servidor más potente y servicios adicionales. La contratación de cinco personas debe calcularse como un escenario separado, no como un gasto que el equipo ya esté realizando.",
+    relacion: "Los costos dependen de los recursos y las actividades. Los ingresos de los planes de pago deberán cubrir la infraestructura, el mantenimiento y, si el negocio crece, el costo de contratar al equipo.",
+    relacionados: ["recursos", "actividades", "ingresos"],
+    elementos: [
       {
-        "titulo": "Desarrollo inicial",
-        "descripcion": "Aproximadamente $28,000 MXN para desarrollar la app móvil, PWA, API, base de datos y realizar pruebas."
+        titulo: "VPS para el piloto",
+        descripcion: "Referencia de mercado: Hostinger KVM 2 se publica en $154.99 MXN al mes en la oferta consultada y se renueva en $273.99 MXN al mes. Incluye 2 vCPU, 8 GB de RAM y 100 GB NVMe. El precio depende del plazo contratado."
       },
       {
-        "titulo": "Diseño y contenido educativo",
-        "descripcion": "Aproximadamente $7,000 MXN para personajes, interfaz, actividades, apoyos visuales y contenido matemático."
+        titulo: "Escalamiento de infraestructura",
+        descripcion: "Si crece la cantidad de usuarios simultáneos, podría requerirse un VPS superior, una base de datos separada, más almacenamiento o servicios adicionales. Debe decidirse mediante pruebas de carga."
       },
       {
-        "titulo": "Infraestructura y despliegue",
-        "descripcion": "Aproximadamente $6,000 MXN para configuración, publicación, servicios iniciales y pruebas de funcionamiento."
+        titulo: "Dominio y servicios auxiliares",
+        descripcion: "Presupuesto inicial orientativo de $300–$600 MXN al año para dominio y $100–$300 MXN al mes para servicios auxiliares o respaldos adicionales, según proveedor y configuración. Son estimaciones por cotizar."
       },
       {
-        "titulo": "Ilustraciones y recursos visuales",
-        "descripcion": "Aproximadamente $4,000 MXN para personajes, planetas, nave espacial y otros recursos visuales del videojuego."
+        titulo: "Equipo de cómputo",
+        descripcion: "Costo inicial estimado de $0 MXN en nuevas computadoras, porque los cinco integrantes ya cuentan con equipo propio. No incluye reparaciones o futuras renovaciones."
       },
       {
-        "titulo": "Costo mensual de operación",
-        "descripcion": "Aproximadamente $3,500 MXN al mes entre alojamiento, base de datos, respaldos, mantenimiento, soporte y actualización de contenido."
+        titulo: "Salarios futuros de desarrollo",
+        descripcion: "Escenario ilustrativo: Yazmin $18,000, Michelle $20,000 y Obed $18,000 MXN mensuales. Total estimado de los tres puestos de desarrollo: $56,000 MXN al mes."
       },
       {
-        "titulo": "Versión gratuita",
-        "descripcion": "Acceso limitado a actividades básicas para que las escuelas conozcan la plataforma sin generar un pago mensual."
+        titulo: "QA y documentación futuros",
+        descripcion: "Escenario ilustrativo: Citlalli $14,000 y Jennifer $12,000 MXN mensuales. Total estimado de ambos puestos: $26,000 MXN al mes."
       },
       {
-        "titulo": "Versión de pago",
-        "descripcion": "Los planes de $799 MXN y $1,499 MXN al mes representan la principal fuente de ingresos para cubrir los costos de operación y mantenimiento."
+        titulo: "Costo futuro del equipo",
+        descripcion: "Los cinco puestos sumarían aproximadamente $82,000 MXN al mes en remuneraciones ilustrativas, antes de prestaciones, impuestos y otros costos laborales. No son salarios actuales ni cotizaciones de contratación."
+      },
+      {
+        titulo: "Presupuesto operativo del piloto",
+        descripcion: "Como referencia académica, reservar aproximadamente $700–$1,500 MXN mensuales para hosting, dominio prorrateado y servicios auxiliares. No incluye sueldos, trabajo adicional contratado, comisiones ni impuestos."
       }
     ],
-    "nota": "Estas cantidades son estimaciones académicas para representar un escenario realista. Los costos finales dependerán de los proveedores, cantidad de usuarios y alcance definitivo de la plataforma."
+    nota: "Las cifras son estimaciones para planear el proyecto, salvo el precio de hosting identificado como referencia publicada. No hay compra de equipo ni salarios actuales presupuestados. Los importes deben cotizarse y actualizarse antes de invertir. Un VPS no garantiza capacidad para una cantidad específica de usuarios; se requieren pruebas de carga."
   }
 ];
 
-// Iconos propios en SVG: pequeños, locales y decorativos.
+// ============================================================
+// ICONOS SVG LOCALES
+// ============================================================
+
 const iconos = {
   segmentos: '<circle cx="9" cy="7" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 5"/>',
   valor: '<path d="m12 3 3 6 6 3-6 3-3 6-3-6-6-3 6-3Z"/>',
@@ -495,17 +508,17 @@ const iconos = {
   costos: '<rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 9h18m-6 4h6v4h-6Z"/>'
 };
 
-// Ilustraciones originales incluidas en el proyecto; funcionan sin conexión.
+// Ilustraciones originales: se conservan las rutas locales.
 const ilustraciones = {
-  segmentos: { alt: "Dos estudiantes con una tableta, una docente y una escuela, los públicos de Órbita Kids.", pie: "Niños, docentes y escuelas: una comunidad educativa." },
-  valor: { alt: "Una niña aprende con una tableta junto a planetas, bloques de conteo y un cohete.", pie: "Aprender, recibir apoyo y avanzar con una misión espacial." },
-  canales: { alt: "Un teléfono, una computadora, una escuela y un megáfono representan los canales de acceso.", pie: "La app, la PWA y las demostraciones conectan con las aulas." },
-  relaciones: { alt: "Una docente acompaña a una estudiante con mensajes de apoyo y un reporte visual.", pie: "Acompañamiento, retroalimentación y seguimiento docente." },
-  ingresos: { alt: "Una escuela, una tarjeta de suscripción y monedas representan una licencia institucional.", pie: "Una suscripción escolar como posibilidad de sostenimiento." },
-  recursos: { alt: "Computadora, teléfono, base de datos, libro y bloques educativos como recursos del proyecto.", pie: "Tecnología y contenido educativo para hacer posible la misión." },
-  actividades: { alt: "Una docente y un desarrollador diseñan actividades junto a un tablero de trabajo.", pie: "Diseñar, desarrollar, probar y mejorar las actividades." },
-  socios: { alt: "Tres colaboradores reúnen una escuela, un libro y servicios tecnológicos sobre una mesa.", pie: "Escuelas, especialistas y proveedores: colaboración por construir." },
-  costos: { alt: "Calculadora, monedas, libros y servidores para planificar los gastos del proyecto.", pie: "Prever la inversión inicial y los gastos de operación." }
+  segmentos: { alt: "Estudiantes, docente y escuela, los públicos de Órbita Kids.", pie: "Niños, docentes y escuelas forman la comunidad educativa." },
+  valor: { alt: "Una niña aprende con una tableta junto a planetas y un cohete.", pie: "Aprender, recibir apoyo y avanzar con una misión espacial." },
+  canales: { alt: "Un teléfono, una computadora, una escuela y un megáfono.", pie: "La aplicación, la PWA y la difusión conectan con las aulas." },
+  relaciones: { alt: "Una docente acompaña a una estudiante con un reporte.", pie: "Acompañamiento, comunicación y seguimiento docente." },
+  ingresos: { alt: "Una escuela, una tarjeta de suscripción y monedas.", pie: "Las licencias institucionales pueden sostener el servicio." },
+  recursos: { alt: "Computadora, teléfono, base de datos y recursos educativos.", pie: "Tecnología y contenido educativo hacen posible la misión." },
+  actividades: { alt: "Una docente y un desarrollador diseñan actividades.", pie: "Diseñar, desarrollar, probar y mejorar." },
+  socios: { alt: "Colaboradores, una escuela, un libro y servicios tecnológicos.", pie: "Escuelas, especialistas y proveedores: colaboración por construir." },
+  costos: { alt: "Calculadora, monedas, libros y servidores.", pie: "Planificar la inversión y los gastos de operación." }
 };
 
 const grid = document.querySelector("#canvas-grid");
@@ -519,10 +532,14 @@ let indiceActual = 0;
 let botonOrigen = null;
 let inicioEnFondo = false;
 
-// Escapar texto permite modificar el contenido sin interpretarlo como HTML.
+// Escapar texto para insertarlo sin interpretarlo como HTML.
 function escapar(texto) {
   return String(texto).replace(/[&<>"']/g, caracter => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
   })[caracter]);
 }
 
@@ -547,16 +564,21 @@ function renderizarTarjetas() {
 
 function mostrarBloque(indice) {
   if (indice < 0 || indice >= bloques.length) return;
+
   indiceActual = indice;
   const bloque = bloques[indice];
   const yaAbierto = dialog.open;
+
   if (!yaAbierto) botonOrigen = document.activeElement;
 
   dialog.style.setProperty("--accent", `var(--${bloque.color})`);
-  document.querySelector("#detail-number").textContent = `BLOQUE ${String(bloque.numero).padStart(2, "0")} · ${bloque.categoria.toLocaleUpperCase("es")}`;
+  document.querySelector("#detail-number").textContent =
+    `BLOQUE ${String(bloque.numero).padStart(2, "0")} · ${bloque.categoria.toLocaleUpperCase("es")}`;
   document.querySelector("#detail-title").textContent = bloque.titulo;
   document.querySelector("#detail-subtitle").textContent = bloque.pregunta;
+
   const ilustracion = ilustraciones[bloque.id];
+
   content.innerHTML = `
     <section class="detail-application" aria-labelledby="application-title">
       <div class="application-heading">
@@ -597,6 +619,7 @@ function mostrarBloque(indice) {
   previousButton.disabled = indice === 0;
   nextButton.disabled = indice === bloques.length - 1;
   document.querySelector("#detail-position").textContent = `${indice + 1} de ${bloques.length}`;
+
   vistos.add(bloque.id);
   document.querySelector(`#bloque-${bloque.id}`).dataset.seen = "true";
   document.querySelector("#read-progress").textContent = `${vistos.size} de ${bloques.length} bloques explorados`;
@@ -605,42 +628,63 @@ function mostrarBloque(indice) {
     dialog.showModal();
     document.body.classList.add("modal-open");
   }
+
   closeButton.focus({ preventScroll: true });
   content.scrollTop = 0;
 }
 
 function renderizarDatosAcademicos() {
-  const etiquetas = { estudiante: "Estudiante", materia: "Materia", grupo: "Grupo", fecha: "Fecha" };
+  const etiquetas = {
+    estudiante: "Estudiante",
+    materia: "Materia",
+    grupo: "Grupo",
+    fecha: "Fecha"
+  };
+
   const datos = Object.entries(datosAcademicos).filter(([, valor]) => valor.trim());
   const contenedor = document.querySelector("#academic-data");
+
   contenedor.hidden = datos.length === 0;
-  contenedor.innerHTML = datos.map(([clave, valor]) => `<div><dt>${etiquetas[clave]}</dt><dd>${escapar(valor)}</dd></div>`).join("");
+  contenedor.innerHTML = datos.map(([clave, valor]) =>
+    `<div><dt>${etiquetas[clave]}</dt><dd>${escapar(valor)}</dd></div>`
+  ).join("");
 }
 
 grid.addEventListener("click", evento => {
   const boton = evento.target.closest("[data-block]");
-  if (boton) mostrarBloque(bloques.findIndex(bloque => bloque.id === boton.dataset.block));
+  if (boton) {
+    mostrarBloque(bloques.findIndex(bloque => bloque.id === boton.dataset.block));
+  }
 });
 
 content.addEventListener("click", evento => {
   const boton = evento.target.closest("[data-related]");
-  if (boton) mostrarBloque(bloques.findIndex(bloque => bloque.id === boton.dataset.related));
+  if (boton) {
+    mostrarBloque(bloques.findIndex(bloque => bloque.id === boton.dataset.related));
+  }
 });
 
 closeButton.addEventListener("click", () => dialog.close());
 previousButton.addEventListener("click", () => mostrarBloque(indiceActual - 1));
 nextButton.addEventListener("click", () => mostrarBloque(indiceActual + 1));
 
-// Escape dispara el cierre nativo. Se restaura el foco en la tarjeta de origen.
+// Restaurar el foco en la tarjeta de origen al cerrar el diálogo.
 dialog.addEventListener("close", () => {
   document.body.classList.remove("modal-open");
-  if (botonOrigen instanceof HTMLElement && botonOrigen.isConnected) botonOrigen.focus({ preventScroll: true });
+
+  if (botonOrigen instanceof HTMLElement && botonOrigen.isConnected) {
+    botonOrigen.focus({ preventScroll: true });
+  }
 });
 
-// Cerrar solo si el gesto empieza y termina fuera del rectángulo del modal.
+// Cerrar solo si el gesto comienza y termina fuera del diálogo.
 function estaFuera(evento) {
   const rect = dialog.getBoundingClientRect();
-  return evento.clientX < rect.left || evento.clientX > rect.right || evento.clientY < rect.top || evento.clientY > rect.bottom;
+
+  return evento.clientX < rect.left ||
+    evento.clientX > rect.right ||
+    evento.clientY < rect.top ||
+    evento.clientY > rect.bottom;
 }
 
 dialog.addEventListener("pointerdown", evento => {
@@ -648,16 +692,22 @@ dialog.addEventListener("pointerdown", evento => {
 });
 
 dialog.addEventListener("click", evento => {
-  if (inicioEnFondo && evento.target === dialog && estaFuera(evento)) dialog.close();
+  if (inicioEnFondo && evento.target === dialog && estaFuera(evento)) {
+    dialog.close();
+  }
+
   inicioEnFondo = false;
 });
 
-// Mantener el recorrido de Tab dentro de la ficha, incluidos sus extremos.
+// Mantener la navegación de Tab dentro del diálogo.
 dialog.addEventListener("keydown", evento => {
   if (evento.key !== "Tab") return;
+
   const controles = [...dialog.querySelectorAll("button:not(:disabled), a[href]")];
   const primero = controles[0];
   const ultimo = controles[controles.length - 1];
+
+  if (!primero || !ultimo) return;
 
   if (evento.shiftKey && document.activeElement === primero) {
     evento.preventDefault();
@@ -673,7 +723,7 @@ document.querySelector("#print-button").addEventListener("click", () => window.p
 renderizarDatosAcademicos();
 renderizarTarjetas();
 
-// Control de los efectos decorativos. La preferencia del sistema tiene prioridad.
+// Control de efectos decorativos y preferencia de movimiento reducido.
 const motionButton = document.querySelector("#motion-toggle");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -684,6 +734,7 @@ function actualizarPreferenciaMovimiento() {
 motionButton.addEventListener("click", () => {
   const pausado = document.body.classList.toggle("motion-paused");
   const etiqueta = pausado ? "Reanudar animaciones" : "Pausar animaciones";
+
   motionButton.setAttribute("aria-pressed", String(pausado));
   motionButton.setAttribute("aria-label", etiqueta);
   motionButton.title = etiqueta;

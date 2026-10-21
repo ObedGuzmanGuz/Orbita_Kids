@@ -271,6 +271,9 @@ Los wireframes muestran la estructura y navegación de las pantallas de estudian
 
 El diagrama presenta la arquitectura tecnológica propuesta para Órbita Kids: la aplicación móvil para estudiantes y la PWA para docentes se conectan a una API central, que gestiona la lógica del sistema y el acceso a los datos. También muestra componentes previstos para autenticación, despliegue y monitoreo. Estas tecnologías representan una propuesta y no implican que ya estén implementadas.
 
+![Diagrama de arquitectura de Órbita Kids](/Documentacion/DiagramaDeArquitectura/img/diagramaArquitectura.jpeg)
+
+
 📂 **[Ver la carpeta del diagrama de arquitectura](Documentacion/DiagramaDeArquitectura/)**
 
 ---

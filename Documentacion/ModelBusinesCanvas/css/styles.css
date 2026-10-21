@@ -456,3 +456,42 @@ dialog[open] { display: flex; flex-direction: column; animation: reveal .18s eas
   .canvas-frame { padding: 0; border: 0; background: none; }
   .planet-rotation, .moon-orbit { animation: none; }
 }
+/* Quitar el marco y el fondo del contenedor */
+.space-art.logo-art {
+  display: grid;
+  place-items: center;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0;
+}
+
+/* Hacer más grande el logo principal */
+.hero-logo {
+  display: block;
+  width: min(100%, 540px);
+  max-height: none;
+  height: auto;
+  object-fit: contain;
+
+  /* Sin marco, fondo ni sombra */
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+}
+
+/* Quitar posibles decoraciones del contenedor */
+.space-art.logo-art::before,
+.space-art.logo-art::after {
+  content: none !important;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+  .hero-logo {
+    width: min(100%, 300px);
+  }
+}

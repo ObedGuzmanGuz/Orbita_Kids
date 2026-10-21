@@ -43,7 +43,7 @@ El sistema cuenta con un núcleo central representado por **Órbita Kids**, alre
 
 ## 🌐 Aplicación en GitHub Pages
 
-🚀 **[Ver el Diagrama de Roles de Usuario de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/DiagramaRolesUsuario/)**
+🚀 **[Ver el Diagrama de Roles de Usuario de Órbita Kids](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/DiagramaRolesUsuario/)**
 
 
 ### 👨‍🎓 Estudiantes
