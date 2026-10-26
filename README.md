@@ -243,12 +243,18 @@ Para ver el diagrama de Roles de usuario, da clic en la imagen siguiente:
 [![Diagrama de Roles de usuario](/Logos/DiagramaRoles.png)](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/DiagramaRolesUsuario/)
 
 ---
+## Guía de Estilos
+La guía de estilos de Órbita Kids reúne las reglas visuales y de interfaz de la plataforma de matemáticas para niños de 6 a 9 años, con temática espacial. Su objetivo es que la app móvil del estudiante (Flutter) y la PWA del docente (React) se vean y se comporten de forma consistente.
+
+[![Guia de Estilos](/Frontend/Guia_Estilos/Orbita_Kids_Guia_de_Estilos_Visual.png)](/Frontend/Guia_Estilos/Orbita_Kids_Guia_de_Estilos.docx)
 
 ## Skeches de la Aplicacion
 
 Para ver los Sketches da click en la imagen siguiente:
 
 Si quieres que “Para ver el enlace de los sketches” sea el propio enlace, usa:
+
+![Diagrama de Sketches](/Frontend/Sketches/assets/sketches.png)
 
 [Para ver el enlace de los sketches](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746)
 
