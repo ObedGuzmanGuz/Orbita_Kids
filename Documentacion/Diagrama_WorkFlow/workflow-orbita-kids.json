@@ -1,0 +1,304 @@
+{
+    "schema_version":  2,
+    "diagram_type":  "workflow",
+    "meta":  {
+                 "title":  "Órbita Kids | Flujo de actividad matemática",
+                 "subtitle":  "Recorrido del estudiante, procesamiento propuesto y seguimiento docente",
+                 "animation":  "trace",
+                 "quality_profile":  "showcase",
+                 "views":  [
+                               {
+                                   "id":  "student-flow",
+                                   "label":  "Actividad del estudiante",
+                                   "focus":  [
+                                                 "stage01",
+                                                 "stage02",
+                                                 "stage03",
+                                                 "stage04",
+                                                 "stage05",
+                                                 "stage06",
+                                                 "stage07",
+                                                 "stage08",
+                                                 "stage09"
+                                             ],
+                                   "note":  "Simulación de misión, actividad, respuesta y retroalimentación."
+                               },
+                               {
+                                   "id":  "teacher-flow",
+                                   "label":  "Seguimiento docente",
+                                   "focus":  [
+                                                 "stage10",
+                                                 "stage07",
+                                                 "stage09"
+                                             ],
+                                   "note":  "Consulta docente vía FastAPI según la arquitectura propuesta."
+                               },
+                               {
+                                   "id":  "answer-branch",
+                                   "label":  "Resultado y reintento",
+                                   "focus":  [
+                                                 "stage06",
+                                                 "stage07",
+                                                 "stage08",
+                                                 "stage09"
+                                             ],
+                                   "note":  "La bifurcación correcta o incorrecta está documentada como propuesta."
+                               }
+                           ]
+             },
+    "lanes":  [
+                  {
+                      "id":  "student-app",
+                      "label":  "App móvil · Flutter / Dart"
+                  },
+                  {
+                      "id":  "services",
+                      "label":  "Backend · FastAPI / Python"
+                  },
+                  {
+                      "id":  "data",
+                      "label":  "Base de datos prevista · MySQL"
+                  },
+                  {
+                      "id":  "teacher-app",
+                      "label":  "Panel docente · React / PWA"
+                  }
+              ],
+    "phases":  [
+                   {
+                       "id":  "explore",
+                       "label":  "Explorar misión",
+                       "fromCol":  0,
+                       "toCol":  1
+                   },
+                   {
+                       "id":  "request",
+                       "label":  "Solicitar · resolver",
+                       "fromCol":  2,
+                       "toCol":  3,
+                       "variant":  "emphasis"
+                   },
+                   {
+                       "id":  "results",
+                       "label":  "Procesar · acompañar",
+                       "fromCol":  4,
+                       "toCol":  5
+                   }
+               ],
+    "nodes":  [
+                  {
+                      "id":  "stage01",
+                      "lane":  "student-app",
+                      "col":  0,
+                      "type":  "frontend",
+                      "label":  "Acceso",
+                      "tag":  "Diseño",
+                      "width":  120
+                  },
+                  {
+                      "id":  "stage02",
+                      "lane":  "student-app",
+                      "col":  1,
+                      "type":  "frontend",
+                      "label":  "Planeta y nivel",
+                      "tag":  "Diseño",
+                      "width":  150
+                  },
+                  {
+                      "id":  "stage03",
+                      "lane":  "student-app",
+                      "col":  2,
+                      "type":  "frontend",
+                      "label":  "Misión matemática",
+                      "tag":  "Propuesto",
+                      "width":  160
+                  },
+                  {
+                      "id":  "stage04",
+                      "lane":  "services",
+                      "col":  3,
+                      "type":  "backend",
+                      "label":  "API REST",
+                      "tag":  "Pendiente",
+                      "width":  130
+                  },
+                  {
+                      "id":  "stage05",
+                      "lane":  "student-app",
+                      "col":  4,
+                      "type":  "frontend",
+                      "label":  "Ejercicio",
+                      "tag":  "Diseño",
+                      "width":  140
+                  },
+                  {
+                      "id":  "stage06",
+                      "lane":  "student-app",
+                      "col":  5,
+                      "type":  "frontend",
+                      "label":  "Resolver suma",
+                      "tag":  "Pendiente",
+                      "width":  150
+                  },
+                  {
+                      "id":  "stage07",
+                      "lane":  "services",
+                      "col":  5,
+                      "type":  "backend",
+                      "label":  "Validar respuesta",
+                      "tag":  "Pendiente",
+                      "width":  160
+                  },
+                  {
+                      "id":  "stage08",
+                      "lane":  "student-app",
+                      "col":  5,
+                      "type":  "frontend",
+                      "label":  "Retroalimentar",
+                      "tag":  "Propuesto",
+                      "width":  160,
+                      "yOffset":  115
+                  },
+                  {
+                      "id":  "stage09",
+                      "lane":  "data",
+                      "col":  5,
+                      "type":  "database",
+                      "label":  "Progreso y resultados",
+                      "tag":  "Pendiente",
+                      "width":  180
+                  },
+                  {
+                      "id":  "stage10",
+                      "lane":  "teacher-app",
+                      "col":  5,
+                      "type":  "frontend",
+                      "label":  "Consulta docente",
+                      "tag":  "Diseño",
+                      "width":  160
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "explore-world",
+                      "from":  "stage01",
+                      "to":  "stage02",
+                      "label":  "perfil → personaje / planeta",
+                      "role":  "main"
+                  },
+                  {
+                      "id":  "select-mission",
+                      "from":  "stage02",
+                      "to":  "stage03",
+                      "label":  "nivel → misión",
+                      "role":  "main"
+                  },
+                  {
+                      "id":  "request-activity",
+                      "from":  "stage03",
+                      "to":  "stage04",
+                      "label":  "solicitud de actividad · REST previsto",
+                      "role":  "main",
+                      "variant":  "emphasis"
+                  },
+                  {
+                      "id":  "read-activity",
+                      "from":  "stage04",
+                      "to":  "stage09",
+                      "label":  "consulta de actividad (prevista)",
+                      "role":  "branch"
+                  },
+                  {
+                      "id":  "deliver-exercise",
+                      "from":  "stage04",
+                      "to":  "stage05",
+                      "label":  "JSON · ejercicio de respuesta",
+                      "role":  "return"
+                  },
+                  {
+                      "id":  "solve-activity",
+                      "from":  "stage05",
+                      "to":  "stage06",
+                      "label":  "resuelve la suma",
+                      "role":  "main"
+                  },
+                  {
+                      "id":  "send-answer",
+                      "from":  "stage06",
+                      "to":  "stage07",
+                      "label":  "respuesta · validación prevista",
+                      "role":  "main",
+                      "variant":  "emphasis"
+                  },
+                  {
+                      "id":  "save-progress",
+                      "from":  "stage07",
+                      "to":  "stage09",
+                      "label":  "escritura de intento / progreso",
+                      "role":  "branch"
+                  },
+                  {
+                      "id":  "correct-feedback",
+                      "from":  "stage07",
+                      "to":  "stage08",
+                      "label":  "respuesta correcta · feedback",
+                      "role":  "return"
+                  },
+                  {
+                      "id":  "retry-incorrect",
+                      "from":  "stage07",
+                      "to":  "stage06",
+                      "label":  "incorrecta · reintentar",
+                      "role":  "error",
+                      "variant":  "dashed"
+                  },
+                  {
+                      "id":  "teacher-query",
+                      "from":  "stage10",
+                      "to":  "stage07",
+                      "label":  "consulta de resultados vía FastAPI",
+                      "role":  "branch"
+                  },
+                  {
+                      "id":  "teacher-results",
+                      "from":  "stage07",
+                      "to":  "stage10",
+                      "label":  "resultados / seguimiento previstos",
+                      "role":  "return"
+                  }
+              ],
+    "cards":  [
+                  {
+                      "dot":  "cyan",
+                      "title":  "Experiencia de misión",
+                      "items":  [
+                                    "Personaje, planeta, nivel y actividades de suma son parte del diseño documentado.",
+                                    "8 + 5 = ? es un ejemplo ilustrativo de la simulación, no un ejercicio leído de un servicio."
+                                ]
+                  },
+                  {
+                      "dot":  "violet",
+                      "title":  "Servicios previstos",
+                      "items":  [
+                                    "FastAPI centraliza la API descrita en la arquitectura.",
+                                    "No se encontraron endpoints, código de backend ni respuestas JSON implementadas."
+                                ]
+                  },
+                  {
+                      "dot":  "amber",
+                      "title":  "Persistencia prevista",
+                      "items":  [
+                                    "MySQL y las entidades se describen como propuesta.",
+                                    "No se encontraron modelos ni tablas SQL en el repositorio."
+                                ]
+                  },
+                  {
+                      "dot":  "emerald",
+                      "title":  "Integraciones no verificadas",
+                      "items":  [
+                                    "Keycloak, Redis, Prometheus, Grafana y Docker no aparecen como servicios operativos.",
+                                    "La animación representa una simulación local del flujo propuesto; no realiza llamadas de red."
+                                ]
+                  }
+              ]
+}
