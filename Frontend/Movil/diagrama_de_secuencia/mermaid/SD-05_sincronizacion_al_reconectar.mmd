@@ -1,0 +1,39 @@
+%% SD-05 · Sincronización al reconectar
+sequenceDiagram
+  autonumber
+  participant ui as App Flutter<br/>Interfaz
+  participant net as Monitor de red<br/>connectivity_plus
+  participant sync as Servicio sync<br/>En la app
+  participant q as Cola local<br/>SQLite cifrada
+  participant kc as Keycloak<br/>Tokens
+  participant api as API REST<br/>FastAPI
+  participant db as Base de datos<br/>MySQL
+  net-)sync: Conexión recuperada
+  sync->>+q: Lee operaciones pendientes (FIFO)
+  q-->>-sync: Intentos, resultados y borradores
+  opt access token vencido
+    sync->>+kc: POST /token · refresh_token
+    kc-->>-sync: Nuevo access token
+  end
+  loop por cada operación pendiente
+    sync->>q: Marca «sincronizando»
+    sync->>+api: POST /sync · Idempotency-Key: UUID
+    api->>+db: Busca la operación por UUID
+    db-->>-api: Resultado de la búsqueda
+    alt UUID nuevo
+      api->>db: Inserta y recalcula el progreso
+      api-->>-sync: 201 · confirmado
+    else UUID ya registrado
+      api-->>sync: 200 · ya confirmado, sin duplicar
+    else conflicto con un dato más reciente
+      api-->>sync: 409 · versión del servidor
+      sync->>q: Actualiza el dato local: el servidor gana
+    else error de red o del servidor
+      api-->>sync: 5xx o tiempo agotado
+      sync->>q: Conserva y programa reintento (backoff)
+    end
+    opt respuesta 200, 201 o 409
+      sync->>q: Retira de la cola solo lo confirmado
+    end
+  end
+  sync-)ui: Actualiza «Última sincronización» y avisos
