@@ -1,0 +1,32 @@
+%% SD-03 · Registro de estudiante con código de grupo
+sequenceDiagram
+  autonumber
+  actor est as Estudiante<br/>Con un adulto
+  participant app as App Flutter<br/>Registro
+  participant api as API REST<br/>FastAPI
+  participant kc as Keycloak<br/>Admin API
+  participant db as Base de datos<br/>Licencias y grupos
+  Note over est,app: Sin Internet la app explica que el registro la requiere y no avanza.
+  est->>app: Crear cuenta → Soy estudiante
+  est->>app: Escribe el código de grupo (p. ej. ORB-2A7K)
+  app->>app: Valida el formato ORB-XXXX
+  app->>+api: POST /grupos/validar-codigo
+  api->>+db: Busca código, licencia, vigencia y lugares
+  db-->>-api: Grupo y licencia
+  break código incorrecto, vencido (ORB-OLD1) o sin lugares (ORB-FULL)
+    api-->>-app: 404 · 410 · 409 con el motivo
+    app->>est: Mensaje amable y cómo seguir
+  end
+  api-->>app: 200 · grupo «2.° A», docente y escuela
+  app->>est: Tarjeta del grupo encontrado
+  est->>app: Nombre de uso, usuario y método de acceso
+  est->>app: Elige astronauta y preferencias iniciales
+  est->>app: Un adulto responsable confirma
+  app->>+api: POST /registro/estudiante
+  api->>+kc: Crea el usuario y vincula el método
+  kc-->>-api: ID de usuario
+  api->>+db: Guarda perfil y rol, ocupa un lugar (transacción)
+  db-->>-api: Confirmado
+  api-->>-app: 201 · cuenta creada
+  app->>est: «¡Ya eres parte de la tripulación!» → Iniciar sesión
+  Note over app,db: Docente: correo institucional y verificación, la cuenta queda en «Solicitud enviada» hasta que la institución autoriza el rol.

@@ -1,0 +1,38 @@
+%% SD-01 · Arranque y restauración de sesión
+sequenceDiagram
+  autonumber
+  actor u as Usuario<br/>Estudiante o docente
+  participant app as App Flutter<br/>Interfaz
+  participant ss as Almac. seguro<br/>Keystore / Keychain
+  participant db as Base local<br/>SQLite cifrada
+  participant kc as Keycloak<br/>OIDC · PKCE
+  participant api as API REST<br/>FastAPI
+  u->>app: Abre la app
+  app->>u: Splash Órbita Kids (≈ 2.3 s) → Splash Studios (≈ 1.5 s)
+  app->>+ss: ¿Hay tokens guardados?
+  ss-->>-app: Tokens cifrados o vacío
+  alt sin sesión guardada
+    opt primer acceso
+      app->>u: Onboarding en 4 pasos (Omitir siempre visible)
+    end
+    app->>u: Inicio de sesión
+  else sesión guardada
+    app->>u: Loading «Preparando tu próxima misión»
+    alt con conexión y refresh token válido
+      app->>+kc: POST /token · grant_type=refresh_token
+      kc-->>-app: Tokens nuevos (rotados)
+      app->>ss: Reemplaza los tokens
+      app->>+api: GET /me · Bearer
+      api-->>-app: 200 · rol y licencia vigentes
+      app->>u: Home del rol (estudiante o docente)
+    else con conexión, refresh rechazado
+      app->>+kc: POST /token · grant_type=refresh_token
+      kc-->>-app: 400 · invalid_grant
+      app->>ss: Borra los tokens vencidos
+      app->>u: «Tu sesión venció» → Volver a entrar
+    else sin conexión
+      app->>+db: Lee perfil y rol validados en la última sesión
+      db-->>-app: Perfil local de la cuenta
+      app->>u: Home del rol con aviso «Sin conexión»
+    end
+  end

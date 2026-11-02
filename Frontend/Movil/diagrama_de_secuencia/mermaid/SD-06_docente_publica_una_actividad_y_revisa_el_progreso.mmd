@@ -1,0 +1,36 @@
+%% SD-06 · Docente publica una actividad y revisa el progreso
+sequenceDiagram
+  autonumber
+  actor doc as Docente<br/>Rol de seguimiento
+  participant tapp as App docente<br/>Flutter
+  participant api as API REST<br/>FastAPI
+  participant db as Base de datos<br/>MySQL
+  participant eapp as App estudiante<br/>Flutter
+  actor est as Estudiante<br/>Del grupo
+  doc->>tapp: Crear actividad: nombre, grupo, modalidad, nivel y fecha
+  tapp->>tapp: Guarda el borrador local
+  alt sin conexión
+    tapp->>doc: «Borrador guardado, se publica al reconectar»
+  else con conexión
+    doc->>tapp: Publicar y confirmar
+    tapp->>+api: POST /actividades · Bearer docente
+    api->>api: Verifica rol docente y que el grupo sea suyo
+    api->>+db: Guarda la actividad y las asignaciones
+    db-->>-api: Confirmado
+    api-->>-tapp: 201 · actividad activa
+    tapp->>doc: Actividad publicada
+  end
+  eapp->>+api: GET /asignaciones (al sincronizar)
+  api-->>-eapp: Nueva tarea «Sumas hasta 20»
+  eapp->>est: Aviso «Tu maestra te envió…»
+  Note over api,est: ref · SD-04 · Resolver una misión  +  SD-05 · Sincronización
+  doc->>tapp: Abre Resultados y reportes del grupo
+  tapp->>+api: GET /grupos/(id)/reportes
+  api->>+db: Agrega aciertos, intentos y errores frecuentes
+  db-->>-api: Datos agregados del grupo
+  api-->>-tapp: Reporte del grupo
+  tapp->>doc: Cifras, evolución y necesidades de refuerzo
+  opt R4 · 2 misiones seguidas por debajo de 60 %
+    tapp->>doc: Alerta con recomendación de refuerzo
+    doc->>tapp: Asignar refuerzo (vuelve al paso 1)
+  end

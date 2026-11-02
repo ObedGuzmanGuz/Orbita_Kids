@@ -1,0 +1,26 @@
+%% SD-07 · Cerrar sesión de forma segura
+sequenceDiagram
+  autonumber
+  actor u as Usuario<br/>Estudiante o docente
+  participant app as App Flutter<br/>Perfil y sesión
+  participant q as Cola local<br/>SQLite cifrada
+  participant ss as Almac. seguro<br/>Keystore / Keychain
+  participant kc as Keycloak<br/>Sesiones
+  u->>app: Perfil → Cerrar sesión
+  app->>+q: Cuenta operaciones pendientes
+  q-->>-app: p. ej. 2 intentos sin enviar
+  app->>u: Resumen de pendientes · Cerrar sesión o Quedarme
+  u->>app: Confirma «Cerrar sesión»
+  alt con conexión
+    opt hay pendientes
+      Note over app,q: ref · SD-05 · Sincronización
+    end
+    app->>+kc: POST /logout con el refresh token
+    kc-->>-app: 204 · sesión revocada
+  else sin conexión
+    app->>q: Aísla y protege los pendientes de la cuenta
+    app->>app: Deja pendiente el cierre remoto
+  end
+  app->>ss: Borra access, refresh e id token
+  app->>app: Limpia memoria y caché de la sesión
+  app->>u: Vuelve a Inicio de sesión
