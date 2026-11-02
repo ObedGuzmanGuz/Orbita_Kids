@@ -1,0 +1,65 @@
+%% SD-00 · Diagrama general del sistema
+sequenceDiagram
+  autonumber
+  actor est as Estudiante<br/>Rol principal
+  actor doc as Docente<br/>Rol de seguimiento
+  participant app as App Flutter<br/>Móvil · ambos roles
+  participant loc as Almac. local<br/>SQLite + Keystore
+  participant kc as Keycloak<br/>OIDC · PKCE
+  participant api as API REST<br/>FastAPI
+  participant db as Base de datos<br/>MySQL
+  Note over est,db: Fase 1 · Arranque e inicio de sesión
+  est->>app: Abre la app
+  app->>est: Splash, onboarding (primer acceso) e inicio de sesión
+  est->>app: Elige Google, Facebook, institución o cuenta Órbita
+  app->>+kc: Authorization Code + PKCE en el navegador del sistema
+  kc-->>-app: Access, refresh e id token
+  app->>loc: Guarda los tokens cifrados
+  app->>+api: GET /me · Bearer
+  api->>+db: Rol, licencia, grupos y asignaciones
+  db-->>-api: Datos de la cuenta
+  api-->>-app: Rol estudiante (lo decide el backend)
+  app->>est: Home estudiante
+  Note over est,db: ref · SD-01 · Arranque   ·   SD-02 · Inicio de sesión   ·   SD-03 · Registro
+  Note over est,db: Fase 2 · El docente publica una actividad
+  doc->>app: Crea la actividad (borrador local si no hay Internet)
+  app->>+api: POST /actividades · Bearer docente
+  api->>+db: Guarda la actividad (solo en sus grupos)
+  db-->>-api: Confirmado
+  api-->>-app: 201 · actividad activa
+  Note over est,db: Fase 3 · El estudiante resuelve la misión, con o sin Internet
+  app->>+api: GET /asignaciones (al sincronizar)
+  api-->>-app: Nueva tarea «Sumas hasta 20»
+  app->>est: Aviso de la maestra → Continuar misión
+  loop por cada suma de la misión
+    app->>est: Muestra la suma con apoyo visual u opciones
+    est->>app: Responde → Comprobar
+    app->>app: Reglas R1–R3: pista, apoyo extra o refuerzo
+    app->>loc: Guarda el intento con UUID y lo encola
+  end
+  app->>est: Resultados, estrellas e insignias
+  Note over est,loc: ref · SD-04 · Resolver una misión
+  Note over est,db: Fase 4 · Sincronización al haber conexión
+  opt hay conexión
+    app->>+api: POST /sync · Idempotency-Key: UUID
+    api->>+db: Inserta sin duplicar y recalcula el progreso
+    db-->>-api: Confirmado
+    api-->>-app: 201 · 200 · 409 (el servidor gana)
+    app->>loc: Retira de la cola solo lo confirmado
+  end
+  Note over app,db: ref · SD-05 · Sincronización al reconectar
+  Note over est,db: Fase 5 · El docente revisa el progreso
+  doc->>app: Abre Resultados y reportes
+  app->>+api: GET /grupos/(id)/reportes
+  api->>+db: Agrega aciertos, intentos y errores frecuentes
+  db-->>-api: Datos agregados
+  api-->>-app: Reporte y alertas (R4)
+  app->>doc: Cifras, evolución y refuerzo sugerido
+  Note over doc,db: ref · SD-06 · Docente publica y revisa el progreso
+  Note over est,db: Fase 6 · Cierre de sesión
+  est->>app: Perfil → Cerrar sesión
+  app->>+kc: POST /logout · revoca la sesión
+  kc-->>-app: 204 · sesión revocada
+  app->>loc: Borra los tokens y aísla los pendientes
+  app->>est: Vuelve a Inicio de sesión
+  Note over est,kc: ref · SD-07 · Cerrar sesión de forma segura

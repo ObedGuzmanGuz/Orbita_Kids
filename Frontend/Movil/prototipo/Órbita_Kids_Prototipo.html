@@ -778,6 +778,72 @@ pre.dart code{background:none;padding:0}
 .seq-note{display:inline-block;width:22px;height:16px;background:#2E2A17;border:1px solid #C9A447}
 .seq-tag{font-size:11.5px;font-weight:800;color:#8F88F0;background:#2A2F66;border:1px solid #8F88F0;padding:1px 7px;border-radius:2px 2px 8px 2px}
 .seq-svg svg{margin:0 auto}
+
+/* interactividad */
+#v-secuencia .seq-sub{margin:10px 0 -4px}
+#v-secuencia .seq-sub h2{font-size:24px;margin-top:4px}
+.seq-gen{border-color:#5E55D6;box-shadow:0 0 0 1px rgba(145,134,245,.25) inset}
+.sq-pf{background:none;cursor:pointer;font:inherit;font-size:12px;font-weight:800}
+.sq-pf[aria-pressed="true"]{background:currentColor}
+.sq-pf[aria-pressed="true"]{color:#0D102B!important;background:#FFD166;border-color:#FFD166}
+.sq-bar{position:sticky;top:calc(var(--topH,64px) + 8px);z-index:20;background:rgba(18,21,58,.96);backdrop-filter:blur(8px);border:1px solid var(--s-line);border-radius:16px;padding:10px 12px 12px;margin-bottom:10px;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.sq-ctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sq-ic{min-width:36px;justify-content:center;padding-inline:10px}
+.sq-play{min-width:128px;justify-content:center;background:var(--pur);border-color:var(--pur);color:#fff}
+.sq-play[aria-pressed="true"]{background:var(--s-panel2);border-color:var(--yel);color:var(--yel)}
+.sq-count{font-size:13px;font-weight:800;color:var(--s-mut);font-variant-numeric:tabular-nums;margin-left:4px}
+.sq-zoom{display:inline-flex;gap:6px;align-items:center;margin-left:auto}
+.sq-zoom b{font-size:12.5px;min-width:44px;text-align:center;font-variant-numeric:tabular-nums;color:var(--s-mut)}
+.sq-prog{height:4px;border-radius:2px;background:var(--s-line);margin:10px 0 8px;overflow:hidden}
+.sq-prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,#9186F5,#FFD166);transition:width .3s}
+.sq-cap{display:flex;gap:12px;align-items:flex-start;min-height:46px;font-size:14px;line-height:1.4}
+.sq-cap .sq-txt{flex:1;min-width:0}
+.sq-cap small,.sq-tip small{display:block;color:var(--s-mut);font-weight:600;margin-top:2px}
+.sq-cap .sq-ctx,.sq-tip .sq-ctx{color:#9C99C9;font-style:italic}
+.sq-who{font-size:11.5px;letter-spacing:.6px;text-transform:uppercase;font-weight:800;color:var(--s-mut)}
+.sq-n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--yel);color:#292742;display:grid;place-items:center;font-family:var(--f-disp);font-weight:700;font-size:15px}
+.sq-hint{color:var(--s-mut);flex:1}
+.sq-go{flex:none;border-color:var(--yel);color:var(--yel)}
+.sq-tip{position:fixed;z-index:90;max-width:340px;background:#0A0C24;color:var(--s-fg);border:1px solid var(--s-line);border-radius:12px;padding:9px 11px;font-size:13px;line-height:1.4;pointer-events:none;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.seq-svg{outline-offset:3px}
+.seq-svg:focus-visible{outline:3px solid var(--yel)}
+.seq-svg svg{display:block}
+.seq-svg .sq-m{cursor:pointer}
+.seq-svg .sq-m .hit{transition:fill .15s}
+.seq-svg .sq-m:hover .hit{fill:rgba(145,134,245,.18)}
+.seq-svg .sq-m,.seq-svg .sq-x,.seq-svg .sq-h,.seq-svg .sq-l{transition:opacity .25s}
+.seq-svg.stepping .sq-m.fut,.seq-svg.stepping .sq-x.fut{opacity:.1}
+.seq-svg.filter .sq-m:not(.match){opacity:.12}
+.seq-svg .sq-m.cur .hit{fill:rgba(255,209,102,.16)}
+.seq-svg .sq-m.cur>path{stroke:#FFD166;stroke-width:2.6}
+.seq-svg .sq-m.cur text{fill:#FFD166}
+.seq-svg .sq-h{cursor:pointer}
+.seq-svg .sq-h:hover{opacity:.8}
+.seq-svg.focus .sq-h:not(.on){opacity:.38}
+.seq-svg.focus .sq-l.on{stroke:#FFD166;stroke-opacity:.85}
+.seq-svg .sq-ref:hover rect{stroke-width:2.4}
+#v-secuencia.seq-light .seq-svg .sq-m.cur>path{stroke:#C2410C}
+#v-secuencia.seq-light .seq-svg .sq-m.cur text{fill:#C2410C}
+#v-secuencia.seq-light .seq-svg .sq-m.cur .hit{fill:rgba(194,65,12,.09)}
+#v-secuencia.seq-light .seq-svg.focus .sq-l.on{stroke:#C2410C}
+.seq-steps tr[data-n]{cursor:pointer}
+.seq-steps tr[data-n]:hover td{background:rgba(145,134,245,.08)}
+.seq-steps tr.cur td{background:rgba(255,209,102,.13)}
+.seq-steps .sq-phr td{font-family:var(--f-disp);font-weight:600;color:var(--lav);background:rgba(145,134,245,.08)}
+.seq-phase{display:inline-block;width:26px;height:14px;border-radius:4px;background:#232866;border:1px solid #8F88F0}
+@media (max-width:700px){.sq-bar{padding:8px 10px 10px}.sq-zoom{display:none}.sq-cap{flex-wrap:wrap;gap:8px 10px;min-height:0}.sq-cap .sq-txt{flex:1 1 calc(100% - 44px)}.sq-cap small{display:none}.sq-go{flex:1 1 100%;justify-content:center}.sq-play{min-width:0}.sq-count{margin-left:auto}.sq-prog{margin:8px 0 6px}}
+@media (prefers-reduced-motion:reduce){.seq-svg *,.sq-prog i{transition:none!important}}
+
+/* corrección: el encabezado fijo se perdía al desplazar más de una pantalla */
+body{height:auto;min-height:100%}
+
+.tabs .t-s{display:none}
+@media (max-width:760px){.tabs .t-l{display:none}.tabs .t-s{display:inline}}
+.tabs{max-width:100%;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{white-space:nowrap}
+@media (max-width:430px){.tabs a{padding-left:9px;padding-right:9px;font-size:13px}}
+@media (max-width:370px){.tabs a{padding-left:7px;padding-right:7px;font-size:12.5px}}
 </style>
 
 <header class="top">
@@ -790,7 +856,7 @@ pre.dart code{background:none;padding:0}
       <a href="#prototipo" data-view="prototipo">Prototipo</a>
       <a href="#sketches" data-view="sketches">Sketches</a>
       <a href="#wireframes" data-view="wireframes">Wireframes</a>
-      <a href="#secuencia" data-view="secuencia">Diagrama de secuencia</a>
+      <a href="#secuencia" data-view="secuencia" aria-label="Diagrama de secuencia"><span class="t-l">Diagrama de secuencia</span><span class="t-s">Secuencia</span></a>
     </nav>
   </div>
 </header>
@@ -3636,7 +3702,7 @@ function showView(v) {
   VIEWS.forEach(x => { $('#v-' + x).hidden = x !== v; });
   $$('.top .tabs a').forEach(a => { if (a.dataset.view === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   if (!built[v]) { built[v] = true; ({ sketches: buildSketches, wireframes: buildWires, secuencia: buildSeq }[v] || (() => { }))(); }
-  if (location.hash !== '#' + v) history.replaceState(null, '', '#' + v);
+  try { if (location.hash !== '#' + v) history.replaceState(null, '', '#' + v); } catch (e) { /* vista previa en iframe (about:srcdoc): no se puede cambiar la URL; la vista cambia igual */ }
   if (v === 'prototipo') requestAnimationFrame(fit);
 }
 
@@ -4706,7 +4772,7 @@ const LAYOUTS = [{"H":844,"sb":[0.13,1],"bp":null,"sc":0,"n":[{"t":"txt","p":-1,
 /* Datos de cada diagrama + renderizador SVG propio + exportación a Mermaid.
    Mismos actores y reglas que la arquitectura del prototipo (Keycloak, PKCE, offline first, R1–R5). */
 const SEQ = (() => {
-  const m = (f, t, txt, o = {}) => ({ m: 1, f, t, txt, k: o.k || 'sync', a: o.a || '', d: o.d || '' });
+  const m = (f, t, txt, o = {}) => ({ m: 1, f, t, txt, k: o.k || 'sync', a: o.a || '', d: o.d || '', scr: o.scr || '' });
   const r = (f, t, txt, o = {}) => m(f, t, txt, { ...o, k: 'ret', a: o.a === undefined ? '-' : o.a });
   const as = (f, t, txt, o = {}) => m(f, t, txt, { ...o, k: 'async' });
   const alt = (...br) => ({ fr: 'alt', br });
@@ -4715,9 +4781,75 @@ const SEQ = (() => {
   const brk = (g, st) => ({ fr: 'break', br: [[g, st]] });
   const note = (over, txt) => ({ note: txt, over });
   const ref = (over, txt, go) => ({ ref: txt, over, go });
+  const phase = txt => ({ ph: txt });
   const A = (k, n, s, c, ty = 'box') => ({ k, n, s, c, ty });
   const C = { pur: '#746BE8', vio: '#9186F5', lav: '#C9C3FF', yel: '#FFD166', tq: '#69D6DE', mint: '#82D9B4', gry: '#9C99C9', blu: '#7FA7FF' };
   return [
+    {
+      id: 'SD-00', cat: 'General', t: 'Diagrama general del sistema', gen: true,
+      d: 'Vista de conjunto de Órbita Kids de principio a fin: inicio de sesión, el docente publica una actividad, el estudiante la resuelve sin depender de Internet, la app sincroniza, el docente revisa el progreso y se cierra la sesión. Cada fase remite con «ref» a su diagrama de detalle.',
+      pre: 'App instalada en el teléfono del estudiante y del docente; licencia escolar vigente.',
+      post: 'Intentos y progreso sincronizados, reporte disponible para el docente y sesión cerrada de forma segura.',
+      scr: ['splash', 'login', 'shome', 'create', 'assigned', 'visual', 'results', 'sync', 'reports', 'logout'],
+      actors: [A('est', 'Estudiante', 'Rol principal', C.yel, 'actor'), A('doc', 'Docente', 'Rol de seguimiento', C.tq, 'actor'), A('app', 'App Flutter', 'Móvil · ambos roles', C.pur), A('loc', 'Almac. local', 'SQLite + Keystore', C.mint, 'db'), A('kc', 'Keycloak', 'OIDC · PKCE', C.vio), A('api', 'API REST', 'FastAPI', C.yel), A('db', 'Base de datos', 'MySQL', C.yel, 'db')],
+      steps: [
+        phase('Fase 1 · Arranque e inicio de sesión'),
+        m('est', 'app', 'Abre la app', { scr: 'splash' }),
+        m('app', 'est', 'Splash, onboarding (primer acceso) e inicio de sesión', { scr: 'login' }),
+        m('est', 'app', 'Elige Google, Facebook, institución o cuenta Órbita', { scr: 'login' }),
+        m('app', 'kc', 'Authorization Code + PKCE en el navegador del sistema', { a: '+', scr: 'google', d: 'Keycloak redirige al proveedor de identidad elegido; nunca se usa un WebView.' }),
+        r('kc', 'app', 'Access, refresh e id token', { scr: 'loading' }),
+        m('app', 'loc', 'Guarda los tokens cifrados'),
+        m('app', 'api', 'GET /me · Bearer', { a: '+' }),
+        m('api', 'db', 'Rol, licencia, grupos y asignaciones', { a: '+' }),
+        r('db', 'api', 'Datos de la cuenta'),
+        r('api', 'app', 'Rol estudiante (lo decide el backend)'),
+        m('app', 'est', 'Home estudiante', { scr: 'shome' }),
+        ref(['est', 'db'], 'SD-01 · Arranque   ·   SD-02 · Inicio de sesión   ·   SD-03 · Registro', 'SD-02'),
+        phase('Fase 2 · El docente publica una actividad'),
+        m('doc', 'app', 'Crea la actividad (borrador local si no hay Internet)', { scr: 'create' }),
+        m('app', 'api', 'POST /actividades · Bearer docente', { a: '+' }),
+        m('api', 'db', 'Guarda la actividad (solo en sus grupos)', { a: '+' }),
+        r('db', 'api', 'Confirmado'),
+        r('api', 'app', '201 · actividad activa', { scr: 'activities' }),
+        phase('Fase 3 · El estudiante resuelve la misión, con o sin Internet'),
+        m('app', 'api', 'GET /asignaciones (al sincronizar)', { a: '+' }),
+        r('api', 'app', 'Nueva tarea «Sumas hasta 20»'),
+        m('app', 'est', 'Aviso de la maestra → Continuar misión', { scr: 'assigned' }),
+        loop('por cada suma de la misión', [
+          m('app', 'est', 'Muestra la suma con apoyo visual u opciones', { scr: 'visual' }),
+          m('est', 'app', 'Responde → Comprobar', { scr: 'choice' }),
+          m('app', 'app', 'Reglas R1–R3: pista, apoyo extra o refuerzo', { d: 'Motor de reglas local, sin IA. R1: 2 errores seguidos activan apoyo visual.' }),
+          m('app', 'loc', 'Guarda el intento con UUID y lo encola'),
+        ]),
+        m('app', 'est', 'Resultados, estrellas e insignias', { scr: 'results' }),
+        ref(['est', 'loc'], 'SD-04 · Resolver una misión', 'SD-04'),
+        phase('Fase 4 · Sincronización al haber conexión'),
+        opt('hay conexión', [
+          m('app', 'api', 'POST /sync · Idempotency-Key: UUID', { a: '+', scr: 'sync' }),
+          m('api', 'db', 'Inserta sin duplicar y recalcula el progreso', { a: '+' }),
+          r('db', 'api', 'Confirmado'),
+          r('api', 'app', '201 · 200 · 409 (el servidor gana)', { scr: 'sync' }),
+          m('app', 'loc', 'Retira de la cola solo lo confirmado'),
+        ]),
+        ref(['app', 'db'], 'SD-05 · Sincronización al reconectar', 'SD-05'),
+        phase('Fase 5 · El docente revisa el progreso'),
+        m('doc', 'app', 'Abre Resultados y reportes', { scr: 'reports' }),
+        m('app', 'api', 'GET /grupos/{id}/reportes', { a: '+' }),
+        m('api', 'db', 'Agrega aciertos, intentos y errores frecuentes', { a: '+' }),
+        r('db', 'api', 'Datos agregados'),
+        r('api', 'app', 'Reporte y alertas (R4)'),
+        m('app', 'doc', 'Cifras, evolución y refuerzo sugerido', { scr: 'student' }),
+        ref(['doc', 'db'], 'SD-06 · Docente publica y revisa el progreso', 'SD-06'),
+        phase('Fase 6 · Cierre de sesión'),
+        m('est', 'app', 'Perfil → Cerrar sesión', { scr: 'logout' }),
+        m('app', 'kc', 'POST /logout · revoca la sesión', { a: '+' }),
+        r('kc', 'app', '204 · sesión revocada'),
+        m('app', 'loc', 'Borra los tokens y aísla los pendientes'),
+        m('app', 'est', 'Vuelve a Inicio de sesión', { scr: 'login' }),
+        ref(['est', 'kc'], 'SD-07 · Cerrar sesión de forma segura', 'SD-07'),
+      ],
+    },
     {
       id: 'SD-01', cat: 'Arranque', t: 'Arranque y restauración de sesión',
       d: 'Qué ocurre desde que se abre la app hasta llegar al Home del rol: las dos splash en orden, el onboarding solo en el primer acceso y la restauración segura de la sesión, con y sin Internet.',
@@ -5008,8 +5140,8 @@ const SEQ = (() => {
 })();
 
 const SEQ_PAL = {
-  dark: { bg: '#12153A', fg: '#E9E7FF', mut: '#A9A6D6', ln: '#4A4F96', frame: '#8F88F0', fill: '#181C4A', fragF: 'rgba(145,134,245,.06)', tag: '#2A2F66', note: '#2E2A17', noteS: '#C9A447', noteT: '#FFE7A8', ret: '#9C99C9', act: '#2A2F66', refF: '#1D2257', num: '#FFD166' },
-  light: { bg: '#FFFFFF', fg: '#1F1D38', mut: '#5E5B80', ln: '#B7B3D8', frame: '#6B63D9', fill: '#F6F5FD', fragF: 'rgba(116,107,232,.04)', tag: '#ECEAFF', note: '#FFF6D6', noteS: '#D9AE3E', noteT: '#4A3A00', ret: '#6E6B92', act: '#E6E3FA', refF: '#F1EFFC', num: '#B5791A' },
+  dark: { bg: '#12153A', fg: '#E9E7FF', mut: '#A9A6D6', ln: '#4A4F96', frame: '#8F88F0', fill: '#181C4A', fragF: 'rgba(145,134,245,.06)', tag: '#2A2F66', note: '#2E2A17', noteS: '#C9A447', noteT: '#FFE7A8', ret: '#9C99C9', act: '#2A2F66', refF: '#1D2257', num: '#FFD166', ph: '#232866', phT: '#C9C3FF', cur: '#FFD166' },
+  light: { bg: '#FFFFFF', fg: '#1F1D38', mut: '#5E5B80', ln: '#B7B3D8', frame: '#6B63D9', fill: '#F6F5FD', fragF: 'rgba(116,107,232,.04)', tag: '#ECEAFF', note: '#FFF6D6', noteS: '#D9AE3E', noteT: '#4A3A00', ret: '#6E6B92', act: '#E6E3FA', refF: '#F1EFFC', num: '#B5791A', ph: '#EFEDFD', phT: '#4D44C4', cur: '#C2410C' },
 };
 const seqEsc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const seqCtx = document.createElement('canvas').getContext('2d');
@@ -5020,7 +5152,7 @@ function seqWrap(t, max, fs, fw) {
   if (line) out.push(line); return out;
 }
 function seqCount(steps) { let n = 0; const walk = s => s.forEach(x => { if (x.m) n++; else if (x.fr) x.br.forEach(b => walk(b[1])); }); walk(steps); return n; }
-function seqFlat(steps) { const out = []; const walk = (s, ctx) => s.forEach(x => { if (x.m) out.push({ ...x, ctx }); else if (x.fr) x.br.forEach(b => walk(b[1], [...ctx, `${x.fr} [${b[0]}]`])); else if (x.ref) out.push({ ref: x.ref, ctx }); }); walk(steps, []); return out; }
+function seqFlat(steps) { const out = []; const walk = (s, ctx) => s.forEach(x => { if (x.m) out.push({ ...x, ctx }); else if (x.fr) x.br.forEach(b => walk(b[1], [...ctx, `${x.fr} [${b[0]}]`])); else if (x.ref) out.push({ ref: x.ref, ctx }); else if (x.ph) out.push({ ph: x.ph, ctx }); }); walk(steps, []); return out; }
 
 function seqSVG(D, th = 'dark') {
   const P = SEQ_PAL[th], n = D.actors.length, colW = D.colW || 176, PX = 26;
@@ -5046,8 +5178,10 @@ function seqSVG(D, th = 'dark') {
     if (s.f === s.t) {
       const x = edge(s.f, 1), maxW = Math.max(120, Math.min(colW + 10, W - 40 - (x + 40))), lines = seqWrap(nb(s.txt), maxW, 12.5, 700);
       const y0 = y + 4, h = Math.max(22, lines.length * 15 + 6);
-      fg.push(`<path d="M${x} ${y0}H${x + 30}V${y0 + h}H${x + 2}" fill="none" stroke="${col}" stroke-width="1.4" ${dash} marker-end="url(#${mk})"/>`);
-      fg.push(T(x + 36, y0 + 12, `${num}.`, { fill: P.num, fw: 800, halo: 1 }) + lines.map((l, i) => T(x + 36 + seqTW(`${num}.`, 12.5, 800) + 4, y0 + 12 + i * 15, l, { halo: 1 })).join(''));
+      const lw = Math.max(...lines.map(l => seqTW(l))) + seqTW(`${num}.`, 12.5, 800) + 10;
+      fg.push(`<g class="sq-m" data-n="${num}" data-f="${s.f}" data-t="${s.t}"><rect class="hit" x="${x - 6}" y="${y0 - 6}" width="${lw + 46}" height="${h + 12}" rx="6" fill="transparent"/>`
+        + `<path d="M${x} ${y0}H${x + 30}V${y0 + h}H${x + 2}" fill="none" stroke="${col}" stroke-width="1.4" ${dash} marker-end="url(#${mk})" data-mk="${mk}"/>`
+        + T(x + 36, y0 + 12, `${num}.`, { fill: P.num, fw: 800, halo: 1 }) + lines.map((l, i) => T(x + 36 + seqTW(`${num}.`, 12.5, 800) + 4, y0 + 12 + i * 15, l, { halo: 1 })).join('') + '</g>');
       s.y = y0; y = y0 + h + 16; return;
     }
     const dir = idx[s.t] > idx[s.f] ? 1 : -1, x1s = cx(s.f), x2s = cx(s.t);
@@ -5055,12 +5189,13 @@ function seqSVG(D, th = 'dark') {
     const ay = y + lines.length * 15 + 6;
     if (s.a.includes('+')) openA(s.t, ay);
     const x1 = edge(s.f, dir), x2 = s.a.includes('+') ? cx(s.t) + (st[s.t].length - 1) * 5 - dir * 6 : edge(s.t, -dir);
-    const mid = (x1s + x2s) / 2;
+    const mid = (x1s + x2s) / 2, lw = Math.max(...lines.map(l => seqTW(l))), hx1 = Math.min(x1s, x2s, mid - lw / 2) - 6, hx2 = Math.max(x1s, x2s, mid + lw / 2) + 6;
+    let g = `<g class="sq-m" data-n="${num}" data-f="${s.f}" data-t="${s.t}"><rect class="hit" x="${hx1.toFixed(1)}" y="${y - 3}" width="${(hx2 - hx1).toFixed(1)}" height="${ay - y + 10}" rx="6" fill="transparent"/>`;
     lines.forEach((l, i) => {
-      if (i === 0) { const w0 = seqTW(l, 12.5, 700), xs = mid - w0 / 2, wn = seqTW(`${num}.`, 12.5, 800); fg.push(T(xs, y + 12, `${num}.`, { fill: P.num, fw: 800, halo: 1 }) + T(xs + wn + 3.5, y + 12, l.slice(pre.length), { fill: ret ? P.mut : P.fg, halo: 1 })); }
-      else fg.push(T(mid, y + 12 + i * 15, l, { anchor: 'middle', fill: ret ? P.mut : P.fg, halo: 1 }));
+      if (i === 0) { const w0 = seqTW(l, 12.5, 700), xs = mid - w0 / 2, wn = seqTW(`${num}.`, 12.5, 800); g += T(xs, y + 12, `${num}.`, { fill: P.num, fw: 800, halo: 1 }) + T(xs + wn + 3.5, y + 12, l.slice(pre.length), { fill: ret ? P.mut : P.fg, halo: 1 }); }
+      else g += T(mid, y + 12 + i * 15, l, { anchor: 'middle', fill: ret ? P.mut : P.fg, halo: 1 });
     });
-    fg.push(`<path d="M${x1.toFixed(1)} ${ay}H${(x2 - dir * 1).toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.4" ${dash} marker-end="url(#${mk})"/>`);
+    fg.push(g + `<path d="M${x1.toFixed(1)} ${ay}H${(x2 - dir * 1).toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.4" ${dash} marker-end="url(#${mk})" data-mk="${mk}"/></g>`);
     if (s.a.includes('-')) closeA(s.f, ay);
     s.y = ay; y = ay + 16;
   }
@@ -5068,13 +5203,13 @@ function seqSVG(D, th = 'dark') {
     const ks = s.over, a = cx(ks[0]), b = cx(ks[ks.length - 1]);
     const x1 = Math.min(a, b) - (ks.length > 1 ? 40 : 70), x2 = Math.max(a, b) + (ks.length > 1 ? 40 : 70), w = x2 - x1;
     const lines = seqWrap(s.note, w - 26, 12, 700), h = lines.length * 15 + 14;
-    fg.push(`<path d="M${x1} ${y}H${x2 - 12}L${x2} ${y + 12}V${y + h}H${x1}Z" fill="${P.note}" stroke="${P.noteS}" stroke-width="1.2"/><path d="M${x2 - 12} ${y}V${y + 12}H${x2}" fill="none" stroke="${P.noteS}" stroke-width="1.2"/>`);
-    fg.push(lines.map((l, i) => T(x1 + 12, y + 18 + i * 15, l, { fs: 12, fill: P.noteT })).join(''));
+    fg.push(`<g class="sq-x" data-after="${num}"><path d="M${x1} ${y}H${x2 - 12}L${x2} ${y + 12}V${y + h}H${x1}Z" fill="${P.note}" stroke="${P.noteS}" stroke-width="1.2"/><path d="M${x2 - 12} ${y}V${y + 12}H${x2}" fill="none" stroke="${P.noteS}" stroke-width="1.2"/>`
+      + lines.map((l, i) => T(x1 + 12, y + 18 + i * 15, l, { fs: 12, fill: P.noteT })).join('') + '</g>');
     y += h + 16;
   }
   function refS(s, depth) {
     const [x1, x2] = span(new Set(s.over), depth), h = 44;
-    fg.push(`<g ${s.go ? `data-seqgo="${s.go}" style="cursor:pointer"` : ''}><rect x="${x1}" y="${y}" width="${x2 - x1}" height="${h}" fill="${P.refF}" stroke="${P.frame}" stroke-width="1.4"/>
+    fg.push(`<g class="sq-x sq-ref" data-after="${num}" ${s.go ? `data-seqgo="${s.go}" style="cursor:pointer"` : ''}><rect x="${x1}" y="${y}" width="${x2 - x1}" height="${h}" fill="${P.refF}" stroke="${P.frame}" stroke-width="1.4"/>
       <path d="M${x1} ${y}H${x1 + 40}V${y + 12}L${x1 + 32} ${y + 20}H${x1}Z" fill="${P.tag}" stroke="${P.frame}" stroke-width="1.2"/>${T(x1 + 8, y + 14, 'ref', { fs: 11.5, fw: 800, fill: P.frame })}
       ${T((x1 + x2) / 2, y + 28, s.ref, { anchor: 'middle', fw: 800 })}</g>`);
     y += h + 16;
@@ -5100,7 +5235,12 @@ function seqSVG(D, th = 'dark') {
     seps.forEach(([sy, g]) => { bg.push(`<path d="M${x1} ${sy}H${x2}" stroke="${P.frame}" stroke-width="1.2" stroke-dasharray="7 5"/>`); fg.push(T(x1 + 10, sy + 15, `[${g}]`, { fs: 12, fw: 800, fill: P.frame, it: true })); });
     y += 14;
   }
-  function run(steps, depth) { steps.forEach(s => { if (s.m) msg(s); else if (s.fr) frag(s, depth); else if (s.note) noteS(s, depth); else if (s.ref) refS(s, depth); }); }
+  function phS(s) {
+    y += 4; const h = 28;
+    bg.push(`<g class="sq-x sq-ph" data-after="${num}"><rect x="14" y="${y}" width="${W - 28}" height="${h}" rx="6" fill="${P.ph}" stroke="${P.frame}" stroke-width="1" stroke-opacity=".5"/>${T(26, y + 19, s.ph, { fs: 13, fw: 800, fill: P.phT })}</g>`);
+    y += h + 18;
+  }
+  function run(steps, depth) { steps.forEach(s => { if (s.m) msg(s); else if (s.fr) frag(s, depth); else if (s.note) noteS(s, depth); else if (s.ref) refS(s, depth); else if (s.ph) phS(s); }); }
   run(D.steps, 0);
   y += 6; Object.keys(st).forEach(k => { while (st[k].length) closeA(k, y); });
   const BY = y + 14;
@@ -5108,23 +5248,24 @@ function seqSVG(D, th = 'dark') {
     const x = cx(a.k), bw = colW - 22, c = a.c;
     if (a.ty === 'actor') {
       const fy = bottom ? yy + 4 : yy;
-      return `<g><circle cx="${x}" cy="${fy + 8}" r="7.5" fill="none" stroke="${c}" stroke-width="2"/><path d="M${x} ${fy + 16}V${fy + 32}M${x - 12} ${fy + 22}H${x + 12}M${x} ${fy + 32}L${x - 10} ${fy + 45}M${x} ${fy + 32}L${x + 10} ${fy + 45}" stroke="${c}" stroke-width="2" fill="none" stroke-linecap="round"/>
+      return `<g class="sq-h" data-k="${a.k}"><circle cx="${x}" cy="${fy + 8}" r="7.5" fill="none" stroke="${c}" stroke-width="2"/><path d="M${x} ${fy + 16}V${fy + 32}M${x - 12} ${fy + 22}H${x + 12}M${x} ${fy + 32}L${x - 10} ${fy + 45}M${x} ${fy + 32}L${x + 10} ${fy + 45}" stroke="${c}" stroke-width="2" fill="none" stroke-linecap="round"/>
         ${T(x, fy + 62, a.n, { anchor: 'middle', fs: 13.5, fw: 800 })}${T(x, fy + 77, a.s, { anchor: 'middle', fs: 11, fw: 700, fill: P.mut })}</g>`;
     }
     if (a.ty === 'db') {
-      return `<g><path d="M${x - bw / 2} ${yy + 10}V${yy + 62}A${bw / 2} 9 0 0 0 ${x + bw / 2} ${yy + 62}V${yy + 10}" fill="${P.fill}" stroke="${c}" stroke-width="2"/><ellipse cx="${x}" cy="${yy + 10}" rx="${bw / 2}" ry="9" fill="${P.fill}" stroke="${c}" stroke-width="2"/>
+      return `<g class="sq-h" data-k="${a.k}"><path d="M${x - bw / 2} ${yy + 10}V${yy + 62}A${bw / 2} 9 0 0 0 ${x + bw / 2} ${yy + 62}V${yy + 10}" fill="${P.fill}" stroke="${c}" stroke-width="2"/><ellipse cx="${x}" cy="${yy + 10}" rx="${bw / 2}" ry="9" fill="${P.fill}" stroke="${c}" stroke-width="2"/>
         ${T(x, yy + 40, a.n, { anchor: 'middle', fs: 13.5, fw: 800 })}${T(x, yy + 56, a.s, { anchor: 'middle', fs: 11, fw: 700, fill: P.mut })}</g>`;
     }
-    return `<g><rect x="${x - bw / 2}" y="${yy + 6}" width="${bw}" height="62" rx="10" fill="${P.fill}" stroke="${c}" stroke-width="2"/><rect x="${x - bw / 2}" y="${yy + 6}" width="${bw}" height="5" rx="2" fill="${c}"/>
+    return `<g class="sq-h" data-k="${a.k}"><rect x="${x - bw / 2}" y="${yy + 6}" width="${bw}" height="62" rx="10" fill="${P.fill}" stroke="${c}" stroke-width="2"/><rect x="${x - bw / 2}" y="${yy + 6}" width="${bw}" height="5" rx="2" fill="${c}"/>
       ${T(x, yy + 36, a.n, { anchor: 'middle', fs: 13.5, fw: 800 })}${T(x, yy + 54, a.s, { anchor: 'middle', fs: 11, fw: 700, fill: P.mut })}</g>`;
   };
   const lifeTop = HY + 78, H = BY + 100;
-  const lifelines = D.actors.map(a => `<path d="M${cx(a.k)} ${lifeTop}V${BY}" stroke="${P.ln}" stroke-width="1.3" stroke-dasharray="5 5"/>`).join('');
-  const barsS = bars.map(b => `<rect x="${cx(b.k) - 6 + b.d * 5}" y="${b.y1 - 4}" width="12" height="${Math.max(10, b.y2 - b.y1 + 8)}" fill="${P.act}" stroke="${P.frame}" stroke-width="1.1"/>`).join('');
+  const lifelines = D.actors.map(a => `<path class="sq-l" data-k="${a.k}" d="M${cx(a.k)} ${lifeTop}V${BY}" stroke="${P.ln}" stroke-width="1.3" stroke-dasharray="5 5"/>`).join('');
+  const barsS = bars.map(b => `<rect class="sq-b" data-k="${b.k}" x="${cx(b.k) - 6 + b.d * 5}" y="${b.y1 - 4}" width="12" height="${Math.max(10, b.y2 - b.y1 + 8)}" fill="${P.act}" stroke="${P.frame}" stroke-width="1.1"/>`).join('');
   const sdTag = `sd ${D.id} · ${D.t}`, sdW = seqTW(sdTag, 13, 800) + 26;
   const marks = `<marker id="${uid}f" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10z" fill="${P.fg}"/></marker>
-    <marker id="${uid}o" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0.5L10 5L0 9.5" fill="none" stroke="${P.ret}" stroke-width="1.6"/></marker>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" font-family="Nunito, 'Segoe UI', Arial, sans-serif" role="img" aria-label="Diagrama de secuencia ${seqEsc(D.id)}: ${seqEsc(D.t)}">
+    <marker id="${uid}o" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0.5L10 5L0 9.5" fill="none" stroke="${P.ret}" stroke-width="1.6"/></marker>
+    <marker id="${uid}c" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10z" fill="${P.cur}"/></marker>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" font-family="Nunito, 'Segoe UI', Arial, sans-serif" data-uid="${uid}" role="img" aria-label="Diagrama de secuencia ${seqEsc(D.id)}: ${seqEsc(D.t)}">
   <defs>${marks}</defs>
   <rect width="${W}" height="${H}" fill="${P.bg}"/>
   <rect x="8" y="8" width="${W - 16}" height="${H - 16}" fill="none" stroke="${P.frame}" stroke-width="1.5" rx="4"/>
@@ -5153,53 +5294,149 @@ function seqMermaid(D) {
       L.push(`${p}end`);
     } else if (s.note) L.push(`${p}Note over ${s.over[0]}${s.over.length > 1 ? ',' + s.over[s.over.length - 1] : ''}: ${clean(s.note)}`);
     else if (s.ref) L.push(`${p}Note over ${s.over[0]}${s.over.length > 1 ? ',' + s.over[s.over.length - 1] : ''}: ref · ${clean(s.ref)}`);
+    else if (s.ph) L.push(`${p}Note over ${D.actors[0].k},${D.actors[D.actors.length - 1].k}: ${clean(s.ph)}`);
   });
   walk(D.steps, 1);
   return L.join('\n');
 }
 
 let SEQ_TH = 'dark';
+const SQS = {}, SQI = {};
+const seqRM = () => !!((window.PREFS && PREFS.rm) || matchMedia('(prefers-reduced-motion: reduce)').matches);
+const SEQ_TY = { sync: 'Síncrono', ret: 'Respuesta', async: 'Asíncrono' };
+function seqCapIdx(k) { const c = CAPS.find(x => x.k === k); return c ? c.i : -1; }
 function buildSeq() {
-  const root = $('#v-secuencia'), total = SEQ.reduce((s, D) => s + seqCount(D.steps), 0);
-  const glyph = (d, dash, open) => `<svg width="46" height="12" viewBox="0 0 46 12" aria-hidden="true"><path d="M2 6H40" stroke="currentColor" stroke-width="1.5" ${dash ? 'stroke-dasharray="5 3"' : ''}/>${open ? '<path d="M36 2L44 6L36 10" fill="none" stroke="currentColor" stroke-width="1.5"/>' : '<path d="M36 2L44 6L36 10z" fill="currentColor"/>'}</svg>`;
-  const scrBtn = k => { const c = CAPS.find(x => x.k === k); return c ? `<button class="sbtn" data-cap="${c.i}">${c.code} · ${scrName(k)}</button>` : ''; };
-  root.innerHTML = `<div class="doc-h"><div><div class="eyebrow">Diagramas de secuencia UML</div><h2>${SEQ.length} diagramas de secuencia · ${total} mensajes</h2>
-    <p>Cómo colaboran los actores y los componentes del ecosistema en los flujos principales del prototipo: arranque, autenticación con Keycloak, registro con código de grupo, misiones offline first, sincronización, trabajo docente y cierre de sesión. Es una propuesta técnica: el prototipo no se conecta a servicios reales.</p></div></div>
+  const root = $('#v-secuencia'), det = SEQ.filter(D => !D.gen), totalDet = det.reduce((s, D) => s + seqCount(D.steps), 0);
+  SEQ.forEach(D => {
+    const msgs = seqFlat(D.steps).filter(x => x.m), nm = k => D.actors.find(a => a.k === k).n;
+    SQI[D.id] = { msgs, nm, N: msgs.length, W: 0 };
+    SQS[D.id] = SQS[D.id] || { cur: 0, filt: null, playing: false, timer: null, z: 1 };
+  });
+  const glyph = (dash, open) => `<svg width="46" height="12" viewBox="0 0 46 12" aria-hidden="true"><path d="M2 6H40" stroke="currentColor" stroke-width="1.5" ${dash ? 'stroke-dasharray="5 3"' : ''}/>${open ? '<path d="M36 2L44 6L36 10" fill="none" stroke="currentColor" stroke-width="1.5"/>' : '<path d="M36 2L44 6L36 10z" fill="currentColor"/>'}</svg>`;
+  const scrBtn = k => { const i = seqCapIdx(k); return i >= 0 ? `<button class="sbtn" data-cap="${i}">${CAPS[i].code} · ${scrName(k)}</button>` : ''; };
+  const hint = `<span class="sq-hint">Toca un <b>mensaje</b> para ver su detalle, un <b>participante</b> para ver solo sus mensajes, o <b>Reproducir</b> para recorrer el flujo paso a paso. Con el diagrama seleccionado: ← → avanzan y la barra espaciadora pausa.</span>`;
+  const block = D => { const N = SQI[D.id].N; return `<section class="blk seq${D.gen ? ' seq-gen' : ''}" id="seq-${D.id}" data-sd="${D.id}">
+      <div class="seq-h"><div><div class="eyebrow">${D.gen ? 'Vista general · ' : ''}${D.id} · ${D.cat} · ${N} mensajes</div><h3>${D.t}</h3><p class="lead">${D.d}</p></div>
+        <div class="seq-btns"><button class="sbtn" data-sqdl="${D.id}">Descargar SVG</button><button class="sbtn" data-sqcp="${D.id}">Copiar Mermaid</button></div></div>
+      <div class="seq-meta"><div><dt>Participantes</dt><dd>${D.actors.map(a => `<button class="pill sq-pf" data-pf="${a.k}" style="color:${a.c}" aria-pressed="false">${a.n}</button>`).join(' ')}</dd></div>
+        <div><dt>Precondición</dt><dd>${D.pre}</dd></div><div><dt>Resultado</dt><dd>${D.post}</dd></div>
+        <div><dt>Pantallas del prototipo</dt><dd class="seq-scr">${D.scr.map(scrBtn).join('')}</dd></div></div>
+      <div class="sq-bar" data-pl="${D.id}">
+        <div class="sq-ctl">
+          <button class="sbtn sq-play" data-sp="play" aria-pressed="false">▶ Reproducir</button>
+          <button class="sbtn sq-ic" data-sp="first" aria-label="Ir al primer paso" title="Primer paso">⏮</button>
+          <button class="sbtn sq-ic" data-sp="prev" aria-label="Paso anterior" title="Anterior">‹</button>
+          <button class="sbtn sq-ic" data-sp="next" aria-label="Paso siguiente" title="Siguiente">›</button>
+          <button class="sbtn" data-sp="all">Ver todo</button>
+          <span class="sq-count" aria-live="polite">${N} mensajes</span>
+          <span class="sq-zoom" role="group" aria-label="Zoom"><button class="sbtn sq-ic" data-sz="-" aria-label="Alejar">−</button><b>100 %</b><button class="sbtn sq-ic" data-sz="+" aria-label="Acercar">+</button><button class="sbtn" data-sz="fit">Ajustar al ancho</button></span>
+        </div>
+        <div class="sq-prog" aria-hidden="true"><i></i></div>
+        <div class="sq-cap" aria-live="polite">${hint}</div>
+      </div>
+      <div class="diag-wrap seq-svg" data-sv="${D.id}" tabindex="0" aria-label="Diagrama ${D.id}. Usa las flechas izquierda y derecha para recorrer los mensajes."></div>
+      <pre class="seq-mmd" hidden><code>${seqEsc(seqMermaid(D))}</code></pre>
+      <details class="seq-steps"><summary>Mensajes paso a paso (${N})</summary><div class="tbl-wrap"><table class="tok"><thead><tr><th>#</th><th>De → a</th><th>Tipo</th><th>Mensaje</th><th>Contexto</th></tr></thead><tbody>
+        ${(() => { let k = 0; const nm = SQI[D.id].nm; return seqFlat(D.steps).map(x => x.ph ? `<tr class="sq-phr"><td colspan="5">${x.ph}</td></tr>` : x.ref ? `<tr><td>—</td><td colspan="2"><b>ref</b></td><td>${x.ref}</td><td>${x.ctx.join(' › ') || '—'}</td></tr>` : `<tr data-n="${++k}"><td class="num">${k}</td><td>${nm(x.f)} → ${nm(x.t)}</td><td>${SEQ_TY[x.k]}</td><td><b>${x.txt}</b>${x.d ? `<small>${x.d}</small>` : ''}</td><td>${x.ctx.join(' › ') || '—'}</td></tr>`).join(''); })()}
+      </tbody></table></div></details>
+    </section>`; };
+  root.innerHTML = `<div class="doc-h"><div><div class="eyebrow">Diagramas de secuencia UML · interactivos</div><h2>Diagrama general + ${det.length} diagramas de detalle</h2>
+    <p>El diagrama general muestra el sistema completo de principio a fin en seis fases; cada fase remite con «ref» a su diagrama de detalle (${totalDet} mensajes en total). Todos se pueden reproducir paso a paso, filtrar por participante y abrir en el prototipo. Es una propuesta técnica: el prototipo no se conecta a servicios reales.</p></div></div>
     <section class="blk seq-legend"><h3>Notación</h3>
       <div class="seq-not">
-        <span>${glyph(0, 0, 0)} Mensaje síncrono (petición)</span><span>${glyph(0, 1, 1)} Respuesta</span><span>${glyph(0, 0, 1)} Mensaje asíncrono</span>
+        <span>${glyph(0, 0)} Mensaje síncrono (petición)</span><span>${glyph(1, 1)} Respuesta</span><span>${glyph(0, 1)} Mensaje asíncrono</span>
         <span><i class="seq-bar"></i> Activación (el participante está trabajando)</span><span><b class="seq-tag">alt</b> Alternativas excluyentes</span><span><b class="seq-tag">opt</b> Ocurre solo si se cumple la condición</span>
-        <span><b class="seq-tag">loop</b> Se repite</span><span><b class="seq-tag">break</b> Interrumpe el flujo</span><span><b class="seq-tag">ref</b> Otro diagrama (se puede tocar)</span><span><i class="seq-note"></i> Nota</span>
+        <span><b class="seq-tag">loop</b> Se repite</span><span><b class="seq-tag">break</b> Interrumpe el flujo</span><span><b class="seq-tag">ref</b> Otro diagrama (se puede tocar)</span><span><i class="seq-note"></i> Nota</span><span><i class="seq-phase"></i> Fase del flujo general</span>
       </div></section>
     <div class="sk-tools" role="group" aria-label="Diagramas">
       <button class="sbtn" data-sqf="todos" aria-pressed="true">Todos (${SEQ.length})</button>${SEQ.map(D => `<button class="sbtn" data-sqf="${D.id}" aria-pressed="false">${D.id} · ${D.cat}</button>`).join('')}
     </div>
     <div class="sk-tools"><button class="sbtn" id="sqTheme" aria-pressed="false">Fondo claro (para imprimir)</button><button class="sbtn" id="sqMmd" aria-pressed="false">Mostrar código Mermaid</button></div>
-    <div class="seq-list">${SEQ.map(D => `<section class="blk seq" id="seq-${D.id}" data-sd="${D.id}">
-      <div class="seq-h"><div><div class="eyebrow">${D.id} · ${D.cat} · ${seqCount(D.steps)} mensajes</div><h3>${D.t}</h3><p class="lead">${D.d}</p></div>
-        <div class="seq-btns"><button class="sbtn" data-sqdl="${D.id}">Descargar SVG</button><button class="sbtn" data-sqcp="${D.id}">Copiar Mermaid</button></div></div>
-      <div class="seq-meta"><div><dt>Participantes</dt><dd>${D.actors.map(a => `<span class="pill" style="color:${a.c}">${a.n}</span>`).join(' ')}</dd></div>
-        <div><dt>Precondición</dt><dd>${D.pre}</dd></div><div><dt>Resultado</dt><dd>${D.post}</dd></div>
-        <div><dt>Pantallas del prototipo</dt><dd class="seq-scr">${D.scr.map(scrBtn).join('')}</dd></div></div>
-      <div class="diag-wrap seq-svg" data-sv="${D.id}"></div>
-      <pre class="seq-mmd" hidden><code>${seqEsc(seqMermaid(D))}</code></pre>
-      <details class="seq-steps"><summary>Mensajes paso a paso (${seqCount(D.steps)})</summary><div class="tbl-wrap"><table class="tok"><thead><tr><th>#</th><th>De → a</th><th>Tipo</th><th>Mensaje</th><th>Contexto</th></tr></thead><tbody>
-        ${(() => { let k = 0; const nm = x => D.actors.find(a => a.k === x).n; return seqFlat(D.steps).map(x => x.ref ? `<tr><td>—</td><td colspan="2"><b>ref</b></td><td>${x.ref}</td><td>${x.ctx.join(' › ') || '—'}</td></tr>` : `<tr><td class="num">${++k}</td><td>${nm(x.f)} → ${nm(x.t)}</td><td>${{ sync: 'Síncrono', ret: 'Respuesta', async: 'Asíncrono' }[x.k]}</td><td><b>${x.txt}</b>${x.d ? `<small>${x.d}</small>` : ''}</td><td>${x.ctx.join(' › ') || '—'}</td></tr>`).join(''); })()}
-      </tbody></table></div></details>
-    </section>`).join('')}</div>`;
-  const draw = () => $$('.seq-svg', root).forEach(d => { d.innerHTML = seqSVG(SEQ.find(D => D.id === d.dataset.sv), SEQ_TH); });
+    <div class="seq-list">${SEQ.filter(D => D.gen).map(block).join('')}
+      <div class="seq-sub" id="seqDetH"><div class="eyebrow">Detalle por flujo</div><h2>${det.length} diagramas de detalle</h2></div>
+      ${det.map(block).join('')}</div>
+    <div class="sq-tip" id="sqTip" hidden></div>`;
+  const setTop = () => root.style.setProperty('--topH', ($('.top')?.offsetHeight || 64) + 'px');
+  setTop(); addEventListener('resize', setTop);
+  const svgOf = id => $(`#seq-${id} .seq-svg svg`);
+  function apply(id) {
+    const S = SQS[id], I = SQI[id], sec = $(`#seq-${id}`), wrap = $('.seq-svg', sec), svg = svgOf(id); if (!svg) return;
+    const uid = svg.dataset.uid, m = S.cur ? I.msgs[S.cur - 1] : null;
+    wrap.classList.toggle('stepping', S.cur > 0); wrap.classList.toggle('filter', !!S.filt && !S.cur);
+    $$('.sq-m', svg).forEach(g => { const n = +g.dataset.n, cur = n === S.cur; g.classList.toggle('cur', cur); g.classList.toggle('fut', S.cur > 0 && n > S.cur);
+      g.classList.toggle('match', !!S.filt && (g.dataset.f === S.filt || g.dataset.t === S.filt));
+      const p = g.querySelector('path[data-mk]'); if (p) p.setAttribute('marker-end', `url(#${cur ? uid + 'c' : p.dataset.mk})`); });
+    $$('.sq-x', svg).forEach(g => g.classList.toggle('fut', S.cur > 0 && S.cur <= +g.dataset.after));
+    const on = new Set(m ? [m.f, m.t] : S.filt ? [S.filt] : []);
+    wrap.classList.toggle('focus', on.size > 0);
+    $$('.sq-h, .sq-l', svg).forEach(e => e.classList.toggle('on', on.has(e.dataset.k)));
+    $$('[data-pf]', sec).forEach(b => b.setAttribute('aria-pressed', b.dataset.pf === S.filt));
+    const cnt = S.filt ? I.msgs.filter(x => x.f === S.filt || x.t === S.filt).length : 0;
+    $('.sq-count', sec).textContent = S.cur ? `Paso ${S.cur} de ${I.N}` : S.filt ? `${cnt} mensajes de ${I.nm(S.filt)}` : `${I.N} mensajes`;
+    $('.sq-prog i', sec).style.width = (S.cur / I.N * 100) + '%';
+    const pb = $('.sq-play', sec); pb.setAttribute('aria-pressed', S.playing); pb.textContent = S.playing ? '❚❚ Pausar' : S.cur >= I.N ? '↻ Repetir' : S.cur ? '▶ Continuar' : '▶ Reproducir';
+    let cap = hint;
+    if (m) { const ci = m.scr ? seqCapIdx(m.scr) : -1;
+      cap = `<span class="sq-n">${S.cur}</span><div class="sq-txt"><div class="sq-who">${I.nm(m.f)} → ${I.nm(m.t)} · ${SEQ_TY[m.k]}</div><b>${m.txt}</b>${m.d ? `<small>${m.d}</small>` : ''}${m.ctx.length ? `<small class="sq-ctx">Dentro de: ${m.ctx.join(' › ')}</small>` : ''}</div>${ci >= 0 ? `<button class="sbtn sq-go" data-cap="${ci}">Ver pantalla «${scrName(m.scr)}» →</button>` : ''}`; }
+    else if (S.filt) cap = `<span class="sq-hint">Se resaltan los ${cnt} mensajes en los que participa <b>${I.nm(S.filt)}</b>.</span><button class="sbtn" data-sp="clear">Quitar filtro</button>`;
+    $('.sq-cap', sec).innerHTML = cap;
+    $$('tr[data-n]', sec).forEach(r => r.classList.toggle('cur', +r.dataset.n === S.cur));
+    if (!I.W) I.W = svg.viewBox.baseVal.width;
+    svg.style.width = Math.round(I.W * S.z) + 'px'; svg.style.height = 'auto';
+    $('.sq-zoom b', sec).textContent = Math.round(S.z * 100) + ' %';
+  }
+  function reveal(id) {
+    const S = SQS[id], sec = $(`#seq-${id}`), wrap = $('.seq-svg', sec), el = svgOf(id)?.querySelector(`.sq-m[data-n="${S.cur}"]`); if (!el) return;
+    const beh = seqRM() ? 'auto' : 'smooth', r = el.getBoundingClientRect(), wr = wrap.getBoundingClientRect();
+    if (r.left < wr.left + 16 || r.right > wr.right - 16) wrap.scrollTo({ left: wrap.scrollLeft + (r.left + r.right) / 2 - (wr.left + wr.right) / 2, behavior: beh });
+    const topLim = ($('.top')?.offsetHeight || 64) + $('.sq-bar', sec).offsetHeight + 24;
+    if (r.top < topLim || r.bottom > innerHeight - 24) window.scrollBy({ top: r.top - topLim - Math.max(40, (innerHeight - topLim) * .3), behavior: beh });
+  }
+  function stop(id) { const S = SQS[id]; if (S.timer) clearInterval(S.timer); S.timer = null; S.playing = false; }
+  function stopAll() { Object.keys(SQS).forEach(stop); }
+  function go(id, n, rev) { const S = SQS[id]; S.cur = Math.max(0, Math.min(SQI[id].N, n)); if (S.cur) S.filt = null; apply(id); if (rev && S.cur) reveal(id); }
+  function play(id) {
+    const S = SQS[id]; if (S.playing) { stop(id); return apply(id); }
+    stopAll(); Object.keys(SQS).forEach(k => k !== id && apply(k));
+    if (S.cur >= SQI[id].N) S.cur = 0;
+    S.playing = true; go(id, S.cur + 1, true);
+    S.timer = setInterval(() => { if ($('#v-secuencia').hidden || $(`#seq-${id}`).hidden) { stop(id); return apply(id); } if (S.cur >= SQI[id].N) { stop(id); return apply(id); } go(id, S.cur + 1, true); }, 1900);
+  }
+  const draw = () => $$('.seq-svg', root).forEach(d => { d.innerHTML = seqSVG(SEQ.find(D => D.id === d.dataset.sv), SEQ_TH); apply(d.dataset.sv); });
   if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('700 13px Nunito'), document.fonts.load('800 13px Nunito')]).finally(draw); else draw();
+  const tip = $('#sqTip');
+  root.addEventListener('pointerover', e => { const g = e.target.closest('.seq-svg .sq-m'); if (!g || e.pointerType !== 'mouse') return; const id = g.closest('[data-sv]').dataset.sv, I = SQI[id], x = I.msgs[+g.dataset.n - 1];
+    tip.innerHTML = `<div class="sq-who">${g.dataset.n}. ${I.nm(x.f)} → ${I.nm(x.t)} · ${SEQ_TY[x.k]}</div><b>${x.txt}</b>${x.d ? `<small>${x.d}</small>` : ''}${x.ctx.length ? `<small class="sq-ctx">${x.ctx.join(' › ')}</small>` : ''}`; tip.hidden = false; });
+  root.addEventListener('pointermove', e => { if (tip.hidden) return; const w = tip.offsetWidth, h = tip.offsetHeight; let l = e.clientX + 16, t = e.clientY + 18; if (l + w > innerWidth - 8) l = e.clientX - w - 12; if (t + h > innerHeight - 8) t = e.clientY - h - 12; tip.style.left = l + 'px'; tip.style.top = t + 'px'; });
+  root.addEventListener('pointerout', e => { if (e.target.closest('.seq-svg .sq-m') && !e.relatedTarget?.closest?.('.sq-m')) tip.hidden = true; });
   root.addEventListener('click', e => {
-    const f = e.target.closest('[data-sqf]'); if (f) { const v = f.dataset.sqf; $$('[data-sqf]', root).forEach(b => b.setAttribute('aria-pressed', b === f)); $$('.seq', root).forEach(s => s.hidden = v !== 'todos' && s.dataset.sd !== v); return; }
-    const g = e.target.closest('[data-seqgo]'); if (g) { $$('[data-sqf]', root).forEach(b => b.setAttribute('aria-pressed', b.dataset.sqf === 'todos')); $$('.seq', root).forEach(s => s.hidden = false); $('#seq-' + g.dataset.seqgo)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
-    const c = e.target.closest('[data-cap]'); if (c) return openCap(+c.dataset.cap);
+    const f = e.target.closest('[data-sqf]'); if (f) { const v = f.dataset.sqf; $$('[data-sqf]', root).forEach(b => b.setAttribute('aria-pressed', b === f)); $$('.seq', root).forEach(s => s.hidden = v !== 'todos' && s.dataset.sd !== v); $('#seqDetH').hidden = v === 'SD-00'; return; }
+    const sg = e.target.closest('[data-seqgo]'); if (sg) { stopAll(); $$('[data-sqf]', root).forEach(b => b.setAttribute('aria-pressed', b.dataset.sqf === 'todos')); $$('.seq', root).forEach(s => s.hidden = false); $('#seqDetH').hidden = false; $('#seq-' + sg.dataset.seqgo)?.scrollIntoView({ behavior: seqRM() ? 'auto' : 'smooth', block: 'start' }); return; }
+    const sec = e.target.closest('.seq'), id = sec?.dataset.sd;
+    const msg = e.target.closest('.seq-svg .sq-m'); if (msg) { stop(id); tip.hidden = true; const n = +msg.dataset.n; go(id, SQS[id].cur === n ? 0 : n); return; }
+    const hd = e.target.closest('.seq-svg .sq-h') || e.target.closest('[data-pf]'); if (hd) { stop(id); const k = hd.dataset.k || hd.dataset.pf, S = SQS[id]; S.cur = 0; S.filt = S.filt === k ? null : k; apply(id); return; }
+    const sp = e.target.closest('[data-sp]'); if (sp) { const a = sp.dataset.sp, S = SQS[id];
+      if (a === 'play') return play(id);
+      stop(id);
+      if (a === 'next') go(id, S.cur + 1, true); else if (a === 'prev') go(id, S.cur - 1, true); else if (a === 'first') go(id, 1, true); else if (a === 'all') { S.filt = null; go(id, 0); } else if (a === 'clear') { S.filt = null; apply(id); }
+      return; }
+    const z = e.target.closest('[data-sz]'); if (z) { const S = SQS[id], wrap = $('.seq-svg', sec); S.z = z.dataset.sz === 'fit' ? Math.min(1.6, Math.max(.35, (wrap.clientWidth - 4) / SQI[id].W)) : Math.min(1.6, Math.max(.35, Math.round((S.z + (z.dataset.sz === '+' ? .1 : -.1)) * 10) / 10)); apply(id); return; }
+    const tr = e.target.closest('tr[data-n]'); if (tr) { stop(id); go(id, +tr.dataset.n, true); return; }
+    const c = e.target.closest('[data-cap]'); if (c) { stopAll(); return openCap(+c.dataset.cap); }
     const dl = e.target.closest('[data-sqdl]'); if (dl) { const D = SEQ.find(x => x.id === dl.dataset.sqdl); const url = URL.createObjectURL(new Blob([seqSVG(D, SEQ_TH)], { type: 'image/svg+xml' })); const a = document.createElement('a'); a.href = url; a.download = `${D.id}_${D.t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\w]+/g, '_')}.svg`; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000); return; }
     const cp = e.target.closest('[data-sqcp]'); if (cp) { const D = SEQ.find(x => x.id === cp.dataset.sqcp); const t = seqMermaid(D); (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => { cp.textContent = 'Copiado ✓'; }, () => { cp.textContent = 'No se pudo copiar'; }).finally(() => setTimeout(() => { cp.textContent = 'Copiar Mermaid'; }, 1600)); }
+  });
+  root.addEventListener('keydown', e => {
+    const w = e.target.closest('.seq-svg'); if (!w) return; const id = w.dataset.sv, S = SQS[id];
+    if (e.key === 'ArrowRight') { stop(id); go(id, S.cur + 1, true); } else if (e.key === 'ArrowLeft') { stop(id); go(id, S.cur - 1, true); } else if (e.key === ' ') play(id); else if (e.key === 'Escape') { stop(id); S.filt = null; go(id, 0); } else if (e.key === 'Home') { stop(id); go(id, 1, true); } else if (e.key === 'End') { stop(id); go(id, SQI[id].N, true); } else return;
+    e.preventDefault();
   });
   $('#sqTheme').onclick = () => { SEQ_TH = SEQ_TH === 'dark' ? 'light' : 'dark'; $('#sqTheme').setAttribute('aria-pressed', SEQ_TH === 'light'); root.classList.toggle('seq-light', SEQ_TH === 'light'); draw(); };
   $('#sqMmd').onclick = () => { const on = $('#sqMmd').getAttribute('aria-pressed') !== 'true'; $('#sqMmd').setAttribute('aria-pressed', on); $('#sqMmd').textContent = on ? 'Ocultar código Mermaid' : 'Mostrar código Mermaid'; $$('.seq-mmd', root).forEach(p => p.hidden = !on); };
 }
 
+/* Las pestañas cambian de vista sin depender de la URL (funciona también dentro de vistas previas en iframe) */
+document.addEventListener('click', e => { const a = e.target.closest('.top .tabs a[data-view]'); if (!a || e.ctrlKey || e.metaKey || e.shiftKey || e.button) return; e.preventDefault(); showView(a.dataset.view); });
 function boot() {
   buildIndex(); bindApp(); applyPrefs();
   $('#btnRestart').onclick = restartApp;
