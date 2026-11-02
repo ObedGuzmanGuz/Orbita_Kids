@@ -1,6 +1,32 @@
-# Sketches · Órbita Kids
+<div align="center">
 
-Bocetos de **baja fidelidad** dibujados a lápiz (estilo a mano con rough.js). Hay **130 sketches** de **60 pantallas**: uno por pantalla y uno más por cada estado que cambia con una acción. Cada caja, texto, imagen y botón tiene la misma posición y tamaño que en el wireframe y en el prototipo.
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ TODO COMIENZA CON UNA IDEA ✨
+
+# ✏️ SKETCHES · MÓVIL
+
+**BOCETOS DE BAJA FIDELIDAD · FLUJOS DE LA APP**
+
+<br>
+
+<img src="https://img.shields.io/badge/ROUGH.JS-7957D5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/PNG-EA4335?style=for-the-badge&logo=png&logoColor=white" />
+<img src="https://img.shields.io/badge/PROTOTIPADO-7254B8?style=for-the-badge" />
+
+<br><br>
+
+### 💡 IMAGINA · DIBUJA · DESCUBRE
+
+---
+
+</div>
 
 ## Cómo leerlos
 

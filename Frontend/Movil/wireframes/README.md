@@ -1,6 +1,32 @@
-# Wireframes · Órbita Kids
+<div align="center">
 
-**130 wireframes** en escala de grises con las **medidas de Flutter** (dp, píxeles lógicos), medidos sobre la app real del prototipo. Son los mismos estados que los sketches y las capturas, con el mismo nombre de archivo.
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CADA DETALLE GUÍA EL APRENDIZAJE ✨
+
+# 📐 WIREFRAMES · MÓVIL
+
+**ESTRUCTURA VISUAL · MEDIDAS Y ACCIONES DE LA APP**
+
+<br>
+
+<img src="https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/DP-7254B8?style=for-the-badge" />
+<img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=black" />
+<img src="https://img.shields.io/badge/PNG-EA4335?style=for-the-badge&logo=png&logoColor=white" />
+
+<br><br>
+
+### 📏 ORDENA · VALIDA · CONSTRUYE
+
+---
+
+</div>
 
 Cada estado está en dos formatos dentro de su sección:
 

@@ -1,6 +1,32 @@
-# Sketches · PWA Órbita Kids
+<div align="center">
 
-**50 sketches** de baja fidelidad a lápiz de **35 pantallas** de la PWA. Se dibujan desde la ventana real del prototipo (1280 px de ancho): cada caja, texto, imagen y botón tiene la misma posición y tamaño que en el wireframe y en la captura. Arriba se ve si la pantalla está en el **navegador** (pestaña y barra de direcciones) o en la **app instalada** (barra de título).
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CADA PANTALLA COMIENZA CON UNA IDEA ✨
+
+# ✏️ SKETCHES · WEB
+
+**BOCETOS DE BAJA FIDELIDAD · FLUJOS DE LA PWA**
+
+<br>
+
+<img src="https://img.shields.io/badge/ROUGH.JS-7957D5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
+<img src="https://img.shields.io/badge/PNG-EA4335?style=for-the-badge&logo=png&logoColor=white" />
+<img src="https://img.shields.io/badge/1280px-5367C5?style=for-the-badge" />
+
+<br><br>
+
+### 💡 IMAGINA · ORGANIZA · CONECTA
+
+---
+
+</div>
 
 ## Cómo leerlos
 

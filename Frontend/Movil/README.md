@@ -1,6 +1,33 @@
-# Órbita Kids · Frontend móvil
+<div align="center">
 
-App móvil educativa de matemáticas para primaria (Flutter · Keycloak · offline first). Esta carpeta reúne los cuatro entregables de la app móvil, todos generados a partir del mismo prototipo para que coincidan entre sí.
+<img align="left" src="../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ EXPERIENCIAS QUE ACOMPAÑAN CADA DESCUBRIMIENTO ✨
+
+# 📱 FRONTEND · APLICACIÓN MÓVIL
+
+**ENTREGABLES INTERACTIVOS · EXPERIENCIA DEL ESTUDIANTE**
+
+<br>
+
+<img src="https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/DART-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+<img src="https://img.shields.io/badge/KEYCLOAK-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+<img src="https://img.shields.io/badge/OFFLINE--FIRST-7254B8?style=for-the-badge" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🚀 JUEGA · APRENDE · AVANZA
+
+---
+
+</div>
 
 | Carpeta | Contenido | Archivos |
 |---|---|---|

@@ -1,6 +1,33 @@
-# Wireframes · PWA Órbita Kids
+<div align="center">
 
-**50 wireframes** medidos en **píxeles CSS** sobre la ventana real de 1280 px. Cada estado está como imagen (`NNN_….png`) y como vector editable (`svg/NNN_….svg`).
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CADA DETALLE HACE MÁS CLARO EL CAMINO ✨
+
+# 📐 WIREFRAMES · WEB
+
+**ESTRUCTURA VISUAL · MEDIDAS Y ACCIONES DE LA PWA**
+
+<br>
+
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS--PX-5367C5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=black" />
+<img src="https://img.shields.io/badge/PNG-EA4335?style=for-the-badge&logo=png&logoColor=white" />
+
+<br><br>
+
+### 📏 DEFINE · ORDENA · CONSTRUYE
+
+---
+
+</div>
 
 ## Cómo leerlos
 

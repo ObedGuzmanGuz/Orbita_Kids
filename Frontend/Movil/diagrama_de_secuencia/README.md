@@ -1,8 +1,33 @@
-# Diagramas de secuencia · Órbita Kids
+<div align="center">
 
-**1 diagrama general y 7 de detalle** (178 mensajes en total) que muestran cómo colaboran los usuarios, la app Flutter, Keycloak, los proveedores de identidad, la API REST (FastAPI + MySQL) y el almacenamiento local en los flujos principales del prototipo. Es una propuesta técnica coherente con la arquitectura del proyecto; el prototipo no se conecta a servicios reales.
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
-**SD-00 es el diagrama general**: recorre el sistema completo en seis fases y cada fase remite con «ref» a su diagrama de detalle (SD-01 a SD-07).
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CADA PASO CUENTA EN LA AVENTURA ✨
+
+# 🔄 DIAGRAMAS DE SECUENCIA · MÓVIL
+
+**FLUJOS DE INTERACCIÓN · ARQUITECTURA DE LA APP**
+
+<br>
+
+<img src="https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/KEYCLOAK-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+<img src="https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/MYSQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🧭 CONECTA · EXPLICA · ORIENTA
+
+---
+
+</div>
 
 En la pestaña **Diagrama de secuencia** de `../prototipo/Órbita_Kids_Prototipo.html` los diagramas son **interactivos**:
 

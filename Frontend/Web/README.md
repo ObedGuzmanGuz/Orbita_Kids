@@ -1,6 +1,34 @@
-# Órbita Kids · Frontend web (PWA)
+<div align="center">
 
-PWA para **docentes e instituciones**: sitio web público, acceso con Keycloak, app de escritorio instalable, espacio docente, panel de la institución, trabajo sin conexión y cuenta. El estudiante usa la app móvil (`../Movil/`).
+<img align="left" src="../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ EXPERIENCIAS QUE CONECTAN A CADA COMUNIDAD ✨
+
+# 🌐 FRONTEND · APLICACIÓN WEB
+
+**PWA EDUCATIVA · DOCENTES E INSTITUCIONES**
+
+<br>
+
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
+<img src="https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/KEYCLOAK-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🌍 CONECTA · ACOMPAÑA · CRECE
+
+---
+
+</div>
 
 | Carpeta | Contenido | Archivos |
 |---|---|---|

@@ -1,25 +1,32 @@
-# Órbita Kids · Frontend
+<div align="center">
 
-Entregables de diseño del frontend de Órbita Kids, separados por plataforma. Las dos carpetas tienen la misma estructura.
+<img align="left" src="../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
-```
-Frontend/
-├── README.md
-├── Movil/                      App móvil Flutter (estudiante y docente)
-│   ├── sketches/               130 sketches de baja fidelidad
-│   ├── wireframes/             130 wireframes con medidas Flutter (PNG + SVG)
-│   ├── prototipo/              Prototipo interactivo HTML + 130 capturas
-│   └── diagrama_de_secuencia/  1 diagrama general + 7 de detalle (PNG, SVG y Mermaid)
-└── Web/                        PWA para docentes e instituciones
-    ├── sketches/               50 sketches de baja fidelidad
-    ├── wireframes/             50 wireframes a 1280 px (PNG + SVG)
-    ├── prototipo/              Órbita_Kids_PWA_v3.html + 53 capturas
-    └── diagrama_de_secuencia/  4 diagramas (PNG, SVG y Mermaid)
-```
+<br>
 
-| Plataforma | Para quién | Prototipo | Estado |
-|---|---|---|---|
-| [`Movil/`](Movil/README.md) | Estudiante (rol principal) y docente | `Movil/prototipo/Órbita_Kids_Prototipo.html` | Completo |
-| [`Web/`](Web/README.md) | Docente e institución (dirección) | `Web/prototipo/Órbita_Kids_PWA_v3.html` | Completo |
+# 🪐  ` Ó R B I T A · K I D S ` 🚀
 
-Las dos plataformas comparten Keycloak (Authorization Code + PKCE) y la misma API; el diagrama general `Movil/diagrama_de_secuencia/` (SD-00) muestra cómo encajan.
+### ✨ CREAMOS EXPERIENCIAS QUE INSPIRAN ✨
+
+# 💻 FRONTEND · DISEÑO Y PROTOTIPOS
+
+**ENTREGABLES DE EXPERIENCIA · WEB & MOBILE**
+
+<br>
+
+<img src="https://img.shields.io/badge/ÁREA-FRONTEND-7957D5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
+<img src="https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/DART-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🌌 DISEÑA · PRUEBA · TRANSFORMA
+
+---
+
+</div>

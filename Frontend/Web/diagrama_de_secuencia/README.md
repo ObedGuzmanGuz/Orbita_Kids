@@ -1,6 +1,33 @@
-# Diagramas de secuencia · PWA Órbita Kids
+<div align="center">
 
-**4 diagramas de secuencia** (58 mensajes) de los flujos clave de la PWA: quién envía qué, en qué orden y qué pasa cuando algo falla. Se ven también en la pestaña **Diagramas de secuencia** de `../prototipo/Órbita_Kids_PWA_v3.html`, donde las etiquetas de la columna «Pantalla» abren el prototipo en ese estado.
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CADA CONEXIÓN IMPULSA EL PROGRESO ✨
+
+# 🔄 DIAGRAMAS DE SECUENCIA · WEB
+
+**FLUJOS DE INTERACCIÓN · ARQUITECTURA DE LA PWA**
+
+<br>
+
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
+<img src="https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/KEYCLOAK-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🔗 CONECTA · ORGANIZA · COMUNICA
+
+---
+
+</div>
 
 | Diagrama | Flujo | Mensajes |
 |---|---|---|

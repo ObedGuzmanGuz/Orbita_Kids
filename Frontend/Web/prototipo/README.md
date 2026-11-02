@@ -1,8 +1,33 @@
-# Prototipo · PWA Órbita Kids
+<div align="center">
 
-`Órbita_Kids_PWA_v3.html` es el prototipo completo de la PWA en un solo archivo. Se abre con doble clic en Chrome, Edge, Firefox o Safari.
+<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
-> Con Internet se ven las tipografías Red Hat y el trazo a lápiz de los sketches (Google Fonts y jsDelivr). Sin Internet funciona igual, con letras del sistema.
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ UNA EXPERIENCIA QUE ACOMPAÑA Y CONECTA ✨
+
+# 🧪 PROTOTIPO INTERACTIVO · WEB
+
+**PWA PARA DOCENTES E INSTITUCIONES · FLUJOS RESPONSIVOS**
+
+<br>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+
+<br><br>
+
+### 🖥️ EXPLORA · GESTIONA · ACOMPAÑA
+
+---
+
+</div>
 
 ## Pestañas
 
