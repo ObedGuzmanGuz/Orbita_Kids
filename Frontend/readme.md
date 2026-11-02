@@ -4,6 +4,7 @@ Entregables de diseño del frontend de Órbita Kids, separados por plataforma.
 
 ```
 Frontend/
+
 ├── README.md
 ├── Movil/                      App móvil Flutter (estudiante y docente)
 │   ├── README.md
