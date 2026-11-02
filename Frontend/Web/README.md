@@ -1,19 +1,32 @@
-# Órbita Kids · Frontend web
+# Órbita Kids · Frontend web (PWA)
 
-Espacio para los entregables de la versión web: la **PWA docente**, complementaria a la app móvil y marcada como «en desarrollo» en la arquitectura del proyecto.
+PWA para **docentes e instituciones**: sitio web público, acceso con Keycloak, app de escritorio instalable, espacio docente, panel de la institución, trabajo sin conexión y cuenta. El estudiante usa la app móvil (`../Movil/`).
 
-Tiene la misma estructura que `../Movil/`:
+| Carpeta | Contenido | Archivos |
+|---|---|---|
+| [`sketches/`](sketches/README.md) | Bocetos de baja fidelidad, uno por pantalla y estado | 50 PNG |
+| [`wireframes/`](wireframes/README.md) | Wireframes a 1280 px con rejilla de 12 columnas y medidas en px CSS | 50 PNG + 50 SVG |
+| [`prototipo/`](prototipo/README.md) | Prototipo interactivo `Órbita_Kids_PWA_v3.html` y capturas de cada estado | 1 HTML + 53 PNG |
+| [`diagrama_de_secuencia/`](diagrama_de_secuencia/README.md) | 4 diagramas de secuencia de los flujos clave de la PWA | SVG, PNG y Mermaid |
 
-| Carpeta | Estado |
-|---|---|
-| [`sketches/`](sketches/README.md) | Pendiente |
-| [`wireframes/`](wireframes/README.md) | Pendiente |
-| [`prototipo/`](prototipo/README.md) | Pendiente |
-| [`diagrama_de_secuencia/`](diagrama_de_secuencia/README.md) | Pendiente |
+## Cifras
 
-Lo que ya está definido para la web y se puede reutilizar desde `../Movil/`:
+- **35 pantallas** y **53 estados**, en 7 secciones.
+- **644 acciones** numeradas en sketches y wireframes.
+- **4 diagramas de secuencia** con **58 mensajes**.
 
-- **Permisos por rol:** desde la PWA el docente ve grupos, estudiantes e intentos, crea y publica actividades, consulta reportes ampliados y crea grupos. El estudiante no usa la PWA.
-- **Autenticación:** el mismo Keycloak con Authorization Code + PKCE (diagrama SD-02).
-- **Flujo docente:** publicar una actividad y revisar el progreso (diagrama SD-06).
-- **Backend:** la misma API REST (FastAPI + MySQL) y una sola fuente de permisos para la app y la PWA.
+Los sketches, los wireframes y las capturas usan el mismo nombre de archivo para cada estado (`orden_código_pantalla_estado`), igual que en `../Movil/`. Los estados 35a (Vista docente), 35b (Vista de dirección), 35c (Asignar sin conexión) de «Explorar sin cuenta» son una demostración dentro del sitio y solo tienen captura, no sketch ni wireframe (así viene en el prototipo).
+
+## Estructura
+
+```
+Web/
+├── README.md
+├── sketches/<sección>/NNN_….png
+├── wireframes/<sección>/NNN_….png  +  <sección>/svg/NNN_….svg
+├── prototipo/
+│   ├── Órbita_Kids_PWA_v3.html
+│   └── capturas/<sección>/NNN_….png
+└── diagrama_de_secuencia/
+    ├── png/  ├── svg/  └── mermaid/
+```

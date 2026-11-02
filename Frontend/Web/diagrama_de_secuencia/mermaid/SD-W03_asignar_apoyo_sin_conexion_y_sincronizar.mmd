@@ -1,0 +1,30 @@
+%% Asignar apoyo sin conexión y sincronizar
+sequenceDiagram
+  autonumber
+  actor u as Docente<br/>persona
+  participant pwa as PWA Órbita Kids<br/>navegador o ventana
+  participant db as IndexedDB<br/>datos y cola local
+  participant sw as Service worker<br/>Workbox
+  participant api as API Órbita<br/>backend compartido
+  participant mob as App móvil<br/>estudiante
+  u->>pwa: «Asignar apoyo» a Leonardo F. sin conexión
+  pwa->>db: Guarda el cambio en la cola con un id único
+  pwa-->>u: Actualiza la vista al instante: «1 cambio en cola»
+  loop Mientras no hay red
+    pwa->>pwa: Indicador orbital punteado, se puede seguir trabajando
+  end
+  pwa->>pwa: Detecta el evento online
+  pwa->>sw: Pide sincronizar (Background Sync)
+  sw->>db: Lee los cambios pendientes
+  sw->>api: POST /cambios en lote, idempotente por id
+  alt Todo se aplicó
+    api-->>sw: 200 con los ids confirmados
+    sw->>db: Borra de la cola lo confirmado
+    sw->>pwa: Avisa que la cola quedó vacía
+    pwa-->>u: «Sincronizado» y aviso de cambios enviados
+  else Conflicto
+    api-->>sw: 409 con la versión actual
+    sw->>pwa: Marca el cambio para revisar
+    pwa->>u: Pide elegir qué versión conservar
+  end
+  api->>mob: Publica el refuerzo en la app del estudiante

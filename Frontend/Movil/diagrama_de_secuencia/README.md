@@ -1,11 +1,20 @@
 # Diagramas de secuencia · Órbita Kids
 
-**7 diagramas de secuencia UML** (138 mensajes) que muestran cómo colaboran los usuarios, la app Flutter, Keycloak, los proveedores de identidad, la API REST (FastAPI + MySQL) y el almacenamiento local en los flujos principales del prototipo. Es una propuesta técnica coherente con la arquitectura del proyecto; el prototipo no se conecta a servicios reales.
+**1 diagrama general y 7 de detalle** (178 mensajes en total) que muestran cómo colaboran los usuarios, la app Flutter, Keycloak, los proveedores de identidad, la API REST (FastAPI + MySQL) y el almacenamiento local en los flujos principales del prototipo. Es una propuesta técnica coherente con la arquitectura del proyecto; el prototipo no se conecta a servicios reales.
 
-También se ven en la pestaña **Diagrama de secuencia** de `../prototipo/Órbita_Kids_Prototipo.html`.
+**SD-00 es el diagrama general**: recorre el sistema completo en seis fases y cada fase remite con «ref» a su diagrama de detalle (SD-01 a SD-07).
+
+En la pestaña **Diagrama de secuencia** de `../prototipo/Órbita_Kids_Prototipo.html` los diagramas son **interactivos**:
+
+- **Reproducir** recorre los mensajes uno a uno; ‹ › avanzan y retroceden (también con las flechas del teclado).
+- Tocar un **mensaje** muestra su detalle, el contexto (alt, opt, loop) y un botón para abrir esa pantalla en el prototipo.
+- Tocar un **participante** resalta solo sus mensajes.
+- Tocar un marco **ref** lleva al diagrama de detalle.
+- Zoom, fondo claro u oscuro, código Mermaid y descarga en SVG.
 
 | Diagrama | Flujo | Mensajes |
 |---|---|---|
+| [SD-00](#sd-00) | Diagrama general del sistema | 40 |
 | [SD-01](#sd-01) | Arranque y restauración de sesión | 20 |
 | [SD-02](#sd-02) | Inicio de sesión federado con Keycloak | 27 |
 | [SD-03](#sd-03) | Registro de estudiante con código de grupo | 20 |
@@ -36,9 +45,152 @@ También se ven en la pestaña **Diagrama de secuencia** de `../prototipo/Órbit
 | Marco `break` | Si se cumple la condición, se ejecuta y termina el flujo |
 | Marco `ref` | Remite a otro diagrama |
 | Nota amarilla | Aclaración |
+| Banda de fase | Etapa del flujo en el diagrama general |
 
 Los mensajes están numerados en orden. Se usan los mismos números en las tablas de abajo y en el código Mermaid (`autonumber`).
 
+
+---
+
+## SD-00
+
+### Diagrama general del sistema (vista general)
+
+Vista de conjunto de Órbita Kids de principio a fin: inicio de sesión, el docente publica una actividad, el estudiante la resuelve sin depender de Internet, la app sincroniza, el docente revisa el progreso y se cierra la sesión. Cada fase remite con «ref» a su diagrama de detalle.
+
+- **Participantes:** Estudiante (actor), Docente (actor), App Flutter, Almac. local, Keycloak, API REST, Base de datos
+- **Precondición:** App instalada en el teléfono del estudiante y del docente; licencia escolar vigente.
+- **Resultado:** Intentos y progreso sincronizados, reporte disponible para el docente y sesión cerrada de forma segura.
+- **Pantallas del prototipo:** 01 · Splash Órbita Kids, 05a · Inicio de sesión, 15a · Home estudiante, 33a · Crear actividad, 16a · Mis actividades, 20a · Sumas con apoyo visual, 22a · Resultados y recompensas, 40a · Sincronización, 35 · Resultados y reportes, 49a · Cerrar sesión
+
+![SD-00 · Diagrama general del sistema](png/SD-00_diagrama_general_del_sistema_claro.png)
+
+Archivos: [PNG claro](png/SD-00_diagrama_general_del_sistema_claro.png) · [PNG oscuro](png/SD-00_diagrama_general_del_sistema_oscuro.png) · [SVG claro](svg/SD-00_diagrama_general_del_sistema_claro.svg) · [SVG oscuro](svg/SD-00_diagrama_general_del_sistema_oscuro.svg) · [Mermaid](mermaid/SD-00_diagrama_general_del_sistema.mmd)
+
+<details><summary>Código Mermaid</summary>
+
+```mermaid
+sequenceDiagram
+  autonumber
+  actor est as Estudiante<br/>Rol principal
+  actor doc as Docente<br/>Rol de seguimiento
+  participant app as App Flutter<br/>Móvil · ambos roles
+  participant loc as Almac. local<br/>SQLite + Keystore
+  participant kc as Keycloak<br/>OIDC · PKCE
+  participant api as API REST<br/>FastAPI
+  participant db as Base de datos<br/>MySQL
+  Note over est,db: Fase 1 · Arranque e inicio de sesión
+  est->>app: Abre la app
+  app->>est: Splash, onboarding (primer acceso) e inicio de sesión
+  est->>app: Elige Google, Facebook, institución o cuenta Órbita
+  app->>+kc: Authorization Code + PKCE en el navegador del sistema
+  kc-->>-app: Access, refresh e id token
+  app->>loc: Guarda los tokens cifrados
+  app->>+api: GET /me · Bearer
+  api->>+db: Rol, licencia, grupos y asignaciones
+  db-->>-api: Datos de la cuenta
+  api-->>-app: Rol estudiante (lo decide el backend)
+  app->>est: Home estudiante
+  Note over est,db: ref · SD-01 · Arranque   ·   SD-02 · Inicio de sesión   ·   SD-03 · Registro
+  Note over est,db: Fase 2 · El docente publica una actividad
+  doc->>app: Crea la actividad (borrador local si no hay Internet)
+  app->>+api: POST /actividades · Bearer docente
+  api->>+db: Guarda la actividad (solo en sus grupos)
+  db-->>-api: Confirmado
+  api-->>-app: 201 · actividad activa
+  Note over est,db: Fase 3 · El estudiante resuelve la misión, con o sin Internet
+  app->>+api: GET /asignaciones (al sincronizar)
+  api-->>-app: Nueva tarea «Sumas hasta 20»
+  app->>est: Aviso de la maestra → Continuar misión
+  loop por cada suma de la misión
+    app->>est: Muestra la suma con apoyo visual u opciones
+    est->>app: Responde → Comprobar
+    app->>app: Reglas R1–R3: pista, apoyo extra o refuerzo
+    app->>loc: Guarda el intento con UUID y lo encola
+  end
+  app->>est: Resultados, estrellas e insignias
+  Note over est,loc: ref · SD-04 · Resolver una misión
+  Note over est,db: Fase 4 · Sincronización al haber conexión
+  opt hay conexión
+    app->>+api: POST /sync · Idempotency-Key: UUID
+    api->>+db: Inserta sin duplicar y recalcula el progreso
+    db-->>-api: Confirmado
+    api-->>-app: 201 · 200 · 409 (el servidor gana)
+    app->>loc: Retira de la cola solo lo confirmado
+  end
+  Note over app,db: ref · SD-05 · Sincronización al reconectar
+  Note over est,db: Fase 5 · El docente revisa el progreso
+  doc->>app: Abre Resultados y reportes
+  app->>+api: GET /grupos/(id)/reportes
+  api->>+db: Agrega aciertos, intentos y errores frecuentes
+  db-->>-api: Datos agregados
+  api-->>-app: Reporte y alertas (R4)
+  app->>doc: Cifras, evolución y refuerzo sugerido
+  Note over doc,db: ref · SD-06 · Docente publica y revisa el progreso
+  Note over est,db: Fase 6 · Cierre de sesión
+  est->>app: Perfil → Cerrar sesión
+  app->>+kc: POST /logout · revoca la sesión
+  kc-->>-app: 204 · sesión revocada
+  app->>loc: Borra los tokens y aísla los pendientes
+  app->>est: Vuelve a Inicio de sesión
+  Note over est,kc: ref · SD-07 · Cerrar sesión de forma segura
+```
+
+</details>
+
+| # | De → a | Tipo | Mensaje | Contexto |
+|---|---|---|---|---|
+| | | | **Fase 1 · Arranque e inicio de sesión** | |
+| 1 | Estudiante → App Flutter | Síncrono | Abre la app | — |
+| 2 | App Flutter → Estudiante | Síncrono | Splash, onboarding (primer acceso) e inicio de sesión | — |
+| 3 | Estudiante → App Flutter | Síncrono | Elige Google, Facebook, institución o cuenta Órbita | — |
+| 4 | App Flutter → Keycloak | Síncrono | Authorization Code + PKCE en el navegador del sistema — Keycloak redirige al proveedor de identidad elegido; nunca se usa un WebView. | — |
+| 5 | Keycloak → App Flutter | Respuesta | Access, refresh e id token | — |
+| 6 | App Flutter → Almac. local | Síncrono | Guarda los tokens cifrados | — |
+| 7 | App Flutter → API REST | Síncrono | GET /me · Bearer | — |
+| 8 | API REST → Base de datos | Síncrono | Rol, licencia, grupos y asignaciones | — |
+| 9 | Base de datos → API REST | Respuesta | Datos de la cuenta | — |
+| 10 | API REST → App Flutter | Respuesta | Rol estudiante (lo decide el backend) | — |
+| 11 | App Flutter → Estudiante | Síncrono | Home estudiante | — |
+| — | — | ref | SD-01 · Arranque   ·   SD-02 · Inicio de sesión   ·   SD-03 · Registro | — |
+| | | | **Fase 2 · El docente publica una actividad** | |
+| 12 | Docente → App Flutter | Síncrono | Crea la actividad (borrador local si no hay Internet) | — |
+| 13 | App Flutter → API REST | Síncrono | POST /actividades · Bearer docente | — |
+| 14 | API REST → Base de datos | Síncrono | Guarda la actividad (solo en sus grupos) | — |
+| 15 | Base de datos → API REST | Respuesta | Confirmado | — |
+| 16 | API REST → App Flutter | Respuesta | 201 · actividad activa | — |
+| | | | **Fase 3 · El estudiante resuelve la misión, con o sin Internet** | |
+| 17 | App Flutter → API REST | Síncrono | GET /asignaciones (al sincronizar) | — |
+| 18 | API REST → App Flutter | Respuesta | Nueva tarea «Sumas hasta 20» | — |
+| 19 | App Flutter → Estudiante | Síncrono | Aviso de la maestra → Continuar misión | — |
+| 20 | App Flutter → Estudiante | Síncrono | Muestra la suma con apoyo visual u opciones | loop [por cada suma de la misión] |
+| 21 | Estudiante → App Flutter | Síncrono | Responde → Comprobar | loop [por cada suma de la misión] |
+| 22 | App Flutter → App Flutter | Síncrono | Reglas R1–R3: pista, apoyo extra o refuerzo — Motor de reglas local, sin IA. R1: 2 errores seguidos activan apoyo visual. | loop [por cada suma de la misión] |
+| 23 | App Flutter → Almac. local | Síncrono | Guarda el intento con UUID y lo encola | loop [por cada suma de la misión] |
+| 24 | App Flutter → Estudiante | Síncrono | Resultados, estrellas e insignias | — |
+| — | — | ref | SD-04 · Resolver una misión | — |
+| | | | **Fase 4 · Sincronización al haber conexión** | |
+| 25 | App Flutter → API REST | Síncrono | POST /sync · Idempotency-Key: UUID | opt [hay conexión] |
+| 26 | API REST → Base de datos | Síncrono | Inserta sin duplicar y recalcula el progreso | opt [hay conexión] |
+| 27 | Base de datos → API REST | Respuesta | Confirmado | opt [hay conexión] |
+| 28 | API REST → App Flutter | Respuesta | 201 · 200 · 409 (el servidor gana) | opt [hay conexión] |
+| 29 | App Flutter → Almac. local | Síncrono | Retira de la cola solo lo confirmado | opt [hay conexión] |
+| — | — | ref | SD-05 · Sincronización al reconectar | — |
+| | | | **Fase 5 · El docente revisa el progreso** | |
+| 30 | Docente → App Flutter | Síncrono | Abre Resultados y reportes | — |
+| 31 | App Flutter → API REST | Síncrono | GET /grupos/{id}/reportes | — |
+| 32 | API REST → Base de datos | Síncrono | Agrega aciertos, intentos y errores frecuentes | — |
+| 33 | Base de datos → API REST | Respuesta | Datos agregados | — |
+| 34 | API REST → App Flutter | Respuesta | Reporte y alertas (R4) | — |
+| 35 | App Flutter → Docente | Síncrono | Cifras, evolución y refuerzo sugerido | — |
+| — | — | ref | SD-06 · Docente publica y revisa el progreso | — |
+| | | | **Fase 6 · Cierre de sesión** | |
+| 36 | Estudiante → App Flutter | Síncrono | Perfil → Cerrar sesión | — |
+| 37 | App Flutter → Keycloak | Síncrono | POST /logout · revoca la sesión | — |
+| 38 | Keycloak → App Flutter | Respuesta | 204 · sesión revocada | — |
+| 39 | App Flutter → Almac. local | Síncrono | Borra los tokens y aísla los pendientes | — |
+| 40 | App Flutter → Estudiante | Síncrono | Vuelve a Inicio de sesión | — |
+| — | — | ref | SD-07 · Cerrar sesión de forma segura | — |
 
 ---
 

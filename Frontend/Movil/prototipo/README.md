@@ -11,7 +11,7 @@
 | **Prototipo** | El teléfono navegable al centro, el índice de pantallas a la izquierda y la ficha de la pantalla actual a la derecha. «Ver en acción» recorre solo el flujo completo. |
 | **Sketches** | Los 130 sketches con filtro por sección y ficha completa de cada pantalla. |
 | **Wireframes** | Los 130 wireframes con capas (rejilla, medidas, números, reglas) y la especificación Flutter de cada estado. |
-| **Diagrama de secuencia** | Los 7 diagramas de secuencia UML (nuevo). Fondo claro u oscuro, código Mermaid, descarga en SVG y botones para abrir cada pantalla relacionada. |
+| **Diagrama de secuencia** | 1 diagrama general y 7 de detalle, **interactivos**: se reproducen paso a paso, se filtran por participante, se navega entre diagramas con «ref» y cada paso abre su pantalla en el prototipo. Fondo claro u oscuro, zoom, código Mermaid y descarga en SVG. |
 
 ## Cómo probar
 

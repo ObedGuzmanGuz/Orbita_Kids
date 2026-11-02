@@ -7,13 +7,13 @@ App móvil educativa de matemáticas para primaria (Flutter · Keycloak · offli
 | [`sketches/`](sketches/README.md) | Bocetos de baja fidelidad a lápiz, uno por pantalla y estado | 130 PNG |
 | [`wireframes/`](wireframes/README.md) | Wireframes con rejilla, medidas en dp y acciones numeradas | 130 PNG + 130 SVG |
 | [`prototipo/`](prototipo/README.md) | Prototipo interactivo en HTML y capturas de alta fidelidad | 1 HTML + 130 PNG |
-| [`diagrama_de_secuencia/`](diagrama_de_secuencia/README.md) | 7 diagramas de secuencia UML de los flujos principales | SVG, PNG y Mermaid |
+| [`diagrama_de_secuencia/`](diagrama_de_secuencia/README.md) | Diagramas de secuencia UML: 1 diagrama general y 7 de detalle | SVG, PNG y Mermaid |
 
 ## Cifras
 
 - **60 pantallas** y **130 estados** (cada estado que provoca una acción tiene su propio sketch, wireframe y captura).
 - **928 acciones** numeradas en total.
-- **7 diagramas de secuencia** con **138 mensajes**.
+- **Diagramas de secuencia:** 1 diagrama general y 7 de detalle, con **178 mensajes**.
 
 ## Cómo se relacionan los archivos
 
