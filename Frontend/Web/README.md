@@ -58,3 +58,25 @@ Web/
 └── diagrama_de_secuencia/
     ├── png/  ├── svg/  └── mermaid/
 ```
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

@@ -157,3 +157,25 @@ La especificación completa de cada wireframe está en la pestaña **Wireframes*
 | 48 | [32](07_cuenta/048_32_seguridad-y-sesiones_sesiones-activas.png) | [svg](07_cuenta/svg/048_32_seguridad-y-sesiones_sesiones-activas.svg) | Seguridad y sesiones · Sesiones activas | App instalada · 1280 × 760 | 15 |
 | 49 | [33](07_cuenta/049_33_ayuda-y-soporte_preguntas-y-reporte.png) | [svg](07_cuenta/svg/049_33_ayuda-y-soporte_preguntas-y-reporte.svg) | Ayuda y soporte · Preguntas y reporte | App instalada · 1280 × 760 | 22 |
 | 50 | [34](07_cuenta/050_34_cerrar-sesion_con-un-cambio-pendiente.png) | [svg](07_cuenta/svg/050_34_cerrar-sesion_con-un-cambio-pendiente.svg) | Cerrar sesión · Con un cambio pendiente | App instalada · 1280 × 760 | 2 |
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

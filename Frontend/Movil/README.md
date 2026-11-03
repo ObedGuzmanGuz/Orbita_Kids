@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -29,53 +29,246 @@
 
 </div>
 
-| Carpeta | Contenido | Archivos |
-|---|---|---|
-| [`sketches/`](sketches/README.md) | Bocetos de baja fidelidad a lápiz, uno por pantalla y estado | 130 PNG |
-| [`wireframes/`](wireframes/README.md) | Wireframes con rejilla, medidas en dp y acciones numeradas | 130 PNG + 130 SVG |
-| [`prototipo/`](prototipo/README.md) | Prototipo interactivo en HTML y capturas de alta fidelidad | 1 HTML + 130 PNG |
-| [`diagrama_de_secuencia/`](diagrama_de_secuencia/README.md) | Diagramas de secuencia UML: 1 diagrama general y 7 de detalle | SVG, PNG y Mermaid |
+La carpeta reúne los materiales que explican la experiencia móvil: definición visual, estructura de pantallas, navegación interactiva y flujos técnicos. Cada entregable complementa a los demás y sirve como referencia para construir la aplicación en Flutter.
 
-## Cifras
+---
 
-- **60 pantallas** y **130 estados** (cada estado que provoca una acción tiene su propio sketch, wireframe y captura).
-- **928 acciones** numeradas en total.
-- **Diagramas de secuencia:** 1 diagrama general y 7 de detalle, con **178 mensajes**.
+<div align="center">
 
-## Cómo se relacionan los archivos
+## 🪐 BIENVENIDO A LA EXPERIENCIA MÓVIL DE ÓRBITA KIDS
 
-Los tres primeros entregables usan **el mismo número y el mismo nombre de archivo** para cada estado, así que es fácil compararlos:
+*Un espacio donde cada interacción abre las puertas a nuevos descubrimientos.*
 
-```
-sketches/04_estudiante/059_15a_home-estudiante_inicio-con-mision-actual.png
-wireframes/04_estudiante/059_15a_home-estudiante_inicio-con-mision-actual.png
-prototipo/capturas/04_estudiante/059_15a_home-estudiante_inicio-con-mision-actual.png
-```
+</div>
 
-El nombre se lee así: `orden_código-de-pantalla_pantalla_estado`. El código (por ejemplo `15a`) es el de la ficha de la pantalla en el prototipo; la letra distingue los estados de una misma pantalla.
+## 🚀 01. Acerca del módulo
 
-## Estructura
+El módulo **Frontend Mobile de Órbita Kids** comprende el diseño, prototipado y desarrollo de la aplicación móvil, enfocada en proporcionar una experiencia educativa interactiva, accesible y adaptada a dispositivos móviles.
 
-```
-Frontend/Movil/
-├── README.md
-├── sketches/
-│   ├── README.md
-│   └── <sección>/NNN_código_pantalla_estado.png
-├── wireframes/
-│   ├── README.md
-│   └── <sección>/NNN_….png  +  <sección>/svg/NNN_….svg
-├── prototipo/
-│   ├── README.md
-│   ├── Órbita_Kids_Prototipo.html
-│   └── capturas/<sección>/NNN_….png
-└── diagrama_de_secuencia/
-    ├── README.md
-    ├── png/   (claro y oscuro)
-    ├── svg/   (claro y oscuro)
-    └── mermaid/  (código editable .mmd)
-```
+Su propósito es acercar las experiencias de aprendizaje a los estudiantes mediante interfaces intuitivas, actividades dinámicas y una navegación que fomente la curiosidad, la exploración y la participación.
 
-## Nota
+La aplicación utiliza **Flutter y Dart** como tecnologías principales, manteniendo la identidad visual y los criterios de experiencia de usuario definidos para el ecosistema Órbita Kids.
 
-Es un prototipo académico: no se conecta a Keycloak, Google, Facebook ni al backend reales. Los datos son de demostración.
+## 🎯 02. Objetivo de la aplicación
+
+Construir una experiencia móvil que permita a los estudiantes interactuar con los contenidos y actividades educativas de Órbita Kids desde sus dispositivos, favoreciendo un aprendizaje dinámico y una navegación sencilla.
+
+Los principales objetivos son:
+
+- **Aprendizaje interactivo:** facilitar la participación mediante actividades y experiencias educativas.
+- **Exploración:** incorporar recorridos y experiencias inspiradas en la exploración espacial.
+- **Usabilidad:** ofrecer interfaces intuitivas y adecuadas para la interacción táctil.
+- **Personalización:** contemplar experiencias y elementos visuales personalizables.
+- **Accesibilidad:** considerar diferentes necesidades de interacción y comprensión.
+- **Disponibilidad:** contemplar el funcionamiento de determinadas experiencias sin conexión a Internet.
+
+## 🌟 03. Experiencia del estudiante
+
+La aplicación móvil está orientada principalmente al estudiante, quien representa el centro de la experiencia educativa.
+
+Su diseño busca combinar aprendizaje, exploración e interacción mediante diferentes elementos que conforman el universo de Órbita Kids.
+
+### 🧑‍🚀 Personalización del personaje
+
+Experiencia orientada a la selección y personalización de un personaje que acompañe al estudiante durante su recorrido por la plataforma.
+
+### 🧮 Aprendizaje mediante actividades
+
+Actividades educativas que permiten trabajar contenidos como operaciones matemáticas mediante recursos visuales y apoyos interactivos.
+
+### 🪐 Exploración espacial
+
+Experiencias de exploración mediante planetas, misiones y escenarios que proporcionan un contexto atractivo para el aprendizaje.
+
+### ⭐ Retroalimentación
+
+Recursos visuales y respuestas de interacción que ayudan al estudiante a reconocer sus avances y comprender el resultado de sus actividades.
+
+### 📚 Experiencia educativa
+
+Organización de los contenidos y actividades para ofrecer una interacción progresiva, comprensible y adecuada a los objetivos de aprendizaje.
+
+## 🔐 04. Autenticación y acceso
+
+La arquitectura de acceso contempla **Keycloak** como solución de gestión de identidad y autenticación.
+
+Su incorporación permite establecer una estructura centralizada para gestionar la autenticación de los usuarios y las sesiones de acceso dentro del ecosistema Órbita Kids.
+
+La integración considera:
+
+- Gestión de identidad y autenticación.
+- Acceso mediante los mecanismos de inicio de sesión definidos para el proyecto.
+- Organización de sesiones de usuario.
+- Consideración de los diferentes perfiles de acceso.
+- Integración con los servicios de la plataforma.
+
+## 📡 05. Experiencia Offline-First
+
+La aplicación móvil contempla un enfoque **Offline-First**, orientado a ofrecer una experiencia que no dependa exclusivamente de una conexión permanente a Internet.
+
+Este enfoque considera la disponibilidad local de los recursos necesarios para determinadas interacciones y actividades, así como la gestión de información cuando la conectividad no está disponible.
+
+Entre sus criterios de diseño se encuentran:
+
+- Acceso a recursos previamente disponibles en el dispositivo.
+- Consideración de actividades que puedan utilizarse sin conexión.
+- Gestión de información local.
+- Adaptación de la experiencia ante cambios en la conectividad.
+- Consideración de mecanismos de sincronización cuando se restablezca la conexión.
+
+*La disponibilidad de cada funcionalidad sin conexión dependerá de sus necesidades de datos y de las integraciones correspondientes.*
+
+## 🎨 06. Diseño y entregables móviles
+
+El diseño de la aplicación contempla los elementos visuales, estructurales y funcionales necesarios para representar la experiencia móvil de Órbita Kids.
+
+### 🖌️ Diseño de interfaces (UI)
+
+Definición de pantallas, jerarquías visuales, colores, tipografías, iconografía, componentes y elementos gráficos que conforman la identidad de la aplicación.
+
+### 🧭 Experiencia de usuario (UX)
+
+Organización de recorridos, navegación y relaciones entre pantallas para proporcionar una experiencia intuitiva y coherente.
+
+### ✏️ Sketches
+
+Representaciones iniciales de las ideas y propuestas de interfaz, utilizadas para explorar distribuciones, estructuras y posibles soluciones visuales.
+
+### 📐 Wireframes
+
+Representaciones estructurales de las pantallas que permiten definir la distribución de contenidos, elementos y componentes antes de desarrollar su diseño visual definitivo.
+
+### 🧩 Prototipos interactivos
+
+Representación de la navegación y las interacciones entre pantallas para visualizar el comportamiento esperado de la aplicación.
+
+### 📱 Interfaces móviles
+
+Diseños e implementaciones adaptados a las características de los dispositivos móviles, considerando la interacción táctil y la presentación de contenidos.
+
+Estos entregables siguen un flujo de diseño progresivo: las ideas se organizan en Figma y en los materiales de exploración visual, después se convierten en estructuras medibles, se prueban mediante navegación interactiva y finalmente se documentan sus relaciones técnicas. Así, el equipo puede revisar la experiencia antes de trasladarla a componentes Flutter y mantener una referencia común entre diseño, desarrollo y documentación.
+
+En conjunto, el módulo representa **130 estados de pantalla** para los recorridos de estudiante, docente, autenticación, bienestar, modo offline, configuración y accesibilidad. No se trata únicamente de una colección de imágenes: cada estado ayuda a definir una decisión de interfaz, una acción, una transición o una respuesta que debe conservarse durante la implementación.
+
+---
+
+<div align="center">
+
+## 🧭 07. DIAGRAMA DE DISEÑO Y PROTOTIPADO
+
+*Del primer boceto a la experiencia interactiva.*
+
+</div>
+
+El siguiente diagrama reúne los principales entregables de diseño y conceptualización de la aplicación móvil de Órbita Kids.
+
+En él se integran tres elementos fundamentales del proceso:
+
+- **Sketches:** exploración inicial de ideas y estructuras visuales.
+- **Wireframes:** organización y distribución de los elementos de cada pantalla.
+- **Prototipo:** representación de las interfaces y sus conexiones de navegación.
+
+<div align="center">
+
+### 📱 PROTOTIPO · SKETCHES · WIREFRAMES - DIAGRAMA DE SECUENCIA
+
+**Documentación visual de la experiencia móvil**
+
+[![Vista previa del diagrama general](../img/diagrama1.png)](ENLACE_DIAGRAMA_GENERAL)
+
+[![VER DIAGRAMA GENERAL](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_GENERAL-7957D5?style=for-the-badge&logo=mermaid&logoColor=white)](./img/diagrama1.png)
+
+
+</div>
+
+---
+
+<div align="center">
+
+## 🛠️ 08. TECNOLOGÍAS Y HERRAMIENTAS
+
+*Tecnologías que dan vida a la experiencia móvil.*
+
+<br>
+
+**DESARROLLO DE APLICACIONES**
+
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+
+<br><br>
+
+**AUTENTICACIÓN E IDENTIDAD**
+
+<img src="https://img.shields.io/badge/Keycloak-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+
+<br><br>
+
+**DOCUMENTACIÓN Y DIAGRAMACIÓN**
+
+<img src="https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+<img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
+
+</div>
+
+---
+
+<div align="center">
+
+## ✨ 09. PRINCIPIOS DE DISEÑO
+
+*Una experiencia diseñada para aprender, explorar y descubrir.*
+
+</div>
+
+La experiencia móvil se desarrolla considerando principios que orientan tanto la presentación visual como la interacción con la aplicación.
+
+| Principio | Aplicación en Mobile |
+|---|---|
+| **Intuitividad** | Navegación sencilla y comprensible. |
+| **Accesibilidad** | Interfaces que consideran diferentes necesidades de interacción. |
+| **Interactividad** | Actividades que favorecen la participación del estudiante. |
+| **Adaptabilidad** | Interfaces adecuadas a diferentes dimensiones de pantalla. |
+| **Continuidad** | Consideración de experiencias disponibles sin conexión. |
+| **Personalización** | Elementos que permiten adaptar la experiencia del estudiante. |
+| **Identidad visual** | Uso consistente del lenguaje gráfico de Órbita Kids. |
+
+## 🌠 10. Nuestra visión
+
+La aplicación móvil de Órbita Kids busca transformar los dispositivos móviles en espacios de exploración y aprendizaje, donde los estudiantes puedan descubrir, interactuar y desarrollar conocimientos mediante experiencias digitales.
+
+Cada pantalla, personaje, actividad e interacción forma parte de un universo educativo diseñado para despertar la curiosidad y acompañar el proceso de aprendizaje.
+
+<div align="center">
+
+### 💜 APRENDER ES UNA AVENTURA. CADA ESTUDIANTE TIENE UN UNIVERSO POR DESCUBRIR.
+
+</div>
+
+---
+
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="../../Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+<sub>FLUTTER · DART &nbsp; | &nbsp; EXPERIENCIA MÓVIL</sub>
+
+<br>
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

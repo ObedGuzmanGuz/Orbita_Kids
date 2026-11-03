@@ -309,3 +309,25 @@ sequenceDiagram
 | 10 | PWA Órbita Kids → Dirección | Mensaje | Muestra «Elegir espacio» | 09 · Elegir espacio · Docente e institución | alt [Código correcto] |
 | 11 | Keycloak → PWA Órbita Kids | Respuesta | Error e intentos restantes | — | alt [Código incorrecto] |
 | 12 | PWA Órbita Kids → Dirección | Mensaje | «El código no es correcto. Te quedan 2 intentos.» | 08b · Verificación en dos pasos · Código incorrecto | alt [Código incorrecto] |
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

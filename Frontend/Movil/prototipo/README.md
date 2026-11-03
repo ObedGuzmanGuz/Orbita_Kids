@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -28,6 +28,14 @@
 ---
 
 </div>
+
+## Contexto dentro de Órbita Kids
+
+El prototipo es la versión navegable de la propuesta visual. Reúne en un solo archivo las pantallas, estados, controles y recorridos de la aplicación para que la experiencia pueda probarse antes de existir como una app Flutter compilada.
+
+Su construcción toma como referencia la organización de pantallas definida durante el diseño en Figma y los estados establecidos en sketches y wireframes. Las interacciones permiten revisar onboarding, autenticación, actividades, exploración espacial, perfiles de estudiante y docente, modo offline y configuración desde la perspectiva del usuario.
+
+Las capturas de alta fidelidad sirven como referencia visual para el desarrollo frontend. El prototipo no reemplaza la implementación: ayuda a validar navegación, contenido, retroalimentación y comportamiento esperado para que los componentes finales conserven la intención de diseño.
 
 ## Pestañas
 
@@ -248,3 +256,25 @@ En el panel **Simular condiciones** puedes quitar la conexión, provocar un erro
 ## Nota
 
 No hay conexión real con Keycloak, Google, Facebook ni el backend. Los datos son demostrativos y se reinician al reabrir la app; solo las preferencias se guardan en el navegador.
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

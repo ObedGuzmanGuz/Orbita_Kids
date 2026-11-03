@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -27,6 +27,14 @@
 ---
 
 </div>
+
+## Contexto dentro de Órbita Kids
+
+Los sketches son la primera representación visual de la experiencia móvil. Se elaboran con trazos simples para explorar rápidamente la composición de una pantalla, la ubicación de los elementos y el recorrido que seguirá el estudiante antes de invertir tiempo en estilos, imágenes o componentes finales.
+
+En el flujo de trabajo de diseño, sirven como puente entre las ideas planteadas en Figma y la definición posterior de wireframes y prototipos. Los sketches cubren los estados principales de la aplicación y permiten revisar si una misión, una actividad matemática, un acceso o una pantalla de configuración se entiende antes de llevarlo a Flutter.
+
+Su función dentro del frontend es validar la intención de cada pantalla: qué debe destacar, qué acción puede realizar el usuario y cómo responde la interfaz. Por eso cada estado conserva un nombre común con su wireframe y su captura de alta fidelidad.
 
 ## Cómo leerlos
 
@@ -234,3 +242,25 @@ Los mismos estados están en `../wireframes/` (con medidas) y en `../prototipo/c
 | 128 | [49b](08_configuracion_y_accesibilidad/128_49b_cerrar-sesion_cerrar-sesion-con-pendientes.png) | Cerrar sesión | Cerrar sesión con pendientes | Cerrar sesión sin Internet | 1. Volver → regresa a la pantalla anterior<br>2. Cerrar sesión → cierra la sesión → Iniciar sesión<br>3. Quedarme → regresa a la pantalla anterior<br>4. ¡Podemos seguir la misión sin Internet! · 1 por  → abre Sincronización o Conexión |
 | 129 | [50](08_configuracion_y_accesibilidad/129_50_acerca-de-orbita-kids_acerca-de-orbita-kids.png) | Acerca de Órbita Kids | Acerca de Órbita Kids | Tocar «Acerca de» | 1. Volver → regresa a la pantalla anterior |
 | 130 | [51](08_configuracion_y_accesibilidad/130_51_orbita-kids-studios_orbita-kids-studios.png) | Órbita Kids Studios | Órbita Kids Studios | Tocar «Studios» | 1. Volver → regresa a la pantalla anterior |
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

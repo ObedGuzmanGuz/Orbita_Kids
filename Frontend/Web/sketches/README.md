@@ -137,3 +137,25 @@
 | 48 | [32](07_cuenta/048_32_seguridad-y-sesiones_sesiones-activas.png) | Seguridad y sesiones | Sesiones activas | Tu foto → «Seguridad y sesiones» | 1. Inicio → abre «Inicio docente»<br>2. Mis grupos → abre «Mis grupos»<br>3. Actividades → abre «Actividades»<br>4. Resultados → abre «Resultados y reportes»<br>5. Avisos → abre «Avisos»<br>6. Sincronización → abre «Sincronización»<br>7. Ayuda → abre «Ayuda y soporte»<br>8. Buscar → campo para escribir<br>9. Sincronizado hoy 8:15 → abre «Sincronización»<br>10. Avisos → abre «Avisos»<br>11. Mtra. Ana → abre el menú de la cuenta<br>12. Pedir un código al entrar → activa o desactiva<br>13. Cerrar las otras sesiones → cierra las otras sesiones<br>14. Cerrar → muestra un aviso<br>15. Cerrar → muestra un aviso |
 | 49 | [33](07_cuenta/049_33_ayuda-y-soporte_preguntas-y-reporte.png) | Ayuda y soporte | Preguntas y reporte | Menú «Ayuda» | 1. Inicio → abre «Inicio docente»<br>2. Mis grupos → abre «Mis grupos»<br>3. Actividades → abre «Actividades»<br>4. Resultados → abre «Resultados y reportes»<br>5. Avisos → abre «Avisos»<br>6. Sincronización → abre «Sincronización»<br>7. Ayuda → abre «Ayuda y soporte»<br>8. Buscar → campo para escribir<br>9. Sincronizado hoy 8:15 → abre «Sincronización»<br>10. Avisos → abre «Avisos»<br>11. Mtra. Ana → abre el menú de la cuenta<br>12. Guía de instalación → abre «Instalar en otros navegadores»<br>13. ¿Cómo instalo la app en mi computadora? → abre o cierra la respuesta<br>14. ¿Qué pasa si me quedo sin Internet? → abre o cierra la respuesta<br>15. ¿Los estudiantes pueden entrar aquí? → abre o cierra la respuesta<br>16. ¿Cómo comparto el código de un grupo? → abre o cierra la respuesta<br>17. ¿Quién ve los datos de los niños? → abre o cierra la respuesta<br>18. ¿Cómo desinstalo la app? → abre o cierra la respuesta<br>19. Tipo → elige una opción<br>20. Qué pasó → campo para escribir<br>21. Enviar reporte → envía el reporte<br>22. Copiar → copia al portapapeles |
 | 50 | [34](07_cuenta/050_34_cerrar-sesion_con-un-cambio-pendiente.png) | Cerrar sesión | Con un cambio pendiente | Tu foto → «Cerrar sesión» | 1. Cerrar sesión → cierra la sesión<br>2. Quedarme → regresa a la pantalla anterior |
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

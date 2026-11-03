@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -28,6 +28,14 @@
 ---
 
 </div>
+
+## Contexto dentro de Órbita Kids
+
+Los diagramas de secuencia explican qué ocurre detrás de cada recorrido visible en la aplicación. Mientras los sketches, wireframes y capturas muestran la interfaz, estos diagramas muestran el intercambio de mensajes entre el estudiante o docente, la app Flutter, el almacenamiento local, Keycloak, la API y la base de datos.
+
+Se elaboran en Mermaid a partir de los flujos definidos en el prototipo y de las decisiones de arquitectura del proyecto. Ayudan a revisar autenticación, registro, resolución de misiones, funcionamiento offline, sincronización, publicación de actividades y cierre seguro de sesión.
+
+Su función dentro del frontend es conectar la experiencia visual con el comportamiento que deberá implementar la aplicación. También permiten detectar dependencias, respuestas, estados alternativos y puntos de sincronización antes de construir la lógica de navegación y comunicación con los servicios.
 
 En la pestaña **Diagrama de secuencia** de `../prototipo/Órbita_Kids_Prototipo.html` los diagramas son **interactivos**:
 
@@ -795,3 +803,25 @@ sequenceDiagram
 | 10 | App Flutter → Almac. seguro | Síncrono | Borra access, refresh e id token | — |
 | 11 | App Flutter → App Flutter | Síncrono | Limpia memoria y caché de la sesión | — |
 | 12 | App Flutter → Usuario | Síncrono | Vuelve a Inicio de sesión | — |
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>

@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -27,6 +27,14 @@
 ---
 
 </div>
+
+## Contexto dentro de Órbita Kids
+
+Los wireframes convierten las ideas de los sketches y de la propuesta visual en una estructura que puede revisarse con precisión. En ellos se comprueban jerarquías, espacios, tamaños, áreas táctiles y recorridos de cada pantalla de la aplicación móvil.
+
+Se construyen sobre una referencia de **390 × 844 dp**, con rejilla, márgenes y componentes definidos para mantener consistencia entre las distintas secciones de Órbita Kids. El resultado funciona como una guía visual cercana a la implementación: ayuda a que el equipo traduzca las decisiones de diseño a widgets, layouts y estados de Flutter sin depender solo de una imagen decorativa.
+
+Los wireframes, disponibles en PNG y SVG, también permiten comparar la estructura con el prototipo y detectar antes del desarrollo problemas de legibilidad, navegación o accesibilidad táctil.
 
 Cada estado está en dos formatos dentro de su sección:
 
@@ -258,3 +266,25 @@ La ficha completa de cada wireframe (bloques, posiciones, medidas relativas, tip
 | 128 | [49b](08_configuracion_y_accesibilidad/128_49b_cerrar-sesion_cerrar-sesion-con-pendientes.png) | [svg](08_configuracion_y_accesibilidad/svg/128_49b_cerrar-sesion_cerrar-sesion-con-pendientes.svg) | Cerrar sesión · Cerrar sesión con pendientes | 390 × 998 (desplazable) | 4 |
 | 129 | [50](08_configuracion_y_accesibilidad/129_50_acerca-de-orbita-kids_acerca-de-orbita-kids.png) | [svg](08_configuracion_y_accesibilidad/svg/129_50_acerca-de-orbita-kids_acerca-de-orbita-kids.svg) | Acerca de Órbita Kids · Acerca de Órbita Kids | 390 × 1782 (desplazable) | 1 |
 | 130 | [51](08_configuracion_y_accesibilidad/130_51_orbita-kids-studios_orbita-kids-studios.png) | [svg](08_configuracion_y_accesibilidad/svg/130_51_orbita-kids-studios_orbita-kids-studios.svg) | Órbita Kids Studios · Órbita Kids Studios | 390 × 1378 (desplazable) | 1 |
+<div align="center">
+
+### 🪐 ÓRBITA KIDS
+
+**EXPLORA · APRENDE · DESCUBRE**
+
+*Cada descubrimiento comienza con una pregunta.*
+
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
+
+</div>
