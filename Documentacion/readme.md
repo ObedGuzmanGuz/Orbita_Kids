@@ -1,57 +1,248 @@
-﻿# Documentación de Orbita Kids
+﻿ <div align="center">
 
-Esta carpeta reúne los documentos y materiales visuales que describen el proyecto **Orbita Kids**. Aquí se puede consultar cómo se plantea la arquitectura de la plataforma, qué roles de usuario contempla, cómo se bosqueja su interfaz y cuál es su modelo de negocio.
+# 🚀 ÓRBITA KIDS
+### Centro de documentación
 
-El contenido incluye documentos de análisis y propuestas, así como páginas HTML interactivas. La presencia de una tecnología o funcionalidad en estos materiales no significa necesariamente que ya esté implementada en la aplicación.
+**Diseño, planeación y materiales de consulta del proyecto educativo.**
 
-## Contenido
+[🏗️ Arquitectura](#-diagrama-de-arquitectura) · [👥 Roles](#-diagrama-de-roles-de-usuario) · [🎨 Interfaz](#-gui-y-práctica-de-sketches) · [💼 Modelo de negocio](#-business-model-canvas)
 
-| Carpeta | Qué contiene |
-| --- | --- |
-| [`DiagramaDeArquitectura/`](DiagramaDeArquitectura/) | Documentación y diagrama de la arquitectura tecnológica propuesta: aplicaciones, API, servicios, datos e infraestructura. La imagen del diagrama se encuentra en `img/`. |
-| [`DiagramaRolesUsuario/`](DiagramaRolesUsuario/) | Material de la práctica sobre los actores, roles y funciones de usuario. Incluye una versión visual interactiva en `index.html` y sus archivos de apoyo. |
-| [`GUI/`](GUI/) | Material relacionado con la interfaz gráfica de usuario. Actualmente contiene [`Practica_Sketches/`](GUI/Practica_Sketches/), con la explicación de la práctica y sus bocetos en `img/`. |
-| [`ModelBusinesCanvas/`](ModelBusinesCanvas/) | Business Model Canvas interactivo de Orbita Kids. Incluye `index.html`, estilos, JavaScript, ilustraciones y un README propio con contexto e instrucciones. |
+---
 
-## ¿Qué debe guardarse aquí?
+</div>
 
-Guarda en `Documentacion/` los materiales que expliquen, representen o respalden el diseño y la planeación del proyecto, por ejemplo:
+## 🌌 1. Acerca de esta documentación
 
-- Diagramas de arquitectura, procesos, datos y roles.
-- Requisitos, análisis, decisiones y propuestas de diseño.
-- Bocetos, wireframes y recursos visuales de la interfaz.
-- Modelos de negocio y entregables de prácticas relacionados con el proyecto.
-- Instrucciones para consultar documentos o demostraciones interactivas.
+La carpeta `Documentacion/` reúne los principales entregables que permiten comprender la estructura, el diseño y la planeación de **Órbita Kids**, una propuesta educativa enfocada en el aprendizaje de matemáticas mediante una experiencia interactiva.
 
-Mantén cada tema en su propia subcarpeta. Conserva juntos los archivos que una página necesite para funcionar —por ejemplo, HTML, CSS, JavaScript e imágenes— y agrega un `README.md` en cada sección cuando haga falta explicar su propósito, contenido o forma de consulta. Evita guardar aquí código fuente de la aplicación que pertenezca a las carpetas de desarrollo del proyecto.
+Aquí se encuentran los diagramas técnicos, la definición de roles, los diseños preliminares de las interfaces y el modelo de negocio.
 
-## Cómo consultar el contenido
+**El objetivo es mantener organizada la información del proyecto y facilitar su consulta** por parte del equipo de desarrollo, docentes y personas interesadas.
 
-- Los archivos Markdown (`.md`) pueden leerse directamente en GitHub o en un editor de texto.
-- Para explorar los materiales interactivos, abre el `index.html` de la carpeta correspondiente en un navegador. Mantén sus carpetas de recursos junto al archivo HTML para que carguen estilos, scripts e imágenes.
-- Consulta el README de cada subcarpeta para conocer detalles específicos de ese material.
+## 🧭 2. Índice de contenidos
 
-## Organización actual
+| Sección | Descripción | Ubicación |
+|---|---|---|
+| 🏗️ Arquitectura | Organización técnica y componentes del sistema. | `DiagramaDeArquitectura/` |
+| 👥 Roles de usuario | Actores, responsabilidades y funcionalidades. | `DiagramaRolesUsuario/` |
+| 🎨 GUI y Sketches | Diseños de interfaces y navegación. | `GUI/Practica_Sketches/` |
+| 💼 Business Model Canvas | Propuesta y estructura del modelo de negocio. | `ModelBusinesCanvas/` |
+
+## 📁 3. Estructura del directorio
 
 ```text
 Documentacion/
+│
 ├── DiagramaDeArquitectura/
 │   ├── img/
+│   │   └── diagramaArquitectura.jpeg
 │   └── readme.md
+│
 ├── DiagramaRolesUsuario/
 │   ├── index.html
-│   └── archivos de apoyo del diagrama
+│   ├── practica-05-roles.architecture.json
+│   ├── practica-05-roles.visual-check.html
+│   ├── practica-05-roles.visual-check.json
+│   ├── practica-05.css
+│   ├── practica-05.js
+│   └── readme.md
+│
 ├── GUI/
 │   └── Practica_Sketches/
 │       ├── img/
+│       │   ├── 1.png
+│       │   ├── 2.png
+│       │   ├── 3.png
+│       │   └── 4.png
 │       └── readme.md
+│
 ├── ModelBusinesCanvas/
 │   ├── assets/
+│   │   ├── imagenes/
+│   │   ├── ILUSTRACIONES.md
+│   │   └── orbita.svg
 │   ├── css/
+│   │   └── styles.css
 │   ├── js/
+│   │   └── app.js
 │   ├── index.html
 │   └── README.md
+│
 └── readme.md
 ```
 
-> Algunas carpetas conservan nombres establecidos en entregas anteriores. Si se renombran, hay que actualizar también los enlaces a esas rutas.
+---
+
+## 🏗️ 4. Diagrama de arquitectura
+
+**Ubicación:** `DiagramaDeArquitectura/`
+
+**Recursos:**
+- [📂 Consultar carpeta](DiagramaDeArquitectura/)
+- [📄 Leer documentación](DiagramaDeArquitectura/readme.md)
+- [🖼️ Visualizar diagrama](DiagramaDeArquitectura/img/diagramaArquitectura.jpeg)
+
+Esta sección presenta la arquitectura técnica propuesta para Órbita Kids y la relación entre sus principales componentes.
+
+### Componentes tecnológicos
+
+| Componente | Tecnología propuesta | Función |
+|---|---|---|
+| Aplicación móvil | Flutter y Dart | Interfaz para estudiantes. |
+| Aplicación web | React | Plataforma para docentes. |
+| Backend | FastAPI y Python | Procesamiento de solicitudes y lógica del sistema. |
+| Base de datos | Base de datos relacional | Almacenamiento de información. |
+| API | API REST | Comunicación entre aplicaciones y servidor. |
+
+También se documentan aspectos como autenticación, despliegue mediante contenedores, almacenamiento y monitoreo.
+
+> **Nota:** El diagrama representa la arquitectura propuesta del proyecto. Su presencia en esta documentación no implica que todos sus componentes estén implementados o integrados.
+
+---
+
+## 👥 5. Diagrama de roles de usuario
+
+**Ubicación:** `DiagramaRolesUsuario/`
+
+**Recursos:**
+- [📂 Consultar carpeta](DiagramaRolesUsuario/)
+- [🌐 Abrir diagrama interactivo](DiagramaRolesUsuario/index.html)
+- [📄 Leer documentación](DiagramaRolesUsuario/readme.md)
+
+Este entregable identifica los actores que participan en Órbita Kids, sus responsabilidades y las funcionalidades relacionadas con cada perfil.
+
+### Roles identificados
+
+| Rol | Responsabilidades |
+|---|---|
+| 🎓 Estudiante | Resolver actividades, completar misiones y consultar su progreso. |
+| 👩‍🏫 Docente | Organizar grupos, asignar actividades y revisar resultados. |
+| 🏫 Escuela | Participar en la adopción, demostraciones y posibles pilotos institucionales. |
+
+### Archivos principales
+
+| Archivo | Descripción |
+|---|---|
+| `index.html` | Página principal del diagrama. |
+| `practica-05.css` | Estilos visuales. |
+| `practica-05.js` | Funcionalidad e interacciones. |
+| `practica-05-roles.architecture.json` | Información estructurada de arquitectura. |
+| `practica-05-roles.visual-check.html` | Herramienta auxiliar de revisión visual. |
+| `practica-05-roles.visual-check.json` | Datos de revisión visual. |
+| `readme.md` | Descripción y documentación de la práctica. |
+
+**Importante:** Los archivos HTML, CSS, JavaScript y JSON deben conservarse juntos para mantener el funcionamiento de la visualización.
+
+---
+
+## 🎨 6. GUI y práctica de sketches
+
+**Ubicación:** `GUI/Practica_Sketches/`
+
+**Recursos:**
+- [📂 Consultar carpeta](GUI/Practica_Sketches/)
+- [📄 Leer documentación](GUI/Practica_Sketches/readme.md)
+- [🎨 Consultar diseños en Figma](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746&t=Bh7RA2nB0fxz8pHn-1)
+
+Esta sección contiene los bocetos iniciales de las interfaces de Órbita Kids. Se consideran dos entornos principales: la aplicación móvil para estudiantes y la PWA destinada a docentes.
+
+### Evidencias de diseño
+
+| Archivo | Descripción |
+|---|---|
+| `img/1.png` | Primer sketch de la aplicación estudiantil. |
+| `img/2.png` | Segundo sketch de la aplicación estudiantil. |
+| `img/3.png` | Primer sketch de la PWA docente. |
+| `img/4.png` | Segundo sketch de la PWA docente. |
+
+La documentación complementa los diseños con:
+
+- Mapas de navegación.
+- Descripción de pantallas.
+- Diagramas de secuencia.
+- Relación entre las interfaces y la API.
+- Alcances de la propuesta de diseño.
+
+> **Nota:** Los sketches representan una propuesta visual y funcional preliminar. No deben confundirse con pantallas finales de una aplicación completamente implementada.
+
+---
+
+## 💼 7. Business Model Canvas
+
+**Ubicación:** `ModelBusinesCanvas/`
+
+**Recursos:**
+- [📂 Consultar carpeta](ModelBusinesCanvas/)
+- [🌐 Abrir presentación interactiva](ModelBusinesCanvas/index.html)
+- [📄 Leer documentación](ModelBusinesCanvas/README.md)
+- [🚀 Consultar publicación en GitHub Pages](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/)
+
+Este apartado presenta el modelo de negocio de Órbita Kids mediante una página web interactiva que desarrolla los nueve bloques del Business Model Canvas.
+
+### Contenido del modelo
+
+Se describen los siguientes elementos:
+
+1. Segmentos de clientes.
+2. Propuesta de valor.
+3. Canales de distribución.
+4. Relaciones con los clientes.
+5. Fuentes de ingresos.
+6. Recursos clave.
+7. Actividades clave.
+8. Socios clave.
+9. Estructura de costos.
+
+### Recursos del sitio web
+
+| Archivo o carpeta | Función |
+|---|---|
+| `index.html` | Estructura y contenido de la página. |
+| `css/styles.css` | Diseño visual y adaptación de pantalla. |
+| `js/app.js` | Navegación e interacciones. |
+| `assets/orbita.svg` | Recurso gráfico del proyecto. |
+| `assets/imagenes/` | Ilustraciones utilizadas en el Canvas y ODS 4. |
+| `assets/ILUSTRACIONES.md` | Descripción y procedencia de las ilustraciones. |
+| `README.md` | Explicación del modelo e instrucciones de consulta. |
+
+### Relación con el ODS 4
+
+El modelo también contempla la relación de Órbita Kids con el **Objetivo de Desarrollo Sostenible 4: Educación de calidad**, mediante una propuesta orientada al aprendizaje inclusivo y al fortalecimiento de las habilidades matemáticas.
+
+> **Nota:** El Canvas representa una propuesta de modelo de negocio y sus hipótesis. No constituye evidencia de ingresos, alianzas o resultados educativos ya validados.
+
+---
+
+## 📚 8. Organización y consulta de materiales
+
+Para facilitar el uso de esta documentación, se recomienda seguir estas indicaciones:
+
+| Tipo de recurso | Cómo consultarlo |
+|---|---|
+| Archivos Markdown | Abrir los archivos `.md` desde GitHub o un editor de texto. |
+| Diagramas interactivos | Abrir el archivo `index.html` en un navegador. |
+| Imágenes | Consultar las carpetas `img/` y `assets/imagenes/`. |
+| Diseños de interfaz | Acceder al enlace de Figma. |
+| Presentaciones web | Abrir el archivo HTML correspondiente. |
+
+### Recomendaciones de mantenimiento
+
+- Mantener una carpeta independiente para cada entregable.
+- Incluir un README cuando una sección necesite explicación adicional.
+- Conservar las rutas relativas de imágenes, estilos y scripts.
+- Utilizar nombres claros y consistentes.
+- Actualizar los enlaces cuando se cambien nombres o ubicaciones.
+- Diferenciar entre propuestas, prototipos y funcionalidades implementadas.
+- Mantener actualizado el índice y la estructura general.
+
+---
+
+<div align="center">
+
+## ✨ ÓRBITA KIDS
+
+**Aprender matemáticas explorando el espacio.** 🚀
+
+*Documentación del proyecto educativo.*
+
+</div>
