@@ -1,0 +1,40 @@
+%% SD-04 · Resolver una misión (offline first)
+sequenceDiagram
+  autonumber
+  actor est as Estudiante<br/>Rol principal
+  participant ui as App Flutter<br/>Pantallas de misión
+  participant rules as Motor de reglas<br/>R1–R5 · local
+  participant db as Base local<br/>SQLite cifrada
+  participant q as Cola de sync<br/>UUID por operación
+  est->>ui: Toca «Continuar misión»
+  ui->>+db: Lee la misión descargada y el progreso
+  db-->>-ui: Misión con sus sumas y modalidad
+  ui->>est: Detalle de misión → Comenzar
+  loop por cada suma de la misión
+    ui->>est: Muestra la suma (apoyo visual u opciones)
+    est->>ui: Escribe o elige la respuesta → Comprobar
+    ui->>+rules: Evalúa la respuesta y el historial
+    alt correcta
+      rules-->>-ui: Correcta
+      ui->>est: «¡Muy bien!» y estrella
+    else incorrecta
+      rules-->>ui: Incorrecta · nivel de ayuda
+      ui->>est: Pista: 1.° numera objetos, 2.° explica
+      opt R1 · 2 errores seguidos al primer intento
+        ui->>ui: Resto de la misión con apoyo visual y sumas más pequeñas
+      end
+    end
+    ui->>db: Guarda el intento (UUID, respuesta, tiempo, ayuda)
+    ui-)q: Encola «intento» pendiente
+  end
+  ui->>+rules: Calcula estrellas y recomendación
+  rules-->>-ui: R2 (≥ 90 %) avanzar · R3 (< 60 %) refuerzo
+  ui->>db: Guarda resultado, insignias y progreso
+  ui-)q: Encola «resultado»
+  ui->>est: Resultados y recompensas con estado de envío
+  opt R5 · 20 minutos de aprendizaje
+    ui->>est: Sugiere una Pausa Estelar (se puede posponer)
+  end
+  opt hay conexión
+    Note over ui,q: ref · SD-05 · Sincronización al reconectar
+  end

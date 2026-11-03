@@ -1,0 +1,23 @@
+%% Instalar la app de escritorio
+sequenceDiagram
+  autonumber
+  actor u as Docente<br/>persona
+  participant pwa as PWA Órbita Kids<br/>navegador o ventana
+  participant br as Navegador<br/>Chrome, Edge o Safari
+  participant sw as Service worker<br/>Workbox
+  pwa->>sw: Registra el service worker en el primer ingreso
+  sw->>sw: Precarga el app shell y los íconos (evento install)
+  br->>pwa: Dispara beforeinstallprompt, la app guarda el evento
+  u->>pwa: «Instalar app» desde el panel o el sitio
+  pwa->>br: Llama a prompt() con el evento guardado
+  br->>u: Muestra el diálogo del navegador
+  u->>br: Confirma «Instalar»
+  br-->>pwa: userChoice: accepted y evento appinstalled
+  br->>pwa: Abre la ventana propia (display: standalone)
+  pwa->>sw: Pide el app shell
+  sw-->>pwa: Lo sirve desde la caché, incluso sin Internet
+  opt Hay una versión nueva
+    sw->>pwa: Avisa que descargó la versión nueva
+    u->>pwa: «Actualizar ahora» o «Al cerrar la app»
+    pwa->>pwa: Guarda los borradores antes de recargar
+  end

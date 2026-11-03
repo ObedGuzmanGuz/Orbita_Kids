@@ -1,0 +1,45 @@
+%% SD-02 · Inicio de sesión federado con Keycloak
+sequenceDiagram
+  autonumber
+  actor u as Usuario<br/>Estudiante o docente
+  participant app as App Flutter<br/>flutter_appauth
+  participant nav as Navegador<br/>Custom Tabs / ASWeb
+  participant kc as Keycloak<br/>OIDC · PKCE
+  participant idp as Proveedor<br/>Google · Facebook · Inst.
+  participant ss as Almac. seguro<br/>Keystore / Keychain
+  participant api as API REST<br/>FastAPI
+  participant db as Base de datos<br/>MySQL
+  u->>app: Elige Google, Facebook o su institución
+  app->>app: Genera code_verifier, code_challenge (S256) y state
+  app->>+nav: Abre /auth con code_challenge y kc_idp_hint
+  nav->>+kc: Solicitud de autorización
+  kc->>+idp: Redirige al proveedor elegido
+  idp->>u: Pide identidad y consentimiento
+  u->>idp: Elige su cuenta o escribe sus credenciales
+  alt identidad válida
+    idp-->>-kc: Aserción OIDC / SAML
+    kc->>kc: Vincula la identidad federada con la cuenta
+    kc-->>-nav: Redirección a redirect_uri con code y state
+    nav-->>-app: Deep link con el código
+    app->>app: Verifica state
+    app->>+kc: POST /token · code + code_verifier
+    kc-->>-app: Access, refresh e id token
+    app->>ss: Guarda los tokens cifrados
+    app->>+api: GET /me · Authorization: Bearer
+    api->>api: Valida firma, emisor y vigencia (JWKS)
+    api->>+db: Consulta rol, licencia, grupos y asignaciones
+    db-->>-api: Datos de la cuenta
+    alt cuenta activa con rol asignado
+      api-->>-app: 200 · perfil y rol (estudiante o docente)
+      app->>u: Loading → Home del rol
+    else sin rol, licencia vencida o cuenta en pausa
+      api-->>app: 403 · motivo
+      app->>u: Estados de autenticación con salida
+    end
+  else el usuario cancela o el proveedor falla
+    idp-->>kc: Error del proveedor o cancelación
+    kc-->>nav: redirect_uri con error=access_denied
+    nav-->>app: Deep link con el error
+    app->>u: «Acceso cancelado» · Reintentar o volver
+  end
+  Note over u,app: La cuenta Órbita Kids (usuario y contraseña) usa el mismo flujo, tras 3 intentos fallidos Keycloak bloquea la cuenta 15 min.

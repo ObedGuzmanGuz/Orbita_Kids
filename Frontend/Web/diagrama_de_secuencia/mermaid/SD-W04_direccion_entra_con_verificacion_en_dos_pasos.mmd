@@ -1,0 +1,22 @@
+%% Dirección entra con verificación en dos pasos
+sequenceDiagram
+  autonumber
+  actor d as Dirección<br/>persona
+  participant pwa as PWA Órbita Kids<br/>navegador o ventana
+  participant kc as Keycloak<br/>OIDC con PKCE
+  participant api as API Órbita<br/>backend compartido
+  d->>pwa: Escribe usuario y contraseña
+  pwa->>kc: Envía las credenciales
+  kc-->>pwa: Pide el código: la cuenta tiene rol Institución
+  pwa->>d: Muestra las 6 casillas
+  d->>pwa: Escribe el código de su app de autenticación
+  pwa->>kc: Verifica el código
+  alt Código correcto
+    kc-->>pwa: Tokens con roles Docente e Institución
+    pwa->>api: GET /me
+    api-->>pwa: Dos espacios disponibles
+    pwa->>d: Muestra «Elegir espacio»
+  else Código incorrecto
+    kc-->>pwa: Error e intentos restantes
+    pwa->>d: «El código no es correcto. Te quedan 2 intentos.»
+  end

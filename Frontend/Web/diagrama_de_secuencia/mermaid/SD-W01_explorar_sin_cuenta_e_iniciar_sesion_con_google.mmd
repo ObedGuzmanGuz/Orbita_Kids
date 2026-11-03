@@ -1,0 +1,28 @@
+%% Explorar sin cuenta e iniciar sesión con Google
+sequenceDiagram
+  autonumber
+  actor u as Docente<br/>persona
+  participant pwa as PWA Órbita Kids<br/>navegador o ventana
+  participant kc as Keycloak<br/>OIDC con PKCE
+  participant idp as Google o Microsoft<br/>proveedor de identidad
+  participant api as API Órbita<br/>backend compartido
+  u->>pwa: Abre orbitakids.example y elige «Explorar sin cuenta»
+  pwa->>pwa: Carga los datos de demostración incluidos en la app, sin llamar a la API
+  u->>pwa: «Iniciar sesión» y luego «Continuar con Google»
+  pwa->>pwa: Genera code_verifier y code_challenge (PKCE)
+  pwa->>kc: Redirige a /auth con code_challenge y kc_idp_hint=google
+  kc->>idp: Redirige al proveedor de identidad
+  u->>idp: Elige su cuenta de la escuela
+  idp-->>kc: Devuelve la identidad verificada
+  kc-->>pwa: Vuelve a /app con un código de un solo uso
+  pwa->>kc: Canjea el código junto con code_verifier
+  kc-->>pwa: Access token y refresh token con el rol
+  pwa->>api: GET /me con el token
+  api-->>pwa: Perfil, espacios y grupos
+  alt Tiene dos roles
+    pwa->>u: Muestra «Elegir espacio»
+  else Solo docente
+    pwa->>u: Abre el inicio docente
+  else Cuenta de estudiante
+    pwa->>u: Explica que sus misiones están en la app móvil
+  end
