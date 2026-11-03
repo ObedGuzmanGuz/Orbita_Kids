@@ -130,9 +130,9 @@ Se presentan en un orden de lectura que comienza con la visión integral del pro
 
 Representación global de las plataformas web y móvil, sus relaciones, componentes principales y estructura dentro del ecosistema Órbita Kids.
 
-[![Vista previa del diagrama general](./img/diagrama1.png)](ENLACE_DIAGRAMA_GENERAL)
+[![Vista previa del diagrama general](./img/image.png)](./img/image.png)
 
-[![VER DIAGRAMA GENERAL](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_GENERAL-7957D5?style=for-the-badge&logo=mermaid&logoColor=white)](./img/diagrama1.png)
+[![VER DIAGRAMA GENERAL](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_GENERAL-7957D5?style=for-the-badge&logo=mermaid&logoColor=white)](./img/image.png)
 
 ---
 
