@@ -455,7 +455,7 @@ La contribución prevista del proyecto se centra en ofrecer ejercicios graduados
 </p>
 
 <p align="center">
-  <strong>Figura 16. Órbita Kids como propuesta de apoyo al aprendizaje inclusivo y de calidad.</strong>
+  <strong> Órbita Kids como propuesta de apoyo al aprendizaje inclusivo y de calidad.</strong>
 </p>
 
 🔗 **[Consultar ODS 4 — Naciones Unidas](https://sdgs.un.org/goals/goal4)**
