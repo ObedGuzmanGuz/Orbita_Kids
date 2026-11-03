@@ -62,20 +62,3 @@ Consulta el [documento completo](Historias_de_Usuario.md) o abre una historia:
 | [README.md](README.md) | Presentación, organización, catálogo y acceso a las fuentes. |
 | [Historias_de_Usuario.md](Historias_de_Usuario.md) | Desarrollo de las 20 historias, criterios, reglas pedagógicas y observaciones pendientes. |
 
-## Referencias
-
-- [README principal](../../README.md).
-- [Arquitectura](../DiagramaDeArquitectura/readme.md).
-- [Roles de usuario](../DiagramaRolesUsuario/readme.md).
-- [Navegación y sketches de GUI](../GUI/Practica_Sketches/readme.md).
-- [Frontend móvil](../../Frontend/Movil/README.md) y [frontend web](../../Frontend/Web/README.md).
-- [Prototipo móvil](../../Frontend/Movil/Órbita_Kids_Prototipo.html) y [prototipo web](../../Frontend/Web/Órbita_Kids_PWA_v3.html).
-- [Secuencias móviles](../../Frontend/Movil/diagrama_de_secuencia/README.md) y [secuencias web](../../Frontend/Web/diagrama_de_secuencia/README.md).
-
-Los enlaces HTML permiten localizar los archivos en GitHub; para utilizar sus interacciones se deben abrir en un navegador como archivos HTML o desde su publicación estática.
-
-## Estado de la documentación
-
-**Versión de trabajo para revisión — 3 de noviembre de 2026.** Las historias se identificaron mediante revisión de documentación, prototipos y secuencias. Las 20 tienen evidencia de prototipado, por lo que su estado actual es **Prototipada**; las integraciones, la persistencia y los controles de servidor siguen pendientes de implementación y verificación.
-
-Los criterios expresan requisitos esperados y no resultados de pruebas ya aprobadas. No se identificó una suite automatizada que acredite su cumplimiento. La distribución es de **11 prioridades altas, 7 medias y 2 bajas**. Las contradicciones y decisiones abiertas se conservan en las [observaciones del catálogo](Historias_de_Usuario.md#observaciones-pendientes), sin atribuirles una aprobación del equipo.

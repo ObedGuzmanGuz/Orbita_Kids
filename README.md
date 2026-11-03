@@ -33,6 +33,7 @@ Selecciona cualquier sección para ir directamente a ella.
 10. [Arquitectura del sistema](#arquitectura)
 11. [Tecnologías propuestas](#tecnologias)
 12. [Roles de usuario](#roles)
+    - [Historias de Usuario](#historias-de-usuario)
 13. [Productos y diseño de interfaces](#productos)
     - [Sketches](#sketches)
     - [Wireframes](#wireframes)
@@ -342,6 +343,16 @@ El diagrama de roles permite visualizar los perfiles que interactuarán con Órb
 Los roles deben diferenciar los permisos de cada perfil. Por ejemplo, el estudiante realiza actividades y consulta su propio progreso, mientras que el docente administra sus grupos y revisa los resultados correspondientes.
 
 Los permisos definitivos deberán coincidir con la implementación de la aplicación y las reglas de acceso del backend.
+
+<a id="historias-de-usuario"></a>
+
+### 📋 Historias de Usuario
+
+Las historias de usuario describen las necesidades funcionales de Órbita Kids desde la perspectiva de sus usuarios y orientan el desarrollo y las pruebas. El catálogo reúne **20 historias organizadas en siete módulos**; cada historia incluye actor, descripción, prioridad, alcance y criterios de aceptación.
+
+La documentación distingue las funcionalidades del **producto mínimo viable (MVP)** y las **complementarias**, e identifica las decisiones pendientes de validación. Las historias se basan en la documentación y los prototipos existentes y no implican que todas las funciones estén implementadas.
+
+📂 **[Consultar la documentación de historias de usuario](Documentacion/HistoriasDeUsuario/README.md)**
 
 [Volver al índice](#indice)
 
