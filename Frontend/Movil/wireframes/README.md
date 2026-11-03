@@ -28,6 +28,16 @@
 
 </div>
 
+## 📸 Previsualización de wireframes
+
+*Estructuras visuales que organizan las pantallas y sus medidas para la implementación móvil.*
+
+| Inicio | Autenticación | Exploración |
+|:---:|:---:|:---:|
+| <img src="02_splash_y_onboarding/001_01_splash-orbita-kids_animacion-de-entrada.png" width="180" alt="Wireframe de inicio"/> | <img src="03_autenticacion_y_seguridad/011_05a_inicio-de-sesion_metodos-de-acceso.png" width="180" alt="Wireframe de autenticación"/> | <img src="04_estudiante/056_18a_mapa-espacial_universo-en-modo-explorar.png" width="180" alt="Wireframe de exploración"/> |
+
+---
+
 ## Contexto dentro de Órbita Kids
 
 Los wireframes convierten las ideas de los sketches y de la propuesta visual en una estructura que puede revisarse con precisión. En ellos se comprueban jerarquías, espacios, tamaños, áreas táctiles y recorridos de cada pantalla de la aplicación móvil.
@@ -35,6 +45,27 @@ Los wireframes convierten las ideas de los sketches y de la propuesta visual en 
 Se construyen sobre una referencia de **390 × 844 dp**, con rejilla, márgenes y componentes definidos para mantener consistencia entre las distintas secciones de Órbita Kids. El resultado funciona como una guía visual cercana a la implementación: ayuda a que el equipo traduzca las decisiones de diseño a widgets, layouts y estados de Flutter sin depender solo de una imagen decorativa.
 
 Los wireframes, disponibles en PNG y SVG, también permiten comparar la estructura con el prototipo y detectar antes del desarrollo problemas de legibilidad, navegación o accesibilidad táctil.
+
+## 🎯 Objetivo dentro del desarrollo móvil
+
+Los wireframes sirven como especificación visual intermedia entre la idea y el código. Permiten revisar cómo se distribuyen los contenidos, qué elementos son interactivos y qué espacio necesita cada componente antes de construir las vistas en Flutter.
+
+## 🧭 Proceso y alcance
+
+Se elaboran a partir de los recorridos definidos en Figma y de los estados explorados en los sketches. Cada pantalla aplica una referencia común de ancho, alto, márgenes, rejilla y áreas táctiles para que la experiencia conserve coherencia entre onboarding, autenticación, actividades, perfiles, modo offline y configuración.
+
+El conjunto representa la estructura funcional de las pantallas móviles; no busca sustituir el diseño visual final, sino establecer una base medible para UI, accesibilidad y desarrollo.
+
+## 🛠️ Tecnologías y herramientas
+
+- **Figma:** organización de pantallas y flujos de referencia.
+- **Flutter y dp:** unidad de medida y contexto de implementación.
+- **PNG y SVG:** consulta, presentación y edición de los wireframes.
+- **Markdown:** documentación de medidas, componentes y relaciones.
+
+## ✨ Principios de diseño
+
+Los wireframes priorizan jerarquía, consistencia, legibilidad, accesibilidad táctil y adaptación al dispositivo móvil. Cada medida busca que la interfaz sea comprensible y cómoda para la interacción del estudiante y del docente.
 
 Cada estado está en dos formatos dentro de su sección:
 

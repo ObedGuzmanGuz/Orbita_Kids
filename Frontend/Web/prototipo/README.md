@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -28,6 +28,40 @@
 ---
 
 </div>
+
+## 📸 Previsualización del prototipo
+
+*Vistas de alta fidelidad que muestran la navegación y los estados de la experiencia web.*
+
+| Sitio web | Docente | Institución |
+|:---:|:---:|:---:|
+| <img src="capturas/01_sitio_web/001_01_sitio-web-orbita-kids_portada-del-sitio.png" width="180" alt="Prototipo del sitio web"/> | <img src="capturas/04_docente/027_16_mis-grupos_activos-y-archivados.png" width="180" alt="Prototipo del espacio docente"/> | <img src="capturas/05_institucion/038_24a_docentes_docentes-y-solicitudes.png" width="180" alt="Prototipo del espacio institucional"/> |
+
+---
+
+## Contexto dentro de Órbita Kids
+
+El prototipo es la versión navegable de la PWA. Reúne en un archivo HTML las vistas, estados, controles y recorridos que permiten experimentar la plataforma antes de implementar sus componentes en React.
+
+## 🎯 Objetivo dentro del desarrollo web
+
+Permite validar navegación, contenido, estados de acceso, instalación de escritorio, espacios docente e institucional, cuenta y escenarios sin conexión. También facilita comunicar las decisiones de UX al equipo y detectar ajustes antes del desarrollo.
+
+## 🧭 Proceso y alcance
+
+Se construye a partir de los flujos definidos en Figma, los sketches y los wireframes. La experiencia contempla el sitio público, autenticación, PWA instalable, gestión docente, institución, cuenta y demostraciones de exploración sin sesión.
+
+## 🛠️ Tecnologías y herramientas
+
+- **HTML, CSS y JavaScript:** construcción del prototipo navegable.
+- **React y Vite:** contexto de implementación de la PWA.
+- **Figma:** referencia para composición visual y recorridos.
+- **PWA:** simulación de ventanas, instalación y condiciones de conexión.
+- **Markdown:** documentación de estados y pruebas.
+
+## ✨ Principios de diseño
+
+El prototipo prioriza navegación clara, consistencia visual, respuesta ante distintos tamaños de ventana, accesibilidad y continuidad de la experiencia para docentes e instituciones.
 
 ## Pestañas
 

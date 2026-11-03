@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../Logos/Studio_Blanco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 

@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -27,6 +27,39 @@
 ---
 
 </div>
+
+## 📸 Previsualización de sketches
+
+*Bocetos de baja fidelidad que representan la exploración inicial de la experiencia web.*
+
+| Sitio web | Acceso | Docente |
+|:---:|:---:|:---:|
+| <img src="01_sitio_web/001_01_sitio-web-orbita-kids_portada-del-sitio.png" width="180" alt="Sketch del sitio web"/> | <img src="02_acceso/005_04a_iniciar-sesion_metodos-de-acceso.png" width="180" alt="Sketch de acceso"/> | <img src="04_docente/024_15a_inicio-docente_en-el-navegador.png" width="180" alt="Sketch del espacio docente"/> |
+
+---
+
+## Contexto dentro de Órbita Kids
+
+Los sketches son la primera representación de la PWA y permiten explorar la organización de una interfaz para docentes e instituciones antes de definir su acabado visual. Ayudan a revisar la jerarquía de la información, la navegación y las acciones principales del sitio web, el acceso, el espacio docente y el espacio institucional.
+
+## 🎯 Objetivo dentro del desarrollo web
+
+Sirven para validar rápidamente los recorridos y la claridad de la experiencia sin depender todavía de estilos finales o componentes implementados. También permiten comprobar cómo se adapta la propuesta de Órbita Kids a una ventana web y a los distintos perfiles de usuario.
+
+## 🧭 Proceso y alcance
+
+Se elaboran a partir de ideas y flujos organizados en Figma, y después se relacionan con wireframes, prototipo y capturas mediante la misma nomenclatura. El conjunto cubre el sitio público, autenticación, aplicación de escritorio, experiencia docente, institución, modo sin conexión y cuenta.
+
+## 🛠️ Tecnologías y herramientas
+
+- **Figma:** organización de ideas, flujos y referencias visuales.
+- **Rough.js y PNG:** representación de baja fidelidad.
+- **React, Vite y JavaScript:** contexto de implementación de la PWA.
+- **Markdown:** documentación y relación entre entregables.
+
+## ✨ Principios de diseño
+
+Los sketches priorizan claridad, jerarquía de información, navegación consistente, adaptación a distintos tamaños de ventana y comprensión de las acciones para docentes e instituciones.
 
 ## Cómo leerlos
 

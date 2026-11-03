@@ -29,6 +29,16 @@
 
 </div>
 
+## 📸 Previsualización del prototipo
+
+*Vistas de alta fidelidad que muestran la navegación y los estados de la experiencia móvil.*
+
+| Inicio | Estudiante | Docente |
+|:---:|:---:|:---:|
+| <img src="capturas/02_splash_y_onboarding/001_01_splash-orbita-kids_animacion-de-entrada.png" width="180" alt="Prototipo de inicio"/> | <img src="capturas/04_estudiante/056_18a_mapa-espacial_universo-en-modo-explorar.png" width="180" alt="Prototipo de estudiante"/> | <img src="capturas/06_docente/094_29_home-docente_inicio-docente.png" width="180" alt="Prototipo de docente"/> |
+
+---
+
 ## Contexto dentro de Órbita Kids
 
 El prototipo es la versión navegable de la propuesta visual. Reúne en un solo archivo las pantallas, estados, controles y recorridos de la aplicación para que la experiencia pueda probarse antes de existir como una app Flutter compilada.
@@ -36,6 +46,28 @@ El prototipo es la versión navegable de la propuesta visual. Reúne en un solo 
 Su construcción toma como referencia la organización de pantallas definida durante el diseño en Figma y los estados establecidos en sketches y wireframes. Las interacciones permiten revisar onboarding, autenticación, actividades, exploración espacial, perfiles de estudiante y docente, modo offline y configuración desde la perspectiva del usuario.
 
 Las capturas de alta fidelidad sirven como referencia visual para el desarrollo frontend. El prototipo no reemplaza la implementación: ayuda a validar navegación, contenido, retroalimentación y comportamiento esperado para que los componentes finales conserven la intención de diseño.
+
+## 🎯 Objetivo dentro del desarrollo móvil
+
+El prototipo permite comprobar la experiencia de Órbita Kids como si fuera una aplicación terminada. Sirve para validar navegación, contenido, interacciones, estados alternativos y respuesta ante condiciones como falta de conexión o errores de acceso.
+
+## 🧭 Proceso y alcance
+
+Se construye a partir de la arquitectura de pantallas y los flujos organizados en Figma, tomando los sketches como exploración inicial y los wireframes como referencia estructural. La navegación interactiva conecta las vistas para representar el recorrido de estudiantes, docentes y usuarios sin cuenta.
+
+El prototipo reúne la experiencia de aprendizaje, exploración espacial, misiones, autenticación, bienestar, perfiles, configuración y uso offline. Es una herramienta de validación y comunicación; la lógica real, la persistencia y las integraciones se implementarán posteriormente en Flutter y los servicios correspondientes.
+
+## 🛠️ Tecnologías y herramientas
+
+- **HTML, CSS y JavaScript:** construcción del prototipo navegable.
+- **Figma:** referencia para la composición visual y los flujos.
+- **Google Fonts y recursos gráficos:** identidad visual de la experiencia.
+- **Flutter y Dart:** destino de las decisiones que se validan en el prototipo.
+- **Markdown:** documentación de pruebas, estados y recorridos.
+
+## ✨ Principios de diseño
+
+El prototipo prioriza una navegación clara, retroalimentación visible, consistencia entre pantallas, accesibilidad y continuidad de la experiencia educativa. También permite comunicar de forma concreta las decisiones de diseño al equipo frontend.
 
 ## Pestañas
 

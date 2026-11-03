@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -28,6 +28,40 @@
 ---
 
 </div>
+
+## 📸 Previsualización de diagramas
+
+*Representación visual de los flujos principales de la PWA.*
+
+| Acceso | Escritorio | Sin conexión |
+|:---:|:---:|:---:|
+| <img src="png/SD-W01_explorar_sin_cuenta_e_iniciar_sesion_con_google.png" width="240" alt="Diagrama de acceso"/> | <img src="png/SD-W02_instalar_la_app_de_escritorio.png" width="240" alt="Diagrama de instalación"/> | <img src="png/SD-W03_asignar_apoyo_sin_conexion_y_sincronizar.png" width="240" alt="Diagrama sin conexión"/> |
+
+---
+
+## Contexto dentro de Órbita Kids
+
+Los diagramas de secuencia explican qué sucede detrás de los recorridos visibles de la PWA. Mientras los sketches, wireframes y capturas muestran la interfaz, estos diagramas muestran la comunicación entre el usuario, la aplicación web, Keycloak, los proveedores de identidad y la API.
+
+## 🎯 Objetivo dentro del desarrollo web
+
+Permiten comprender y validar los flujos de exploración sin cuenta, inicio de sesión, instalación de escritorio, asignación sin conexión y sincronización. Funcionan como referencia para conectar las decisiones de UX con la lógica que deberá implementar la aplicación.
+
+## 🧭 Proceso y alcance
+
+Se elaboran en Mermaid a partir del prototipo y de la arquitectura prevista para la PWA. Los cuatro diagramas documentan los flujos clave y sus alternativas, sin describir cada pantalla de forma aislada.
+
+## 🛠️ Tecnologías y herramientas
+
+- **Mermaid:** creación y edición de los diagramas.
+- **React, Vite y JavaScript:** contexto de la PWA.
+- **Keycloak y PKCE:** autenticación e identidad.
+- **API Órbita:** comunicación con los servicios del backend.
+- **PNG y SVG:** consulta y presentación de los diagramas.
+
+## ✨ Principios de diseño
+
+Los diagramas priorizan trazabilidad, claridad, separación de responsabilidades, seguridad de sesión, continuidad sin conexión y coordinación entre interfaz y servicios.
 
 | Diagrama | Flujo | Mensajes |
 |---|---|---|

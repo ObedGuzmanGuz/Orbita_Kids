@@ -29,7 +29,23 @@
 
 </div>
 
-La carpeta reúne los materiales que explican la experiencia móvil: definición visual, estructura de pantallas, navegación interactiva y flujos técnicos. Cada entregable complementa a los demás y sirve como referencia para construir la aplicación en Flutter.
+<div align="center">
+
+## 📸 PREVISUALIZACIÓN DE LA APLICACIÓN
+
+*Un primer vistazo a la experiencia móvil de Órbita Kids.*
+
+</div>
+
+| 🌟 Vista 01 | 🚀 Vista 02 | 🪐 Vista 03 |
+|:---:|:---:|:---:|
+| <img src="./prototipo/capturas/02_splash_y_onboarding/001_01_splash-orbita-kids_animacion-de-entrada.png" width="210" alt="Pantalla móvil 1"/> | <img src="./prototipo/capturas/04_estudiante/056_18a_mapa-espacial_universo-en-modo-explorar.png" width="210" alt="Pantalla móvil 2"/> | <img src="./prototipo/capturas/06_docente/094_29_home-docente_inicio-docente.png" width="210" alt="Pantalla móvil 3"/> |
+
+<div align="center">
+
+<sub>VISTAS DE LA INTERFAZ · APLICACIÓN MÓVIL</sub>
+
+</div>
 
 ---
 
@@ -146,10 +162,6 @@ Representación de la navegación y las interacciones entre pantallas para visua
 
 Diseños e implementaciones adaptados a las características de los dispositivos móviles, considerando la interacción táctil y la presentación de contenidos.
 
-Estos entregables siguen un flujo de diseño progresivo: las ideas se organizan en Figma y en los materiales de exploración visual, después se convierten en estructuras medibles, se prueban mediante navegación interactiva y finalmente se documentan sus relaciones técnicas. Así, el equipo puede revisar la experiencia antes de trasladarla a componentes Flutter y mantener una referencia común entre diseño, desarrollo y documentación.
-
-En conjunto, el módulo representa **130 estados de pantalla** para los recorridos de estudiante, docente, autenticación, bienestar, modo offline, configuración y accesibilidad. No se trata únicamente de una colección de imágenes: cada estado ayuda a definir una decisión de interfaz, una acción, una transición o una respuesta que debe conservarse durante la implementación.
-
 ---
 
 <div align="center">
@@ -170,14 +182,13 @@ En él se integran tres elementos fundamentales del proceso:
 
 <div align="center">
 
-### 📱 PROTOTIPO · SKETCHES · WIREFRAMES - DIAGRAMA DE SECUENCIA
+### 📱 PROTOTIPO · SKETCHES · WIREFRAMES
 
 **Documentación visual de la experiencia móvil**
 
-[![Vista previa del diagrama general](../img/diagrama1.png)](ENLACE_DIAGRAMA_GENERAL)
+[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama2.png)](/Frontend/img/diagrama2.png)
 
-[![VER DIAGRAMA GENERAL](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_GENERAL-7957D5?style=for-the-badge&logo=mermaid&logoColor=white)](./img/diagrama1.png)
-
+[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_DE_DISEÑO-7254B8?style=for-the-badge&logo=figma&logoColor=white)](/Frontend/img/diagrama2.png)
 
 </div>
 

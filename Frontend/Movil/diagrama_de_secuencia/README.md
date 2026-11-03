@@ -29,6 +29,16 @@
 
 </div>
 
+## 📸 Previsualización de diagramas
+
+*Representación visual de los flujos principales de la aplicación móvil.*
+
+| Sistema | Sesión | Misión |
+|:---:|:---:|:---:|
+| <img src="png/SD-00_diagrama_general_del_sistema_claro.png" width="240" alt="Diagrama general del sistema"/> | <img src="png/SD-01_arranque_y_restauracion_de_sesion_claro.png" width="240" alt="Diagrama de sesión"/> | <img src="png/SD-04_resolver_una_mision_offline_first_claro.png" width="240" alt="Diagrama de misión"/> |
+
+---
+
 ## Contexto dentro de Órbita Kids
 
 Los diagramas de secuencia explican qué ocurre detrás de cada recorrido visible en la aplicación. Mientras los sketches, wireframes y capturas muestran la interfaz, estos diagramas muestran el intercambio de mensajes entre el estudiante o docente, la app Flutter, el almacenamiento local, Keycloak, la API y la base de datos.
@@ -36,6 +46,29 @@ Los diagramas de secuencia explican qué ocurre detrás de cada recorrido visibl
 Se elaboran en Mermaid a partir de los flujos definidos en el prototipo y de las decisiones de arquitectura del proyecto. Ayudan a revisar autenticación, registro, resolución de misiones, funcionamiento offline, sincronización, publicación de actividades y cierre seguro de sesión.
 
 Su función dentro del frontend es conectar la experiencia visual con el comportamiento que deberá implementar la aplicación. También permiten detectar dependencias, respuestas, estados alternativos y puntos de sincronización antes de construir la lógica de navegación y comunicación con los servicios.
+
+## 🎯 Objetivo dentro del desarrollo móvil
+
+Los diagramas de secuencia traducen los recorridos de Órbita Kids a una vista técnica. Permiten entender qué sucede cuando un estudiante inicia sesión, resuelve una misión, trabaja sin conexión, sincroniza sus avances o cierra la sesión, así como qué ocurre en las acciones del docente.
+
+## 🧭 Proceso y alcance
+
+Se elaboran en Mermaid a partir de los flujos representados en el prototipo y de la arquitectura prevista para la aplicación. El diagrama general presenta el recorrido completo y los diagramas de detalle profundizan en las interacciones que requieren decisiones específicas de frontend, autenticación, almacenamiento o servicios.
+
+Esta documentación no describe cada pantalla de forma aislada: muestra la coordinación entre actores, estados y sistemas para que el equipo pueda implementar una navegación coherente y prever respuestas normales, alternativas y errores.
+
+## 🛠️ Tecnologías y herramientas
+
+- **Mermaid:** creación y edición de los diagramas.
+- **Flutter y Dart:** contexto de la aplicación móvil.
+- **Keycloak:** autenticación e identidad.
+- **FastAPI y MySQL:** referencia para API y persistencia.
+- **Almacenamiento local:** soporte para los flujos offline-first.
+- **PNG y SVG:** consulta y presentación de los diagramas.
+
+## ✨ Principios de diseño
+
+Los diagramas priorizan trazabilidad, claridad, separación de responsabilidades, continuidad sin conexión y seguridad de sesión. Su objetivo es que la experiencia visible y la lógica que la sostiene puedan evolucionar de forma coordinada.
 
 En la pestaña **Diagrama de secuencia** de `../prototipo/Órbita_Kids_Prototipo.html` los diagramas son **interactivos**:
 

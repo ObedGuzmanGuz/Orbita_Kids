@@ -28,6 +28,16 @@
 
 </div>
 
+## 📸 Previsualización de sketches
+
+*Bocetos de baja fidelidad que representan la exploración inicial de la experiencia móvil.*
+
+| Inicio | Onboarding | Exploración |
+|:---:|:---:|:---:|
+| <img src="02_splash_y_onboarding/001_01_splash-orbita-kids_animacion-de-entrada.png" width="180" alt="Sketch de inicio"/> | <img src="02_splash_y_onboarding/003_03a_onboarding_paso-1-de-5-hola-soy-orbi.png" width="180" alt="Sketch de onboarding"/> | <img src="04_estudiante/056_18a_mapa-espacial_universo-en-modo-explorar.png" width="180" alt="Sketch de exploración"/> |
+
+---
+
 ## Contexto dentro de Órbita Kids
 
 Los sketches son la primera representación visual de la experiencia móvil. Se elaboran con trazos simples para explorar rápidamente la composición de una pantalla, la ubicación de los elementos y el recorrido que seguirá el estudiante antes de invertir tiempo en estilos, imágenes o componentes finales.
@@ -35,6 +45,27 @@ Los sketches son la primera representación visual de la experiencia móvil. Se 
 En el flujo de trabajo de diseño, sirven como puente entre las ideas planteadas en Figma y la definición posterior de wireframes y prototipos. Los sketches cubren los estados principales de la aplicación y permiten revisar si una misión, una actividad matemática, un acceso o una pantalla de configuración se entiende antes de llevarlo a Flutter.
 
 Su función dentro del frontend es validar la intención de cada pantalla: qué debe destacar, qué acción puede realizar el usuario y cómo responde la interfaz. Por eso cada estado conserva un nombre común con su wireframe y su captura de alta fidelidad.
+
+## 🎯 Objetivo dentro del desarrollo móvil
+
+Los sketches ayudan a tomar decisiones tempranas sobre la experiencia de Órbita Kids sin distraerse con el acabado visual. Permiten revisar si los recorridos de onboarding, autenticación, misiones, actividades matemáticas, modo offline y configuración son claros para el estudiante y el docente.
+
+## 🧭 Proceso y alcance
+
+Se elaboran a partir de las ideas y flujos organizados en Figma, utilizando una representación visual sencilla que facilita iterar y comparar alternativas. Después se relacionan con los wireframes y el prototipo para conservar la misma nomenclatura, orden y estados de pantalla.
+
+El conjunto cubre las secciones principales de la aplicación móvil y documenta las decisiones de navegación que sirven como base para el diseño UI y la implementación posterior en Flutter.
+
+## 🛠️ Tecnologías y herramientas
+
+- **Figma:** organización de ideas, flujos y referencias de diseño.
+- **Rough.js y PNG:** representación visual de baja fidelidad.
+- **Flutter y Dart:** contexto de implementación de las pantallas.
+- **Markdown:** documentación y relación entre entregables.
+
+## ✨ Principios de diseño
+
+Los sketches priorizan claridad, exploración, consistencia entre estados, interacción táctil y una experiencia adecuada para niños de primaria. Su valor está en hacer visibles las decisiones antes de convertirlas en componentes definitivos.
 
 ## Cómo leerlos
 

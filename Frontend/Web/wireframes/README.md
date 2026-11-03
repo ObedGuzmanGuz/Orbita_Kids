@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="left" src="../../../Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="../../../Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
 
 <br>
 
@@ -28,6 +28,40 @@
 ---
 
 </div>
+
+## 📸 Previsualización de wireframes
+
+*Estructuras visuales que organizan las pantallas y sus medidas para la implementación web.*
+
+| Sitio web | Acceso | Docente |
+|:---:|:---:|:---:|
+| <img src="01_sitio_web/001_01_sitio-web-orbita-kids_portada-del-sitio.png" width="180" alt="Wireframe del sitio web"/> | <img src="02_acceso/005_04a_iniciar-sesion_metodos-de-acceso.png" width="180" alt="Wireframe de acceso"/> | <img src="04_docente/024_15a_inicio-docente_en-el-navegador.png" width="180" alt="Wireframe del espacio docente"/> |
+
+---
+
+## Contexto dentro de Órbita Kids
+
+Los wireframes convierten las ideas de la PWA en una estructura visual medible. En ellos se revisan jerarquías, distribución de contenidos, navegación, áreas interactivas y comportamiento de las vistas para docentes e instituciones.
+
+## 🎯 Objetivo dentro del desarrollo web
+
+Funcionan como una especificación visual intermedia entre el diseño y el código. Permiten definir cómo se organiza cada pantalla antes de construirla con React, CSS y componentes reutilizables.
+
+## 🧭 Proceso y alcance
+
+Se elaboran a partir de los sketches y de los flujos definidos en Figma. Usan una ventana de referencia de **1280 × 760 px**, una rejilla de 12 columnas y medidas CSS que ayudan a mantener consistencia en el sitio público, acceso, escritorio, espacios docente e institucional, modo sin conexión y cuenta.
+
+## 🛠️ Tecnologías y herramientas
+
+- **Figma:** organización de pantallas y flujos de referencia.
+- **CSS y px:** unidad de medida y contexto de implementación web.
+- **React y Vite:** destino de las decisiones estructurales.
+- **PNG y SVG:** consulta, presentación y edición de los wireframes.
+- **Markdown:** documentación de medidas y componentes.
+
+## ✨ Principios de diseño
+
+Los wireframes priorizan claridad, consistencia, legibilidad, accesibilidad, adaptación de ventanas y una navegación comprensible para los perfiles docente e institucional.
 
 ## Cómo leerlos
 
