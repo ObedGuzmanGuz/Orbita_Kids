@@ -441,19 +441,27 @@ Los resultados permitirán corregir problemas y ajustar la propuesta. No se cons
 
 <a id="ods-4"></a>
 
+
 ## 🌎 16. Relación con el ODS 4: Educación de calidad
 
 Órbita Kids se relaciona con el **Objetivo de Desarrollo Sostenible 4**, que busca promover una educación inclusiva, equitativa y de calidad.
 
 La contribución prevista del proyecto se centra en ofrecer ejercicios graduados, apoyos visuales y seguimiento que ayuden a reconocer necesidades de refuerzo en la práctica matemática.
 
+<p align="center">
+  <img src="./img/ods4-orbita-kids.png.jpeg"
+       alt="Niños aprendiendo con Órbita Kids"
+       width="750">
+</p>
+
+<p align="center">
+  <strong>Figura 16. Órbita Kids como propuesta de apoyo al aprendizaje inclusivo y de calidad.</strong>
+</p>
+
 🔗 **[Consultar ODS 4 — Naciones Unidas](https://sdgs.un.org/goals/goal4)**
 
 [Volver al índice](#indice)
 
----
-
-<a id="estado"></a>
 
 ## 📍 17. Estado del proyecto
 
