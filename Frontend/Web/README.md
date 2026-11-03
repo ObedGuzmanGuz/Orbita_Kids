@@ -26,7 +26,6 @@
 
 ### 🌍 CONECTA · ACOMPAÑA · CRECE
 
----
 
 </div>
 
