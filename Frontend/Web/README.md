@@ -213,9 +213,9 @@ Los recursos están disponibles en diferentes formatos para facilitar su consult
 
 <div align="center">
 
-[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama1.png)](/Frontend/img/diagrama1.png)
+[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama1.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
-[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_DE_DISEÑO-7254B8?style=for-the-badge&logo=figma&logoColor=white)](/Frontend/img/diagrama1.png)
+[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_DE_DISE%C3%91O-7254B8?style=for-the-badge&logo=figma&logoColor=white)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
 
 <br>

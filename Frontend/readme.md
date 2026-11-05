@@ -129,11 +129,9 @@ Se presentan en un orden de lectura que comienza con la visión integral del pro
 **Visión integral de la arquitectura Frontend**
 
 Representación global de las plataformas web y móvil, sus relaciones, componentes principales y estructura dentro del ecosistema Órbita Kids.
+[![Vista previa del diagrama general](./img/image.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#mapa)
 
-[![Vista previa del diagrama general](./img/image.png)](./img/image.png)
-
-[![VER DIAGRAMA GENERAL](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_GENERAL-7957D5?style=for-the-badge&logo=mermaid&logoColor=white)](./img/image.png)
-
+[![VER DIAGRAMA GENERAL](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_GENERAL-7957D5?style=for-the-badge&logo=mermaid&logoColor=white)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#mapa)
 ---
 
 ### 📱 02. DIAGRAMA DE APLICACIÓN MÓVIL
@@ -142,10 +140,9 @@ Representación global de las plataformas web y móvil, sus relaciones, componen
 
 Describe la estructura de la aplicación desarrollada con Flutter, incluyendo la organización de sus pantallas, componentes, navegación y relaciones funcionales.
 
-[![Vista previa del diagrama móvil](./img/diagrama1.png)](./img/diagrama1.png)
+[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama2.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
-[![VER DIAGRAMA MOBILE](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_MOBILE-02569B?style=for-the-badge&logo=flutter&logoColor=white)](./img/diagrama1.png0)
-
+[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA%20DE%20DISE%C3%91O-2EA44F?style=for-the-badge&logo=github&logoColor=white)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 ---
 
 ### 💻 03. DIAGRAMA DE PLATAFORMA WEB
@@ -154,10 +151,9 @@ Describe la estructura de la aplicación desarrollada con Flutter, incluyendo la
 
 Representa la estructura de la plataforma desarrollada con React y Vite, mostrando sus componentes, módulos, vistas y principales relaciones.
 
-[![Vista previa del diagrama web](./img/diagrama2.png)](./img/diagrama2.png)
+[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama1.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
-[![VER DIAGRAMA WEB](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_WEB-5367C5?style=for-the-badge&logo=react&logoColor=white)](./img/diagrama2.png)
-
+[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_DE_DISE%C3%91O-7254B8?style=for-the-badge&logo=figma&logoColor=white)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 </div>
 
 ---
