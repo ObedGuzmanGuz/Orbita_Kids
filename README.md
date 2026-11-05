@@ -359,9 +359,12 @@ Esta sección reúne los recursos visuales que ayudan a comprender la experienci
 
 Los sketches presentan ideas iniciales de las pantallas y los recorridos de usuario. Permiten visualizar cómo podrían interactuar estudiantes y docentes con la plataforma.
 
-🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Sketches/)**
 
-📂 [Ver carpeta de Sketches](Frontend/Sketches/)
+![alt text](Frontend/img/1.png)
+
+🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#sketches)**
+
+📂 [Ver carpeta de SSketches](Frontend)
 
 [Volver al índice](#indice)
 
@@ -373,9 +376,11 @@ Los sketches presentan ideas iniciales de las pantallas y los recorridos de usua
 
 Los wireframes muestran la estructura y distribución de las pantallas para estudiantes y docentes, tanto en móvil como en web/PWA. Ayudan a definir la navegación, la jerarquía visual y la ubicación de los elementos antes de implementar las interfaces.
 
-🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Wireframes/)**
+![alt text](Frontend/img/2.png)
 
-📂 [Ver carpeta de Wireframes](Frontend/Wireframes/)
+🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#wireframes)**
+
+📂 [Ver carpeta de Wireframes](Frontend)
 
 [Volver al índice](#indice)
 
@@ -387,7 +392,9 @@ Los wireframes muestran la estructura y distribución de las pantallas para estu
 
 El archivo de Figma sirve como referencia visual para revisar las propuestas de interfaz y mantener coherencia entre las pantallas.
 
-🎨 **[Consultar el diseño en Figma](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746)**
+![alt text](./Frontend/img/3.png)
+
+🎨 **[Consultar el diseño en Figma](https://www.figma.com/design/PRteYbnQPyx8MJ6Y04NnOb/Orbita-Kids-V1?node-id=14-2&p=f&t=E7tU3lXgY1IsgScd-0)**
 
 [Volver al índice](#indice)
 

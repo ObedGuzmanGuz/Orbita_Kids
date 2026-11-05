@@ -1,6 +1,6 @@
 # 🚀 Órbita Kids — Diagrama de Arquitectura
 
-## 📌 Descripción general
+## 📌 Descripción general0
 
 **Órbita Kids** es una plataforma educativa de matemáticas adaptativas con temática espacial, diseñada para que los estudiantes aprendan mediante actividades interactivas, misiones y recompensas, mientras los docentes cuentan con herramientas para administrar grupos, asignar actividades y consultar el progreso académico.
 
