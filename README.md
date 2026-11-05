@@ -1,17 +1,46 @@
+<div align="center">
+
+<img align="left" src="./Logos/Studio_Blamco-removebg-preview.png" width="90" alt="Órbita Studio"/>
+<img align="right" src="./Logos/Kid_Blanco-removebg-preview.png" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CREAMOS EXPERIENCIAS QUE INSPIRAN ✨
+
+<br>
+
+# 🌎 PLATAFORMA EDUCATIVA INTERACTIVA
+
+**APRENDIZAJE · TECNOLOGÍA · EXPLORACIÓN ESPACIAL**
+
+<br>
+
+<img src="https://img.shields.io/badge/PROYECTO-ÓRBITA_KIDS-7957D5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/WEB-REACT_+_VITE-5367C5?style=for-the-badge&logo=react&logoColor=white" />
+<img src="https://img.shields.io/badge/MOBILE-FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/DART-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+<img src="https://img.shields.io/badge/KEYCLOAK-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🌌 EXPLORA · APRENDE · DESCUBRE
+
+</div>
+
+
 
 <div align="center">
 
-<img src="/Logos/Logo_Empresa.png" alt="Logo de Órbita Kids" width="180">
+## 🪐 BIENVENIDO AL UNIVERSO DE ÓRBITA KIDS
 
-# 🪐 ÓRBITA · KIDS 🚀
+*Una experiencia educativa diseñada para descubrir nuevas formas de aprender.*
 
-### ✨ *CREAMOS EXPERIENCIAS QUE INSPIRAN* ✨
-
-**Plataforma educativa para reforzar el aprendizaje de matemáticas mediante una aventura espacial.**
-
-[Business Model Canvas](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/) · [Roles de usuario](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/DiagramaRolesUsuario/) · [Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Sketches/) · [Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Wireframes/)
-
-</div>
+</div>.
 
 ---
 
@@ -34,6 +63,7 @@ Selecciona cualquier sección para ir directamente a ella.
 11. [Tecnologías propuestas](#tecnologias)
 12. [Roles de usuario](#roles)
 13. [Productos y diseño de interfaces](#productos)
+    - [Diagrama General](#DiagramaGeneral)
     - [Sketches](#sketches)
     - [Wireframes](#wireframes)
     - [Diseño en Figma](#figma)
@@ -353,15 +383,33 @@ Los permisos definitivos deberán coincidir con la implementación de la aplicac
 
 Esta sección reúne los recursos visuales que ayudan a comprender la experiencia propuesta antes de completar la implementación.
 
+<a id="DiagramaGeneral"></a>
+
+### Diagrama General Interactivo
+
+
+
+![alt text](Frontend/img/4.png)
+
+🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)**
+
+📂 [Ver carpeta de Frontend](Frontend)
+
+[Volver al índice](#indice)
+
+
 <a id="sketches"></a>
 
 ### ✏️ Sketches de la aplicación
 
 Los sketches presentan ideas iniciales de las pantallas y los recorridos de usuario. Permiten visualizar cómo podrían interactuar estudiantes y docentes con la plataforma.
 
-🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Sketches/)**
 
-📂 [Ver carpeta de Sketches](Frontend/Sketches/)
+![alt text](Frontend/img/1.png)
+
+🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#sketches)**
+
+📂 [Ver carpeta de SSketches](Frontend)
 
 [Volver al índice](#indice)
 
@@ -373,9 +421,11 @@ Los sketches presentan ideas iniciales de las pantallas y los recorridos de usua
 
 Los wireframes muestran la estructura y distribución de las pantallas para estudiantes y docentes, tanto en móvil como en web/PWA. Ayudan a definir la navegación, la jerarquía visual y la ubicación de los elementos antes de implementar las interfaces.
 
-🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Wireframes/)**
+![alt text](Frontend/img/2.png)
 
-📂 [Ver carpeta de Wireframes](Frontend/Wireframes/)
+🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#wireframes)**
+
+📂 [Ver carpeta de Wireframes](Frontend)
 
 [Volver al índice](#indice)
 
@@ -387,7 +437,9 @@ Los wireframes muestran la estructura y distribución de las pantallas para estu
 
 El archivo de Figma sirve como referencia visual para revisar las propuestas de interfaz y mantener coherencia entre las pantallas.
 
-🎨 **[Consultar el diseño en Figma](https://www.figma.com/design/NJvpRMCpqT1MHrAjRdWY9k/Orbita-Kids?node-id=8-6746)**
+![alt text](./Frontend/img/3.png)
+
+🎨 **[Consultar el diseño en Figma](https://www.figma.com/design/PRteYbnQPyx8MJ6Y04NnOb/Orbita-Kids-V1?node-id=14-2&p=f&t=E7tU3lXgY1IsgScd-0)**
 
 [Volver al índice](#indice)
 
@@ -412,6 +464,8 @@ El proyecto cuenta con un **Business Model Canvas interactivo** que organiza los
 Cada bloque explica su significado, su relación con los demás elementos y su aplicación al proyecto.
 
 El modelo contempla una posible estrategia de ingresos mediante una versión gratuita y licencias escolares de pago. Los precios, costos, alianzas y previsiones económicas son hipótesis que deberán validarse antes de considerarse resultados reales.
+
+![alt text](Frontend/img/5.png)
 
 🚀 **[Abrir el Business Model Canvas interactivo](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/)**
 
@@ -476,16 +530,36 @@ Las siguientes etapas deberán priorizar la validación del diseño, el desarrol
 
 [Volver al índice](#indice)
 
+<div align="center">
+
+### 💜 APRENDER ES UNA AVENTURA. CADA ESTUDIANTE TIENE UN UNIVERSO POR DESCUBRIR.
+
+</div>
+
 ---
 
 <div align="center">
 
----
+### 🪐 ÓRBITA KIDS
 
-<img src="/Logos/Logo_Aplicacion.png" alt="Logo de Órbita Kids" width="100">
+**EXPLORA · APRENDE · DESCUBRE**
 
-### 🪐 Órbita Kids
+*Cada descubrimiento comienza con una pregunta.*
 
-*Aprender matemáticas también puede ser una aventura.* 🚀
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+<sub>FLUTTER · DART &nbsp; | &nbsp; EXPERIENCIA MÓVIL</sub>
+
+<br>
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
 
 </div>

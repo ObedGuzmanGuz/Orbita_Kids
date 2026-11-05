@@ -186,9 +186,9 @@ En él se integran tres elementos fundamentales del proceso:
 
 **Documentación visual de la experiencia móvil**
 
-[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama2.png)](/Frontend/img/diagrama2.png)
+[![Vista previa del diagrama de diseño móvil](/Frontend/img/diagrama2.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
-[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA_DE_DISEÑO-7254B8?style=for-the-badge&logo=figma&logoColor=white)](/Frontend/img/diagrama2.png)
+[![EXPLORAR DIAGRAMA DE DISEÑO](https://img.shields.io/badge/EXPLORAR-DIAGRAMA%20DE%20DISE%C3%91O-2EA44F?style=for-the-badge&logo=github&logoColor=white)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
 </div>
 
