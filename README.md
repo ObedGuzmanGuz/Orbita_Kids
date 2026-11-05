@@ -1,15 +1,6 @@
 <div align="center">
 
-<img align="left" src="./Logos/Studio_Blamco-removebg-preview.png" width="90" alt="Órbita Studio"/>
-<img align="right" src="./Logos/Kid_Blanco-removebg-preview.png" width="80" alt="Órbita Kids"/>
-
-<br>
-
-# 🪐 ` Ó R B I T A · K I D S ` 🚀
-
-### ✨ CREAMOS EXPERIENCIAS QUE INSPIRAN ✨
-
-<br>
+<img align="left" src=.0.
 
 # 🌎 PLATAFORMA EDUCATIVA INTERACTIVA
 
@@ -389,7 +380,7 @@ Esta sección reúne los recursos visuales que ayudan a comprender la experienci
 
 
 
-![alt text](Frontend/img/4.png)
+[![Vista previa de Sketches](Frontend/img/4.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
 
 🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)**
 
@@ -405,7 +396,7 @@ Esta sección reúne los recursos visuales que ayudan a comprender la experienci
 Los sketches presentan ideas iniciales de las pantallas y los recorridos de usuario. Permiten visualizar cómo podrían interactuar estudiantes y docentes con la plataforma.
 
 
-![alt text](Frontend/img/1.png)
+[![Vista previa de Sketches](Frontend/img/1.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#sketches)
 
 🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#sketches)**
 
@@ -421,9 +412,10 @@ Los sketches presentan ideas iniciales de las pantallas y los recorridos de usua
 
 Los wireframes muestran la estructura y distribución de las pantallas para estudiantes y docentes, tanto en móvil como en web/PWA. Ayudan a definir la navegación, la jerarquía visual y la ubicación de los elementos antes de implementar las interfaces.
 
-![alt text](Frontend/img/2.png)
+[![Vista previa de Wireframes](Frontend/img/2.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#wireframes)
 
 🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#wireframes)**
+
 
 📂 [Ver carpeta de Wireframes](Frontend)
 
@@ -437,7 +429,7 @@ Los wireframes muestran la estructura y distribución de las pantallas para estu
 
 El archivo de Figma sirve como referencia visual para revisar las propuestas de interfaz y mantener coherencia entre las pantallas.
 
-![alt text](./Frontend/img/3.png)
+[![Vista previa del diseño en Figma](./Frontend/img/3.png)](https://www.figma.com/design/PRteYbnQPyx8MJ6Y04NnOb/Orbita-Kids-V1?node-id=14-2&p=f&t=E7tU3lXgY1IsgScd-0)
 
 🎨 **[Consultar el diseño en Figma](https://www.figma.com/design/PRteYbnQPyx8MJ6Y04NnOb/Orbita-Kids-V1?node-id=14-2&p=f&t=E7tU3lXgY1IsgScd-0)**
 
@@ -465,7 +457,7 @@ Cada bloque explica su significado, su relación con los demás elementos y su a
 
 El modelo contempla una posible estrategia de ingresos mediante una versión gratuita y licencias escolares de pago. Los precios, costos, alianzas y previsiones económicas son hipótesis que deberán validarse antes de considerarse resultados reales.
 
-![alt text](Frontend/img/5.png)
+[![Vista previa del Business Model Canvas](Frontend/img/5.png)](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/)
 
 🚀 **[Abrir el Business Model Canvas interactivo](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/)**
 
