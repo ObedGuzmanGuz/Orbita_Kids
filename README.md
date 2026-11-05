@@ -1,17 +1,46 @@
+<div align="center">
+
+<img align="left" src="./Logos/Studio_Blamco-removebg-preview.png" width="90" alt="Órbita Studio"/>
+<img align="right" src="./Logos/Kid_Blanco-removebg-preview.png" width="80" alt="Órbita Kids"/>
+
+<br>
+
+# 🪐 ` Ó R B I T A · K I D S ` 🚀
+
+### ✨ CREAMOS EXPERIENCIAS QUE INSPIRAN ✨
+
+<br>
+
+# 🌎 PLATAFORMA EDUCATIVA INTERACTIVA
+
+**APRENDIZAJE · TECNOLOGÍA · EXPLORACIÓN ESPACIAL**
+
+<br>
+
+<img src="https://img.shields.io/badge/PROYECTO-ÓRBITA_KIDS-7957D5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/WEB-REACT_+_VITE-5367C5?style=for-the-badge&logo=react&logoColor=white" />
+<img src="https://img.shields.io/badge/MOBILE-FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/DART-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+<img src="https://img.shields.io/badge/KEYCLOAK-4D4D4D?style=for-the-badge&logo=keycloak&logoColor=white" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+
+<br><br>
+
+### 🌌 EXPLORA · APRENDE · DESCUBRE
+
+</div>
+
+
 
 <div align="center">
 
-<img src="/Logos/Logo_Empresa.png" alt="Logo de Órbita Kids" width="180">
+## 🪐 BIENVENIDO AL UNIVERSO DE ÓRBITA KIDS
 
-# 🪐 ÓRBITA · KIDS 🚀
+*Una experiencia educativa diseñada para descubrir nuevas formas de aprender.*
 
-### ✨ *CREAMOS EXPERIENCIAS QUE INSPIRAN* ✨
-
-**Plataforma educativa para reforzar el aprendizaje de matemáticas mediante una aventura espacial.**
-
-[Business Model Canvas](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/) · [Roles de usuario](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/DiagramaRolesUsuario/) · [Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Sketches/) · [Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/Wireframes/)
-
-</div>
+</div>.
 
 ---
 
