@@ -34,6 +34,7 @@ Selecciona cualquier sección para ir directamente a ella.
 11. [Tecnologías propuestas](#tecnologias)
 12. [Roles de usuario](#roles)
 13. [Productos y diseño de interfaces](#productos)
+    - [Diagrama General](#DiagramaGeneral)
     - [Sketches](#sketches)
     - [Wireframes](#wireframes)
     - [Diseño en Figma](#figma)
@@ -353,6 +354,21 @@ Los permisos definitivos deberán coincidir con la implementación de la aplicac
 
 Esta sección reúne los recursos visuales que ayudan a comprender la experiencia propuesta antes de completar la implementación.
 
+<a id="DiagramaGeneral"></a>
+
+### Diagrama General Interactivo
+
+
+
+![alt text](Frontend/img/4.png)
+
+🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)**
+
+📂 [Ver carpeta de Frontend](Frontend)
+
+[Volver al índice](#indice)
+
+
 <a id="sketches"></a>
 
 ### ✏️ Sketches de la aplicación
@@ -420,6 +436,8 @@ Cada bloque explica su significado, su relación con los demás elementos y su a
 
 El modelo contempla una posible estrategia de ingresos mediante una versión gratuita y licencias escolares de pago. Los precios, costos, alianzas y previsiones económicas son hipótesis que deberán validarse antes de considerarse resultados reales.
 
+![alt text](Frontend/img/5.png)
+
 🚀 **[Abrir el Business Model Canvas interactivo](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/ModelBusinesCanvas/)**
 
 📂 **[Ver carpeta del Business Model Canvas](Practica04/)**
@@ -483,16 +501,36 @@ Las siguientes etapas deberán priorizar la validación del diseño, el desarrol
 
 [Volver al índice](#indice)
 
+<div align="center">
+
+### 💜 APRENDER ES UNA AVENTURA. CADA ESTUDIANTE TIENE UN UNIVERSO POR DESCUBRIR.
+
+</div>
+
 ---
 
 <div align="center">
 
----
+### 🪐 ÓRBITA KIDS
 
-<img src="/Logos/Logo_Aplicacion.png" alt="Logo de Órbita Kids" width="100">
+**EXPLORA · APRENDE · DESCUBRE**
 
-### 🪐 Órbita Kids
+*Cada descubrimiento comienza con una pregunta.*
 
-*Aprender matemáticas también puede ser una aventura.* 🚀
+<br>
+
+<img src="/Logos/Orbi_y_Teo_saludando_transparente.webp" width="280" alt="Animación de Órbita Kids"/>
+
+<br>
+
+### ✨ ¡GRACIAS POR EXPLORAR CON NOSOTROS! ✨
+
+**DESARROLLADO POR ÓRBITA STUDIO**
+
+<sub>FLUTTER · DART &nbsp; | &nbsp; EXPERIENCIA MÓVIL</sub>
+
+<br>
+
+<sub>© 2026 Órbita Studio · Todos los derechos reservados.</sub>
 
 </div>
