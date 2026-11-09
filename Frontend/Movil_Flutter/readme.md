@@ -11,7 +11,7 @@
 
 <br>
 
-# 💻 FRONTEND · DISEÑO Y PROTOTIPOS
+# 💻 Desarrollo 
 
 **APLICACION FLUTTER MOVIL**
 
