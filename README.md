@@ -385,9 +385,9 @@ Esta sección reúne los recursos visuales que ayudan a comprender la experienci
 
 
 
-[![Vista previa de Sketches](Frontend/img/4.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)
+[![Vista previa de Diagrama General](Frontend/img/4.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Sketch%2C%20wireframe%2C%20mockup%20y%20prototipo.html)
 
-🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#prototipo)**
+🚀 **[Explorar Diagrama General](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Sketch%2C%20wireframe%2C%20mockup%20y%20prototipo.html)**
 
 📂 [Ver carpeta de Frontend](Frontend)
 
