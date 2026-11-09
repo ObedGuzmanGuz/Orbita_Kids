@@ -1,0 +1,60 @@
+/* Espacio de institución · acento ámbar */
+
+.progress__bar--amber { background: #c27c0e; }
+.stat__of {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+.inst-grid { grid-template-columns: minmax(0, 488fr) minmax(0, 344fr); }
+.inst-subtitle {
+  margin: 22px 0 12px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 19.6px;
+  letter-spacing: -0.17px;
+}
+.session-bars {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  align-items: end;
+}
+.session-bars__col { display: flex; flex-direction: column; align-items: stretch; gap: 4px; text-align: center; }
+.session-bars__value,
+.session-bars__label { font-weight: 600; font-size: 12.5px; line-height: 18px; color: var(--muted); }
+.session-bars__bar { display: block; border-radius: 4px; background: #fcefd4; }
+.is-current .session-bars__bar { background: #a35f00; }
+.invite-form { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+
+/* 25 · Grupos y códigos, 26 · Licencia, 27 · Reportes, 28 · Configuración */
+.inst-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.plan-hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.plan-hero__price {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+}
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; line-height: 20.3px; }
+.kv dt { color: var(--muted); font-weight: 600; }
+.kv dd { margin: 0; font-weight: 600; color: var(--ink); }
+
+@media (max-width: 1100px) {
+  .inst-grid,
+  .inst-split { grid-template-columns: minmax(0, 1fr); }
+}
+.plans-table th,
+.plans-table td { height: 44px; padding-top: 6px; padding-bottom: 6px; }
