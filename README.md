@@ -385,9 +385,9 @@ Esta sección reúne los recursos visuales que ayudan a comprender la experienci
 
 
 
-[![Vista previa de Diagrama General](Frontend/img/4.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Sketch%2C%20wireframe%2C%20mockup%20y%20prototipo.html)
+[![Vista previa de Diagrama General](Frontend/img/4.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/diagrama-general.html#prototipo)
 
-🚀 **[Explorar Diagrama General](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Sketch%2C%20wireframe%2C%20mockup%20y%20prototipo.html)**
+🚀 **[Explorar Diagrama General](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/diagrama-general.html#prototipo)**
 
 📂 [Ver carpeta de Frontend](Frontend)
 
@@ -401,9 +401,9 @@ Esta sección reúne los recursos visuales que ayudan a comprender la experienci
 Los sketches presentan ideas iniciales de las pantallas y los recorridos de usuario. Permiten visualizar cómo podrían interactuar estudiantes y docentes con la plataforma.
 
 
-[![Vista previa de Sketches](Frontend/img/1.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#sketches)
+[![Vista previa de Sketches](Frontend/img/1.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/diagrama-general.html#sketches)
 
-🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#sketches)**
+🚀 **[Explorar Sketches](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/diagrama-general.html#sketches)**
 
 📂 [Ver carpeta de SSketches](Frontend)
 
@@ -417,9 +417,9 @@ Los sketches presentan ideas iniciales de las pantallas y los recorridos de usua
 
 Los wireframes muestran la estructura y distribución de las pantallas para estudiantes y docentes, tanto en móvil como en web/PWA. Ayudan a definir la navegación, la jerarquía visual y la ubicación de los elementos antes de implementar las interfaces.
 
-[![Vista previa de Wireframes](Frontend/img/2.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#wireframes)
+[![Vista previa de Wireframes](Frontend/img/2.png)](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/diagrama-general.html#wireframes)
 
-🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/%C3%93rbita%20Kids%20%C2%B7%20Estudio%20general.html#wireframes)**
+🚀 **[Explorar Wireframes](https://obedguzmanguz.github.io/Orbita_Kids/Frontend/diagrama-general.html#wireframes)**
 
 
 📂 [Ver carpeta de Wireframes](Frontend)
