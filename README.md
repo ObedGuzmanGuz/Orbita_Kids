@@ -36,7 +36,7 @@
 
 *Una experiencia educativa diseñada para descubrir nuevas formas de aprender.*
 
-</div>.
+</div>
 
 ---
 
