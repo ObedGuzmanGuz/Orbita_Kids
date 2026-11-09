@@ -1,45 +1,59 @@
 <div align="center">
 
-<img align="left" src="/Logos/Studio_Blamco.jpg" width="90" alt="Órbita Studio"/>
-<img align="right" src="/Logos/Kid_Blanco.jpg" width="80" alt="Órbita Kids"/>
+<img align="left" src="/Logos/Studio_Blamco-removebg-preview.png" width="90" alt="Órbita Studio"/>
+<img align="right" src="/Logos/Kid_Blanco-removebg-preview.png" width="80" alt="Órbita Kids"/>
 
 <br>
 
 # 🪐 ` Ó R B I T A · K I D S ` 🚀
 
-### ✨ CREAMOS EXPERIENCIAS QUE INSPIRAN ✨
+### ✨ EXPERIENCIAS QUE ACOMPAÑAN CADA DESCUBRIMIENTO ✨
 
 <br>
 
-# 💻 FRONTEND · DISEÑO Y PROTOTIPOS
+# 📱 FRONTEND · FLUTTER
 
-**APLICACION FLUTTER MOVIL**
+**APLICACIÓN MÓVIL NATIVA · EXPERIENCIA INTERACTIVA**
 
 <br>
 
-<img src="https://img.shields.io/badge/ÁREA-FRONTEND-7957D5?style=for-the-badge" />
-<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" />
-<img src="https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-<img src="https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-<img src="https://img.shields.io/badge/DART-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/MERMAID-FF3670?style=for-the-badge&logo=mermaid&logoColor=white" />
+## Descripción
 
-<br><br>
+La aplicación Flutter nativa se encuentra en [`orbita_kids/`](./orbita_kids). Está diseñada para que estudiantes exploren planetas y practiquen sumas, y para que docentes administren actividades, grupos y reportes. Implementa las pantallas 01 a 59 del diseño de Figma.
 
-### 🌌 DISEÑA · PRUEBA · TRANSFORMA
+La aplicación usa Flutter 3.47, Material 3, Riverpod, GoRouter, Dio, SQLite, almacenamiento seguro, conectividad, notificaciones locales, OIDC con PKCE y síntesis de voz.
 
-</div>
+## Cómo ejecutar
 
+```bash
+cd orbita_kids
+flutter pub get
+flutter run
+flutter test
+```
 
-<div align="center">
+Sin configuración de servidor, la aplicación inicia en modo demo. Para conectarla al backend local:
 
+```bash
+flutter run -d chrome --web-port 5000 `
+  --dart-define=API_BASE_URL=http://localhost:3000/v1 `
+  --dart-define=API_DEV_AUTH=true
+```
 
+En Windows PowerShell, el carácter `` ` `` permite continuar el comando en la siguiente línea. El backend debe estar ejecutándose desde [`Backend/backend/`](../../Backend/backend).
 
-<div align="center">
+## Funcionalidades
 
+- Inicio de sesión demo o mediante Keycloak con OIDC y PKCE.
+- Roles de estudiante y docente.
+- Actividades, intentos, progreso y reportes.
+- Trabajo offline con cola de sincronización.
+- Persistencia local con SQLite y almacenamiento seguro de credenciales.
+- Integración con el backend Node.js y MySQL del proyecto.
 
-<div align="center">
+Las cuentas, códigos de grupo, variables `--dart-define`, configuración de Keycloak y contrato de API están documentados en [`orbita_kids/README.md`](./orbita_kids/README.md).
+
+<br>
 
 ### 🪐 ÓRBITA KIDS
 
@@ -57,7 +71,7 @@
 
 **DESARROLLADO POR ÓRBITA STUDIO**
 
-<sub>WEB · REACT + VITE &nbsp; | &nbsp; MOBILE · FLUTTER</sub>
+<sub>FLUTTER · DART &nbsp; | &nbsp; EXPERIENCIA MÓVIL</sub>
 
 <br>
 
