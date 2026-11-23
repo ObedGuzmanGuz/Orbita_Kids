@@ -1,0 +1,28 @@
+{
+  "project": {
+    "name": "Órbita Kids",
+    "start": "2026-09-28",
+    "end": "2026-12-12",
+    "repository": "https://github.com/ObedGuzmanGuz/Orbita_Kids"
+  },
+  "members": [
+    { "id": "yazmin", "name": "Yazmin Gutierrez Hernandez", "role": "Frontend · Líder de equipo", "color": "#8A2BE2", "photo": "assets/perfiles/yazmin.jpg", "gitNames": ["Yazmin Gutierrez Hernandez"] },
+    { "id": "michelle", "name": "Michelle Castro Otero", "role": "Backend", "color": "#1DE9B6", "photo": "assets/perfiles/michelle.jpg", "gitNames": ["Ktmich2095"] },
+    { "id": "obed", "name": "Obed Guzmán Flores", "role": "Backend · Documentación", "color": "#F5D742", "photo": "assets/perfiles/obed.jpg", "gitNames": ["Obed Guzman Flores", "Obed Guzmán Flores"] },
+    { "id": "citlalli", "name": "Citlalli Pérez Dionicio", "role": "QA · Testing", "color": "#63A9FF", "photo": "assets/perfiles/citlalli.jpg", "gitNames": ["Citlalli Pérez Dionicio"] },
+    { "id": "jennifer", "name": "Jennifer Bautista Barrios", "role": "Documentación", "color": "#FF8F70", "photo": "assets/perfiles/jennifer.jpg", "gitNames": ["Jennifer Bautista Barrios"] }
+  ],
+  "tasks": [
+    { "id": "analysis", "name": "Análisis del proyecto", "start": "2026-09-28", "end": "2026-10-05", "owners": ["yazmin", "michelle", "obed", "citlalli", "jennifer"], "status": "Realizado", "progress": 100, "phase": "analysis", "dependencies": [], "description": "Definición del problema, objetivos, alcance y necesidades de la plataforma educativa." },
+    { "id": "design", "name": "Diseño y prototipos", "start": "2026-10-05", "end": "2026-10-16", "owners": ["yazmin", "obed"], "status": "Avanzado", "progress": 80, "phase": "design", "dependencies": ["analysis"], "description": "Identidad visual, sketches y wireframes para las experiencias de estudiante y docente." },
+    { "id": "architecture", "name": "Arquitectura del sistema", "start": "2026-10-12", "end": "2026-10-23", "owners": ["michelle"], "status": "Avanzado", "progress": 75, "phase": "architecture", "dependencies": ["analysis"], "description": "Definición de componentes, responsabilidades y comunicación entre aplicaciones, API y persistencia." },
+    { "id": "mobile", "name": "Aplicación móvil", "start": "2026-10-19", "end": "2026-11-20", "owners": ["yazmin"], "status": "En desarrollo", "progress": 45, "phase": "mobile", "dependencies": ["design", "architecture"], "description": "Experiencia móvil de aprendizaje con misiones y actividades matemáticas." },
+    { "id": "teacher", "name": "Panel docente (PWA)", "start": "2026-10-26", "end": "2026-11-27", "owners": ["yazmin"], "status": "En desarrollo", "progress": 40, "phase": "teacher", "dependencies": ["design", "architecture"], "description": "Panel web para organizar grupos, asignar actividades y consultar resultados." },
+    { "id": "backend", "name": "Desarrollo del backend", "start": "2026-10-26", "end": "2026-11-27", "owners": ["michelle", "obed"], "status": "Iniciado", "progress": 20, "phase": "backend", "dependencies": ["architecture"], "description": "Servicios de aplicación y API REST para gestionar actividades y progreso." },
+    { "id": "database", "name": "Base de datos MySQL", "start": "2026-11-02", "end": "2026-11-28", "owners": ["michelle"], "status": "Iniciado", "progress": 15, "phase": "database", "dependencies": ["architecture"], "description": "Modelo de datos y persistencia para usuarios, grupos, actividades y resultados." },
+    { "id": "integration", "name": "Integración de módulos", "start": "2026-11-23", "end": "2026-12-04", "owners": ["yazmin", "michelle", "obed"], "status": "Pendiente", "progress": 0, "phase": "integration", "dependencies": ["mobile", "teacher", "backend", "database"], "description": "Conexión de las interfaces con los servicios y la persistencia." },
+    { "id": "testing", "name": "Pruebas y validación", "start": "2026-11-30", "end": "2026-12-09", "owners": ["citlalli"], "status": "Pendiente", "progress": 0, "phase": "testing", "dependencies": ["integration"], "description": "Pruebas funcionales y revisión de la experiencia antes del cierre del proyecto." },
+    { "id": "documentation", "name": "Documentación", "start": "2026-09-28", "end": "2026-12-12", "owners": ["obed", "jennifer"], "status": "En desarrollo", "progress": 45, "phase": "documentation", "dependencies": [], "description": "Documentación técnica y de proyecto que acompaña el desarrollo durante todo el periodo." }
+  ],
+  "statusNotes": "Las fechas y responsables representan la planificación aprobada. Los porcentajes y estados iniciales son estimaciones para el dashboard, no resultados medidos ni inferidos de commits."
+}

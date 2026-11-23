@@ -1,8 +1,8 @@
 <div align="center">
 
-<img align="left" src="./Logos/Studio_Blamco-removebg-preview.png" width="90" alt="Órbita Studio"/>
+<img align="left" src="/Logos/Logo_Empresa.png" width="90" alt="Órbita Studio"/>
 
-<img align="right" src="./Logos/Kid_Blanco-removebg-preview.png" width="80" alt="Órbita Kids"/>
+<img align="right" src="/Logos/Logo_Aplicacion.png" width="80" alt="Órbita Kids"/>
 
 <br>
 

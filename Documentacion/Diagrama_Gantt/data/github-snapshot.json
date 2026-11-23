@@ -1,0 +1,873 @@
+﻿{
+    "repository":  "ObedGuzmanGuz/Orbita_Kids",
+    "fetchedAt":  "2026-11-02T21:26:16-06:00",
+    "source":  "GitHub REST API, branches and commit histories",
+    "branches":  [
+                     {
+                         "name":  "Documentacion",
+                         "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/Documentacion",
+                         "sha":  "90a965a7478321ba926dbc4581a9182188bec0cf"
+                     },
+                     {
+                         "name":  "Frontend",
+                         "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/Frontend",
+                         "sha":  "baa94b0f1a9979ef7b40235e919be801e603f8dc"
+                     },
+                     {
+                         "name":  "WorkFlow",
+                         "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/WorkFlow",
+                         "sha":  "41502869e98551846f6cea37c780c4995ad9e8dc"
+                     },
+                     {
+                         "name":  "fix/documentacion",
+                         "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/fix/documentacion",
+                         "sha":  "a646efa7c5fca30ea97eef4989d81721c0a0010e"
+                     },
+                     {
+                         "name":  "fix-sketches",
+                         "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/fix-sketches",
+                         "sha":  "08ef1865bfc5499391d097033d7ded77145e1a49"
+                     },
+                     {
+                         "name":  "main",
+                         "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/main",
+                         "sha":  "5ebc4cd2414970cb46d88c42659b9b0d88b27607"
+                     }
+                 ],
+    "commits":  [
+                    {
+                        "sha":  "a646efa7c5fca30ea97eef4989d81721c0a0010e",
+                        "authorName":  "Jennifer Bautista Barrios",
+                        "authorLogin":  "JenniferBautistaBarrios",
+                        "date":  "2026-11-03T03:13:59Z",
+                        "message":  "docs: documentar relación de Órbita Kids con el ODS 4",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/a646efa7c5fca30ea97eef4989d81721c0a0010e",
+                        "branches":  [
+                                         "fix/documentacion"
+                                     ]
+                    },
+                    {
+                        "sha":  "c251c10e99230b00abde5df790434f7fa823da9e",
+                        "authorName":  "Jennifer Bautista Barrios",
+                        "authorLogin":  "JenniferBautistaBarrios",
+                        "date":  "2026-11-03T03:12:27Z",
+                        "message":  "docs: agregar documentación del ODS 4",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/c251c10e99230b00abde5df790434f7fa823da9e",
+                        "branches":  [
+                                         "fix/documentacion"
+                                     ]
+                    },
+                    {
+                        "sha":  "baa94b0f1a9979ef7b40235e919be801e603f8dc",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-03T02:38:15Z",
+                        "message":  "Frontend fix:Web",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/baa94b0f1a9979ef7b40235e919be801e603f8dc",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "28bf82bbaaa1bb8de5e309dc4912bc6fd2ed7926",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-03T01:51:19Z",
+                        "message":  "Frontend fix:Movil",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/28bf82bbaaa1bb8de5e309dc4912bc6fd2ed7926",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "cd45d6060241291abbed44d15d127896b08f117c",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T23:55:31Z",
+                        "message":  "Frontend update: encabezado",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/cd45d6060241291abbed44d15d127896b08f117c",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "5e474450f020497f5addb85f1f5a403d109d333f",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T23:10:54Z",
+                        "message":  "Merge branch \u0027Frontend_Web\u0027 into Frontend",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/5e474450f020497f5addb85f1f5a403d109d333f",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "aeb9f4d41dcb8a50b0be7bb439cb6932667636fa",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T23:10:22Z",
+                        "message":  "Frontend_Web fix:prototipo",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/aeb9f4d41dcb8a50b0be7bb439cb6932667636fa",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "fac40a16d5e4eea7c370ae43626251492c8eb2a4",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T23:05:09Z",
+                        "message":  "Frontend_Web uodate : readmes",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/fac40a16d5e4eea7c370ae43626251492c8eb2a4",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "a667aec77aa80d3d7a0d325223e0cbc7a702de0a",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T23:00:34Z",
+                        "message":  "Frontend_Web add: diagrama",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/a667aec77aa80d3d7a0d325223e0cbc7a702de0a",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "614f58b4ac379e171d275294e8c9bb1e197aebdd",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T22:45:53Z",
+                        "message":  "Merge branch \u0027Frontend_Movil\u0027 into Frontend",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/614f58b4ac379e171d275294e8c9bb1e197aebdd",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "e71fbb00fa312cccf2a875cc1d1b4dd7bbf3b5f3",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T18:21:13Z",
+                        "message":  "Frontend_Movil add: Diagrama Interactivo",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/e71fbb00fa312cccf2a875cc1d1b4dd7bbf3b5f3",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "d980ea633f65eb7e33da759ffcbcef82fc7bf4a2",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-11-02T18:16:54Z",
+                        "message":  "Frontend Movil add",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/d980ea633f65eb7e33da759ffcbcef82fc7bf4a2",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "41502869e98551846f6cea37c780c4995ad9e8dc",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-11-01T23:20:02Z",
+                        "message":  "WorkFlow:add creacion interactivo de service workflow diagram",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/41502869e98551846f6cea37c780c4995ad9e8dc",
+                        "branches":  [
+                                         "WorkFlow"
+                                     ]
+                    },
+                    {
+                        "sha":  "6e358f52640d089de3df967d7f9ce4f17d9c4f02",
+                        "authorName":  "Citlalli Pérez Dionicio",
+                        "authorLogin":  "KouDionicio",
+                        "date":  "2026-10-26T20:11:33Z",
+                        "message":  "Frontend: add",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/6e358f52640d089de3df967d7f9ce4f17d9c4f02",
+                        "branches":  [
+                                         "Frontend"
+                                     ]
+                    },
+                    {
+                        "sha":  "5ebc4cd2414970cb46d88c42659b9b0d88b27607",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-21T16:58:42Z",
+                        "message":  "Fusion de la rama fix/Documentacion al main",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/5ebc4cd2414970cb46d88c42659b9b0d88b27607",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "0fe44b4871a2d6e73f0d0e4104e293eafbfa52d5",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-21T16:57:24Z",
+                        "message":  "fix/Documentacion:add Diagrama de Roles",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/0fe44b4871a2d6e73f0d0e4104e293eafbfa52d5",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "cc6648f7e8f45930c6c7b0eba41c1cf36dbfd6cd",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-21T16:29:58Z",
+                        "message":  "Fix/Documentacion:update Actualizaion Readme principal",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/cc6648f7e8f45930c6c7b0eba41c1cf36dbfd6cd",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "edd485d7cfc20ee3a9762f0a4c2cc09fe488b5da",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-21T16:08:52Z",
+                        "message":  "Fix/Documentacion:update Correccion de rutas de logos",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/edd485d7cfc20ee3a9762f0a4c2cc09fe488b5da",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "f6090700321b737237c6f22b85945184616f8548",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-21T16:05:46Z",
+                        "message":  "Fix/Documentacion:update Correccion de rutas de logos",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/f6090700321b737237c6f22b85945184616f8548",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "b85e6f0bb56409b31c1e9d5b804b0703461ee816",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-21T06:35:15Z",
+                        "message":  "Fusion de cambios remotos en main",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/b85e6f0bb56409b31c1e9d5b804b0703461ee816",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "fc9158faddad8a73e2588afb2e71a4ba20747b87",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-21T06:25:24Z",
+                        "message":  "Fusion rama fix-sketches",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/fc9158faddad8a73e2588afb2e71a4ba20747b87",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "08ef1865bfc5499391d097033d7ded77145e1a49",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-21T06:24:49Z",
+                        "message":  "fix-sketches",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/08ef1865bfc5499391d097033d7ded77145e1a49",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "45340e67bc593f047bc5facaa1a84e6b83ec9246",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-21T04:37:32Z",
+                        "message":  "fix-sketches",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/45340e67bc593f047bc5facaa1a84e6b83ec9246",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "27f2d550a6cd85465b28f1d0d6830199b7860c95",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-20T19:16:08Z",
+                        "message":  "Actualizacion de Readme principal",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/27f2d550a6cd85465b28f1d0d6830199b7860c95",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "91d53e37c4db03cf171c161693614657cc196002",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-20T19:00:15Z",
+                        "message":  "fix-sketches",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/91d53e37c4db03cf171c161693614657cc196002",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "fb19ce1cb8f509601c4e157afb5cbc69b60ac59f",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-20T07:46:44Z",
+                        "message":  "Fix-sketches",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/fb19ce1cb8f509601c4e157afb5cbc69b60ac59f",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "493f1853509a8413b7f74b645618561a74698b5a",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-19T04:39:48Z",
+                        "message":  "Merge de rama de Diagrama de Arquitectura",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/493f1853509a8413b7f74b645618561a74698b5a",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "10f30c119a2040543b9844e2601ad1ac986a76e8",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-19T04:38:55Z",
+                        "message":  "Diagrama de Arquitectura",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/10f30c119a2040543b9844e2601ad1ac986a76e8",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "654991f16607005ae84db0211fa451b15a9f2cb8",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-19T04:11:48Z",
+                        "message":  "Diagrama de Arquitectura",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/654991f16607005ae84db0211fa451b15a9f2cb8",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "821f40ffbe54fb206bcb2c90e9f7507d068c7a40",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-19T04:02:19Z",
+                        "message":  "Diagrama de Arquitectura",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/821f40ffbe54fb206bcb2c90e9f7507d068c7a40",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "efa33d78b804e6f4a965989ece70eac285fd6583",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-19T03:27:45Z",
+                        "message":  "Merge branch \u0027Frontend\u0027",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/efa33d78b804e6f4a965989ece70eac285fd6583",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "ceb1151bc2cc14b65ebc2b927f9aa3b7b43bf670",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-19T03:26:59Z",
+                        "message":  "Frontend add",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/ceb1151bc2cc14b65ebc2b927f9aa3b7b43bf670",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "7996a7426f4e3027292d4239848267a0d107cc4f",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-19T03:23:14Z",
+                        "message":  "Frontend fix",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/7996a7426f4e3027292d4239848267a0d107cc4f",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "30eac06cf1e44784e523648b7fe55af2683ebb1c",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-19T03:14:05Z",
+                        "message":  "Frontend add",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/30eac06cf1e44784e523648b7fe55af2683ebb1c",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "502a78f500a6b2436d88e67a2efaf3534b05f43d",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-19T02:40:45Z",
+                        "message":  "Frontend update",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/502a78f500a6b2436d88e67a2efaf3534b05f43d",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "6cb54a91209a17a397f54cbc5b929a607e1c4f9a",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-18T22:08:44Z",
+                        "message":  "Frontend add",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/6cb54a91209a17a397f54cbc5b929a607e1c4f9a",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "ad533f4e0749a00274ffd7ba239b82b7a1c492ff",
+                        "authorName":  "Ktmich2095",
+                        "authorLogin":  "Ktmich2095",
+                        "date":  "2026-10-18T00:43:00Z",
+                        "message":  "Diagrama de Arquitectura",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/ad533f4e0749a00274ffd7ba239b82b7a1c492ff",
+                        "branches":  [
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "262cb1777df5203bfbc01e35fe347630d1be2295",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-16T17:20:41Z",
+                        "message":  "Frontend  update",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/262cb1777df5203bfbc01e35fe347630d1be2295",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "22514996fdcf07008629c03c574318c00913f61f",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-16T17:16:11Z",
+                        "message":  "Frontend update",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/22514996fdcf07008629c03c574318c00913f61f",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "8b685498823dffd4883df5281e752c8c083e8c93",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-15T01:04:13Z",
+                        "message":  "Actualizacion en index.html",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/8b685498823dffd4883df5281e752c8c083e8c93",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "34104fe555c8d33a2f89d1be8b555474a651b73c",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-15T00:58:34Z",
+                        "message":  "Actualizacion de Readme",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/34104fe555c8d33a2f89d1be8b555474a651b73c",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "b2a9ebd7098288fa818142f5a7f2f34a3a81b624",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-14T19:15:52Z",
+                        "message":  "Merge branch \u0027main\u0027 of https://github.com/ObedGuzmanGuz/Orbita_Kids",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/b2a9ebd7098288fa818142f5a7f2f34a3a81b624",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "5289ba49a2a08715db3cdf9699c337bd6a2a06cb",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-14T19:14:23Z",
+                        "message":  "Fusion de la rama Documentacion",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/5289ba49a2a08715db3cdf9699c337bd6a2a06cb",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "90a965a7478321ba926dbc4581a9182188bec0cf",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-14T19:13:19Z",
+                        "message":  "Documentacion:add Agregacion de Logos",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/90a965a7478321ba926dbc4581a9182188bec0cf",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "732a6d3d9be09ab18f1773fc3209d5c2a116d426",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-14T19:12:11Z",
+                        "message":  "Documentacion: update Actuzalicion de readme",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/732a6d3d9be09ab18f1773fc3209d5c2a116d426",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "5cb38e4a997f5072e1a5bfb80a7707ed65f7ad60",
+                        "authorName":  "Yazmin Gutierrez Hernandez",
+                        "authorLogin":  "yaz-gutzz",
+                        "date":  "2026-10-14T18:27:53Z",
+                        "message":  "Add : Sketches",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/5cb38e4a997f5072e1a5bfb80a7707ed65f7ad60",
+                        "branches":  [
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "22cad8c6c166ef1b2e3ff2879d7f22a76f1fe79a",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-12T20:12:30Z",
+                        "message":  "Actualizacion Readme",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/22cad8c6c166ef1b2e3ff2879d7f22a76f1fe79a",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "11da0b85d263ea6c7d93a2b2ce06f2822779d499",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-08T00:49:33Z",
+                        "message":  "Cambios en el Readme",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/11da0b85d263ea6c7d93a2b2ce06f2822779d499",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "8bd8914ae92ab0ee4fab85d30f46d71bbe02fca0",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-08T00:28:34Z",
+                        "message":  "Merge DiagramaRolesUsuario into main",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/8bd8914ae92ab0ee4fab85d30f46d71bbe02fca0",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "4ed6090f1dedc5e683737327ac8602d79e23d28a",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-08T00:25:15Z",
+                        "message":  "DiagramaRolesUsuario:update README",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/4ed6090f1dedc5e683737327ac8602d79e23d28a",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "ebb40a94e5be353dd140962b54421f2374510f10",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-08T00:18:25Z",
+                        "message":  "DiagramaRolesUsuario:add README",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/ebb40a94e5be353dd140962b54421f2374510f10",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "ba9871ffdaf0a7686d4c2af4cc914a82b6b01bd7",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-08T00:09:33Z",
+                        "message":  "DiagramaRolesUsuario: add arquitectura de roles",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/ba9871ffdaf0a7686d4c2af4cc914a82b6b01bd7",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "f11f8f4f5968e869f08adf4499781f322cdffd04",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-07T18:46:26Z",
+                        "message":  "Update:Actualizar modelo de negocio de Orbita Kids",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/f11f8f4f5968e869f08adf4499781f322cdffd04",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "b8220897ffd432f8f219182a5b6e21dfd227987b",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-05T18:18:37Z",
+                        "message":  "Se fusionó ModelBusinescanvas con main: mejoras del Canvas y documentación de Órbita Kids",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/b8220897ffd432f8f219182a5b6e21dfd227987b",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "8afe1222831e053950a4c7baedc956b00507683f",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-05T18:18:13Z",
+                        "message":  "ModelBusinescanvas: corregir enlaces del README",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/8afe1222831e053950a4c7baedc956b00507683f",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "b49ffc882190f71a792142410397aa5c059f8c74",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-05T18:12:41Z",
+                        "message":  "ModelBusinescanvas:update  mejorar Canvas y documentación de Órbita Kids",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/b49ffc882190f71a792142410397aa5c059f8c74",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "35e2910048ae171d494cf1f944d6b25d5230fa10",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-10-05T17:56:59Z",
+                        "message":  "ModelBusinesCanvas:update Actualizacion de carpetas",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/35e2910048ae171d494cf1f944d6b25d5230fa10",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "b8dfca9b8b36ee9df7f9502ddeb203e7ae6bd872",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-09-28T20:20:01Z",
+                        "message":  "Practica04: update Business Model Canvas",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/b8dfca9b8b36ee9df7f9502ddeb203e7ae6bd872",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "ca2e08a8fc366fd3856f660c157df4bc4a636695",
+                        "authorName":  "Obed Guzman Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-09-28T17:59:06Z",
+                        "message":  "Practica04: add modelo Canvas interactivo de Orbita Kids",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/ca2e08a8fc366fd3856f660c157df4bc4a636695",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    },
+                    {
+                        "sha":  "ce8efd646f84bed8c18163142c34055b0fc71e68",
+                        "authorName":  "Obed Guzmán Flores",
+                        "authorLogin":  "ObedGuzmanGuz",
+                        "date":  "2026-09-28T06:23:44Z",
+                        "message":  "Initial commit",
+                        "url":  "https://github.com/ObedGuzmanGuz/Orbita_Kids/commit/ce8efd646f84bed8c18163142c34055b0fc71e68",
+                        "branches":  [
+                                         "Documentacion",
+                                         "Frontend",
+                                         "WorkFlow",
+                                         "fix/documentacion",
+                                         "fix-sketches",
+                                         "main"
+                                     ]
+                    }
+                ]
+}

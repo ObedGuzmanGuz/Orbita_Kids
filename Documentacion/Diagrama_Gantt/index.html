@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101119">
+  <meta name="description" content="Panel interactivo de seguimiento del proyecto Órbita Kids: planificación Gantt y actividad real de GitHub.">
+  <title>Órbita Kids · Project control</title>
+  <link rel="icon" href="assets/orbita-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="Órbita Kids, resumen">
+        <span class="brand-mark"><img src="assets/Logo_Aplicacion.png" alt="Logo Órbita Kids" fetchpriority="high"></span>
+        <span><b>ÓRBITA <em>KIDS</em></b><small>PROJECT CONTROL</small></span>
+      </a>
+      <div class="side-label">ESPACIO DE TRABAJO</div>
+      <nav class="side-nav" aria-label="Navegación principal">
+        <button class="nav-link active" data-view="overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg> Resumen</button>
+        <button class="nav-link" data-view="gantt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6v3H4zm0 6h11v3H4zm0 6h15v3H4zM13 5h7v3h-7z"/></svg> Cronograma Gantt</button>
+        <button class="nav-link" data-view="activities"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h12M8 12h12M8 19h12M4 5h.01M4 12h.01M4 19h.01"/></svg> Actividades</button>
+        <button class="nav-link" data-view="team"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1zm13-9a3 3 0 1 0-1-5.8M18 14a4 4 0 0 1 3 4v2"/></svg> Equipo</button>
+        <button class="nav-link" data-view="github"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2m12 4v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7A5.2 5.2 0 0 0 18.8 6 4.8 4.8 0 0 0 18.7 2S17.5 1.7 15 3.4a13.3 13.3 0 0 0-7 0C5.5 1.7 4.3 2 4.3 2A4.8 4.8 0 0 0 4.2 6 5.2 5.2 0 0 0 2.8 9.7c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 19v2"/></svg> Historial de GitHub</button>
+        <button class="nav-link" data-view="reports"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h17M8 15l3-4 3 2 5-7"/><circle cx="8" cy="15" r="1"/><circle cx="11" cy="11" r="1"/><circle cx="14" cy="13" r="1"/><circle cx="19" cy="6" r="1"/></svg> Reportes</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="orbit-card"><span class="orbit-dot"></span><div><b>Misión en curso</b><small>Construyendo el futuro</small></div><span class="orbit-arrow">↗</span></div>
+        <div class="sidebar-user"><span class="avatar photo-avatar sidebar-avatar" title="Yazmin Gutierrez Hernandez · Frontend / Líder de equipo"><span class="avatar-fallback">YG</span><img class="avatar-image" src="assets/perfiles/yazmin.jpg" alt="Foto de Yazmin Gutierrez Hernandez"></span><div><b>Yazmin Gutierrez</b><small>Líder de equipo</small></div><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir navegación">☰</button>
+        <div class="breadcrumb">Órbita Kids <span>/</span> <b id="breadcrumbCurrent">Resumen</b></div>
+        <div class="top-actions"><span class="sync-indicator"><i></i> Snapshot verificado</span><button class="icon-button" id="githubLink" title="Abrir repositorio GitHub" aria-label="Abrir repositorio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2m12 4v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7A5.2 5.2 0 0 0 18.8 6 4.8 4.8 0 0 0 18.7 2S17.5 1.7 15 3.4a13.3 13.3 0 0 0-7 0C5.5 1.7 4.3 2 4.3 2A4.8 4.8 0 0 0 4.2 6 5.2 5.2 0 0 0 2.8 9.7c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 19v2"/></svg></button><span id="topProfile"></span></div>
+      </header>
+
+      <section class="page-view active" id="view-overview">
+        <div class="page-heading">
+          <div class="project-heading-brand"><span class="hero-brand-image"><img src="assets/Logo_Aplicacion.png" alt="Órbita Kids" fetchpriority="high"></span><div><div class="eyebrow"><span class="eyebrow-star">✦</span> PROJECT CONTROL</div><h1>Órbita Kids <span class="wave">✦</span></h1><p class="muted">Hola, equipo. Un vistazo al viaje y lo que sigue.</p></div></div>
+          <div class="heading-actions"><span class="period-pill"><span>◷</span> 28 sep — 12 dic, 2026</span><span class="status-pill"><i></i> Proyecto en marcha</span></div>
+        </div>
+        <div class="data-legend"><span><i class="legend-real"></i> GitHub verificado</span><span><i class="legend-plan"></i> Planificación aprobada</span><span><i class="legend-est"></i> Estimación inicial</span><small id="updatedLabel">Datos consultados —</small></div>
+        <div class="kpi-grid" id="kpiGrid"></div>
+        <div class="overview-grid">
+          <article class="panel gantt-preview-panel">
+            <div class="panel-heading"><div><div class="eyebrow">PLAN DEL PROYECTO</div><h2>Cronograma <span class="title-accent">Gantt</span></h2></div><button class="text-button" data-open-view="gantt">Ver cronograma <span>↗</span></button></div>
+            <div class="mini-gantt" id="miniGantt"></div>
+            <div class="panel-foot"><span><i class="phase-key key-done"></i>Realizado</span><span><i class="phase-key key-progress"></i>En desarrollo</span><span><i class="phase-key key-pending"></i>Pendiente</span><span class="foot-note">Las barras muestran progreso estimado</span></div>
+          </article>
+          <article class="panel activity-panel">
+            <div class="panel-heading"><div><div class="eyebrow">ACTIVIDAD REAL</div><h2>Últimos commits</h2></div><button class="circle-action" data-open-view="github" aria-label="Ver historial de GitHub">↗</button></div>
+            <div id="recentCommits" class="recent-commits"></div>
+          </article>
+        </div>
+        <div class="overview-bottom">
+          <article class="panel team-preview"><div class="panel-heading"><div><div class="eyebrow">TRIPULACIÓN</div><h2>El equipo</h2></div><button class="text-button" data-open-view="team">Ver equipo <span>↗</span></button></div><div id="teamStrip" class="team-strip"></div></article>
+          <article class="panel milestone-panel"><div class="panel-heading"><div><div class="eyebrow">SIGUIENTE HITO</div><h2>Integración de módulos</h2></div><span class="milestone-icon">✦</span></div><p>Conectar las piezas de la misión y preparar el terreno para las pruebas.</p><div class="milestone-meta"><span>23 nov — 4 dic</span><span class="tag pending-tag">Pendiente</span></div><div class="progress-track"><i style="width:0%"></i></div></article>
+        </div>
+        <div class="overview-bottom evidence-row">
+          <article class="panel evidence-panel"><div class="eyebrow">EVIDENCIA EN EL REPOSITORIO</div><h2>La misión ya tiene mapa</h2><p>Los archivos actuales incluyen el Canvas, los diagramas de roles y arquitectura, sketches, wireframes y el Service Workflow interactivo.</p><div class="evidence-links"><a href="https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/main/Documentacion/DiagramaRolesUsuario" target="_blank" rel="noreferrer">Roles ↗</a><a href="https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/main/Documentacion/DiagramaDeArquitectura" target="_blank" rel="noreferrer">Arquitectura ↗</a><a href="https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/main/Frontend/Wireframes" target="_blank" rel="noreferrer">Wireframes ↗</a><a href="https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/Diagrama_WorkFlow/workflow-orbita-kids.html" target="_blank" rel="noreferrer">Service Workflow ↗</a></div></article>
+          <article class="panel evidence-panel"><div class="eyebrow">TECNOLOGÍAS DOCUMENTADAS</div><h2>Stack propuesto</h2><div class="tech-chips"><span>Flutter · Dart</span><span>React · PWA</span><span>FastAPI · Python</span><span>MySQL</span></div><p class="evidence-note">La documentación las describe como tecnologías previstas; GitHub no confirma que estén integradas o desplegadas.</p></article>
+        </div>
+      </section>
+
+      <section class="page-view" id="view-gantt">
+        <div class="page-heading compact-heading"><div><div class="eyebrow">PLANIFICACIÓN APROBADA</div><h1>Mapa de la misión</h1><p class="muted">Diez fases para llevar Órbita Kids de la idea a la validación.</p></div><div class="heading-actions"><span class="period-pill">28 sep — 12 dic, 2026</span></div></div>
+        <div class="panel gantt-controls"><div class="control-group"><label for="ownerFilter">Responsable</label><select id="ownerFilter"><option value="all">Todo el equipo</option></select></div><div class="control-group"><label for="statusFilter">Estado</label><select id="statusFilter"><option value="all">Todos los estados</option></select></div><div class="control-group zoom-control"><label>Escala temporal</label><div class="segmented" role="group" aria-label="Zoom del cronograma"><button data-zoom="day">Día</button><button class="selected" data-zoom="week">Semana</button><button data-zoom="month">Mes</button></div></div><button class="reset-button" id="resetGantt">Restablecer filtros</button></div>
+        <div class="panel gantt-panel"><div class="gantt-summary"><div><span class="eyebrow">VISTA DEL CRONOGRAMA</span><h2>Ruta del proyecto <span class="gantt-range">28 sep — 12 dic 2026</span></h2></div><div class="gantt-legend"><span><i class="legend-plan"></i>Planificado</span><span><i class="legend-est"></i>Avance estimado</span><span><i class="today-swatch"></i>Hoy</span></div></div><div class="gantt-scroll" id="ganttScroll"><div class="gantt-grid" id="ganttGrid"></div></div><div class="gantt-foot"><span id="ganttCount"></span><span>Selecciona una actividad para ver sus detalles</span></div></div>
+      </section>
+
+      <section class="page-view" id="view-activities"><div class="page-heading"><div><div class="eyebrow">TRABAJO PLANIFICADO</div><h1>Actividades</h1><p class="muted">Responsables, ventanas de trabajo y estimaciones iniciales.</p></div><div class="heading-actions"><label class="search-box"><span>⌕</span><input id="activitySearch" placeholder="Buscar actividad…" type="search"></label></div></div><div class="data-legend"><span><i class="legend-plan"></i>Fechas aprobadas</span><span><i class="legend-est"></i>Avance estimado</span></div><div class="activity-cards" id="activityCards"></div></section>
+
+      <section class="page-view" id="view-team"><div class="page-heading"><div><div class="eyebrow">TRIPULACIÓN ÓRBITA</div><h1>El equipo</h1><p class="muted">Cinco personas, una misión compartida.</p></div><span class="period-pill">5 integrantes</span></div><div class="team-grid" id="teamGrid"></div></section>
+
+      <section class="page-view" id="view-github"><div class="page-heading"><div><div class="eyebrow">DATOS REALES · GITHUB REST API</div><h1>Actividad del repositorio</h1><p class="muted">Commits únicos agrupados entre ramas consultadas. Un SHA se cuenta una sola vez.</p></div><a class="button-primary" href="https://github.com/ObedGuzmanGuz/Orbita_Kids" target="_blank" rel="noreferrer">Abrir repositorio ↗</a></div><div class="github-stats" id="githubStats"></div><div class="panel filters-panel"><label class="search-box"><span>⌕</span><input id="commitSearch" type="search" placeholder="Buscar autor o mensaje…"></label><div class="control-group"><label for="branchFilter">Rama</label><select id="branchFilter"><option value="all">Todas las ramas</option></select></div><div class="control-group"><label for="memberFilter">Integrante</label><select id="memberFilter"><option value="all">Todo el equipo</option></select></div><div class="control-group"><label for="periodFilter">Periodo</label><select id="periodFilter"><option value="all">Todo el historial</option><option value="30">Últimos 30 días</option><option value="90">Últimos 90 días</option></select></div></div><div class="panel commit-table-panel"><div class="table-heading"><h2>Historial de commits <span id="commitResults"></span></h2><span class="source-badge">FUENTE VERIFICADA</span></div><div class="table-scroll"><table><thead><tr><th>Autor</th><th>Mensaje</th><th>Rama(s)</th><th>Fecha</th><th></th></tr></thead><tbody id="commitRows"></tbody></table></div><div class="empty-state hidden" id="commitEmpty">No hay commits que coincidan con esos filtros.</div></div></section>
+
+      <section class="page-view" id="view-reports"><div class="page-heading"><div><div class="eyebrow">LECTURA DEL PROYECTO</div><h1>Reportes</h1><p class="muted">Planificación estimada y actividad GitHub consultada, en contexto.</p></div><span class="period-pill">Actualizado <span id="reportDate">—</span></span></div><div class="report-grid"><article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">ESTADO PLANIFICADO</div><h2>Actividades por estado</h2></div></div><div id="statusChart" class="status-chart"></div></article><article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">CARGA PLANIFICADA</div><h2>Actividades por integrante</h2></div></div><div id="ownerChart" class="bar-chart"></div></article><article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">DATOS REALES · GITHUB</div><h2>Commits por integrante</h2></div></div><div id="commitChart" class="bar-chart"></div><p class="chart-note">Mide actividad del historial, no porcentaje de tareas.</p></article><article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">DATOS REALES · GITHUB</div><h2>Actividad por mes</h2></div></div><div id="monthChart" class="month-chart"></div></article><article class="panel chart-panel phase-chart-panel"><div class="panel-heading"><div><div class="eyebrow">ESTIMACIÓN INICIAL</div><h2>Avance estimado por fase</h2></div></div><div id="phaseChart" class="phase-chart"></div><p class="chart-note">Los porcentajes son una referencia inicial acordada para esta vista.</p></article></div></section>
+
+      <footer class="app-footer"><span>✦ Órbita Kids · Creamos experiencias que inspiran</span><span>Dashboard independiente · HTML, CSS y JavaScript</span></footer>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="taskModal" aria-hidden="true"><section class="task-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Cerrar">×</button><div class="eyebrow" id="modalEyebrow">DETALLE DE ACTIVIDAD</div><h2 id="modalTitle"></h2><p id="modalDescription" class="muted"></p><div id="modalMeta" class="modal-meta"></div><div class="modal-progress-label"><span>Avance estimado</span><b id="modalProgress"></b></div><div class="progress-track modal-progress"><i id="modalProgressBar"></i></div><div class="modal-dependencies"><b>Dependencias</b><div id="modalDependencies"></div></div></section></div>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
