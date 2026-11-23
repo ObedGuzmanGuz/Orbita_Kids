@@ -357,6 +357,7 @@ El diagrama de Gantt permite visualizar la planificación temporal del proyecto,
 
 Su objetivo es facilitar el seguimiento de las tareas y conocer el avance de las actividades establecidas para el desarrollo de Órbita Kids.
 
+🚀 **[Abrir diagrama interactivo de Gantt](https://obedguzmanguz.github.io/Orbita_Kids/Documentacion/Diagrama_Gantt/)**
 📂 [Ver carpeta del diagrama de Gantt](https://github.com/ObedGuzmanGuz/Orbita_Kids/tree/main/Documentacion/Diagrama_Gantt)
 
 [Volver al índice](#indice)
